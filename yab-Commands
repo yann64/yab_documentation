@@ -551,10 +551,13 @@ SLIDER SET Silder$, Value
   Set the slider to Value.
 Value = SLIDER GET Slider$
   Get the currently selected value of the slider.
-ID = SOUND PLAY SoundFile$
+ID = SOUND PLAY SoundFile$, 1 
   Play the sound file SoundFile$ (can be anything like wav, mp3, etc.).
   You are given an ID to handle the playback later in your code.
-  Note: Currently not supported by Haiku!
+  The ID is the same time 1. you can use it for stoping and resume playback.
+  New in this command is the setting behind Soundfile$.
+  1 = playing in a loop
+  0 = palying once a time
 SOUND STOP ID
   Stop the sound with ID
 SOUND WAIT ID

@@ -118,6 +118,7 @@ COLUMNBOX x1,y1 TO x2,y2, ID$, HasHScrollbar, Option$, View$
   Option$ affects all columns! The columns can be made movable, resizable, removable
   Option$ = "movable, resizable, popup, removable"
   Option$ = "no-border" sets up the columnbox without border
+  Option$=  "no-sorting" disable the sorting function
 COLUMNBOX COLUMN ColumnBox$, Name$, Position, MaxWidth, MinWidth, Width, Option$
   Option$ = "align-left, align-center, align-right"
 COLUMNBOX ADD ColumnBox$, Column, Row, Height, Item$

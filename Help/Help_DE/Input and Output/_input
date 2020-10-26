@@ -1,0 +1,58 @@
+
+Name:
+input -- read input from the user (or from a file) and assign it to a variable
+
+Synopsis: 
+input a 
+input a,b,c 
+input a$ 
+input "Hello" a 
+input #1 a$ 
+
+Description:
+input reads the new contents of one or many (numeric- or string-) variables, either from the keyboard (i.e. from you) or from a file. An optional first string-argument specifies a prompt, which will be issued before reading any contents.
+
+If you want to read from an open file, you need to specify a hash ('#'), followed by the number, under which the file has been opened.
+
+Note, that the input is split at spaces, i.e. if you enter a whole line consisting of many space-seperated word, the first input-statement will only return the first word; the other words will only be returned on subsequent calls to input; the same applies, if a single input reads multiple variables: The first variable gets only the first word, the second one the second word, and so on. If you don't like this behaviour, you may use line input, which returns a whole line (including embedded spaces) at once.
+
+Example:
+input "Please enter the name of a file to read: " a$ 
+open 1,a$ 
+while(!eof(1)) 
+	input #1 b$ 
+	print b$ 
+wend 
+Explanation:
+
+If this program is stored within a file test.yab and you enter this name when prompted for a file to read, you will see this output:
+
+
+Please enter the name of a file to read: test.yab 
+input 
+"Please 
+enter 
+the 
+name 
+of 
+a 
+file 
+to 
+read: 
+"
+a$ 
+open 
+1,a$ 
+while(!eof(1)) 
+input 
+#1 
+b$ 
+print 
+b$ 
+wend 
+
+
+
+Related: line input
+
+&

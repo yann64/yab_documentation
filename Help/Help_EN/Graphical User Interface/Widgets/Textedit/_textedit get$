@@ -1,0 +1,19 @@
+
+Name:
+textedit get$ -- retrieve text from a textedit
+
+Synopsis:
+EnteredText$ = TEXTEDIT GET$ TextEdit$
+TextLine$ = TEXTEDIT GET$ TextEdit$, LineNumber
+
+Description:
+EnteredText$ = TEXTEDIT GET$ TextEdit$
+Get the entire contents of a textedit.
+
+TextLine$ = TEXTEDIT GET$ TextEdit$, LineNumber
+Get the contents of a line of text.
+
+
+
+Related: textedit, textedit add, textedit clear, textedit color, textedit get, textedit set
+&

@@ -1,0 +1,32 @@
+
+Name:
+option set -- set various options for views and controls.
+
+Synopsis:
+OPTION SET View$, "Auto-Resize"
+OPTION SET View$, "Focus", HasFocus
+OPTION SET Control$, "Enabled", IsEnabled 
+OPTION SET Control$, "Label", NewLabel$
+OPTION SET Control$, "Visible", IsVisible
+
+Description:
+OPTION SET View$, "Auto-Resize"
+Automatically resize the view View$ to preferred (when this is supported by the view).
+
+OPTION SET View$, "Focus", HasFocus
+Set/remove the focus of View$ (when this is supported by the view).
+
+OPTION SET Control$, "Enabled", IsEnabled 
+Enable/disable the control Control$.
+
+OPTION SET Control$, "Label", NewLabel$
+Give a Control a new label.
+
+OPTION SET Control$, "Visible", IsVisible
+Set the control Control$ invisible or visible
+
+Note:
+
+The following widgets are controls:
+CHECKBOX, RADIOBUTTON, SLIDER, TEXTCONTROL, BUTTON, COLORCONTROL, SPINCONTROL, CALENDAR
+&

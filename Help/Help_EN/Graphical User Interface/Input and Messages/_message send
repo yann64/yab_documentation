@@ -1,0 +1,35 @@
+
+Name:
+message send -- send a system message
+
+Synopsis:
+Arrived = MESSAGE SEND Application$, Message$
+
+Description:
+This is an rather advanced command for sending messages to other yab programs.
+
+The target program should have the signature Application$. The default signature is: "application/x-vnd.yab-app".
+
+You can change the signature for yab scripts when you add a comment in the first or second line of your program like this:
+// mimetype "application/x-vnd.myapp"
+
+The command returns one of the following error codes:
+   0: Message was delivered
+   1: The destination program was not found
+   2: The target's message queue is full
+   3: Time out, the message never made it to the target
+   4: An other error occurred  
+
+Message:
+The destination yab application will produce a message$ stating:
+
+
+_Scripting:...|
+
+
+(The ... is the Message$.)
+
+See the files Ping.yab and Pong.yab for a nice example of message send. As you have to start both, use the tracker or the terminal to run them, but not the IDE.
+
+Related: message$
+&

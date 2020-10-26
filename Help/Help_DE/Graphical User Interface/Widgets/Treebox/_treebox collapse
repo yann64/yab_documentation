@@ -1,0 +1,12 @@
+
+Name:
+treebox collapse -- Collapse a top level category.
+
+Synopsis:
+TREEBOX COLLAPSE TreeBox$, Head$
+
+Description:
+Collapses Head$ in TreeBox$.
+
+Related: treebox, treebox add, treebox clear, treebox count, treebox expand, treebox get$, treebox remove, treebox select, treebox sort
+&

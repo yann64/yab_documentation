@@ -1,0 +1,29 @@
+
+Name:
+sig() -- return the sign of its argument
+
+Synopsis:
+a=sig(b) 
+
+Description:
+Return +1, -1 or 0, if the single argument is positive, negative or zero.
+
+Example:
+//*** requires ncurses support compiled in ***
+//See Documentation/Advanced for info.
+clear screen 
+dim c$(3):c$(1)="red":c$(2)="white":c$(3)="green" 
+do 
+	num=ran(100)-50 
+	print color(c$(2+sig(num))) num 
+loop 
+Explanation:
+
+  This program prints an infinite sequence of random number; positive numbers are printed in green, negative numbers are printed red (an exact zero would be printed white). (With a little extra work, this program could be easily extended into a brogerage system).
+
+  Start this program in a terminal.
+
+
+Related: abs, int, frac
+
+&

@@ -1,0 +1,22 @@
+
+Name:
+draw ellipse -- draw an ellipse
+
+Synopsis:
+DRAW ELLIPSE x,y, RadiusX, RadiusY, View$
+
+Description:
+This command will draw an ellipse on Target$. Target$ has to be either a valid view, bitmap or canvas. The center of the ellipse is (x,y) and the ellipse has a horizontal radius of RadiusX and a vertical radius of RadiusY.
+
+At default it will draw a filled ellipse in the current highcolor. With the draw set command you can change the filling settings.
+
+Example:
+window open 100,100 to 400,400, "Example", "Example"
+draw set true, "HighSolidFill"
+draw ellipse 150,150, 75, 30, "Example"
+sleep 7
+window close "Example"
+Explanation:
+
+Related: draw circle, draw curve, draw dot, draw flush, draw line, draw rect, draw set
+&

@@ -1,0 +1,35 @@
+
+Name:
+left$() -- return (or change) left end of a string
+
+Synopsis: 
+print left$(a$,2) 
+left$(b$,3)="foobar" 
+
+Description:
+The left$-function accepts two arguments (a string and a number) and returns the part from the left end of the string, whose length is specified by its second argument. Loosely spoken, it simply returns the requested number of chars from the left end of the given string.
+
+Note, that the left$-function can be assigned to, i.e. it may appear on the left hand side of an assignment. In this way it is possible to change a part of the variable used within the left$-function. Note, that that way the length of the string cannot be changed, i.e. characters might be overwritten, but not added. For an example see below.
+
+Example:
+input "Please answer yes or no: " a$ 
+l=len(a$):a$=lower$(a$):print "Your answer is "
+if (left$("yes",l)=a$ and l>=1) then 
+	print "yes" 
+elsif (left$("no",l)=a$ and l>=1) then 
+	print "no" 
+else 
+	print "?" 
+endif 
+
+a$="Heiho World!" 
+print a$ 
+left$(a$,5)="Hello" 
+print a$ 
+Explanation:
+
+This example asks a simple yes/no question and goes some way to accept even incomplete input, while still beeing able to reject invalid input. This second example demonstrates the capability to assign to the left$-function.
+ 
+
+Related: right$, mid$
+&

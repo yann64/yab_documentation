@@ -1,0 +1,19 @@
+
+Name:
+dropbox remove -- removes an item from a  dropbox.
+
+Synopsis:
+DROPBOX REMOVE DropBox$, Position
+
+Description:
+Removes item number Position. 
+Note: If the removed item was marked, the item before it will be marked instead. You will NOT get
+a message that the marked item has changed. If the first item will be deleted, the next item in
+the drop box will be marked.
+
+Note:
+
+Each time an item was removed, the drop box count will change as well!
+
+Related: dropbox , dropbox add, dropbox clear, dropbox count, dropbox get$, dropbox select
+&

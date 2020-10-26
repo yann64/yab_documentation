@@ -1,0 +1,21 @@
+
+Name:
+true -- a constant with the value of 1
+
+Synopsis:
+okay=true 
+
+Description:
+The constant true can be assigned to variables which will later appear in conditions (e.g. an if-statement.
+true may also be written as TRUE or even TrUe.
+
+Example:
+input "Please enter a string of all upper letters: " a$ 
+if (is_upper(a$)) print "Okay" 
+
+sub is_upper(a$) 
+	if (a$=upper$(a$)) return true 
+	return false 
+end sub 
+Related: false
+&

@@ -1,0 +1,21 @@
+
+Name:
+clipboard paste$ -- read out the clipboard
+
+Synopsis:
+Text$ = CLIPBOARD PASTE$
+
+Description:
+This command will read out ("paste") the content of the system clipboard.
+
+Example:
+print "This is the content of the clipboard: "+clipboard paste$
+print "Now we copy \"Foo Bar\" to the clipboard"
+clipboard copy "Foo Bar"
+print "This is the content of the clipboard: "+clipboard paste$
+Explanation:
+
+The example will first display whatever is written in the clipboard (might be empty too), and then copies the string "Foo Bar" to the clipboard. Another output shows, it actually worked.
+
+Related: clipboard copy
+&

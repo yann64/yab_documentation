@@ -1,0 +1,25 @@
+
+Name:
+using -- Specify the format for printing a number
+
+Synopsis: 
+print a using "##.###" 
+print a using("##.###",",.") 
+
+Description:
+The using-keyword may appear as part of the print-statement and specifies the format (e.g. the number of digits before and after the decimal dot), which should be used to print the number.
+
+The possible values for the format argument ("##.###" in the synopsis above) are described within the entry for the str$-function; especially the second line in the synopsis (print a using("##.###",",.")) will become clear after referring to str$. In fact the using clause is closely related to the str$-function; the former can always be rewritten using the latter; i.e. print foo using bar$ is always equivalent to print str$(foo,bar$). Therefore you should check out str$ to learn more.
+
+Example:
+for a=1 to 10 
+	print sqrt(ran(10000*a)) using "#########.#####" 
+next a 
+Explanation:
+
+This example prints a column of square roots of random number, nicely aligned at the decimal dot.
+
+
+Related: print, str$
+
+&

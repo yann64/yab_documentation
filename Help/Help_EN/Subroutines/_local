@@ -1,0 +1,44 @@
+
+Name:
+local -- mark a variable as local to a subroutine
+
+Synopsis: 
+sub foo() 
+
+  local a,b,c$,d(10),e$(5,5) 
+
+  ... 
+
+end sub 
+
+Description:
+The local-command can (and should be) used to mark a variable (or array) as local to the containing subroutine. This means, that a local variable in your subroutine is totally different from a variable with the same name within your main program. Variables which are known everywhere within your program are called global in contrast.
+Declaring variables within the subroutine as local helps to avoid hard to find bugs; therefore local variables should be used whenever possible.
+
+Note, that the parameters of your subroutines are always local.
+
+As you may see from the example, local arrays may be created without using the keyword dim (which is required only for global arrays).
+
+Example:
+a=1 
+b=1 
+print a,b 
+foo() 
+print a,b 
+
+sub foo() 
+	local a 
+	a=2 
+	b=2 
+end sub 
+Explanation:
+
+This example demonstrates the difference between local and global variables; it produces this output:
+1 1 
+1 2 
+As you may see, the content of the global variable a is unchanged after the subroutine foo; this is because the assignment a=2 within the subroutine affects the local variable a only and not the global one. However, the variable b is never declared local and therefore the subroutine changes the global variable, which is reflected in the output of the second print-statement.
+
+
+Related: sub, static, dim
+
+&

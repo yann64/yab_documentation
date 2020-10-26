@@ -1,0 +1,3 @@
+WINDOW OPEN x1,,y1 TO x2 ,y2, ID$ , Title$ 
+
+Öffnet ein Fenster an Position x1,y1 nach x2,y2 der Bildschirmkoordinaten mit dem Titel Title$. Generiert automatisch einen View in Fenstergröße, mit der Bezeichnung ID$. 

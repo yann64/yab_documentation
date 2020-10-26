@@ -1,0 +1,14 @@
+
+Name:
+listbox get$ -- get a specific item string in a listbox
+
+Synopsis:
+Item$ = LISTBOX GET$ ListBox$, Position
+
+Description:
+In the given listbox named ListBox$, the item text at the position Position will be stored in Item$.
+
+Have a look at the listbox command for an example.
+
+Related: listbox, listbox add, listbox clear, listbox count, listbox get, listbox remove, listbox select, listbox sort
+&

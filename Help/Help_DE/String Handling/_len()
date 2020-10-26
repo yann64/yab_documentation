@@ -1,0 +1,19 @@
+
+Name:
+len() -- return the length of a string
+
+Synopsis: 
+x=len(a$) 
+
+Description:
+The len-function returns the length of its single string argument.
+
+Example:
+input "Please enter a password: " a$ 
+if (len(a$)<6) error "Password too short!" 
+Explanation:
+
+This example checks the length of the password, that the user has entered.
+
+Related: left$, right$, mid$ 
+&

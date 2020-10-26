@@ -1,0 +1,22 @@
+
+Name:
+textedit -- create a multiline text editor
+
+Synopsis:
+TEXTEDIT x1,y1 TO x2,y2, ID$, ScrollbarType, View$
+
+Description:
+Opens an editor at (x1,y1) to (x2,y2) with ID$ (not displayed) on View$.
+
+ScrollbarType = 0 -- no scrollbar
+ScrollbarType = 1 -- the textedit has a vertical scrollbar
+ScrollbarType = 2 -- the textedit has a horizontal scrollbar
+ScrollbarType = 3 -- the textedit has a vertical and a horizontal scrollbar
+
+TEXTEDIT follows all sides in standard layout.
+
+Example: 
+See Tedit.yab or AllInOne.yab example programs.
+
+Related: textcontrol, textedit add, textedit clear, textedit color, textedit get, textedit get$, textedit set
+&

@@ -1,0 +1,14 @@
+File$ = FILEPANEL Mode$, Title$, Directory$ 
+
+Mode$ = "Load-File" 
+Mode$ = "Load-Directory" 
+Mode$ = "Load-File-and-Directory" 
+Mode$ = "Save-File" 
+
+Öffnet ein "Datei Ã?ffnen..."- Menü im Verzeichnis Directory$. Die gewählte Datei ist File$. 
+
+Filepanel wird mit Modus Mode$ (Datei laden, Verzeichnis laden, Datei oder Verzeichnis laden und Speichern) geöffnet.. 
+
+File$ = FILEPANEL Mode$, Title$, Directory$, Filename$ 
+
+Gleiche Funktionsweise wie oben, nur das hier gezielt eine Datei oder Verzeichnis vorgegeben wird. 

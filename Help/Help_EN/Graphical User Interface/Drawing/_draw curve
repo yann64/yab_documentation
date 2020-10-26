@@ -1,0 +1,20 @@
+
+Name:
+draw curve -- draw a Bezier curve with four reference points
+
+Synopsis:
+DRAW CURVE x1,y1, x2,y2, x3,y3, x4,y4, Target$
+
+Description:
+Bezier curves are defined by a number of points. They will always start in the first point and end in the last one. The curve will always be within the four sides if you connect the points directly. For our command, the curve is defined by four points (x1,y1) ... (x4,y4) and it is drawn on Target$. Target$ has to be either a valid view, bitmap or canvas.
+
+At default it will draw a filled curve in the current highcolor. With the draw set command you can change the filling settings. Note: A filled curve might have refresh problems due to a bug in the app-server.
+
+Example:
+window open 100,100 to 400,400, "Example", "Example"
+draw set true, "HighSolidFill"
+draw curve 10,150, 75,60, 150,20, 250,140, "Example"
+sleep 7
+window close "Example"
+Related: draw circle, draw dot, draw ellipse, draw flush, draw line, draw rect, draw set
+&

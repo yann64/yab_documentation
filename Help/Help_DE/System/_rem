@@ -1,0 +1,33 @@
+
+Name:
+rem -- start a comment
+
+Synopsis: 
+rem  Hey, this is a comment 
+ #    this is a comment too 
+// even this 
+print "Not a comment" #    This is an error!! 
+print "Not a comment"://   But this is again a valid comment 
+print "Not a comment" //   even this. 
+print "Not a comment" rem  and this! 
+
+Description:
+rem introduces a comment (like # or //), that extends up to the end of the line.
+Those comments do not even need a colon (':' infront of them); they (rem, # and //) all behave alike except for #, which may only appear at the very beginning of a line; therefore the fourth example in the synopsis above (print "Not a comment" # This is an error!!) is indeed an error.
+Note, that rem is an abbreviation for remark. remark however is not a valid command in yab.
+Finally note, that a comment intoduced with '#' may have a special meaning under BeOS; see the entry for # for details.
+
+Example:
+# 
+rem   comments on data structures 
+#     are more useful than 
+//    comments on algorithms. 
+rem 
+Explanation:
+
+This program does nothing, but in a splendid and well commented way.
+
+
+Related: #, //
+
+&

@@ -1,0 +1,12 @@
+
+Name:
+view -- add a view
+
+Synopsis:
+VIEW x1,y1 TO x2,y2, ID$, View$
+
+Description:
+ Adds a view
+
+Related: view get, view remove
+&

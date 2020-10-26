@@ -1,0 +1,22 @@
+
+Name:
+columnbox color -- change the colors of a columnbox
+
+Synopsis:
+COLUMNBOX COLOR ColumnBox$, Option$, r,g,b
+
+Description:
+The colors in a columnbox can be changed easily. This distinguishes the columnbox from other list widgets like listbox, dropbox or treebox. Given an option string Option$ the colors can be set to the RGB value (r,g,b). Read the part on the draw set command to learn more about RGB color space in yab.
+
+The following values for Option$ are valid:
+"selection-text" -- set the color of the text in the selected row
+"non-focus-selection" -- set the color of the selection when the columnbox is not focussed
+"selection" -- set the color for the selected row
+"text" -- set the general text color
+"row-divider" -- set the color of the line between the rows
+"background" -- set the background color
+
+Have a look at the columnbox command for an example.
+
+Related: columnbox, columnbox add, columnbox clear, columnbox column, columnbox count, columnbox get, columnbox get$, columnbox remove, columnbox select
+&

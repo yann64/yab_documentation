@@ -1,0 +1,33 @@
+
+Name:
+doc -- special comment, which might be retrieved by the program itself
+
+Synopsis: 
+doc   This is a comment 
+docu  This is another comment 
+
+Description:
+Introduces a comment, which spans up to the end of the line. But other than the rem-comment, any docu-comment is collected within the special docu$-array and might be retrieved later on. Moreover you might invoke yab -docu foo.yab on the commandline to retrieve the embedded documentation within the program foo.yab.
+Instead of doc you may just as well write docu or even documentation.
+
+Example:
+rem   Hi, this has been written by me 
+rem 
+doc   This program asks for a number and 
+doc   prints this number multiplied with 2 
+rem 
+rem   Print out rhe above message 
+for a=1 to arraysize(docu$()):print docu$(a):next a 
+
+rem   Read and print the number 
+input "Please input a number: " x 
+print x*2 
+Explanation:
+
+This program uses the comments within its code to print out a help message for the user.
+The contents of the doc-lines are retrieved from the docu$-array; if you do not want a comment to be collected within this array, use the rem-statement instead.
+
+
+Related: docu$, rem
+
+&

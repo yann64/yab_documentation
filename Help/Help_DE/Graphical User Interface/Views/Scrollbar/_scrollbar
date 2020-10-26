@@ -1,0 +1,13 @@
+
+Name:
+scrollbar -- make a view scrollable
+
+Synopsis:
+SCROLLBAR ID$, ScrollbarType, View$
+
+Description:
+SCROLLBAR ID$, ScrollbarType, View$
+  Make View$ scrollable.
+
+Related: scrollbar get, scrollbar set
+&

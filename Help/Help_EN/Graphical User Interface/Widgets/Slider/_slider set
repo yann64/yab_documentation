@@ -1,0 +1,22 @@
+
+Name:
+slider set -- set the slider value or hashmarks location and numnber
+
+Synopsis:
+SLIDER SET Silder$, Location$, Count
+SLIDER SET Silder$, Value
+
+Description:
+SLIDER SET Silder$, Location$, Count
+
+Set the hashmarks.
+Location$ = "none/bottom/top/both" use these valuse for hashmarks for horizontal sliders
+Location$ = "none/left/rigth/both" use  these valuse for hashmarks for vertical sliders
+Count = number of hashmarks
+
+SLIDER SET Silder$, Value
+
+Set the slider to Value. Moves the slider indicator block to this location.
+
+Related: slider, slider color, slider get, slider label
+&Spincontrol

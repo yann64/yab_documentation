@@ -1,0 +1,40 @@
+
+Name:
+ran() -- return a random number
+
+Synopsis: 
+print ran() 
+x=ran(y) 
+
+Description:
+The ran-function returns a random number. If no argument is given, the number returned is in the range from 0 to 1; where only 0 is a possible value; 1 will never be returned. If an argument is supplied, the number returned will be in the range from 0 up to this argument, whereas this argument itself is not a possible return value.
+
+Example:
+//*** requires ncurses support compiled in ***
+//See Documentation/Advanced for info.
+
+clear screen 
+c=peek("screenwidth")-1 
+l=peek("screenheight") 
+
+dim col$(8) 
+for a=0 to 7
+	read col$(a)
+next a 
+
+do 
+	x=ran(c) 
+	y=l-ran(l*exp(-32*((x/c-1/2)**2))) 
+	i=i+1 
+	print color(col$(mod(i,8))) at(x,y) "*" 
+loop 
+
+data "black","white","red","blue","green","yellow","cyan","magenta" 
+Explanation:
+
+  This example will print a cloured bell-curve. Start this program in a terminal.
+
+
+Related: int
+
+&

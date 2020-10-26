@@ -1,0 +1,32 @@
+
+Name:
+pause -- pause, sleep, wait for the specified number of seconds
+
+Synopsis: 
+pause 5 
+
+Description:
+The pause-command has many different names: You may write pause, sleep or wait interchangable; whatever you write, yab will always do exactly the same.
+
+The pause-command will simply wait for the specified number of seconds. This may be a fractional number, so you may well wait less than a second. However, if you try to pause for a smaller and smaller interval (e.g. 0.1 seconds, 0.01 seconds, 0.001 seconds and so on) you will find that at some point yab will not wait at all.
+The pause-command cannot be interrupted. However, sometimes you may want the wait to be interuptible by simply pressing a key on the keyboard. In such cases you should consider using the inkey$-function, with a number of seconds as an argument).
+
+Example:
+deg=0 
+do 
+	maxx=44+40*sin(deg) 
+	for x=1 to maxx 
+		print "*" 
+	next x 
+	pause 0.1+(maxx*maxx/(4*84*84)) 
+	print 
+	deg=deg+0.1 
+loop 
+Explanation:
+
+This example draws a sine-curve; due to the pause-statement the speed of drawing varies in the same way as the speed of a ball might vary, if it would roll along this curve under the influence of gravity.
+
+
+Related: sleep, wait
+
+&

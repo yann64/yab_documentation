@@ -1,0 +1,23 @@
+
+Name:
+thread remove -- kill a running thread or team
+
+Synopsis:
+Success = THREAD REMOVE Option$, ID
+
+Description:
+For a given ID this command kills either the team or the thread. Thus Option$ is either "TeamID" or "ThreadID". If the team or thread was killed successfully Success is set to true, otherwise it is set to false.
+
+Note: You can crash your system with this command! If you do not know what this command is meant for, then do not use it!
+
+Example:
+id = thread get "teamid", "/boot/home/config/bin/yab kamikaze.yab"
+print "Commiting suicide..."
+success = thread remove "teamid", id
+print "This line is never reached."
+Explanation:
+
+Save this example in the file kamikaze.yab and start it from the command line (not from the IDE). It first gets the ID from itself and then kills its own team. Thus the last print command is not executed anymore. This is a very unelegant way to exit.
+
+Related: thread get
+&

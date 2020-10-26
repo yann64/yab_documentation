@@ -1,0 +1,36 @@
+
+Name:
+inkey$ -- wait, until a key is pressed
+
+Synopsis:
+
+*** requires ncurses support compiled in ***
+See Documentation/Advanced for info.
+
+clear screen 
+foo$=inkey$ 
+inkey$ 
+foo$=inkey$(bar) 
+inkey$(bar) 
+
+Description:
+The inkeys$-function waits, until the user presses a key on the keyboard or a button of his mouse, and returns this very key. An optional argument specifies the number of seconds to wait; if omitted, inkey$ will wait indefinitely. inkey$ may only be used, if clear screen has been called at least once.
+
+For normal keys, yab simply returns the key, e.g. a, 1 or !. For function keys you will get f1, f2 and so on. Other special keys will return these strings respectively: enter, backspace, del, esc, scrnup (for screen up), scrndown and tab. Modifier keys (e.g. ctrl, alt or shift) by themself can not be detected (however, if you press shift and e.g. a simultaniously, inkey$ will return the letter A instead of a of course).
+
+Example:
+clear screen 
+print "Press any key or press 'q' to stop." 
+repeat 
+	a$=inkey$ 
+	print a$ 
+until(a$="q") 
+Explanation:
+
+This program simply returns the key pressed. You may use it, to learn, which strings are returned for the special keys on your keyboard (e.g. function-keys).
+
+Start this program in a terminal.
+
+Related: clear screen
+
+&

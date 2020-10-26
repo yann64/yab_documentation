@@ -1,0 +1,25 @@
+
+Name:
+error -- raise an error and terminate your program
+
+Synopsis:
+error "Wrong, wrong, wrong!!"
+
+Description:
+Produces the same kind or error messages, that yab itself produces (e.g. in case of a syntax-error). The single argument is issued along with the current line-number.
+
+Example:
+input "Please enter a number between 1 and 10: " a 
+if (a<1 or a>10) error "Oh no ..." 
+Explanation:
+
+This program is very harsh in checking the users input; instead of just asking again, the program terminates with an error, if the user enters something wrong.
+The error message would look like this:
+
+
+---Error in t.yab, line 2: Oh no ... 
+---Error: Program stopped due to an error 
+
+
+
+&

@@ -1,0 +1,12 @@
+
+Name:
+treebox clear -- clear a treebox
+
+Synopsis:
+TREEBOX CLEAR TreeBox$
+
+Description:
+Clear the tree.
+
+Related: treebox, treebox add, treebox collapse, treebox count, treebox expand, treebox get$, treebox remove, treebox select, treebox sort
+&

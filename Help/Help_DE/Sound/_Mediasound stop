@@ -1,0 +1,20 @@
+
+Name:
+MEDIASOUND STOP ID -- stop playing a sound file
+
+Synopsis:
+MEDIASOUND STOP ID
+
+Description:
+Stop a sound that is playing with the valid identification number Id.
+
+Example:
+ID = MEDIASOUND PLAY SoundFile$
+sleep 3
+MEDIASOUND STOP ID
+Explanation:
+
+This first loads the file SoundFile$, plays it for three seconds and then stops it.
+
+Related: mediasound stop
+&

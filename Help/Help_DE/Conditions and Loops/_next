@@ -1,0 +1,27 @@
+
+Name:
+next -- mark the end of a for loop
+
+Synopsis: 
+for a=1 to 10 
+next a 
+
+Description:
+The next-keyword marks the end of a for-loop. All statements up to the next-keyword will be repeated as specified with the for-clause. Note, that the name of the variable is optional; so instead of next a you may write next.
+
+Example:
+for a=1 to 300000 
+	for b=1 to 21+20*sin(pi*a/20) 
+		print "*" 
+	next b 
+	print 
+	sleep 0.1 
+next a 
+Explanation:
+
+This example simply plots a sine-curve until you fall asleep. Start this program in a terminal.
+
+
+Related: for
+
+&

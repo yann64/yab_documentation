@@ -1,0 +1,36 @@
+
+Name:
+getscreen$() -- returns a string representing a rectangular section of the text terminal
+
+Synopsis:
+
+*** requires ncurses support compiled in ***
+See Documentation/Advanced for info.
+
+a$=getscreen$(2,2,20,20) 
+
+Description:
+The getscreen$ function returns a string representing the area of the screen as specified by its four arguments (which specify two corners). I.e. everything you have printed within this rectangle will be encoded in the string returned (including any colour-information).
+Like most other commands dealing with advanced text output, getscreen$ requires, that you have called clear screen before.
+
+Example:
+clear screen 
+
+for a=1 to 1000: 
+	print color("red") "1" 
+	print color("green") "2" 
+	print color("blue") "3" 
+next a  
+screen$=getscreen$(10,10,40,10) 
+print at(10,10) " Please Press 'y' or 'n'! "
+a$=inkey$ 
+putscreen screen$,10,10 
+Explanation:
+
+This program fills the screen with coloured digits and afterwards asks the user for a choice ( Please press 'y' or 'n'! ). Afterwards the area of the screen, which has been overwritten by the question will be restored with its previous contents, whhch had been saved via getscreen$.
+
+Start this program in a terminal.
+
+Related: putscreen$
+
+&

@@ -1,0 +1,33 @@
+
+Name:
+keyboard message$() -- check the keyboard for pressed buttons
+
+Synopsis:
+Msg$ = KEYBOARD MESSAGE$(View$)
+
+Description:
+With keyboard message$(), you can receive key strokes. These key strokes are always sent to the view that currently has focus, so you should make sure, that you set the focus for the view named View$. This avoids trouble with textedit or textcontrol widgets that rely on user input too. 
+
+For normal keys, yab simply returns the key, e.g. a, 1 or !. For function keys you will get f1, f2 and so on. Other special keys will return these strings respectively: enter, backspace, del, esc, pageup, pagedown and tab. Modifier keys (e.g. ctrl, alt or shift) by themself can not be detected (however, if you press shift and e.g. a simultaniously, keyboard message$ will return the letter A instead of a of course).
+
+If you are interested in getting the key strokes in a terminal, have a look at the inkey$ command. Note, other than inkey$, keyboard message$() does not wait for a key to be pressed. It will simply return an empty string ("") when no key is pressed.
+
+Design:
+It is quite hard to use keyboard message$() for a input method that behaves like e.g. a textcontrol because you have to control the key repeat rate yourself. So rather use a textcontrol, spincontrol or a textedit widget for more complex editing.
+
+Example:
+window open 100,100 to 300,300, "Example", "Example"
+option set "Example", "Focus", true
+while(not instr(message$, "Quit"))
+	k$ = keyboard message$("Example")
+	if(k$<>"" and k$<>old_k$) then
+		print "You pressed "+k$
+		old_k$ = k$
+	endif
+wend
+window close "Example"
+Explanation:
+This simple example first sets the focus on the view that should get the keyboard messages. Whenever a key is pressed, and it is not similar to the pressed key before, we show a text message.
+
+Related: inkey$, mouse message$(), option set, shortcut
+&

@@ -1,0 +1,49 @@
+
+Name:
+colorcontrol -- create a new control for choosing a color
+
+Synopsis:
+COLORCONTROL x,y, ID$, View$
+
+Description:
+Colorcontrol gives you a basic color selection tool in only one command. The colorcontrol named ID$ has its upper left corner at the position (x,y) of the view View$. It always has a width of 276 pixels and a height of 54 pixels. 
+
+Note: The colorcontrol will look differently on 8 bit displays than on  displays with 16 or more bit. However, this should not concern you, the system will take care of that. On BeOS, the colorcontrol will have an additional deactivated selection for alpha channel selection. This is not functional, so again, do not care.
+
+The colorcontrol does not send any message, you have to check with colorcontrol get what the user selected.
+
+You can use option set to disable the colorcontrol. Use colorcontrol set, to set a color.
+
+Layout:
+In standard layout, the colorcontrol will follow the lower, right corner of the view or window.
+
+Design:
+Always give feedback to the user, how the color looks like, he is currently selecting. The example below shows how to do that.
+
+Example:
+window open 100,100 to 426,176, "Example", "Example"
+view 10,10 to 40,66, "Color", "Example"
+colorcontrol 50,10, "MyColorControl", "Example"
+
+// set color to white
+colorcontrol set "MyColorControl", 255,255,255
+
+while(not quitting)
+	if(instr(message$, "Quit")) quitting = true
+	r = colorcontrol get "MyColorControl", "red"
+	g = colorcontrol get "MyColorControl", "green"
+	b = colorcontrol get "MyColorControl", "blue"
+	
+	// check if the color was changed
+	if(r<>old_r or g<>old_g or b<>old_b) then
+		old_r = r: old_g = g: old_b = b
+		draw set "bgcolor", r,g,b, "Color"
+	endif
+wend
+window close "Example"
+Explanation:
+
+The example shows a colorcontrol and view. The view always takes the color that is selected by the user. Note: The color is only set, when the selection changed. This avoids flickering on slow machines.
+
+Related: colorcontrol get, colorcontrol set, option set
+&

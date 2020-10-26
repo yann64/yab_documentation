@@ -1,0 +1,85 @@
+
+Name:
+split() -- split a string into many strings
+
+Synopsis: 
+dim w$(10) 
+... 
+num=split(a$,w$()) 
+num=split(a$,w$(),s$) 
+
+Description:
+The split-function requires a string (containing the text to be split), a reference to a string-array (which will receive the resulting strings, i.e. the tokens) and an optional string (with a set of characters, at which to split, i.e. the delimiters).
+
+The split-function regards its first argument (a string) as a list of tokens separated by delimiters and it will store the list of tokens within the array-reference you have supplied. Note, that the array, which is passed as a reference (w$() in the synopsis), will be resized accordingly, so that you don't have to figure out the number of tokens in advance. The element at position zero (i.e. w$(0)) will not be used.
+
+Normally (i.e. if you omit the third, which is the delimiter-argument) the function will regard space or tab as delimiters for tokens; however by supplying a third argument, you may split at any single of the characters within this string. E.g. if you supply ":;" as the third argument, then colon (:) or semicolon (;) will delimit tokens.
+Note, that a sequence of separator-characters will produce a sequence of empty tokens; that way, the number of tokens returned will always be one plus the number of separator characters contained within the string. Refer to the closely related token-function, if you do not like this behaviour. In some way, the split-function focuses on the separators (other than the token-function, which focuses on the tokens), hence its name.
+
+The second argument is a reference on a string-array, where the tokens will be stored; this array will be expanded (or shrinked) to have room for all tokens, if necessary.
+The first argument finally contains the text, that will be split into tokens. The split-function returns the number of tokens that have been found.
+
+Please see the examples below for some hints on the exact behaviour of the split-function and how it differs from the token-function:
+
+Example:
+print "This program will help you to understand, how the" 
+print "split()-function exactly works and how it behaves" 
+print "in certain special cases." 
+print 
+print "Please enter a line containing tokens separated" 
+print "by either '=' or '-'" 
+dim t$(10) 
+do 
+	print 
+	input "Please enter a line: " l$ 
+	num=split(l$,t$(),"=-") 
+	print num," Tokens: "
+	for a=1 to num 
+		if (t$(a)="") then 
+			print "(EMPTY)" 
+		else 
+			print t$(a); 
+		endif 
+		if (a<num) print "," 
+	next a 
+	print 
+loop 
+Explanation:
+
+This program prints the following output:
+
+
+Please enter a line: a 
+1 Tokens: a 
+
+Please enter a line: 
+0 Tokens: 
+
+Please enter a line: ab 
+1 Tokens: ab 
+
+Please enter a line: a=b 
+2 Tokens: a,b 
+
+Please enter a line: a- 
+2 Tokens: a,(EMPTY) 
+
+Please enter a line: a-= 
+3 Tokens: a,(EMPTY),(EMPTY) 
+
+Please enter a line: =a- 
+3 Tokens: (EMPTY),a,(EMPTY) 
+
+Please enter a line: a=-b 
+3 Tokens: a,(EMPTY),b 
+
+Please enter a line: a--b- 
+4 Tokens: a,(EMPTY),b,(EMPTY) 
+
+Please enter a line: -a==b-c== 
+7 Tokens: (EMPTY),a,(EMPTY),b,c,(EMPTY),(EMPTY) 
+
+
+
+Related: token
+&

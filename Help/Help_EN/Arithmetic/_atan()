@@ -1,0 +1,22 @@
+
+Name:
+atan() -- returns the arcus tangens of its numeric argument
+
+Synopsis:
+angle=atan(a,b) 
+angle=atan(a) 
+
+Description:
+The atan is the arcus-tangens-function, i.e. the inverse of the tan-function. Or, more elaborate: It Returns the angle (in radian, not degree!), which, fed to the tan-function will produce the argument passed to the atan-function.
+The atan-function has a second form, which accepts two arguments: atan(a,b) which is (mostly) equivilantly to atan(a/b) except for the fact, that the two-argument-form returns an angle in the range -pi to pi, whereas the one-argument-form returns an angle in the range -pi/2 to pi/2. To understand this you have to be good at math.
+
+Example:
+print atan(1),atan(tan(pi)),atan(-0,-1),atan(-0,1) 
+Explanation:
+
+  This will print 0.785398 2.06823e-13 -3.14159 3.14159 which is pi/4, almost 0, -pi and pi respectively.
+
+
+Related: tan, sin
+
+&

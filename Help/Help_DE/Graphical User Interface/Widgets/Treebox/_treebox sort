@@ -1,0 +1,15 @@
+
+Name:
+treebox sort -- Sort the treebox.
+
+Synopsis:
+TREEBOX SORT TreeBox$
+
+Description:
+Sorts the entries of TreeBox$ alphabetically.
+
+
+Related: treebox, treebox add, treebox clear, treebox collapse, treebox count, treebox expand, treebox get$, treebox remove, treebox select
+
+
+&Localization

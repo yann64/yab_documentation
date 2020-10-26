@@ -1,0 +1,74 @@
+
+Name:
+export -- mark a function as globally visible
+
+Synopsis: 
+export sub foo(bar) 
+... 
+end sub 
+
+Description:
+The export-statement is used within libraries to mark a user defined subroutine as visible outside the library wherein it is defined. Subroutines, which are not exported, must be qualified with the name of the library, e.g. foo.baz (where foo is the name of the library and baz the name of the subroutine); exported subroutines may be used without specifying the name of the library, e.g. bar.
+
+Therefore export may only be useful within libraries.
+
+Example:
+export sub bar() 
+	print "Hello" 
+end sub 
+
+sub baz() 
+	print "World" 
+end sub 
+Explanation:
+
+The library foo.bar (which is listed above) defines two functions bar and baz, however only the function bar is exported and therefore visible even outside the library; baz is not exported and may only be used within the library foo.yab.
+
+Now within your main program cux.yab (which imports the library foo.yab); note that this program produces an error:
+ 
+import foo 
+
+print "Calling subroutine foo.bar (okay) ..." 
+foo.bar() 
+print "done." 
+
+print "Calling subroutine bar (okay) ..." 
+bar() 
+print "done." 
+
+print "Calling subroutine foo.baz (okay) ..." 
+foo.baz() 
+print "done." 
+
+print "Calling subroutine baz (NOT okay) ..." 
+baz() 
+print "done." 
+ 
+
+The output when executing yab foo.yab is this:
+ 
+ 
+Calling subroutine foo.bar (okay) ... 
+Hello 
+done. 
+Calling subroutine bar (okay) ... 
+Hello 
+done. 
+Calling subroutine foo.baz (okay) ... 
+World 
+done. 
+Calling subroutine baz (NOT okay) ... 
+---Error in main.yab, line 16: can't find subroutine 'baz' 
+---Dump: sub baz() called in main.yab,16 
+---Error: Program stopped due to an error 
+ 
+
+As the error message above shows, the subroutine baz must be qualified with the name of the library, if used outside the library, wherein it is defined (e.g. foo.baz. I.e. outside the library foo.yab you need to write foo.baz. baz alone would be an error.
+
+The subroutine bar (without adding the name of the library) however may (and probably should) be used in any program, which imports the library foo.yab.
+Note: In some sense the set of exported subroutines constitutes the interface of a library.
+
+
+Related: sub, import
+
+&

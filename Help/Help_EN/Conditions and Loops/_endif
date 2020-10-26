@@ -1,0 +1,26 @@
+
+Name:
+endif -- ends an if-statement
+
+Synopsis: 
+if (...) then 
+  ... 
+endif 
+
+Description:
+The endif-statement closes (or ends) an if-statement.
+Note, that endif may be written in a variety of other ways: end if, end-if or even fi. The endif-statement must be omitted, if the if-statement does not contain the keyword then (see the example below). Such an if-statement without endif extends only over a single line.
+
+Example:
+input "A number please: " a 
+if (a<10) then 
+	print "Your number is less than 10." 
+endif 
+
+rem  and now without endif 
+
+input "A number please: " a 
+if (a<10) print "Your number is less than 10." 
+Related: if
+
+&

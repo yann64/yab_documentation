@@ -1,0 +1,25 @@
+Name:
+eor() -- compute the bitwise exclusive or of its two arguments
+
+Synopsis:
+print eor(a,b)
+
+Description:
+The eor-function takes two arguments and computes their bitwise exclusive or. See your favorite introductory text on informatics for an explanation of this function.
+The xor-function is the same as the eor function; both are synonymous; however they have each their own description, so you may check out the entry of xor for a slightly different view.
+
+Example:
+for a=0 to 3 
+	for b=0 to 3 
+		print fill$(bin$(a))," eor ",fill$(bin$(b))," = ",fill$(bin$(eor(a,b))) 
+	next b 
+next a 
+
+sub fill$(a$) 
+	return right$("0"+a$,2) 
+end sub 
+Explanation:
+
+  This example prints a table, from which you may figure, how the eor-function is computed.
+
+Related: and, or

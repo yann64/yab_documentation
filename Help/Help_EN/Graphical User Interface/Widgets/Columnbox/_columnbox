@@ -1,0 +1,88 @@
+
+Name:
+columnbox -- create a list widget with columns
+
+Synopsis:
+COLUMNBOX x1,y1 TO x2,y2, ID$, HasHScrollbar, Option$, View$
+
+Description:
+The columnbox ist created at (x1,y1) to (x2,y2) on the target view named View$. It gets an own ID i.e. ID$. If it should have a horizontal scrollbar, set HasHScrollbar to true otherwise set it to false. Note: a columnbox always has a vertical scrollbar.
+
+There are several options regarding the behaviour of the columns. These options affect all columns:
+"movable" -- the columns can be dragged
+"resizable" -- the columns can be resized
+"popup" -- clicking on the columns with the right mouse button brings up a popup menu with all column names
+"removable" -- the columns can be removed
+"no-sorting" -- disable the sorting function
+An addtional options is "no-border" which draws the columnbox without a borderline.
+
+Several options can be combined, e.g. "movable, resizable, no-border". Note: If "removable" is allowed, you should allow "popup" too, so that removed columns can be brought back again.
+
+After setting up a columnbox you have to add columns with the columnbox column command before adding items.
+
+Note: A columnbox cannot be sorted.
+
+Message:
+The columnbox provides two messages. The first kicks in when a row is selected by clicking once on it or by the up and down keys. This then has the format ID$+":_Select:"+SelectedRow$ where SelectedRow$ contains the number of the row selected. The second message is send, when a row is invoked, i.e. by double-clicking at a row or pressing the Enter key. It has the format ID$+":_Invoke:"+SelectedRow$.
+
+Layout:
+The columbox will follow all sides as in standard layout.
+
+Design:
+To use a columnbox is almost always a good idea. It helps to present a lot of data in an organized way. Additionally it allows bitmaps and icons as list entries and it is the most customizable list widget in yab. 
+
+Example:
+window open 100,100 to 400,500, "Example", "Example"
+
+columnbox 10,10 to 290,390, "MyColumnbox", true, "movable, resizable, popup, removable", "Example"
+
+columnbox column "MyColumnbox", " ", 1, 20, 20, 20, "align-center"
+columnbox column "MyColumnbox", "Name", 2, 140, 60, 80, "align-right"
+columnbox column "MyColumnbox", "Address", 3, 250, 60, 180, "align-left"
+columnbox column "MyColumnbox", "Age", 4, 250, 60, 50, "align-center"
+
+columnbox add "MyColumnbox", 1, 1, 18, "__Mime__=application/x-person"
+columnbox add "MyColumnbox", 2, 1, 18, "John"
+columnbox add "MyColumnbox", 3, 1, 18, "Cape Town"
+columnbox add "MyColumnbox", 4, 1, 18, "30"
+
+columnbox add "MyColumnbox", 1, 2, 18, "__Mime__=application/x-person"
+columnbox add "MyColumnbox", 2, 2, 18, "Mary"
+columnbox add "MyColumnbox", 3, 2, 18, "Omaruru"
+columnbox add "MyColumnbox", 4, 2, 18, "27"
+
+columnbox color "MyColumnbox", "text", 0,0,200
+columnbox color "MyColumnbox", "selection", 200,200,255
+columnbox color "MyColumnbox", "row-divider", 255,255,255
+
+columnbox select "MyColumnbox", 2
+
+while(not quitting)
+        m$ = message$
+        if(instr(m$, "_Select")) then
+                currentRow = columnbox get "MyColumnbox"
+                print columnbox get$ "MyColumnbox", 2, currentRow
+        endif
+        if(instr(m$, "_Invoke")) then
+                currentRow = columnbox get "MyColumnbox"
+                currentItem$ = columnbox get$ "MyColumnbox", 2, currentRow
+                alert "You selected "+currentItem$, "Ok", "info"
+        endif
+        if(instr(m$, "Quit")) quitting = true
+wend
+
+window close "Example"
+Explanation:
+
+In this example, first a columnbox is created. It has a horizontal scrollbar. Due to the options, the columns can be moved by clicking and dragging on the column title, they can be removed by dragging a title out of the columnbox, the columns can be resized by dragging the mouse at the border of the column titles and by right clicking on the column title a popup window appears.
+
+Next the column are defined with columnbox column. All four columns have a title and a column number. Ideally this number starts at one and it increases with every column. Furthermore we specify the width of the column and its maximum and minimum width. This is important when the columnbox allows the "resizable" option.
+
+Several items are inserted into the columnbox with the columnbox add command. Here the column number has to be given and the row number too. The row height is set by the first columnbox add command for a row and here it is set to 18 because we use icons with a 16 pixel height. We obtain the icon from the mimetype of the type "application/x-person" which is given by the system.
+
+Several colors are set to personalize our columnbox a bit and the second row is selected with the columnbox select command.
+
+In the message loop we check for the "_Select" and the "_Invoke" messages of the columnbox. When a row is selected, e.g. by clicking on it once, we first obtain the row where the click happened with columnbox get (this can also be obtain from the message itself using the right$ and val commands). Then the item string itself is retrieved with the columnbox get$ command.
+
+Related: columnbox add, columnbox clear, columnbox column, columnbox count, columnbox get, columnbox get$, columnbox remove, columnbox select
+&

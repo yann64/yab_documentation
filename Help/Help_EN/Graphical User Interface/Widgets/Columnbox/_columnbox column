@@ -1,0 +1,18 @@
+
+Name:
+columnbox column -- add a new column to a columnbox
+
+Synopsis:
+COLUMNBOX COLUMN ColumnBox$, Name$, ColumnNumber, MaxWidth, MinWidth, Width, Option$
+
+Description:
+This command takes quite a number of parameters. Here ColumnBox$ is the columnbox where the column should be added. Name$ is the string that shows up in the title of the column.
+
+ColumnNumber gives the position relative to the other columns. Ideally ColumnNumber starts at 1 for the first column and with every new column it is incremented by 1. The column gets the width Width (thus the next column will start at Position+Width). MaxWidth and MinWidth declare the boundaries for the column when resizing was specified in the construction of the columnbox.
+
+Finally the alignment of all items in the column has to be defined in Option$. Possible values are "align-left" for left alignment, "align-center" for center alignment and "align-right" for right alignment.
+
+Have a look at the columnbox command for an example.
+
+Related: columnbox, columnbox add, columnbox clear, columnbox color, columnbox count, columnbox get, columnbox get$, columnbox remove, columnbox select
+&

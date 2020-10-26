@@ -1,0 +1,13 @@
+
+Name:
+slidet get -- get the curent value of a slider
+
+Synopsis:
+Value = SLIDER GET Slider$
+
+Description:
+Get the currently selected value of the slider.
+
+Related: slider, slider color, slider label, slider set
+
+&

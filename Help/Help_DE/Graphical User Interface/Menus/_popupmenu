@@ -1,0 +1,37 @@
+
+Name:
+popupmenu -- open a popup menu
+
+Synopsis:
+Selected$ = POPUPMENU x,y, MenuItems$, View$ 
+
+Description:
+This function pops up a menu at the position (x,y) as upper left corner on View$. The menu contains several menu items which are given as MenuItems$. The items are separated by a pipe "|". If a menu item is a double minus, it will be used as a separator.
+
+Your program will wait until an item is selected from the menu or the user clicks somewhere else. The command will then return either the selected item name or an empty string "" when nothing was selected.
+
+Note, you cannot add submenus, have a radio mode or select items which is possible for menus in a menubar.
+
+Similar to the menu, the Selected$ will contain the translation of the selected item when localization is used. Use translate$ where necessary, as explained for the menu command.
+
+Design:
+Remember to give the user a hint so he can expect a popup menu. E.g. add a small down-arrow to a button image, if this button opens a popup menu.
+
+Example:
+window open 100,100 to 300,300, "Example", "Example"
+button 10,10 to 100,30, "MyButton", "Popup", "Example"
+while(not quitting)
+	m$ = message$
+	if(instr(m$, "Quit")) quitting = true
+	if(instr(m$, "MyButton")) then
+		selected$ = popupmenu 10,31, "About...|--|Quit", "Example"
+		if(selected$ = "About...") alert "Popupmenu example.", "Ok", "Info"
+		if(selected$ = "Quit") quitting = true
+	endif
+wend
+window close "Example"
+Explanation:
+The example opens a window with a button. Whenever the button is clicked on, a popup menu appears. The selection of the popup menu is then processed immediately.
+
+Related: dropbox
+&

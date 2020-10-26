@@ -1,0 +1,22 @@
+
+Name:
+
+attribute set --  sets ( adds or overwrites ) an attribute of a file.
+
+
+Synopsis:
+
+ATTRIBUTE SET Type$, Name$, Value$, Filename$
+  Set the attribute Name$ of type Type$ for the file Filename$ with the string Value$.
+  These are valid types:
+  Type$ = "String|Int|Long|Double|Float|Mime|Bool"
+  For Bool type attributes:
+  Value$ = "true|false"
+
+Description:
+
+Attribute set sets, adds or overwrites, file attributes. The attributes can be strings, integer, long.double, or float numbers, or boolian true/false.
+
+ 
+Related: attribute clear, attribute get, attribute get$
+&

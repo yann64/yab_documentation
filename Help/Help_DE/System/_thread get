@@ -1,0 +1,27 @@
+
+Name:
+thread get -- get the thread identification for a team or program
+
+Synopsis:
+Id = THREAD GET Option$, Program$
+
+Description:
+For more advanced control of the running threads, this command provides you with ID a given program named Program$. Option$ can be set as follows:
+
+Option$ = "TeamID" -- returns the team ID for the program named Program$. Specify the whole path with parameters (only the first 64 characters are important) for the team, the ID of the first team with this path and parameters will be returned.
+
+Option$ = "ThreadID" -- returns the thread ID for the program named Program$. Specify the program name, the ID of the first thread with this name will be returned. 
+
+Thread get will return -1 when the program was not found. This helps you to find out whether a program e.g. started with the system command is still running or not.
+
+Note: Using thread get is much better than trying to parse "ps" from the command line.
+
+Example:
+print thread get "teamid", "/boot/home/config/bin/yab"
+print thread get "threadid", "yab"
+Explanation:
+
+The first statement prints the team ID number of the first yab program running. The second statement prints the first thread ID of the first yab program running. Note: The team ID takes the whole path while the thread ID only takes the program name.
+
+Related: thread remove
+&

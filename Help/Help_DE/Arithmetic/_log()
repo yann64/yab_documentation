@@ -1,0 +1,32 @@
+
+Name:
+log() -- compute the natural logarithm
+
+Synopsis:
+a=log(x) 
+a=log(x,base) 
+
+Description:
+The log-function computes the logarithm of its first argument. The optional second argument gives the base for the logarithm; if this second argument is omitted, the euler-constant 2.71828... will be taken as the base.
+
+Example:
+window open 200,200 to 400,400, "Example", "Example"
+draw set 0, "highsolidfill"
+for x=10 to 190 step 10
+	for y=10 to 190 step 10 
+		r=3*log(1+x,1+y) 
+		if (r>10) r=10 
+		if (r<1) r=1 
+		draw circle x,y,r, "Example" 
+	next y
+next x 
+sleep 5
+window close "Example"
+Explanation:
+
+  This draws another nice plot.
+
+
+Related: exp
+
+&

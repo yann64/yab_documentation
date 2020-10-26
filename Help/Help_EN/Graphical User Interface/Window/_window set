@@ -1,0 +1,88 @@
+
+Name:
+window set -- set the properties of a window
+
+Synopsis:
+WINDOW SET WindowID$, Option$
+WINDOW SET WindowID$, Option$, x,y
+WINDOW SET WindowID$, Option$, Value$
+
+Description:
+This command allows the flexible ajustment of the look and feel of a window. We first inspect the options that require no further parameter other than Option$:
+
+Option$ = "Activate" -- activate the window, so it is in the foreground.
+Option$ = "Deactivate" -- deactivate the window, so it is in the background.
+Option$ = "Minimize" -- minimize the window, or restore the window if it is already minimized.
+Option$ = "Maximize" -- maximize (zoom) the window.
+Option$ = "Enable-Updates" -- updates the window again after a "Disable-Updates".
+Option$ = "Disable-Updates" -- disables the automatic window updates.
+
+To disable updates is normally not needed, this just means that after this command no drawing even from widgets will be shown.
+
+Given two additional parameters x and y, the following options are valid:
+
+Option$ = "ResizeTo" -- resize the window to (x,y) relative screen coordinates
+Option$ = "MoveTo" -- move the window to (x,y) relative screen coordinates
+Option$ = "MinimumTo" -- when resizing, the minimum width and height is given by (x,y)
+Option$ = "MaximumTo" -- when resizing, the maximum width and height is given by (x,y)
+
+Given an additional parameter Value$, the following options are valid:
+
+Option$ = "Look" -- this changes the appearance of the window accroding to the following values:
+Value$ = "Document" -- large title bar, thick border, draggable resize box
+Value$ = "Titled" -- same as the document window, but with a less substantial resize corner, default
+Value$ = "Floating" -- small title bar, thin border, resize corner
+Value$ = "Modal" -- no title bar, thick border, no resize control
+Value$ = "Bordered" -- no title bar, line border, no resize control
+Value$ = "No-Border" -- a borderless white rectangle
+
+Option$ = "Feel" -- this sets the behaviour of the window in relation to other windows
+Value$ = "Normal" -- behaves like a normal window (non-modal, non-floating), default
+Value$ = "Modal-App" -- the window blocks all other windows of this application
+Value$ = "Modal-All" -- the window blocks all other windows on the system, the window is visible on all workspaces
+Value$ = "Floating-App" -- the window floats on top of all other windows of this application
+Value$ = "Floating-All" -- the window floats on top of all other windows on the system, the window is visible on all workspaces
+
+Option$ = "Flags" -- this sets special properties of a window, flags can be used accumulative, simply write all wanted flags in the Value$
+Value$ = "Not-Closable" -- the window does not have the close button in the tab
+Value$ = "Not-Zoomable" -- the window does not have the zoom button in the tab
+Value$ = "Not-Minimizable" -- the window cannot be minimized
+Value$ = "Not-H-Resizable" -- the window cannot be resized horizontally
+Value$ = "Not-V-Resizable" -- the window cannot be resized vertically
+Value$ = "Not-Resizable" -- the window cannot be resized 
+Value$ = "Accept-First-Click" -- when the window is inactive it still accepts the first click
+Value$ = "Reset" -- reset all flags back to none
+
+Option$ = "Workspace" -- sets where the window is shown:
+Value$ = "All" -- the window is shown on all workspaces
+Value$ = "Current" -- the window is shown on the current workspace, default
+
+Option$ = "Title" -- set the window title to Value$
+
+Design:
+Look:
+For most application the default "Titled" look will be sufficient. However, heavy apps with big windows, e.g. the IDE, should have the "Document" look. Use "Floating" for toolboxes and other options that stay around, as done e.g. in Refraction. "Modal" is meant to be used for alert windows that block the main application. "Bordered" and "No-Border" are for more creative applications like games and eye candy stuff.
+
+Feel:
+Always try to avoid windows with a "Modal-All" feel because they block the whole system.
+
+Resizable:
+Try to set appropriate minimum and maximum width and height parameters so your application always looks good.
+
+Example:
+window open 100,100 to 300,300, "Example", "Example"
+window set "Example", "MinimumTo", 150,150
+window set "Example", "Look", "Floating"
+window set "Example", "Feel", "Floating-All"
+
+while(not instr(message$, "Quit"))
+wend
+
+window close "Example"
+Explanation:
+
+A small demo window is opened with the floating look and feel. It can only be resized to a width and height of (150,150).
+
+Related:
+window open, window close, window count, window get
+&

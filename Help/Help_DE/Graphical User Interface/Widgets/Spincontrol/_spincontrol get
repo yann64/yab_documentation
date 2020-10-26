@@ -1,0 +1,12 @@
+
+Name:
+spincontrol get -- Get the value of a spincontrol.
+
+Synopsis:
+Value = SPINCONTROL GET SpinControl$
+
+Description:
+Get the current spin control value for SpinControl$.
+
+Related: spincontrol, spincontrol set
+&

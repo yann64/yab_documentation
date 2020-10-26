@@ -1,0 +1,48 @@
+
+Name:
+seek() -- change the position within an open file
+
+Synopsis: 
+open 1,"foo" 
+seek #1,q 
+seek #1,x,"begin" 
+seek #1,y,"end" 
+seek #1,z,"here" 
+
+Description:
+The seek-command changes the position, where the next input (or peek) statement will read from an open file. Usually files are read from the beginning to the end sequentially; however sometimes you may want to depart from this simple scheme. This can be done with the seek-command, allowing you to change the position, where the next piece of data will be read from the file.
+
+seek accepts two or three arguments: The first one is the number of an already open file. The second one is the position where the next read from the file will start. The third argument is optional and specifies the the point from where the position (the second argument) will count. It can be one of:
+
+begin -- Count from the beginning of the file.
+
+end  -- Count from the end of the file.
+
+here -- Count from the current position within the file.
+
+
+Example:
+open #1,"count.dat","w" 
+for a=1 to 10 
+	print #1,"00000000" 
+	if (a<10) print #1,"" 
+next a 
+
+dim count(10) 
+do 
+	x=int(ran(10)) 
+	i=i+1 
+	if (mod(i,1000)=0) print "." 
+	count(x)=count(x)+1 
+	curr$=right$("00000000"+str$(count(x)),8) 
+	seek #1,9*x,"begin" 
+	print #1,curr$; 
+loop 
+Explanation:
+
+This example increments randomly one of ten counters (in the array count()); however, the result is always kept and updated within the file count.dat, so even in case of an unexpected interrupt, the result will not be lost.
+
+
+Related: tell, open, print, peek
+
+&

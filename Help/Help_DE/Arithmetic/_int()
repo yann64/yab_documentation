@@ -1,0 +1,20 @@
+
+Name:
+int() -- return the integer part of its single numeric argument
+
+Synopsis:
+ print int(a) 
+
+Description:
+The int-function returns only the digits before the comma; int(2.5) returns 2 and int(-2.3) returns -2.
+
+Example:
+input "Please enter a whole number between 1 and 10: " a 
+if (a=int(a) and a>=1 and a<=10) then 
+	print "Thanx!" 
+else 
+	print "Never mind ..." 
+endif 
+Related: frac
+
+&

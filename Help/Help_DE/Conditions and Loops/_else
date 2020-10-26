@@ -1,0 +1,29 @@
+
+Name:
+else -- mark an alternative within an if-statement
+
+Synopsis:
+if (...) then 
+  ... 
+else 
+  ... 
+endif 
+
+Description:
+The else-statement introduces the alternate branch of an if-statement. I.e. it starts the sequence of statements, which is executed, if the condition of the if-statement is not true.
+
+Example:
+input "Please enter a number: " a 
+if (mod(a,2)=1) then 
+	print a," is odd." 
+else 
+	print a," is even." 
+endif 
+Explanation:
+
+  This program detects, if the number you have entered is even or odd.
+
+
+Related: if
+
+&

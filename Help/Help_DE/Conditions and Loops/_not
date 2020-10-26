@@ -1,0 +1,17 @@
+
+Name:
+not -- negate an expression; can be written as!
+
+Synopsis:
+if (not a<b) then ... 
+bad=!okay 
+
+Description:
+The keyword not (or ! for short) is mostly used within conditions (e.g. within if- or while-statements). There it is employed to negate the condition or expression (i.e. turn TRUE into FALSE and vice versa). However not can be used within arithmetic calculations too., simply because there is no difference between arithmetic and logical expressions.
+
+Example:
+input "Please enter three ascending numbers: " a,b,c 
+if (not (a<b and b<c)) error " the numbers you have entered are not ascending ..." 
+Related: and, or, xor, eor
+
+&

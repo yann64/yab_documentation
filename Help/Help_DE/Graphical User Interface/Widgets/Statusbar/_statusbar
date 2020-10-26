@@ -1,0 +1,33 @@
+
+Name:
+statusbar -- create a progress or status bar
+
+Synopsis:
+STATUSBAR x1, y1 TO x2, y2, ID$, LeftLabel$, RightLabel$, View$
+
+Description:
+Use the statusbar to visualize the progress of a long computation process, e.g. installation or search. The statusbar is simply set up with the identifier ID$ at (x1,y1) to (x2,y2) on the view named View$. It takes two labels, LeftLabel$ is shown on the left side above of the statusbar and RightLabel$ is shown on the right side above of the statusbar.
+
+Layout:
+The statusbar will follow the lower right corner of a window in standard layout.
+
+Design:
+The statusbar should give the user an idea how long a specific process takes. This of course is only useful for processes that take some time. Also having a statusbar that stays for one minute at 5% and then immediatly jumps to 100% should be avoided although this sometimes is not in control of the programmer.
+
+Example:
+window open 100,100 to 300,150, "Example", "Example"
+statusbar 10,10 to 190,40, "MyStatus", "Start", "End", "Example"
+
+while(not instr(message$, "Quit") and i<100)
+        i = i + 2
+        statusbar set "MyStatus", "Start", "End", i
+        sleep 0.05
+wend
+
+window close "Example" 
+Explanation:
+
+The statusbar is put on top of the example window with the two labels "Start" and "End". Using the statusbar set command, the statusbar is updated regularly to the new calculated value i which is between 0 and 100. 
+
+Related: statusbar set
+&

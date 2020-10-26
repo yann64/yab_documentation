@@ -1,0 +1,27 @@
+
+Name:
+bind() -- Binds a yab-program and the yab-interpreter together into a standalone program.
+
+Synopsis:
+bind("foo.exe")
+
+Description:
+The bind-command combines your own yab-program (plus all the libraries it does import) and the interpreter by copying them into a new file, whose name is passed as an argument. This new program may then be executed on any computer, even if it does not have yab installed.
+
+Note: With the current version of yab, bind should not be used anymore, use the Build Factory instead.
+
+Example:
+if (!peek("isbound")) then 
+	bind "foo" 
+	print "Successfully created the standalone executable 'foo'!" 
+	exit 
+endif 
+
+print "Hello World!" 
+Explanation:
+
+This example creates a standalone program foo from itself.
+
+
+Related: peek
+&

@@ -1,0 +1,32 @@
+
+Name:
+textcontrol set -- Set various options for a textcontrol.
+
+Synopsis:
+TEXTCONTROL SET TextControl$, IsPassword 
+TEXTCONTROL SET TextControl$, Text$
+TEXTCONTROL SET TextControl$, Option$, Value$
+
+Description:
+
+TEXTCONTROL SET TextControl$, IsPassword 
+IsPassword = false Normal typing
+IsPassword = true Hide typing with *
+
+TEXTCONTROL SET TextControl$, Text$
+Set the text control's text to Text$.
+
+TEXTCONTROL SET TextControl$, Option$, Value$
+Option$="align" Value$= "left" / "right" / "center"
+Option$="exclude", Value$=characters to disallow.
+Option$="include", Value$=characters to allow.
+Option$="length", Value$=str$(number) of characters allowed.
+Sets the font used to the system fixed font.
+Option$="type"
+Value$="number" Only allow  to characters 0-9 and  ".", full stop.
+Value$=""alphanumeric" allow all characters.
+Option$="focus" Value$ = "true" / "false" Set the focus of TextControl$.
+Option$="Cursor", Value$=str$(number) positions the cursor, sets the focus to true.
+
+Related: textcontrol, textcontrol clear, textcontrol get$
+&

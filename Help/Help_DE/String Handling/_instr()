@@ -1,0 +1,23 @@
+
+Name:
+instr() -- searches its second argument within the first; returns its position if found
+
+Synopsis: 
+print instr(a$,b$) 
+if (instr(a$,b$)) ... 
+pos=instr(a$,b$,x) 
+
+Description:
+The instr-functions requires two string arguments and searches the second argument within the first. If the second argument can be found within the first, the position is returned (counting from one). If it can not be found, the instr-function returns 0; this makes this function usable within the condition of an if-statement (see the example below).
+
+If you supply a third, numeric argument to the instr-function, it will be used as a starting point for the search. Therefore instr("abcdeabcdeabcde","e",8) will return 10, because the search for an "e" starts at position 8 and finds the "e" at position 10 (and not the one at position 5).
+
+Example:
+input "Please enter a text containing the string 'bumf': " a$ 
+if (instr(a$,"bumf")) then 
+	print "Well done!" 
+else 
+	print "not so well ..." 
+endif 
+Related: rinstr
+&

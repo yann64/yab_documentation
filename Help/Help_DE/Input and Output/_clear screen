@@ -1,0 +1,27 @@
+
+Name:
+clear screen -- erases the text window
+
+Synopsis:
+clear screen
+*** requires ncurses support compiled in ***
+See Documentation/Advanced for info. 
+
+Description:
+clear screen erases the text window (the window where the output of print appears).
+It must be issued at least once, before some advanced screen-commands (e.g. print at or inkey$) may be called; this requirement is due to some limititations of the curses-library, which is used by yab for some commands.
+
+Example:
+clear screen 
+print "Please press a key : "
+a$=inkey$ 
+print a$ 
+Explanation:
+
+The clear screen command is essential here; if it would be omitted, yab would issue an error ("need to call 'clear screen' first") while trying to execute the inkey$-function.
+
+Start this program in a terminal.
+
+
+Related: inkey$
+&

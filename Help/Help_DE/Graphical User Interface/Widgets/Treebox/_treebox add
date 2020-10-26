@@ -1,0 +1,18 @@
+
+Name:
+treebox add -- Add an item to a treebox.
+
+Synopsis:
+TREEBOX ADD TreeBox$, RootItem$
+TREEBOX ADD TreeBox$, HeadItem$, ListItem$, IsExpanded
+
+Description:
+
+TREEBOX ADD TreeBox$, RootItem$
+Add the item RootItem$ to the top level of the tree.
+
+TREEBOX ADD TreeBox$, HeadItem$, ListItem$, IsExpanded
+Add the item ListItem$ under the level of HeadItem$ of the tree.
+
+Related: treebox, treebox clear, treebox collapse, treebox count, treebox expand, treebox get$, treebox remove, treebox select, treebox sort
+&

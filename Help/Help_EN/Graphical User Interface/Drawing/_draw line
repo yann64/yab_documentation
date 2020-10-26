@@ -1,0 +1,24 @@
+
+Name:
+draw line -- draw a line
+
+Synopsis:
+DRAW LINE x1,y1 TO x2,y2, Target$
+
+Description:
+This command draws a line from (x1,y1) to (x2,y2) on Target$ in the current highcolor. Target$ has to be either a valid view, bitmap or canvas.
+
+Example:
+window open 100,100 to 400,400, "Example", "Example"
+for i = 0 to 300 step 10
+	draw line 0,i to i,300, "Example"
+	draw line 300,i to i,0, "Example"
+next i
+sleep 7
+window close "Example" 
+Explanation:
+
+Draws some nice lines.
+
+Related: draw circle, draw curve, draw dot, draw ellipse, draw flush, draw rect, draw set
+&

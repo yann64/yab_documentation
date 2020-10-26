@@ -1,0 +1,26 @@
+
+Name:
+step -- specifies the increment step in a for-loop
+
+Synopsis: 
+for a=1 to 10 step 3 
+  ... 
+next a 
+
+Description:
+Specify, by which amount the loop-variable of a for-loop will be incremented at each step.
+The step (as well as the lower and upper bound) are computed anew in each step; this is not common, but possible, as the example below demonstrates.
+
+Example:
+for x=1 to 1000 step y 
+	y=x+y 
+	print x," ",y," "
+next x 
+print 
+Explanation:
+
+This program computes the fibonacci numbers between 1 and 1000.
+
+
+Related: for
+&

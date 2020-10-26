@@ -1,0 +1,12 @@
+
+Name:
+treebox count --  count the entries in a treebox.
+
+Synopsis:
+n = TREEBOX COUNT TreeBox$
+
+Description:
+Returns the number of entries in TreeBox$
+
+Related: treebox, treebox add, treebox clear, treebox collapse, treebox expand, treebox get$, treebox remove, treebox select, treebox sort
+&

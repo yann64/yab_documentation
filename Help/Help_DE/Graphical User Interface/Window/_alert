@@ -1,0 +1,11 @@
+ALERT Text$, Label$,Type$ 
+
+Öffnet ein alert window mit dem Text Text$ und dem Button Label$ vom Typ Type$ 
+
+Type$ = "none|info|idea|warning|stop " 
+
+Selected = ALERT , Button1$, Button2$ , Button3$, Type$ 
+
+Erweitertes Alert window. Spezifiziert einen Text und bis zu drei Buttons. Wenn Button2$ oder Button3$ mit "" gesetzt ist, wird der Button nicht angezeigt. Der gewählte Button wird zurückgegeben, wobei Gewählt= 1 Links ist, 2 ist Mitte und 3 der rechte Button. 
+
+Type$ = "none|info|idea|warning|stop " 

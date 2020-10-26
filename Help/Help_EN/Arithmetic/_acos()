@@ -1,0 +1,20 @@
+
+Name:
+acos() -- returns the arcus cosine of its numeric argument
+
+Synopsis:
+x=acos(angle)
+
+Description:
+The acos is the arcus cosine-function, i.e. the inverse of the cos-function. Or, more elaborate: It Returns the angle (in radian, not degree!), which, fed to the cosine-function will produce the argument passed to the acos-function.
+
+Example:
+print acos(0.5),acos(cos(pi))
+Explanation:
+
+  This example will print 1.0472 3.14159 which are pi/3 and pi respectively.
+
+
+Related: cos, asin
+
+&

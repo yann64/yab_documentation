@@ -1,0 +1,16 @@
+
+Name:
+listbox sort -- sort all items in a listbox
+
+Synopsis:
+LISTBOX SORT ListBox$
+
+Description:
+This command sorts the given listbox named ListBox$ alphabetically. Items starting with a number will be set before items starting with a letter. However, please note that items containing numbers will NOT be sorted as numbers. E.g. The items "1", "2", "10" will be sorted according to the ASCII codes and the length of the strings, thus they are sorted to: "1", "10", "2"
+
+Note: After sorting, any former selection is removed.
+
+Have a look at the listbox command for an example.
+
+Related: listbox, listbox add, listbox clear, listbox count, listbox get, listbox get$, listbox remove, listbox select
+&Options

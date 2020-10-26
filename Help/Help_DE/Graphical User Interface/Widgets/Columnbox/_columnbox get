@@ -1,0 +1,14 @@
+
+Name:
+columnbox get -- returns the number of the currently selected row in a columnbox
+
+Synopsis:
+ItemNumber = COLUMNBOX GET ColumnBox$
+
+Description:
+To obtain the row that is currently selected in the columnbox named ColumnBox$, simply use this command. If no row is selected, ItemNumber will be set to 0.
+
+Have a look at the columnbox command for an example.
+
+Related: columnbox, columnbox add, columnbox clear, columnbox color, columnbox column, columnbox count, columnbox get$, columnbox remove, columnbox select
+&

@@ -1,0 +1,38 @@
+
+Name:
+break -- breaks out of a switch statement or a loop
+
+Synopsis:
+break
+
+Description:
+break transfers control immediately outside the enclosing loop or switch statement. This is the preferred way of leaving a such a statement (rather than goto, which is still possible in most cases).
+
+Example:
+for a=1 to 10 
+	break 
+	print "Hi" 
+next a 
+
+while(1) 
+	break 
+	print "Hi" 
+wend 
+
+repeat 
+	break 
+	print "Hi" 
+until(0) 
+
+switch 1 
+	case 1:break 
+	case 2:case 3:print "Hi" 
+end switch 
+Explanation:
+
+  This example prints nothing at all, because each of the loops (and the switch-statement) does an immediate break (before it could print any "Hi").
+
+
+Related: for, while, repeat, switch
+
+&

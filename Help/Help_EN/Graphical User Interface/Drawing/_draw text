@@ -1,0 +1,31 @@
+
+Name:
+draw text -- draw a text string in the current font
+
+Synopsis:
+DRAW TEXT x,y, Text$, Target$
+
+Description:
+Draw the string Text$ in the current font and highcolor on Target$. Target$ has to be either a valid view, bitmap or canvas. The left baseline (!) starts at (x,y). Please refer to the example of the command draw get to learn more about the font height and its baseline.
+
+Note: The text will be anti-aliased (smoothed) with the current lowcolor. If your text looks strange and blocky, you probably should set the lowcolor to the background color.
+
+Example:
+window open 100,100 to 400,400, "Example", "Example"
+// set the colors, ajust lowcolor to background color
+draw set "bgcolor", 0,0,125, "Example"
+draw set "lowcolor", 0,0,125, "Example"
+draw set "highcolor", 255,255,0, "Example"
+// set the font
+draw set "Zurich, Roman, 25", "Example"
+// draw the text
+draw text 80,150, "yab Example", "Example"
+sleep 7
+window close "Example"
+Explanation:
+
+This program sets the colors to a blue background and a yellow textcolor. It sets the font and then displays the string "yab Example".
+
+Related: draw flush, draw get, draw get$, draw set
+
+&Input and Messages

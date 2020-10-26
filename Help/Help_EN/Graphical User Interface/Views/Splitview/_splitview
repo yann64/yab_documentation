@@ -1,0 +1,27 @@
+
+Name:
+splitview -- Set up the new view and split it into two new views.
+
+Synopsis:
+SPLITVIEW x1,y1 TO x2,y2, ID$, IsVerticalSplit, NormalStyle, View$
+
+Description:
+Set up the new view ID$ and split it into two new views ID$+"1" and ID$+"2".
+If IsVerticalSplit = true, a vertical splitter is set
+if IsVerticalSplit = false, a horizontal splitter is set
+If NormalStyle = true, the splitter is 10 pixels thick
+If NormalStyle = false, the splitter is 4 pixels thick
+
+Example:
+
+splitview 120,110 to 260,195, "Split", true, false, "Box2"
+draw set "bgcolor", "Panel-Background-Color, Darken-1-Tint", "Split1"
+draw set "bgcolor", "Panel-Background-Color, Lighten-1-Tint", "Split2"
+tooltip "Split", "SPLITVIEW"
+
+Explanation:
+
+This snippet from then AllInOne.yab example program opens a splitview and changes the background colors of each pannel so it is easy to see the two suib-views.
+
+related: splitview set, stackview, tabview
+&

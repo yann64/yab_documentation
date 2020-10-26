@@ -1,0 +1,20 @@
+
+Name:
+cos() -- return the cosine of its single argument
+
+Synopsis:
+x=cos(angle) 
+
+Description:
+The cos-function expects an angle (in radian) and returns its cosine.
+
+Example:
+print cos(pi) 
+Explanation:
+
+  This example will print -1.
+
+
+Related: acos, sin
+
+&

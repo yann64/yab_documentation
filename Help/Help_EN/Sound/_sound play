@@ -1,0 +1,23 @@
+
+Name:
+sound play -- play a sound file
+
+Synopsis:
+Id = SOUND PLAY Filename$, loop
+
+Description:
+To play a sound file named Filename$ which can be of any supported format (e.g. WAV, MP3, etc.) sound play will return a number Id. Use Id to have basic control with the two other sound commands: sound wait and sound stop.
+
+Design:
+In a GUI context use sound wisely. Remember that not everyone can hear the sound, e.g. because sound is turned off, not supported or the user is deaf or hard-of-hearing. Thus, do not put important information for your application in speech files only. Additionally, remember that bells and whistles on each mouse click can become very annoying.
+
+Example:
+id = sound play "bach.mp3" , 1
+while(1)
+wend
+Explanation:
+
+This loads the file "bach.mp3" and then waits forever (use Ctrl-C or Break to end the program).
+
+Related: sound stop, sound wait
+&

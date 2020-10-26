@@ -1,0 +1,14 @@
+
+Name:
+listbox get -- returns the number of the currently selected item in a listbox
+
+Synopsis:
+ItemNumber = LISTBOX GET ListBox$
+
+Description:
+To obtain the item that is currently selected in the listbox named ListBox$, simply use this command. If no item is selected, ItemNumber will be set to 0.
+
+Have a look at the listbox command for an example.
+
+Related: listbox, listbox add, listbox clear, listbox count, listbox get$, listbox remove, listbox select, listbox sort
+&

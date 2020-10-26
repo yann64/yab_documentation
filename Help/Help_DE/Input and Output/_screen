@@ -1,0 +1,18 @@
+
+Name:
+screen -- as clear screen clears the text window
+
+Synopsis:
+
+*** requires ncurses support compiled in ***
+See Documentation/Advanced for info.
+
+clear screen 
+
+
+Description:
+The keyword screen appears only within the sequence clear screen; please see there for a description.
+
+Related: clear screen
+
+&

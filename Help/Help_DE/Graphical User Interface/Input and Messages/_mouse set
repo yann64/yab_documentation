@@ -1,0 +1,16 @@
+
+Name:
+mouse set -- show or hide the mouse cursor
+
+Synopsis:
+MOUSE SET Option$
+
+Description:
+Sometimes (e.g. games) the mouse cursor is just in the way. To get rid of it for your application windows, this command allows you to hide it (or later show it again). Use Option$ as described:
+
+Option$ = "Hide" -- hide the mouse cursor
+Option$ = "Show" -- show the mouse cursor
+Option$ = "Obscure" -- hide the mouse cursor until the mouse is moved 
+
+Related: ismousein(), mouse message$(), mouse message$
+&

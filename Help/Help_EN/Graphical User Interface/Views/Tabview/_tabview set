@@ -1,0 +1,13 @@
+
+Name:
+tabview set -- Chose the current tab
+
+Synopsys:
+TABVIEW SET TabView$, TabNumber
+
+Description:
+Open the tab number TabNumber.
+
+Related: tabview tabview add, tabview get
+
+&View

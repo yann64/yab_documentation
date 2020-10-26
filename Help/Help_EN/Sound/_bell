@@ -1,0 +1,14 @@
+
+Name:
+bell -- ring the bell within your computer (just as beep)
+
+Synopsis:
+bell
+
+Description:
+The bell-command rings the bell within your computer once. This command is not a sound-interface, so you can neither vary the length or the height of the sound. bell is exactly the same as beep. 
+
+Example:
+print "This is a problem ...":bell
+Related: beep
+&

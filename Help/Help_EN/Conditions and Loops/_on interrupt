@@ -1,0 +1,29 @@
+
+Name:
+on interrupt -- change reaction on keyboard interrupts
+
+Synopsis:
+on interrupt break 
+... 
+on interrupt continue 
+
+Description:
+With the on interrupt-command you may change the way, how yab reacts on a keyboard interrupt; it comes in two variants: on interrupt break and on interrupt continue. A keyboard interrupt is produced, if you press ctrl-C on your keyboard; normally (and certainly after you have called on interrupt break), yab will terminate with an error message. However after the command on interrupt continue yab ignores any keyboard interrupt. This may be useful, if you do not want your program beeing interruptible during certain critical operations (e.g. updating of files).
+
+Example:
+print "Please stand by while writing a file with random data ..." 
+on interrupt continue 
+open "random.data" for writing as #1 
+for a=1 to 100 
+	print #1 ran(100) 
+	print a," percent done." 
+	sleep 1 
+next a 
+close #1 
+on interrupt continue 
+Explanation:
+
+This program writes a file with 100 random numbers. The on interrupt continue command insures, that the program will not be terminated on a keyboard interrupt and the file will be written entirely in any case. The sleep-command just stretches the process arificially to give you a chance to try a ctrl-C.
+
+
+&

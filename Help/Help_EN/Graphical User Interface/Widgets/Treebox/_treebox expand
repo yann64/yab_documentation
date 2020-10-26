@@ -1,0 +1,14 @@
+
+Name:
+treebox expand -- Expand a category.
+
+Synopsis:
+TREEBOX EXPAND TreeBox$, Head$
+
+Description:
+Expands Head$ in TreeBox$.
+
+Related: treebox, treebox add, treebox clear, treebox collapse, treebox count, treebox get$, treebox remove, treebox select, treebox sort
+
+
+&

@@ -1,0 +1,32 @@
+
+Name:
+textedit color -- set the colors of a textedit or provide syntax highlighting
+
+Synopsis:
+TEXTEDIT COLOR TextEdit$, Option$, Command$
+TEXTEDIT COLOR TextEdit$, Option$, r,g,b
+
+Description:
+
+TEXTEDIT COLOR TextEdit$, Option$, Command$
+Option$ = "color1, color2, color3, color4, char-color", Command$
+
+Add the command Command$ to the list of words that are checked for syntax highlighting
+The char-color behaves differently and highlights only the first character of Command$
+(this happens after the highlighting of the other colors).
+
+
+TEXTEDIT COLOR TextEdit$, Option$, r,g,b
+Option$ = "bgcolor, textcolor, color1, color2, color3, color4, char-color", r,g,b
+
+Default colors are:
+bgcolor = 255,255,255 (white)
+textcolor = 0,0,0 (black)
+color1 = 0,0,255 (blue)
+color2 = 255,0,0 (red)
+color3 = 0,250,0 (green)
+color4 = 185,185,185 (gray)
+char-color = 200,0,255 (magenta)
+
+Related: textedit, textedit add, textedit clear, textedit get, textedit get$, textedit set
+&

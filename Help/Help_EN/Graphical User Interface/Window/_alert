@@ -1,0 +1,39 @@
+
+Name:
+alert -- show an alert window
+
+Synopsis:
+ALERT Text$, ButtonLabel$, Type$ 
+Selected = ALERT Text$, Button1$, Button2$, Button3$, Type$ 
+
+Description:
+By simply calling alert, you can always display an alert window. 
+
+It always has a message Text$ and it can either have one, two or three buttons. 
+
+For the second syntax, the alert window will return the number of pressed button, where Button1$ is the label of the most left button and Button3$ is the label or the most right one. If you specify Button2$ or Button3$ as empty string (""), the according button is not shown. 
+
+Type$ specifies the icon displayed on the left side of the alert window. It has to be one of the following strings:
+"None" for no icon
+"Info" for the information icon
+"Idea" for the light bulb icon
+"Warning" for the yellow exclamation mark
+"Stop" for the red exclamation mark
+
+Design:
+Use a warning icon to warn the user that something might go wrong (e.g. ask whether to save before quitting) and the stop icon to inform the user that something already went wrong (e.g. saving failed).
+
+For the dialog box, always use complete sentences, while for the buttons use understandable labels. Capitalize the buttons in English.
+
+Note: the right button always has the focus in the multi-button alert. Do not put a dangerous action on this button. E.g. for a dialog "Your data will be lost!", do not put the "Proceed" button on the right position, but rather the "Cancel" button. 
+
+Example:
+alert "Warning! All your base are belong to us.", "Ok", "warning"
+selected = alert "Choose a button", "Left", "Middle", "Right", "info"
+print "You selected button number: ", selected
+Explanation:
+
+In the last line, the number of the selected button will be printed on screen.
+
+Related: window open
+&

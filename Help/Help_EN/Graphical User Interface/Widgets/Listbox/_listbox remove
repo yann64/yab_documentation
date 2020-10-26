@@ -1,0 +1,12 @@
+
+Name:
+listbox remove -- delete a line in a listbox
+
+Synopsis:
+LISTBOX REMOVE ListBox$, Position
+
+Description:
+In the given listbox named ListBox$, the specified item at the position Position is deleted.
+
+Related: listbox, listbox add, listbox clear, listbox count, listbox get, listbox get$, listbox select, listbox sort
+&

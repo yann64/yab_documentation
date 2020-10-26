@@ -1,0 +1,40 @@
+
+Name:
+draw get$ -- retrieve information about the installed fonts
+
+Synopsis:
+FontFamilies$ = DRAW GET$ "FontFamily"
+FontStyles$ = DRAW GET$ FontFamily$
+
+Description:
+The draw get$ command reads out the information about all installed fonts and their styles.
+
+Use the parameter "FontFamily" first to get all font families. For a given font family, get the possible styles with the family name as parameter.
+
+Use draw set or textedit set to set the font for a draw text or textedit.
+
+Example:
+dim fonts$(1)
+dim styles$(1)
+window open 100,100 to 400,400, "Example", "Example"
+menu "File", "Quit", "Q", "Example"
+fontfamilies$ = draw get$ "fontfamily"
+numFonts = token(fontfamilies$, fonts$(), "|")
+for i = 1 to numFonts
+	menu "Fonts", fonts$(i), "", "Example"
+	fontstyles$ = draw get$ fonts$(i)
+	numStyles = token(fontstyles$, styles$(), "|")
+	for j = 1 to numStyles
+		submenu "Fonts", fonts$(i), styles$(j), "", "Example"
+	next j
+	submenu set "Fonts", fonts$(i), true, "Example"
+next i
+while(not instr(message$, "Quit"))
+wend
+window close "Example" 
+Explanation:
+
+This example sets up a whole menu with all fonts installed and their styles. Note: It is up to you to deselect old submenu items in this example whenever a new item is selected. In other words, this simple example allows several font selections, which is probably not what you want.
+
+Related: draw get, draw set, draw text, textedit set
+&

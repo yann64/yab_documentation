@@ -1,0 +1,37 @@
+
+Name:
+case -- mark the different cases within a switch-statement
+
+Synopsis:
+switch a 
+  case 1 
+  case 2 
+  ... 
+end switch 
+
+... 
+
+switch a$ 
+  case "a" 
+  case "b" 
+  ... 
+end switch 
+
+Description:
+Please see the switch-statement.
+
+Example:
+input a 
+switch(a) 
+	case 1:print "one":break 
+	case 2:print "two":break 
+	default:print "more" 
+end switch 
+Explanation:
+
+  Depending on your input (a number is expected) this code will print one or two or otherwise more.
+
+
+Related: switch
+
+&

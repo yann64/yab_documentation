@@ -1,0 +1,39 @@
+
+Name:
+default -- mark the default-branch within a switch-statement
+
+Synopsis:
+switch a+3 
+case 1 
+  ... 
+case 2 
+  ... 
+default 
+  ... 
+end switch 
+
+Description:
+The default-clause is an optional part of the switch-statement (see there for more information). It introduces a series of statements, that should be executed, if none of the casese matches, that have been specified before (each with its own case-clause). So default specifies a default to be executed, if none of the explicitly named cases matches; hence its name.
+
+Example:
+print "Please enter a number between 0 and 6," 
+print "specifying a day in the week." 
+input d 
+switch d 
+	case 0:print "Monday":break 
+	case 1:print "Tuesday":break 
+	case 2:print "Wednesday":break 
+	case 3:print "Thursday":break 
+	case 4:print "Friday":break 
+	case 5:print "Saturday":break 
+	case 6:print "Sunday":break 
+	default:print "Hey you entered something invalid!" 
+end switch 
+Explanation:
+
+  This program translates a number between 0 and 6 into the name of a weekday; the default -case is used to detect (and complain about) invalid input.
+
+
+Related: sub, case
+
+&

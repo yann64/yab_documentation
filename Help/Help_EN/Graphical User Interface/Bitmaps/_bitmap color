@@ -1,0 +1,13 @@
+
+Name:
+bitmap color -- Gets the color of a pixel on a bitmap
+
+Synopsis:
+color = BITMAP COLOR x, y, ID$, ColorPart$
+	ColorPart$ = "red|green|blue"
+
+Description:
+Returns the red, green, or blue color value of the pixel at position (x,y) of the bitmap ID$
+
+Related: bitmap, bitmap get, bitmap image, bitmap remove, bitmap save, draw bitmap  
+&

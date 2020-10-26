@@ -1,0 +1,12 @@
+
+Name:
+dropbox clear -- Clear all items from  a dropbox.
+
+Synopsis:
+DROPBOX CLEAR DropBox$
+
+Description:
+Clear dropbox DropBox$ of all items.
+
+Related: dropbox , dropbox add, dropbox count, dropbox get$, dropbox remove, dropbox select
+&

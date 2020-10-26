@@ -1,0 +1,16 @@
+
+Name:
+window close -- close a window
+
+Synopsis:
+WINDOW CLOSE WindowID$
+
+Description:
+Window close of course closes the window named WindowID$. All widgets and views in the window will be deleted. Their IDs and the window ID will no longer be valid, if you call them, yab will exit with an error message.
+
+Design:
+It is good style to close all windows before exiting. Always keep track of the windows currently open.
+
+Related:
+window open, window count, window get, window set
+&

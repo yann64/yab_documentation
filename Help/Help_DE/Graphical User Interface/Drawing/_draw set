@@ -1,0 +1,46 @@
+
+Name:
+draw set -- set various drawing parameters
+
+Synopsis:
+DRAW SET Color$, r,g,b, Target$
+DRAW SET "Alpha", Alpha-Value
+DRAW SET IsStroke, Pattern$
+DRAW SET Font$, Target$ 
+
+Description:
+Draw set allows you to set various parameters for the other draw commands. 
+
+Draw set with a Color$ allows you to set three different colors: the background color of Target$, the so-called lowcolor and the highcolor. At default, everything is drawn with the current highcolor, the lowcolor is useful for patterns which can have two colors. The background color can only be set for views, otherwise Target$ has to be either a valid view, bitmap or canvas.
+If Color$ = "BGColor", the background color of the view Target$ is set, default is grey (216,216,216),
+if Color$ = "LowColor", the lowcolor of Target$ is set, default is grey (216,216,216),
+if Color$ = "HighColor", the highcolor of Target$ is set, default is black (0,0,0).
+
+A short note about colors: On BeOS and ZETA, colors are notated with their three component colors red (r), green (g) and blue (b). These component colors are values between 0 (dark) and 255 (light) and mixed together (additive mixture) they represent a 32bit color space. Have a look at the colorcontrol widget to learn more about colors.
+
+Draw set with "Alpha" as option sets the alpha channel value. At default it is set to 255 which is completly opaque. The smaller the alpha value gets, the more translucent following drawings will become. Note: This only affects the graphic primitives as dot, line, rect, text etc. but not draw image.
+Note: When Alpha-Value is below 255, use only HighSolidFill to draw, patterns are ignored!
+Note: Transparent drawing (that is Alpha-Value below 255) is not printed (see printer) correctly!
+
+Draw set can also set the stroke or fill parameter and a pattern. If IsStroke is true, only the outline of circle, ellipse, rectangle and curve are drawn, otherwise they are filled up (which is the default setting). The Pattern$ specifies a pattern that is used for drawing and filling. The following patterns are predefined:
+If Pattern$ = "HighSolidFill" solid fill is used with the current high color (default),
+if Pattern$ = "LowSolidFill" solid fill is used with the current low color,
+if Pattern$ = "CheckeredFill" checkered fill is used as a combination of low- and highcolor,
+otherwise Pattern$ is a 8x8 1bit map where one line is one character which is written out as its ASCII code.
+Use the pattern editor to draw and calculate patterns for your convenience.
+
+Draw set with a parameter Font$ sets the font for Target$. The Font$ consists of the font family, the font style and the font size separated with commas. E.g. the following is a valid font string:
+Font$ = "Zurich, Roman, 25"
+Note: Use the correct spelling of the font families and styles keeping existing spaces; they are case sensitive too.
+Three special Font$ are available, namely the system fonts:
+If Font$ = "system-plain", the plain system font is used (default),
+if Font$ = "system-fixed", the fixed-sized system font is used,
+if Font$ = "system-bold", the bold system font is used.
+See the command draw get$ for more information about font families and styles.
+
+Example:
+"127191223239215187109214"
+Explanation:
+
+Related: draw circle, draw curve, draw dot, draw ellipse, draw get, draw get$, draw line, draw rect, draw text, view
+&

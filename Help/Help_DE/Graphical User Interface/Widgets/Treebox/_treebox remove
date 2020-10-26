@@ -1,0 +1,17 @@
+
+Name:
+treebox remove -- Remove an item from a treebox.
+
+Synopsis:
+TREEBOX REMOVE TreeBox$, Position
+TREEBOX REMOVE TreeBox$, Head$, ListItem$
+
+Description:
+TREEBOX REMOVE TreeBox$, Position
+Removes the entry at position Position in TreeBox$.
+
+TREEBOX REMOVE TreeBox$, Head$, ListItem$
+Removes ListItem$ under Head$ in TreeBox$.
+
+Related: treebox, treebox add, treebox clear, treebox collapse, treebox count, treebox expand, treebox get$, treebox select, treebox sort
+&

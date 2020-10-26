@@ -1,0 +1,23 @@
+
+Name:
+system$() -- hand a statement over to your operating system and return its output
+
+Synopsis: 
+print system$("dir") 
+
+Description:
+The system$-command accepts a single string argument, specifying a command, that can be found and executed by your operating system. It returns the output of this command as one big string.
+
+Example:
+input "Please enter the name of a directory: " d$ 
+print 
+print "This is the contents of the '"+d$+"':" 
+print system$("ls -l "+d$) 
+Explanation:
+
+This example lists the contents of a directory, employing the ls-command. 
+
+
+Related: system
+
+&

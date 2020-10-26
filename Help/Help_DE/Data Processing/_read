@@ -1,0 +1,35 @@
+
+Name:
+read -- read data from data-statements
+
+Synopsis: 
+read a$,a 
+... 
+data "Hello!",7 
+
+Description:
+The read-statement retrieves literal data, which is stored within data-statements elsewhere in your program.
+
+Example:
+//*** requires ncurses support compiled in ***
+//See Documentation/Advanced for info.
+read num 
+dim col$(num) 
+for a=1 to num:read col$(a):next a 
+clear screen 
+print "These are the colours known to yab:\n" 
+for a=1 to num 
+	print colour(col$(a)) col$(a) 
+next a 
+
+data 8,"black","white","red","blue" 
+data "green","yellow","cyan","magenta" 
+Explanation:
+
+This program prints the names of the colors known to yab in those very colors. 
+
+Start this program in a terminal.
+
+
+Related: data, restore
+&

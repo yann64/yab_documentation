@@ -1,0 +1,27 @@
+
+Name:
+wend -- end a while-loop
+
+Synopsis: 
+while(a<b) 
+  ... 
+wend 
+
+Description:
+The wend-keyword marks the end of a while-loop. Please see the while-keyword for more details.
+wend can be written as end while or even end-while.
+
+Example:
+line input "Please enter a sentence: " a$ 
+p=instr(a$,"e") 
+while(p) 
+	mid$(a$,p,1)="E" 
+	p=instr(a$,"e") 
+wend 
+print a$ 
+Explanation:
+
+This example reads a sentence and converts every occurence of the letter e into uppercase (E).
+
+Related: while
+&

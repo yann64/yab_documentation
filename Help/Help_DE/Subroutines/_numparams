@@ -1,0 +1,35 @@
+
+Name:
+numparams -- return the number of parameters, that have been passed to a subroutine
+
+Synopsis: 
+sub foo(a,b,c) 
+  if (numparams=1) ... 
+  ... 
+end sub 
+
+Description:
+Within a subroutine the local variable numparam or numparams contains the number of parameters, that have been passed to the subroutine. This information can be useful, because the subroutine may have been called with fewer parameters than actually declared. The number of values that actually have been passed while calling the subroutine, can be found in numparams.
+
+Note, that arguments which are used in the definition of a subroutine but are left out during a call to it (thereby reducing the value of numparams) receive a value of 0 or "" (empty string) respectively.
+
+Example:
+a$="123456789" 
+print part$(a$,4) 
+print part$(a$,3,7) 
+
+sub part$(a$,f,t) 
+	if (numparams=2) then 
+		return mid$(a$,f) 
+	else 
+		return mid$(a$,f,t-f+1) 
+	end if 
+end sub 
+Explanation:
+
+When you run this example, it will print 456789 and 34567. Take a look at the subroutine part$, which returns part of the string which has been passed as an argument. If (besides the string) two numbers are passed, they define the starting and end position of the substring, that will be returned. However, if only one number is passed, the rest of the string, starting from this position will be returned. Each of these cases is recognized with the help of the numparams variable.
+
+
+Related: sub
+
+&

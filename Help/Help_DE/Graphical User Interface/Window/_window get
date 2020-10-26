@@ -1,0 +1,44 @@
+Name:
+window get --Informationabfrage ueber von einem Fenster
+
+Synopsis:
+Result = WINDOW GET WindowID$, Option$
+
+Beschreibung:
+To obtain some properties of the window with the ID WindowID$, the following options are allowed:
+
+Option$ = "Position-X" -- Result will contain the horizontal position of the upper left corner of the window relative to the screen
+Option$ = "Position-Y" -- Result will contain the vertical position of the upper left corner of the window relative to the screen
+Option$ = "Width" -- Result will contain the width of the window
+Option$ = "Height" -- Result will contain the height of the window
+Option$ = "Minimum-Width" -- Result will contain the minimum width of the window that is allowed when resizing
+Option$ = "Minimum-Height" -- Result will contain the minimum height of the window that is allowed when resizing
+Option$ = "Maximum-Width" -- Result will contain the maximum width of the window that is allowed when resizing
+Option$ = "Maximum-Height" -- Result will contain the maximum height of the window that is allowed when resizing
+Option$ = "Exists" -- Result will be true if a window with this WindowID$ exits and false otherwise
+Option$ = "Minimized-To-Deskbar" -- Result will be true if the window has been minimized and false if it is not.
+
+Example:
+window open 100,100 to 300,300, "Example", "Example"
+
+w = 200
+h = 200
+
+while(not instr(message$, "Quit"))
+	if(window get "Example", "Width" <> w) then
+		w = window get "Example", "Width"
+		print "New Width: ", w
+	endif
+	if(window get "Example", "Height" <> h) then
+		h = window get "Example", "Height"
+		print "New Height: ", h
+	endif
+wend
+
+window close "Example"
+Explanation:
+
+When the window is resized, the new width and the new height are printed on the standard output.
+
+Related:
+window open, window close, window count, window set

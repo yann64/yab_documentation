@@ -1,0 +1,17 @@
+
+Name:
+canvas -- creates a special flicker-free drawing view.
+
+Synopsis:
+CANVAS x1, y1 TO x2, y2, ID$, View$
+
+Description:
+
+CANVAS x1, y1 TO x2, y2, ID$, View$
+A canvas is a special view for flicker-free drawing. It always shows a bitmap
+and thus cannot be resized. However, it does not have a drawing queue, so you
+do not need DRAW FLUSH
+A canvas is always initialized with a white background.
+
+related: draw bitmap, bitmap get
+&

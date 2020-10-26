@@ -1,0 +1,42 @@
+
+Name:
+tooltip -- add a tooltip to a view or widget
+
+Synopsis:
+TOOLTIP View$, Text$
+
+Description:
+A tooltip is a small popup that appears when the mouse moves over a widget to give some more information.
+
+To have a tooltip to any sort of view or widget named View$, simply add the tooltip string Text$. Text$ should be only one line without linebreaks. If Text$ is set to the empty string "", the tooltip is removed again from View$.
+
+Note: The tooltips look and behave slightly different on BeOS and ZETA.
+
+Design:
+Tooltips can be of great help for the user to understand icons or buttons and the like. However, it does not make sence to add a tooltip "New" to a button that already has the label "New". Rather be more descriptive and provide additional information, e.g. "Open a new image file". For tooltips only the first word should be written with a capital letter.
+
+And remember, too many tooltips can be annoying too.
+
+Example:
+window open 100,100 to 300,300, "Example", "Example"
+
+button 10,10 to 190,30, "Button", "We all...", "Example"
+listbox 10,40 to 95,190, "List", 1, "Example"
+listbox add "List", "...have own..."
+slider 120,40 to 190,190, "Slider", "...tooltips.", 1,10, "triangle, vertical", "Example"
+
+tooltip "Example", "A tooltip for the whole window"
+tooltip "Button", "A tooltip for the button"
+tooltip "List", "A tooltip for the listbox"
+tooltip "Slider", "A tooltip for the slider"
+
+while(not instr(message$, "Quit"))
+wend
+
+window close "Example"
+Explanation:
+
+The example shows how easily a tooltip can be applied to any kind of widget. Here, to the button, the listbox, the slider and the window view itself too.
+
+Related: tooltip color
+&

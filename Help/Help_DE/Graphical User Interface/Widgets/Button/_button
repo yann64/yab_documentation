@@ -1,0 +1,36 @@
+
+Name:
+button -- create a new button
+
+Synopsis:
+BUTTON x1,y1 TO x2,y2, ID$, Label$, View$
+
+Description:
+The button command creates a button from the coordinates (x1,y1) to (x2,y2) on the window or view named View$. It has a text label Label$ and the identifier ID$.
+
+With the option set command you can modify the button, as setting the background color, the focus, enabling or diabling it or resizing it to its preferred size.
+
+Message:
+The button when pressed will send a message string with ID$.
+
+Layout:
+In standard layout, the button will follow the lower, right corner of the view or window.
+
+Design:
+Always use meaningful labels for buttons. If you care for localization (on ZETA you should!), remember that labels can be much longer in other languages. So either provide enough space or use the option set command to auto-resize the button.
+
+Example:
+window open 100,100 to 300,200, "Example", "Example"
+button 20,40 to 180,60, "MyButton", "Hello World", "Example"
+while(not quitting)
+	m$ = message$
+	if(m$ = "MyButton|") alert "You pressed the button", "Ok", "info"
+	if(instr(m$, "_QuitRequested")) quitting = true
+wend
+window close "Example"
+Explanation:
+
+In this example, a button is set on the window. If the button is pressed, an alert window pops up.
+
+Related: button image, option set
+&

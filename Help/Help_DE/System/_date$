@@ -1,0 +1,35 @@
+
+Name:
+date$ -- returns a string with various components of the current date
+
+Synopsis:
+a$=date$
+
+Description:
+The date$-function (which must be called without parantheses; i.e. date$() would be an error) returns a string containing various components of a date; an example would be 4-05-27-2004-Thu-May. This string consists of various fields seperated by hyphens ("-"):The day within the week as a number in the range 0 (=sunday) to 6 (=saturday) (in the example above: 4, i.e. thursday).
+
+The month as a number in the range 1 (=january) to 12 (=december) (in the example: 5 which stands for may).
+The day within the month as a number in the range 1 to 31 (in the example: 27).
+The full, 4-digit year (in the example: 2004, which reminds me that I should adjust the clock within my computer ...).
+The abbreviated name of the day within the week (Mon to Sun).
+The abbreviated name of the month (Jan to Dec).
+
+Therefore the whole example above (4-05-27-2004-Thu-May) would read: day 4 in the week (counting from 0), May 27 in the year 2004, which is a thursday in May.
+Note, that all fields within the string returned by date$ have a fixed with (numbers are padded with zeroes); therefore it is easy to extract the various fields of a date format with mid$.
+
+Example:
+rem   Two ways to print the same ... 
+
+print mid$(date$,3,10) 
+
+dim fields$(6) 
+a=split(date$,fields$(),"-") 
+print fields$(2),"-",fields$(3),"-",fields$(4) 
+Explanation:
+
+This example shows two different techniques to extract components from the value returned by date$. The mid$-function is the preferred way, but you could just as well split the return-value of date$ at every "-" and store the result within an array of strings.
+
+
+Related: time$
+
+&

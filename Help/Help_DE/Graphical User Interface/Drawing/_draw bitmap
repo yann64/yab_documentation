@@ -1,0 +1,30 @@
+
+Name:
+draw bitmap -- Draw a bitmap on a view, another bitmap or a canvas.
+
+Synopsis:
+DRAW BITMAP x,y, Bitmap$, Mode$, View$
+DRAW BITMAP x1,y1 TO x2,y2, Bitmap$, Mode$, View$
+
+Description:
+
+DRAW BITMAP x,y, Bitmap$, Mode$, View$
+Draw a bitmap on a view, another bitmap or a canvas.
+
+Possible Mode$:
+
+"Copy" -- copy the bitmap to the target ignoring transparency
+"Alpha" -- copy the bitmap to the target supporting transparency
+
+DRAW BITMAP x1,y1 TO x2,y2, Bitmap$, Mode$, View$
+Draws and scales the bitmap Bitmap$.
+If x2 is set to -1, the width is scaled according to the height;
+if y2 is set to -1, the height is scaled according to the width;
+if x2 and y2 are set to -1, the image is not scaled at all. 
+
+Possible Mode$:
+
+"Copy" -- copy the bitmap to the target ignoring transparency
+"Alpha" -- copy the bitmap to the target supporting transparency
+
+&

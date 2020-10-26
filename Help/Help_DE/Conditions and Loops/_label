@@ -1,0 +1,33 @@
+
+Name:
+label -- mark a specific location within your program for goto, gosub or restore
+
+Synopsis:
+label foo 
+
+... 
+
+goto foo 
+
+Description:
+The label-command can be used to give a name to a specific location within your program. Such a position might be referred from one of three commands: goto, gosub and restore.
+You may use labels safely within libraries, because a label (e.g. foo) does not collide with a label with the same name within the main program or within another library; yab will not mix them up.
+As an aside, please note, that line numbers are a special (however deprecated) case of labels; see the second example below.
+
+Example:
+for a=1 to 100 
+	if (rand(10)>5) goto done 
+next a 
+label done 
+
+10 for a=1 to 100 
+20 	if (rand(10)>5) goto 40 
+30 next a 
+40 
+Explanation:
+
+Within this example, the for-loop will probably be left prematurely with a goto-statement. This task is done twice: First with labels and then again with line numbers.
+
+Related: gosub, goto
+
+&

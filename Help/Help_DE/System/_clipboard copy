@@ -1,0 +1,21 @@
+
+Name:
+clipboard copy -- copy a string to the clipboard
+
+Synopsis:
+CLIPBOARD COPY Text$
+
+Description:
+Clipboard copy simply copies the string Text$ to the system clipboard. Note: This will overwrite all text currently stored in the clipboard.
+
+Example:
+print "This is the content of the clipboard: "+clipboard paste$
+print "Now we copy \"Foo Bar\" to the clipboard"
+clipboard copy "Foo Bar"
+print "This is the content of the clipboard: "+clipboard paste$
+Explanation:
+
+The example will first display whatever is written in the clipboard (might be empty too), and then copies the string "Foo Bar" to the clipboard. Another output shows, it actually worked.
+
+Related: clipboard paste$
+&

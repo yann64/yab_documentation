@@ -1,0 +1,104 @@
+
+Name:
+menu -- create a menu item for the menubar
+
+Synopsis:
+MENU Head$, Menu$, Shortcut$, View$ 
+
+Description:
+To add a menubar with menus to a window or a view named View$ is very easy. Simply call menu with the menu entry Head$ and a menu item called Menu$. If there is no menubar yet, a new one will be created. If the entry Head$ already exists, the item Menu$ will be added to the existing items at the end.
+
+If Menu$ is set as follows:
+
+Menu$ = "--"
+
+then the menu item will be a separator line.
+
+The first letter of Shortcut$ specifys the shortcut key for this menu item. It is always combined with the command key which is ALT normally (or CTRL when CTRL and ALT are switched in the preferences). E.g. consider a Shortcut$ of "O" then ALT-O will appear in the menu and the user has to press ALT-O to activate this menu item. Additionaly to the command key you can specify further modifiers which are set before the shortcut letter:
+
+
+"S" for the shift key
+"C" for the control key (CTRL, or ALT if CTRL and ALT are switched)
+"O" for the option key (on most keyboards probably the Windows button)
+
+These modifiers can be combined, but the following combinations do not work: "SO", "SC" and "SCO"
+
+Some Shortcut examples:
+
+"O" for ALT-O
+"SO" for Shift-ALT-O
+"COO" for Control-Option-ALT-O
+
+
+The height of the menubar (which depends on the size of the system menu font) can be checked with the peek command.
+
+Message:
+The menu when selected or called by the shortcut key will return a message of the format: 
+
+View$+":"+Head$+":"+Menu$
+
+Note, when you have switched on localization, you get the translated message. Have a look at the example below, how to handle such translations.
+
+Design:
+Although views can have a menubar too, you should only give windows a menu. Use capitalized words for English menu entries (like for headings).  A menu item should have three dots (...) always when the user can expect a further dialog and not an immediate action. Use the default menu head entries: File, Edit, View, Help
+
+Use the following default shortcuts:
+
+For the menu Head$ "File":
+"N" -- New
+"O" -- Open
+"S" -- Save
+"W" -- Close
+"Q" -- Quit
+
+For the menu Head$ "Edit":
+"Z" -- Undo
+"X" -- Cut
+"C" -- Copy
+"V" -- Paste
+"A" -- Select All
+
+Further default shortcuts:
+"F" -- Find
+"G" -- Find Again
+"H" -- Help
+"P" -- Print
+
+
+Example:
+localize
+window open 100,100 to 400,300, "Example", "Example"
+menu "File", "About...", "", "Example"
+menu "File", "--", "", "Example"
+menu "File", "Quit", "Q", "Example"
+
+menu "Action", "My Action Menu", "COA", "Example"
+
+dim msg$(1)
+while(not quitting)
+	n = token(message$, msg$(), "|")
+	for i = 1 to n
+		switch(msg$(i))
+			case "_QuitRequested"
+			case "Example:_QuitRequested"
+			case translate$("Example:File:Quit")
+				quitting = true
+				break
+			case translate$("Example:File:About...")
+				alert "Menu example", "Ok", "info"
+				break
+			case translate$("Example:Action:My Action Menu")
+				press = press + 1
+				draw flush "Example"
+				draw text 50,100, translate$("Menu call: ")+str$(press), "Example"
+				break
+		end switch
+	next i
+wend
+
+window close "Example"
+Explanation:
+We open a window and allow localization. This should explain the usage of translating the messages in the loop. After initializing the menus, we check the messages. When a message arrives, we compare it to the translated (!) counterpart. 
+
+Related: menu set, peek, submenu, submenu set
+&

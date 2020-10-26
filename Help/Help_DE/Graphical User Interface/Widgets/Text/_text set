@@ -1,0 +1,45 @@
+
+Name:
+text set -- set the alignment of a text widget
+
+Synopsis:
+TEXT SET Text$, Alignment$
+
+Description:
+For a text label named Text$ you can change the alignment so that it is aligned to the left, center or right. This only works when you have used the text command with the (x2,y2) parameters because the alignment refers to x1 for left alignment und x2 for right alignment.
+
+The alignment is given as:
+Alignment$ = "Align-Left" -- align to the left
+Alignment$ = "Align-Center" -- align to the center
+Alignment$ = "Align-Right" -- align to the right
+
+Example:
+window open 100,100 to 300,200, "Example", "Example"
+text 10,40 to 190,60, "Text", "Hello", "Example"
+align = 1
+
+while(not instr(message$, "Quit"))
+	switch align
+		case 1: 
+			text set "Text", "Align-Left"
+			break		
+		case 2: 
+			text set "Text", "Align-Center"
+			break
+		case 3: 
+			text set "Text", "Align-Right"
+			break
+	end switch
+	if align = 3 dir = -1
+	if align = 1 dir = 1
+	align = align + dir
+	sleep 0.5
+wend
+
+window close "Example"
+Explanation:
+
+This fun program changes the alignment of the text every half second. 
+
+Related: text
+&Textcontrol

@@ -1,0 +1,26 @@
+
+Name:
+# -- either a comment or a marker for a file-number
+
+Synopsis: 
+# This is a comment, but the line below not! 
+open #1,"foo" 
+
+Description:
+The hash ('#') has two totally unrelated uses:A hash might appear in commands related with file-io. yab uses simple numbers to refer to open files (within input, print, peek or eof). In those commands the hash may precede the number, which species the file. Please see those commands for further information and examples; the rest of this entry is about the second use (as a comment).
+
+As the very first character within a line, a hash introduces comments (similar to rem).
+'#' as a comment is common in most scripting languages and has a special use under BeOS: If the very first line of any BeOS-program begins with the character sequence '#!' ("she-bang", no spaces allowed), the rest of the line is taken as the program that should be used to execute the script. I.e. if your yab-program starts with '#!/boot/home/config/bin/yab', the program /boot/home/config/bin/yab will be invoked to execute the rest of the program. 
+
+Example:
+# This line is a valid comment 
+print "Hello " : # But this is a syntax error, because 
+print "World!" : # the hash is not the first character! 
+Explanation:
+
+Note, that this example will produce a syntax error and is not a valid program!
+
+
+Related: input, print, peek, eof, //, rem
+
+&

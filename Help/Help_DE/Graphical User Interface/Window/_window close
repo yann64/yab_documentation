@@ -1,0 +1,15 @@
+Name:
+window close -- schließt ein Fenster
+
+Synopsis:
+WINDOW CLOSE WindowID$
+
+Beschreibung:
+Window close schließt ein Fenster mit der entsprechenden WindowID$. Alle Widgets und Views in dem Fesnter werden gelöscht. Die IDs und die Window ID sind nicht mehr änger verfügbar. Wenn Sie darauf zugreifen, werden Sie eine Fehlermeldung bekommen oder einen Abstürz.
+
+Design:
+Es ist schön, wenn Sie alle Fenster schließen bovor Sie ein Programm schließen. Fragen Sie in ihrem Programm ab, ob noch Fenster geöffnet sind.
+
+Siehe auch:
+window open, window count, window get, window set
+

@@ -1,0 +1,30 @@
+
+Name:
+printer setup -- setup the current printer
+
+Synopsis:
+PRINTER SETUP SetupFile$
+
+Description:
+Printer setup call the setup window of the currently active printer. Here, the user can specify printing parameters like paper size or a border width. The setup is saved in the file called SetupFile$. No file is created when the user cancels the setup.
+
+Note: At least one window has to be open before printer setup can be called.
+
+Example:
+window open 100,100 to 300,300, "Example", "Example"
+menu "File", "Printer Setup...", "", "Example"
+menu "File", "--", "", "Example"
+menu "File", "Quit", "Q", "Example"
+
+while(not quitting)
+	m$ = message$
+	if(instr(m$, "Printer Setup...")) printer setup "ExamplePrinterConfig"
+	if(instr(m$, "Quit")) quitting = true
+wend
+
+window close "Example"
+Explanation:
+The example shows a window with a menu. When printer setup is selected from this menu, the setup is called. If the user saves the config, it will be stored in the file named "ExamplePrinterConfig".
+
+Related: printer
+&Menus

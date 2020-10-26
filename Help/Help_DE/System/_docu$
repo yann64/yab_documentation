@@ -1,0 +1,34 @@
+
+Name:
+docu$ -- special array, containing the contents of all docu-statement within the program
+
+Synopsis:
+a$=docu$(1)
+
+Description:
+Before your program is executed, yab collects the content of all the doc-statements within your program within this 1-dimensional array (well only those within the main-program, libraries are skipped).
+You may use the arraysize function to find out, how many lines it contains.
+
+Example:
+docu 
+docu  This program reads two numbers 
+docu  and adds them. 
+docu 
+
+rem retrieve and print the embedded documentation 
+for a=1 to arraysize(docu$(),1) 
+  print docu$(a) 
+next a 
+
+input "First number: " b 
+input "Second number: " c 
+
+print "The sum of ",b," and ",c," is ",b+c 
+Explanation:
+
+This program uses the embedded documentation to issue a usage-message.
+
+
+Related: arraydim, rem
+
+&

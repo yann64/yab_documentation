@@ -1,0 +1,49 @@
+
+Name:
+dim -- create an array prior to its first use
+
+Synopsis: 
+dim array(x,y) 
+dim array$(x,y) 
+
+Description:
+The dim-command prepares one or more arrays (of either strings or numbers) for later use. This command can also be used to enlarges an existing array.
+
+When an array is created with the dim-statement, memory is allocated and all elements are initialized with either 0 (for numerical arrays) or "" (for string arrays).
+If the array already existed, and the dim-statement specifies a larger size than the current size, the array is enlarged and any old content is preserved.
+
+Note, that dim cannot be used to shrink an array: If you specify a size, that is smaller than the current size, the dim-command does nothing.
+
+Finally: To create an array, that is only known within a single subroutine, you should use the command local, which creates local variables as well as local arrays.
+
+Example:
+dim a(5,5) 
+for x=1 to 5
+	for y=1 to 5 
+		a(x,y)=int(ran(100)) 
+	y
+next x 
+printmatrix(a()) 
+dim a(7,7) 
+printmatrix(a()) 
+
+sub printmatrix(ar()) 
+	local x,y,p,q 
+	x=arraysize(ar(),1) 
+	y=arraysize(ar(),2) 
+	for q=1 to y 
+		for p=1 to y 
+			print ar(p,q),"\t" 
+		next p 
+		print 
+	next q 
+end sub 
+Explanation:
+
+This example creates a 2-dimenional array (i.e. a matrix) with the dim-statement and fills it with random numbers. The second dim-statement enlarges the array, all new elements are filled with 0.
+
+The subroutine printmatrix just does, what its name says.
+
+
+Related: arraysize, arraydim, local
+&

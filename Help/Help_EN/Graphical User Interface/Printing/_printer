@@ -1,0 +1,53 @@
+
+Name:
+printer -- send a view to the printer
+
+Synopsis:
+PrintingError = PRINTER JobName$, SetupFile$, View$
+
+Description:
+Printer is a powerful but yet simple command to print a view named View$. The view is send to the currently active printer and put into the spooling queue. There, it is visible under the name JobName$.
+
+SetupFile$ gives a files as saved by the printer setup command. If the setup file is not valid or empty (""), the printing setup is called first automatically. Otherwise the saved setup is used for the printing.
+
+Printer returns one of the following numbers:
+0 = No Problems
+1 = Page setup failed (probably communication problems with the print server)
+2 = The configuration file was loaded but page setup failed
+3 = The view View$ was not found
+4 = The number of pages is 0 or less
+5 = The printing was canceled or something went wrong with printing
+
+Note: PrintingError = 4 can happen because of a bug in the PDF printing driver; although a page size is shown, none is selected. If this happens, you may want to call a PRINTER SETUP for the user and try to print again.
+
+Note: When an error with code 1,2,3 or 4 occurs, you can be shure that nothing was sent to the printer yet.
+
+Note: Alpha transparency is not printed correctly!
+
+Note: Due to a bug in BeOS and ZETA, there are probably problems printing CHECKBOX IMAGE and BUTTON IMAGE images, use DRAW IMAGE instead!
+
+Example:
+window open 100,100 to 300,300, "Example", "Example"
+
+view 10,10 to 190,160, "PrintMe", "Example"
+draw set "bgcolor", 255,255,255, "PrintMe"
+draw text 50,50, "Print Me!", "PrintMe"
+
+button 50,170 to 150,190, "PrintButton", "Print...", "Example"
+
+while(not quitting)
+        m$ = message$
+        if(instr(m$, "PrintButton")) then
+                errcode = printer "Example Printjob", "", "PrintMe"
+                if(errcode>1) alert "Printing Problem: "+str$(errcode), "Ok", "Warning"
+        endif
+        if(instr(m$, "Quit")) quitting = true
+wend
+
+window close "Example" 
+Explanation:
+
+First a window is opened and then a white view named "PrintMe" is put upon it. Of course it makes perfect sence to have a white background for your view that is to be printed. When the "Print..." button is pressed, the PrintMe view is send to the printer with the job name "Example Printjob". In case of an error, the user is informed.
+
+Related: printer setup
+&

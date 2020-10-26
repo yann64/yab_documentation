@@ -1,0 +1,22 @@
+
+Name:
+compile -- compile a string with yab-code on the fly
+
+Synopsis:
+compile(code$)
+
+Description:
+This is an advanced command (closely related with the execute-command). It allows you to compile a string of yab-code (which is the only argument). Afterwards the compiled code is a normal part of your program.
+Note, that there is no way to remove the compiled code.
+
+Example:
+compile("sub mysub(a):print a:end sub") 
+mysub(2) 
+Explanation:
+
+This example creates a function named mysub, which simply prints its single argument.
+
+
+Related: execute
+
+&

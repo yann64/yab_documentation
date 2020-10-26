@@ -1,0 +1,38 @@
+
+Name: scrollbar set --  set various settings for the scrollbars.
+
+Synopsis:
+SCROLLBAR SET Scrollbar$, Borderoption$
+SCROLLBAR SET Scrollbar$, "Vertical Position", Position
+SCROLLBAR SET Scrollbar$, "Horizontal Position", Position
+SCROLLBAR SET Scrollbar$, "Vertical Range", Min, Max
+SCROLLBAR SET Scrollbar$, "Horizontal Range", Min, Max
+SCROLLBAR SET Scrollbar$, "Vertical Steps", SmallSteps, BigSteps
+SCROLLBAR SET Scrollbar$, "Horizontal Steps", SmallSteps, BigSteps
+
+Description:
+SCROLLBAR SET Scrollbar$, Borderoption$
+Borderoption$ = "no-border" or "plain-border" or "fancy-border" (default)
+
+SCROLLBAR SET Scrollbar$, "Vertical Position", Position
+
+SCROLLBAR SET Scrollbar$, "Horizontal Position", Position
+Set the scrollbar to the position Position. Default is (0,0).
+
+SCROLLBAR SET Scrollbar$, "Vertical Range", Min, Max
+
+SCROLLBAR SET Scrollbar$, "Horizontal Range", Min, Max
+Set the scrollbars to a maximum range, default is (1000,1000).
+Note: the Max value will be added to the view's actual width/height.
+
+SCROLLBAR SET Scrollbar$, "Vertical Steps", SmallSteps, BigSteps
+
+SCROLLBAR SET Scrollbar$, "Horizontal Steps", SmallSteps, BigSteps
+Set the scrollbar steps. 
+SmallSteps are the scrolling steps when the user clicks on the arrow buttons (default is 1.0).
+BigSteps are the scrolling steps when the user clicks on the empty part of the scrollbar (default is 10.0).
+
+Related: scrollbar, scrollbar get
+
+
+&Splitview

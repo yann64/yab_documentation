@@ -1,0 +1,24 @@
+
+Name:
+draw rect -- draw a rectangle
+
+Synopsis:
+DRAW RECT x1,y1 TO x2,y2, Target$
+
+Description:
+This command will draw a rectangle from (x1,y1) to (x2,y2) on Target$. Target$ has to be either a valid view, bitmap or canvas.
+
+At default it will draw a filled rectangle in the current highcolor. With the draw set command you can change the filling settings.
+
+Example:
+window open 100,100 to 400,400, "Example", "Example"
+draw set true, "HighSolidFill"
+draw rect 10,10, 290, 290, "Example"
+sleep 7
+window close "Example"
+Explanation:
+
+Display a rectangle.
+
+Related: draw circle, draw curve, draw dot, draw ellipse, draw flush, draw line, draw set
+&

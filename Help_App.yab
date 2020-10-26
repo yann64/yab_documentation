@@ -220,7 +220,7 @@ REM ######Fenteraufbau######
 
 	//helpfile
 	directory$="/boot/system/documentation/yab"
-	directory$="/Share/Projekte/c/yab"
+	//directory$="/Share/Projekte/c/yab"
 	//helpdir$=directory$+"/yab_documentation/Help"
 	//helpdir2$=directory$+"/yab_documentation/data"
 	helpdir$=directory$+"/Help"

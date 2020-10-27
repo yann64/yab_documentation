@@ -1,4 +1,3 @@
-
 Name:
 columnbox get$ -- get a specific item in a columnbox
 
@@ -11,4 +10,3 @@ In the given columnbox named ColumnBox$, the item text at the position (Column, 
 Have a look at the columnbox command for an example.
 
 Related: columnbox, columnbox add, columnbox clear, columnbox color, columnbox column, columnbox count, columnbox get, columnbox remove, columnbox select
-&

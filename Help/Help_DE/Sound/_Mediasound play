@@ -1,4 +1,3 @@
-
 Name:
 Mediasound play -- play sound / stream file 
 
@@ -19,4 +18,3 @@ Explanation:
 This first loads the file SoundFile$, plays it for three seconds and then stops it.
 
 Related: mediasound play, mediasound stop
-&

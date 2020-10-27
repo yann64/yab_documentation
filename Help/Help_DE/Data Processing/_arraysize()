@@ -1,4 +1,3 @@
-
 Name:
 arraysize() -- returns the size of a dimension of an array
 
@@ -64,5 +63,3 @@ sub matadd(m1(),m2(),r())
 	next xx 
 end sub 
 Related: arraydim, dim
-
-&

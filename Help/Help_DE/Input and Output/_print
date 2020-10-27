@@ -1,4 +1,3 @@
-
 Name:
 print -- Write to terminal or file
 
@@ -76,5 +75,3 @@ This example draws a cloured ellipse within the text window.
 Start this program in a terminal.
 
 Related: at, color, input, clear screen, using, ;
-
-&

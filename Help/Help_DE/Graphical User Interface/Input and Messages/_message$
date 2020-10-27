@@ -1,4 +1,3 @@
-
 Name:
 message$ -- receive a system message
 
@@ -48,4 +47,3 @@ Explanation:
 This example shows a message loop as it is recommended for most programs. The message$ is split into parts by the token command. Using a switch(), the different messages can be examined.
 
 Related: message send
-&

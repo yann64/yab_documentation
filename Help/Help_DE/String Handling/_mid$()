@@ -1,4 +1,3 @@
-
 Name:
 mid$() -- return (or change) characters from within a string
 
@@ -27,4 +26,3 @@ This example transforms the input string a bit, using the mid$-function to retri
 
 
 Related: left$, right$
-&

@@ -1,4 +1,3 @@
-
 Name:
 slider set -- set the slider value or hashmarks location and numnber
 
@@ -19,4 +18,3 @@ SLIDER SET Silder$, Value
 Set the slider to Value. Moves the slider indicator block to this location.
 
 Related: slider, slider color, slider get, slider label
-&Spincontrol

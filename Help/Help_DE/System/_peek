@@ -1,4 +1,3 @@
-
 Name:
 peek -- retrieve internal information
 
@@ -96,5 +95,3 @@ Note, that each peek does something entirely different, and only one has been de
 
 
 Related: peek$, poke, open
-
-&

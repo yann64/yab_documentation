@@ -1,4 +1,3 @@
-
 Name:
 mod() -- compute the remainder of a division
 
@@ -27,5 +26,3 @@ Start this program in a terminal.
 
 
 Related: int, frac
-
-&

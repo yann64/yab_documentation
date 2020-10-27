@@ -1,4 +1,3 @@
-
 Name:
 columnbox color -- change the colors of a columnbox
 
@@ -19,4 +18,3 @@ The following values for Option$ are valid:
 Have a look at the columnbox command for an example.
 
 Related: columnbox, columnbox add, columnbox clear, columnbox column, columnbox count, columnbox get, columnbox get$, columnbox remove, columnbox select
-&

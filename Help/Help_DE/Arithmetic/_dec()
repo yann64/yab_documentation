@@ -1,4 +1,3 @@
-
 Name:
 dec() -- convert a base 2 or base 16 number into decimal form
 
@@ -12,6 +11,5 @@ The dec-function takes the string-representation of a base-2 or base-16 (which i
 Example:
 input "Please enter a binary number: " a$ 
 print a$," is ",dec(a$) 
-Related: bin$, hex$
 
-&
+Related: bin$, hex$

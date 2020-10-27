@@ -1,4 +1,3 @@
-
 Name:
 asc() -- accepts a string and returns the position of its first character 
 within the ascii charset
@@ -14,5 +13,3 @@ input "Please enter a letter between 'a' and 'y': " a$
 if (a$<"a" or a$>"y") print a$," is not in the proper range":end 
 print "The letter after ",a$," is ",chr$(asc(a$)+1) 
 Related: chr$
-
-&

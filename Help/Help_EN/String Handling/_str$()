@@ -1,4 +1,3 @@
-
 Name:
 str$() -- convert a number into a string
 
@@ -90,5 +89,3 @@ This is the program, that has been used to get the results shown in the table ab
 
 
 Related: print, using
-
-&

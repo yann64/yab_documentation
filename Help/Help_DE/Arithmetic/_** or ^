@@ -1,16 +1,17 @@
 Name:
-** or ^ -- raise its first argument to the power of its second
+** oder ^ - erhebe sein erstes Argument zur Macht seines zweiten
 
-Synopsis:
-print 2**b 
-print 3^4 
+Zusammenfassung:
+print 2 ** b
+print 3 ^ 4
 
-Description:
-** (or ^, which is an exact synonym), is the arithmetic operator of exponentiation; it requires one number to its left and a second one to its right; 
-** then raises the first argument to the power of the second and returns the result. The result will only be computed if it yields a real number (as opposed to a complex number);
-this means, that the power can not be computed, if the first argument is negative and the second one is fractional.
-On the other hand, the second argument can be fractional, if the first one ist positive; this means, that ** may be used to compute arbitrary roots: e.g. x**0.5 computes the square root of x.
+Beschreibung:
+** (oder ^, was ein genaues Synonym ist) ist der arithmetische Operator der Potenzierung; es benötigt eine Zahl links und eine zweite rechts;
+** erhebt dann das erste Argument zur Potenz des zweiten und gibt das Ergebnis zurück. Das Ergebnis wird nur berechnet, wenn es eine reelle Zahl ergibt (im Gegensatz zu einer komplexen Zahl).
+Dies bedeutet, dass die Leistung nicht berechnet werden kann, wenn das erste Argument negativ und das zweite gebrochen ist.
+Andererseits kann das zweite Argument gebrochen sein, wenn das erste positiv ist; Dies bedeutet, dass ** verwendet werden kann, um beliebige Wurzeln zu berechnen: z. x ** 0,5 berechnet die Quadratwurzel von x.
 
-Example:
-print 2**0.5 
-Related: sqrt
+Beispiel:
+print 2 ** 0,5
+
+Verwandte: sqrt

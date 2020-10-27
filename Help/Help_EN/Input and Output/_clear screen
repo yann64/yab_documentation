@@ -1,4 +1,3 @@
-
 Name:
 clear screen -- erases the text window
 
@@ -24,4 +23,3 @@ Start this program in a terminal.
 
 
 Related: inkey$
-&

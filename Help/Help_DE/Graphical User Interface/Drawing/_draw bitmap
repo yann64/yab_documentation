@@ -1,4 +1,3 @@
-
 Name:
 draw bitmap -- Draw a bitmap on a view, another bitmap or a canvas.
 
@@ -26,5 +25,3 @@ Possible Mode$:
 
 "Copy" -- copy the bitmap to the target ignoring transparency
 "Alpha" -- copy the bitmap to the target supporting transparency
-
-&

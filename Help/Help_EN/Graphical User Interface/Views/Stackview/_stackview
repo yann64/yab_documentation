@@ -1,4 +1,3 @@
-
 Name:
 stackview -- create views above each other
 
@@ -50,4 +49,3 @@ Explanation:
 This window has a listbox on the left-hand side and a stackview with three views on the right. Each view has a own background color and text. When an item is selected in the list, we get its number and then switch the stackview to the corresponding view.
 
 Related: stackview get, stackview set, tabview
-&

@@ -1,4 +1,3 @@
-
 Name:
 restore -- reposition the data-pointer
 
@@ -38,4 +37,3 @@ This program asks to select one of those languages known to me (i.e. English or 
 
 
 Related: read, data, label
-&String Handling

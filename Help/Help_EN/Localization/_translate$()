@@ -1,4 +1,3 @@
-
 Name:
 translate$() -- translate a string on ZETA
 
@@ -16,4 +15,3 @@ Explanation:
 Using only the system dictionaries, we can obtain the translation of "File" according to the language set in the ZETA preferences.
 
 Related: localize
-&

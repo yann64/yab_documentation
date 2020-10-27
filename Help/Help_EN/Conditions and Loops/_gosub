@@ -1,4 +1,3 @@
-
 Name:
 gosub -- continue execution at another point within your program 
 (and return later)
@@ -25,5 +24,3 @@ label ask
 input "Please answer yes or no, by typing 'y' or 'n': ",r$ 
 return 
 Related: return, goto, sub, label, on gosub
-
-&

@@ -1,15 +1,14 @@
 Name:
-window close -- schließt ein Fenster
+window close -- close a window
 
 Synopsis:
 WINDOW CLOSE WindowID$
 
-Beschreibung:
-Window close schließt ein Fenster mit der entsprechenden WindowID$. Alle Widgets und Views in dem Fesnter werden gelöscht. Die IDs und die Window ID sind nicht mehr änger verfügbar. Wenn Sie darauf zugreifen, werden Sie eine Fehlermeldung bekommen oder einen Abstürz.
+Description:
+Window close of course closes the window named WindowID$. All widgets and views in the window will be deleted. Their IDs and the window ID will no longer be valid, if you call them, yab will exit with an error message.
 
 Design:
-Es ist schön, wenn Sie alle Fenster schließen bovor Sie ein Programm schließen. Fragen Sie in ihrem Programm ab, ob noch Fenster geöffnet sind.
+It is good style to close all windows before exiting. Always keep track of the windows currently open.
 
-Siehe auch:
+Related:
 window open, window count, window get, window set
-

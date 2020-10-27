@@ -1,4 +1,3 @@
-
 Name:
 radiobutton set -- (de-)activate the radiobutton
 
@@ -9,4 +8,3 @@ Description:
 If IsActivated is set to true, the radiobutton named RadioButton$ will be selected. If IsActivated is set to false, the radiobutton will be deselected. Note: This allows you to activate more than one radiobutton in a group which is not recommended.
 
 Related: radiobutton
-&Slider

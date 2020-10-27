@@ -1,4 +1,3 @@
-
 Name:
 tabview add -- Adds a new view and new tab to a tabview.
 
@@ -25,4 +24,3 @@ Explanation:
 This snippet from the AllInOne.yab example program sets up a tabview called Box on the main Window view "Win" with the tabs at the top, then adds two tabs. "Widgets" is the first tab, "Box1", and "Views and More" is the second tab, "Box2". the button is added to the tab labeled "Widgets."
 
 Related: tabview tabview get, tabview set
-&

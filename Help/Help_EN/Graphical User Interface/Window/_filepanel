@@ -1,4 +1,3 @@
-
 Name:
 filepanel -- open a file or directory selection window
 
@@ -51,5 +50,3 @@ window close "Example"
 Explanation:
 
 The example above opens a window with three buttons. According to the button the filepanel is started in a different mode. Try to understand the difference in the behaviour of the three modes above. Finally, when a valid file or directory is chosen, an alert popup window opens to display the full path of that selected entry.
-
-&

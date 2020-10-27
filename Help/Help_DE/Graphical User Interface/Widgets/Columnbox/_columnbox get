@@ -1,4 +1,3 @@
-
 Name:
 columnbox get -- returns the number of the currently selected row in a columnbox
 
@@ -11,4 +10,3 @@ To obtain the row that is currently selected in the columnbox named ColumnBox$, 
 Have a look at the columnbox command for an example.
 
 Related: columnbox, columnbox add, columnbox clear, columnbox color, columnbox column, columnbox count, columnbox get$, columnbox remove, columnbox select
-&

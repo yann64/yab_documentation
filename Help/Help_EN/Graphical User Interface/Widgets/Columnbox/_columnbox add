@@ -1,4 +1,3 @@
-
 Name:
 columnbox add -- add an item to a columnbox
 
@@ -18,4 +17,3 @@ Note: These identifiers are case sensitive!
 Have a look at the columnbox command for an example.
 
 Related: columnbox, columnbox clear, columnbox color, columnbox column, columnbox count, columnbox get, columnbox get$, columnbox remove, columnbox select
-&

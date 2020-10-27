@@ -1,4 +1,3 @@
-
 Name:
 window open -- open a window
 
@@ -44,4 +43,3 @@ A simple window with a button. Try to close it with the close button and then tr
 
 Related:
 alert, window close, window count, window get, window set
-&

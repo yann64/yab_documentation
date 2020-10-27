@@ -1,4 +1,3 @@
-
 Name:
 goto -- continue execution at another point within your program (and never come back)
 
@@ -30,5 +29,3 @@ Here the goto-statment is used to leave the for-loop prematurely. Start this pro
 
 
 Related: gosub, on goto
-
-&

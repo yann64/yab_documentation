@@ -1,4 +1,3 @@
-
 Name:
 sound wait -- waits until a sound file is finished playing
 
@@ -16,5 +15,3 @@ Explanation:
 This first loads the file "bach.mp3" and then plays it until it ends.
 
 Related: sound play, sound stop
-
-&

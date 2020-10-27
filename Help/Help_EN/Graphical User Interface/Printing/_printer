@@ -1,4 +1,3 @@
-
 Name:
 printer -- send a view to the printer
 
@@ -50,4 +49,3 @@ Explanation:
 First a window is opened and then a white view named "PrintMe" is put upon it. Of course it makes perfect sence to have a white background for your view that is to be printed. When the "Print..." button is pressed, the PrintMe view is send to the printer with the job name "Example Printjob". In case of an error, the user is informed.
 
 Related: printer setup
-&

@@ -1,4 +1,3 @@
-
 Name:
 submenu set -- set options for the submenu
 
@@ -39,4 +38,3 @@ Explanation:
 The submenu is in radio mode, so only one item can be selected. The user will do that for you, however you have to select an item for the first time. The last item cannot be selected because it is disabled.
 
 Related: menu, menu set, submenu
-&Views

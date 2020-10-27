@@ -1,4 +1,3 @@
-
 Name:
 token() -- split a string into multiple strings
 
@@ -80,4 +79,3 @@ Please enter a line: -a==b-c==
 3 Tokens: a,b,c 
 
 Related: split
-&

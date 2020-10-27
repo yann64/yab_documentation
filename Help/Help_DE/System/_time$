@@ -1,4 +1,3 @@
-
 Name:
 time$ -- return a string containing the current time
 
@@ -28,5 +27,3 @@ This program benchmarks the for-loop and uses the fourth field of the string ret
 
 
 Related: date$
-
-&

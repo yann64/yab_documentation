@@ -1,4 +1,3 @@
-
 Name:
 textedit set -- set various options for a textedit
 
@@ -48,4 +47,3 @@ Option$ = "fixed" value$ = str$(point) sets the font to system fixed font of poi
 Option$ = "bold" value$ = str$(point) sets the font to system bold font of point size (number from 7 and up 
 
 Related: textedit, textedit add, textedit clear, textedit color, textedit get, textedit get$
-&TextURL

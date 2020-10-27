@@ -1,4 +1,3 @@
-
 Name:
 dim -- create an array prior to its first use
 
@@ -46,4 +45,3 @@ The subroutine printmatrix just does, what its name says.
 
 
 Related: arraysize, arraydim, local
-&

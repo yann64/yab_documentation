@@ -1,4 +1,3 @@
-
 Name:
 listbox count -- returns the number of items in a listbox 
 
@@ -9,4 +8,3 @@ Description:
 For an existing listbox named ListBox$, this command simply returns the number of items it contains and stores it in NumberOfItems. 
 
 Related: listbox, listbox add, listbox clear, listbox get, listbox get$, listbox remove, listbox select, listbox sort
-&

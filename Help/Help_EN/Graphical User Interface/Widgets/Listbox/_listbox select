@@ -1,4 +1,3 @@
-
 Name:
 listbox select -- select an item in a listbox
 
@@ -14,4 +13,3 @@ Message:
 Using the listbox select command will generate a selection message. This then has the format ID$+":_Select:"+SelectedItem$ where SelectedItem$ contains the number of the item selected. 
 
 Related: listbox, listbox add, listbox clear, listbox count, listbox get, listbox get$, listbox remove, listbox sort
-&

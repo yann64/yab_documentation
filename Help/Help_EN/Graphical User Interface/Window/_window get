@@ -1,4 +1,3 @@
-
 Name:
 window get -- request information about a window
 
@@ -43,4 +42,3 @@ When the window is resized, the new width and the new height are printed on the 
 
 Related:
 window open, window close, window count, window set
-&

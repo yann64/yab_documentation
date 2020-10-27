@@ -1,4 +1,3 @@
-
 Name:
 reverse -- print reverse (background and foreground colors exchanged)
 
@@ -42,5 +41,3 @@ This program prints numbers from 1 on and marks each prime number in reverse.
 Start this program in a terminal.
 
 Related: at, color, print, clear screen
-
-&

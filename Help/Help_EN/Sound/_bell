@@ -1,4 +1,3 @@
-
 Name:
 bell -- ring the bell within your computer (just as beep)
 
@@ -10,5 +9,5 @@ The bell-command rings the bell within your computer once. This command is not a
 
 Example:
 print "This is a problem ...":bell
+
 Related: beep
-&

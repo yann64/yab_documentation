@@ -1,4 +1,3 @@
-
 Name:
 button image -- create a new button with images
 
@@ -42,4 +41,3 @@ Explanation:
 The button is only shown correctly, when the images "icon_pressed.png" and "icon_released" exist.
 
 Related: button
-&

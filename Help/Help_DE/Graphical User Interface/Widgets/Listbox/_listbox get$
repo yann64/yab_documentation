@@ -1,4 +1,3 @@
-
 Name:
 listbox get$ -- get a specific item string in a listbox
 
@@ -11,4 +10,3 @@ In the given listbox named ListBox$, the item text at the position Position will
 Have a look at the listbox command for an example.
 
 Related: listbox, listbox add, listbox clear, listbox count, listbox get, listbox remove, listbox select, listbox sort
-&

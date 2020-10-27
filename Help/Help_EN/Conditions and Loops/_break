@@ -1,4 +1,3 @@
-
 Name:
 break -- breaks out of a switch statement or a loop
 
@@ -34,5 +33,3 @@ Explanation:
 
 
 Related: for, while, repeat, switch
-
-&

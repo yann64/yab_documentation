@@ -1,4 +1,3 @@
-
 Name:
 shortcut -- sends a message when a specified shortcut key is pressed
 
@@ -71,4 +70,3 @@ Explanation:
 Here two shortcuts are setup, ALT-B (or CTRL-B if ALT and CTRL are switched in your preferences) sends the message "About" and Shift-ALT-Q to send the message "MyQuit". Additionally other quit messages are rejected telling the user to only use the shortcut.
 
 Related: keyboard message$, menu, message$
-&

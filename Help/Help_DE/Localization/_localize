@@ -1,4 +1,3 @@
-
 Name:
 localize -- enable the automatic localization of ZETA
 
@@ -53,4 +52,3 @@ This shows automatic translation of the menu strings "File" and "Quit" and the d
 Further, we have to check the translation of the message$ too with translate$ because the menu now reports the message string "Datei:Beenden|" when selected in German.
 
 Related: translate$()
-&

@@ -1,4 +1,3 @@
-
 Name:
 chr$() -- accepts a number and returns the character at this position within the ascii charset
 
@@ -17,4 +16,3 @@ This will print the letters 'a' and 'b' in different lines because of the interv
 
 
 Related: asc
-&

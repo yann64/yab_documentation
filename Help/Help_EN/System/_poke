@@ -1,4 +1,3 @@
-
 Name:
 poke -- change selected internals of yab
 
@@ -31,5 +30,3 @@ This example only demonstrates one of the many pokes, which are described above:
 
 
 Related: peek, peek$
-
-&

@@ -1,4 +1,3 @@
-
 Name:
 checkbox image -- create a new checkbox with images
 
@@ -47,4 +46,3 @@ Explanation:
 Whenever the checkbox is selected or deselected, an alert window will tell you. The checknox is only shown correctly, when the images exist.
 
 Related: checkbox, checkbox set, option set
-&

@@ -1,4 +1,3 @@
-
 Name:
 doc -- special comment, which might be retrieved by the program itself
 
@@ -29,5 +28,3 @@ The contents of the doc-lines are retrieved from the docu$-array; if you do not 
 
 
 Related: docu$, rem
-
-&

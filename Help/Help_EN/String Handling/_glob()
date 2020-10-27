@@ -1,4 +1,3 @@
-
 Name:
 glob() -- check if a string matches a simple pattern
 
@@ -43,4 +42,5 @@ abc does not match ?
 abc matches *c 
 abc does not match A* 
 abc does not match ???? 
-&
+
+Related:

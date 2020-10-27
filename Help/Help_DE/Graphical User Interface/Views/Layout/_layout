@@ -1,4 +1,3 @@
-
 Name:
 layout -- Set the layout for all views on a window.
 
@@ -31,4 +30,4 @@ Horizontal:
 "Top, Bottom" = follow the top and bottom side (resize)
 "V-Center" = follow the vertical center
 
-&Scrollbar
+Related:

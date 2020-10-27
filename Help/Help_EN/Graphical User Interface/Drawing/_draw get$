@@ -1,4 +1,3 @@
-
 Name:
 draw get$ -- retrieve information about the installed fonts
 
@@ -37,4 +36,3 @@ Explanation:
 This example sets up a whole menu with all fonts installed and their styles. Note: It is up to you to deselect old submenu items in this example whenever a new item is selected. In other words, this simple example allows several font selections, which is probably not what you want.
 
 Related: draw get, draw set, draw text, textedit set
-&

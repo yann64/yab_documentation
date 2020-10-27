@@ -1,4 +1,3 @@
-
 Name:
 scrollbar -- make a view scrollable
 
@@ -10,4 +9,3 @@ SCROLLBAR ID$, ScrollbarType, View$
   Make View$ scrollable.
 
 Related: scrollbar get, scrollbar set
-&

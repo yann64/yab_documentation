@@ -1,4 +1,3 @@
-
 Name:
 bitmap save -- saves a bitmap to an image file.
 
@@ -12,5 +11,3 @@ ErrCode = 0|1 , everything worked fine | file could not be saved
 
 
 Related: bitmap, bitmap color, bitmap get, bitmap image, bitmap remove, draw bitmap  
-
-&

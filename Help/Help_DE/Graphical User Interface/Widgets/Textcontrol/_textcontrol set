@@ -1,4 +1,3 @@
-
 Name:
 textcontrol set -- Set various options for a textcontrol.
 
@@ -29,4 +28,3 @@ Option$="focus" Value$ = "true" / "false" Set the focus of TextControl$.
 Option$="Cursor", Value$=str$(number) positions the cursor, sets the focus to true.
 
 Related: textcontrol, textcontrol clear, textcontrol get$
-&

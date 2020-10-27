@@ -1,4 +1,3 @@
-
 Name:
 splitview set --   Set the position of the divider, or the minimum sizes of the view
 
@@ -15,5 +14,3 @@ SPLITVIEW SET SplitView$ "MinimumSizes", LeftOrTop, RightOrBottom
 Set the minimum sizes of the left (or top) view and the right (or bottom) view.
 
 Related: slpitview
-
-&Stackview

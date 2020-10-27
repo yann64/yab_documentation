@@ -1,14 +1,52 @@
-File$ = FILEPANEL Mode$, Title$, Directory$ 
+Name:
+filepanel -- open a file or directory selection window
 
-Mode$ = "Load-File" 
-Mode$ = "Load-Directory" 
-Mode$ = "Load-File-and-Directory" 
-Mode$ = "Save-File" 
+Synopsis:
+Filename$ = FILEPANEL Mode$, Title$, Directory$
+Filename$ = FILEPANEL Mode$, Title$, Directory$, DefaultFile$
 
-Öffnet ein "Datei Ã?ffnen..."- Menü im Verzeichnis Directory$. Die gewählte Datei ist File$. 
+Description:
+In BeOS there is a default window for selecting files or directories to load or save. This so-called filepanel is easily accessable with the filepanel command in yab. The filepanel will open the selection window for you, it lets the user browse, select etc. in the directory tree and returns the selected or newly entered filename. Note: The filepanel just gives you the filename, it does not open, save or process this filename in any way; you have to do that on your own of course.
 
-Filepanel wird mit Modus Mode$ (Datei laden, Verzeichnis laden, Datei oder Verzeichnis laden und Speichern) geöffnet.. 
+First have a look at the parameters. Filename$ will contain the resulting path and name of the selected or newly created directory or filename. If the filepanel is canceled, the Filename$ will be empty ("").
 
-File$ = FILEPANEL Mode$, Title$, Directory$, Filename$ 
+There are different modes Mode$ for a filepanel. Depending on the mode it will act differently:
 
-Gleiche Funktionsweise wie oben, nur das hier gezielt eine Datei oder Verzeichnis vorgegeben wird. 
+Mode$ = "Load-File" -- the user is able to select any file 
+Mode$ = "Load-Directory" -- the user is able to select any directory
+Mode$ = "Load-File-and-Directory" -- the user is able to select any file or directory
+Mode$ = "Save-File" -- the user is able to select either an existing file or enter a name for a new file; when selecting an existing file a popup window will ask whether the file should really be overwritten
+
+Furthermore, the title for the window tab has to specified in Title$. Ideally this should be something like "Open" or "Save" according to the mode.
+
+The starting directory for browsing is set with Directory$. If this is an invalid directory, "/boot/home" will be used instead.
+
+Only for the "Save-File" mode, you additionally can provide a default filename that is put into the textcontrol field of the filepanel in this mode. If you call the filepanel without DefaultFile$, the textcontrol field will be empty.
+
+Design:
+Having filepanels for the file selection is always a good idea. They are much easier to handle than self constructed columnboxes for browsing directories. To use them is just the BeOS way of doing things.
+
+Example:
+window open 100,100 to 300,200, "Example", "Example"
+button 10,10 to 190,30, "OpenFile", "Open a file...", "Example"
+button 10,40 to 190,60, "OpenDir", "Open a directory...", "Example"
+button 10,70 to 190,90, "Save", "Save a file...", "Example"
+
+while(not quitting)
+        m$ = message$
+        if(instr(m$, "OpenFile")) filename$ = filepanel "load-file", "Open File", ""
+        if(instr(m$, "OpenDir")) filename$ = filepanel "load-directory", "Open Directory", ""
+        if(instr(m$, "Save")) filename$ = filepanel "save-file", "Save File", "", "SuggestedFile"
+
+        if(instr(m$, "Quit")) quitting = true
+
+        if(filename$ <> "") then
+                alert "You haven chosen "+filename$, "Ok", "info"
+                filename$ = ""
+        endif
+wend
+
+window close "Example"
+Explanation:
+
+The example above opens a window with three buttons. According to the button the filepanel is started in a different mode. Try to understand the difference in the behaviour of the three modes above. Finally, when a valid file or directory is chosen, an alert popup window opens to display the full path of that selected entry.

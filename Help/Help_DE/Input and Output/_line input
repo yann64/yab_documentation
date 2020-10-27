@@ -1,4 +1,3 @@
-
 Name:
 line input -- read in a whole line of text and assign it to a variable
 
@@ -20,5 +19,3 @@ Note that the usage of line input is essential in this example; a simple input-s
 
 
 Related: input
-
-&

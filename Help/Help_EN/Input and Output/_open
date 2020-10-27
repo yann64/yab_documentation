@@ -1,4 +1,3 @@
-
 Name:
 open -- open a file
 
@@ -51,5 +50,3 @@ This example simply opens the file foo.bar, writes a single line, reopens it and
 
 
 Related: close, print, peek
-
-&

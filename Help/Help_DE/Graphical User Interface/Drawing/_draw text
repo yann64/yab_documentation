@@ -1,4 +1,3 @@
-
 Name:
 draw text -- draw a text string in the current font
 
@@ -27,5 +26,3 @@ Explanation:
 This program sets the colors to a blue background and a yellow textcolor. It sets the font and then displays the string "yab Example".
 
 Related: draw flush, draw get, draw get$, draw set
-
-&Input and Messages

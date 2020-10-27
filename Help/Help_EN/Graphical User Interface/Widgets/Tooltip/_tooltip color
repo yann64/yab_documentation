@@ -1,4 +1,3 @@
-
 Name:
 tooltip color -- set the color for all tooltips
 
@@ -29,4 +28,3 @@ Explanation:
 Here, the color of the tooltips are changed from the default yellow background and black text color to a black background (RGB color values: 0,0,0) and from the default black text color to a white text (RGB color values: 255,255,255).
 
 Related: tooltip
-&Treebox

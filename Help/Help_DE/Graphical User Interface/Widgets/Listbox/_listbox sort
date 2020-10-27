@@ -1,4 +1,3 @@
-
 Name:
 listbox sort -- sort all items in a listbox
 
@@ -13,4 +12,3 @@ Note: After sorting, any former selection is removed.
 Have a look at the listbox command for an example.
 
 Related: listbox, listbox add, listbox clear, listbox count, listbox get, listbox get$, listbox remove, listbox select
-&Options

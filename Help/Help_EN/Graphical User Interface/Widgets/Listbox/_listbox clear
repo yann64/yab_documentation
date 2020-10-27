@@ -1,4 +1,3 @@
-
 Name:
 listbox clear -- remove all items of a listbox
 
@@ -9,4 +8,3 @@ Description:
 Listbox clear deletes and removes all items in a listbox.
 
 Related: listbox, listbox add, listbox count, listbox get, listbox get$, listbox remove, listbox select, listbox sort
-&

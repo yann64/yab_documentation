@@ -1,4 +1,3 @@
-
 Name:
 xor() -- compute the exclusive or
 
@@ -17,5 +16,3 @@ Explanation:
 
 
 Related: and, or, eor, not
-
-&

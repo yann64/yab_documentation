@@ -1,0 +1,37 @@
+A: abs() acos() and and() arraydim() arraysize() asc() asin() at() atan() 
+B: beep bell bin$() break 
+C: chr$() circle clear circle clear rect clear screen clear window close close printer close window colour color compile continue cos() curve 
+D: date$ data dec() dim doc docu docu$() dot 
+E: else elsif end endif end sub eof() eor() error euler execute execute$ exit exp() export 
+F: fi fill for frac() 
+G: getbit$() getscreen$() glob() gosub goto 
+H: hex$() 
+I: ifimport inkey$ input input at input # instr() int() interrupt 
+J: 
+K: 
+L: label left$() len() line line input line to locallog() lower$() ltrim$() 
+M: map() mapx() mapy() max() mid$() min() mod() mouseb mousex mousey 
+N: new curve next not numparams 
+O: on gosub on goto open open printer open window or or() origin 
+P: pause peek peek$ pi poke print print at print using print # printer putbit putscreen 
+Q: 
+R: ran() rectangle read rem redim repeat restore return reverse right$() rinstr() rtrim$() 
+S: seek() sig() sin() static step split() sqr() sqrt() str$() subsystem() system$() 
+T: tan() tell text then time$ token() trim$() 
+U: until upper$() using 
+V: val() 
+W: wait wend while window window origin 
+X: xor() 
+Y: 
+Z:
++ - * / ^ ?@:#,;
+
+Expressions used by Yabasic that should not be used as any variable:
+
+argument 	| arraysize | at 			| backspace 	| cc 			| cb 			| circledate$ 	| debug 
+del 			| down 	 | end 		| enter 	   	| error 		| esc			| fatal 		|fontheight 
+f1...f12 		| home 	 | infolevel	| ins 	   		| interrupt 	| left 		| library 		| lower$ 
+main 		| maxnum | note 		| new curve 	| numparams 	| on 			| origin 		|os 
+pi 			| printer	 | rc 			| rightscreen 	| screenheight  | screenwidth 	| scrdown		| scrup 
+static 		| tab 	 | textalign 	|time$ 		| up			| upper$		| version		| warning
+window

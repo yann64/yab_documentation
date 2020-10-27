@@ -1,4 +1,3 @@
-
 Name:
 static -- preserves the value of a variable between calls to a subroutine
 
@@ -40,5 +39,3 @@ The output shows, that the static variable a keeps its value between subroutine 
 
 
 Related: sub, local
-
-&

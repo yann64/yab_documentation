@@ -1,4 +1,3 @@
-
 Name:
 repeat -- start a repeat-loop
 
@@ -28,4 +27,3 @@ This program is pretty much useless, but self-explanatory.
 
 
 Related: until, break, while, do
-&

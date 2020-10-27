@@ -1,4 +1,3 @@
-
 Name:
 draw get -- retrieve font properties
 
@@ -37,4 +36,3 @@ Explanation:
 The example shows the baseline (blue line), the font size (pink line) and the lower boundary (red line) for the given string. The lower boundary is calculated by: baseline - font size + maximum text height. If you respect these distances, you can align text pretty well.
 
 Related: draw get$, draw set, draw text
-&

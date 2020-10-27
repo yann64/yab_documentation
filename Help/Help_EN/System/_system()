@@ -1,4 +1,3 @@
-
 Name:
 system() -- hand a statement over to your operating system and return its exitcode
 
@@ -22,5 +21,3 @@ Explanation:
 This program uses the commandline command rm to remove a file.
 
 Related: system$
-
-&

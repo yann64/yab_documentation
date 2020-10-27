@@ -1,4 +1,3 @@
-
 Name: scrollbar set --  set various settings for the scrollbars.
 
 Synopsis:
@@ -33,6 +32,3 @@ SmallSteps are the scrolling steps when the user clicks on the arrow buttons (de
 BigSteps are the scrolling steps when the user clicks on the empty part of the scrollbar (default is 10.0).
 
 Related: scrollbar, scrollbar get
-
-
-&Splitview

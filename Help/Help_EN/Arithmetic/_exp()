@@ -1,4 +1,3 @@
-
 Name:
 exp() -- compute the exponential function of its single argument
 
@@ -20,5 +19,3 @@ Explanation:
 This program plots part of the exp-function, however the range is rather small, so that you may not recognize the function from this plot.
 
 Related: log
-
-&

@@ -1,4 +1,3 @@
-
 Name:
 next -- mark the end of a for loop
 
@@ -23,5 +22,3 @@ This example simply plots a sine-curve until you fall asleep. Start this program
 
 
 Related: for
-
-&

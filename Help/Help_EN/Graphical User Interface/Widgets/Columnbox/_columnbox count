@@ -1,4 +1,3 @@
-
 Name:
 columnbox count -- returns the number of rows in a columnbox
 
@@ -9,4 +8,3 @@ Description:
 For a existing columnbox named ColumnBox$, this command simply returns the number of rows it contains and stores it in NumberOfRows.
 
 Related: columnbox, columnbox add, columnbox clear, columnbox color, columnbox column, columnbox get, columnbox get$, columnbox remove, columnbox select
-&

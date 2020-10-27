@@ -1,4 +1,3 @@
-
 Name:
 draw ellipse -- draw an ellipse
 
@@ -19,4 +18,3 @@ window close "Example"
 Explanation:
 
 Related: draw circle, draw curve, draw dot, draw flush, draw line, draw rect, draw set
-&

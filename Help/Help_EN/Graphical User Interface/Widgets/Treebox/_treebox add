@@ -1,4 +1,3 @@
-
 Name:
 treebox add -- Add an item to a treebox.
 
@@ -15,4 +14,3 @@ TREEBOX ADD TreeBox$, HeadItem$, ListItem$, IsExpanded
 Add the item ListItem$ under the level of HeadItem$ of the tree.
 
 Related: treebox, treebox clear, treebox collapse, treebox count, treebox expand, treebox get$, treebox remove, treebox select, treebox sort
-&

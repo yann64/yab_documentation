@@ -1,4 +1,3 @@
-
 Name:
 acos() -- returns the arcus cosine of its numeric argument
 
@@ -16,5 +15,3 @@ Explanation:
 
 
 Related: cos, asin
-
-&

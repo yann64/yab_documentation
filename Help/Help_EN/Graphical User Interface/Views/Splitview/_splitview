@@ -1,4 +1,3 @@
-
 Name:
 splitview -- Set up the new view and split it into two new views.
 
@@ -24,4 +23,3 @@ Explanation:
 This snippet from then AllInOne.yab example program opens a splitview and changes the background colors of each pannel so it is easy to see the two suib-views.
 
 related: splitview set, stackview, tabview
-&

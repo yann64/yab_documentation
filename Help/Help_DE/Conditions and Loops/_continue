@@ -1,4 +1,3 @@
-
 Name:
 continue -- start the next iteration of a for-, do-, repeat- or while-loop
 
@@ -20,5 +19,3 @@ Explanation:
 
 
 Related: for, do, repeat, while, break
-
-&

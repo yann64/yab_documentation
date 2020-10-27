@@ -1,4 +1,3 @@
-
 Name:
 
 attribute get$ -- Get the string value of an attribute.
@@ -49,4 +48,3 @@ Explanation:
 This program uses attrribute get$ to find the program directory, then saves three attributes to the file foobar located in the program directory. Next it gets and prints a list of the attribute names and types associated with the file, then it prints the contents of attribute1.
 
 Related: attribute clear, attribute set, attribute get
-&

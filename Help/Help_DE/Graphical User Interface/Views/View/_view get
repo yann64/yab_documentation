@@ -1,4 +1,3 @@
-
 Name:
 view get -- gets information about a view
 
@@ -9,3 +8,5 @@ Description:
 Option$ = "Position-X/Position-Y/Width/Height/Exists/Focused"
 Returns the requested property or if used with Exists/Focused returns 1 if so and 0 if not.
 &view remove
+
+Related:

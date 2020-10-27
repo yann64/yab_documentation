@@ -1,4 +1,3 @@
-
 Name:
 and -- logical and, used in conditions
 
@@ -13,6 +12,5 @@ Note, that logical shortcuts may take place.
 Example:
 input "Please enter a number" a
 if (a>=1 and a<=9) print "your input is between 1 and 9"
-Related: or, not, xor, eor
 
-&
+Related: or, not, xor, eor

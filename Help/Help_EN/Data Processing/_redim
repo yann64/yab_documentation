@@ -1,4 +1,3 @@
-
 Name:
 redim -- create an array prior to its first use. A synonym for dim
 
@@ -10,4 +9,3 @@ The redim-command does exactly the same as the dim-command; it is just a synonym
 Please refer to the entry for the dim-command for further information.
 
 Related: dim
-&

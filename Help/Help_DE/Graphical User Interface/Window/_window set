@@ -6,7 +6,7 @@ WINDOW SET WindowID$, Option$
 WINDOW SET WindowID$, Option$, x,y
 WINDOW SET WindowID$, Option$, Value$
 
-Beschreibung:
+Description:
 This command allows the flexible ajustment of the look and feel of a window. We first inspect the options that require no further parameter other than Option$:
 
 Option$ = "Activate" -- activate the window, so it is in the foreground.
@@ -84,4 +84,3 @@ A small demo window is opened with the floating look and feel. It can only be re
 
 Related:
 window open, window close, window count, window get
-&

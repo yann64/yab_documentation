@@ -1,4 +1,3 @@
-
 Name:
 euler -- another name for the constant 2.71828182864
 
@@ -10,6 +9,5 @@ euler is the well known constant named after Leonard Euler; its value is 2.71828
 
 Example:
 print euler 
-Related: pi
 
-&
+Related: pi

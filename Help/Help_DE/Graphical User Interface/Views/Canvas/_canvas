@@ -1,4 +1,3 @@
-
 Name:
 canvas -- creates a special flicker-free drawing view.
 
@@ -14,4 +13,3 @@ do not need DRAW FLUSH
 A canvas is always initialized with a white background.
 
 related: draw bitmap, bitmap get
-&

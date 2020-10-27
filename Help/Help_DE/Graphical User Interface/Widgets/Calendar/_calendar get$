@@ -1,4 +1,3 @@
-
 Name:
 calendar get$ -- returns the selected date of a calendar
 
@@ -11,4 +10,3 @@ The command will return the currently selected date of the calendar widget named
 Note: This GetDate$ has a different format than the yab command date$. However, it is not too difficult to convert these formats.
 
 Related: calendar, calendar set, date$
-&

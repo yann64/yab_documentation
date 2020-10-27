@@ -1,4 +1,3 @@
-
 Name:
 label -- mark a specific location within your program for goto, gosub or restore
 
@@ -29,5 +28,3 @@ Explanation:
 Within this example, the for-loop will probably be left prematurely with a goto-statement. This task is done twice: First with labels and then again with line numbers.
 
 Related: gosub, goto
-
-&

@@ -1,4 +1,3 @@
-
 Name:
 bind() -- Binds a yab-program and the yab-interpreter together into a standalone program.
 
@@ -24,4 +23,3 @@ This example creates a standalone program foo from itself.
 
 
 Related: peek
-&

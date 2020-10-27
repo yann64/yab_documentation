@@ -1,4 +1,3 @@
-
 Name:
 or -- logical or, used in conditions
 
@@ -12,6 +11,5 @@ Used in conditions (e.g within if or while) to join two expressions. Returns tru
 Example:
 input "Please enter a number" 
 if (a>9 or a<1) print "a is not between 1 and 9" 
-Related: and, not, xor, eor
 
-&
+Related: and, not, xor, eor

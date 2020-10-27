@@ -1,4 +1,3 @@
-
 Name:
 eor() -- compute the bitwise exclusive or of its two arguments
 
@@ -24,5 +23,3 @@ Explanation:
   This example prints a table, from which you may figure, how the eor-function is computed.
 
 Related: and, or
-
-&

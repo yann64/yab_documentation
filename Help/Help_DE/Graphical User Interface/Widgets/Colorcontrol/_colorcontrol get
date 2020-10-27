@@ -1,4 +1,3 @@
-
 Name:
 colorcontrol get -- return a color component of the currently selected color in a colorcontrol
 
@@ -14,4 +13,3 @@ ColorComponent$ has to be one of the following:
 "Blue" -- the value of the blue color
 
 Related: colorcontrol, colorcontrol set
-&

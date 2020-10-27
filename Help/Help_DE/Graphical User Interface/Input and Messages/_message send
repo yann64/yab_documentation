@@ -1,4 +1,3 @@
-
 Name:
 message send -- send a system message
 
@@ -32,4 +31,3 @@ _Scripting:...|
 See the files Ping.yab and Pong.yab for a nice example of message send. As you have to start both, use the tracker or the terminal to run them, but not the IDE.
 
 Related: message$
-&

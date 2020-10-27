@@ -1,4 +1,3 @@
-
 Name:
 bitmap remove -- removes a bitmap from memory
 
@@ -8,6 +7,4 @@ BITMAP REMOVE Bitmap$
 Explanation:
 Removes Bitmap$ from memory
 
-Related: bitmap, bitmap color, bitmap get, bitmap image, bitmap save, draw bitmap  
-
-&
+Related: bitmap, bitmap color, bitmap get, bitmap image, bitmap save, draw bitmap

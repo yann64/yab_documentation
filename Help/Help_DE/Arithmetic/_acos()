@@ -1,20 +1,17 @@
-
 Name:
-acos() -- returns the arcus cosine of its numeric argument
+acos () - gibt den Arcus-Cosinus seines numerischen Arguments zurück
 
-Synopsis:
-x=acos(angle)
+Zusammenfassung:
+x = acos (Winkel)
 
-Description:
-The acos is the arcus cosine-function, i.e. the inverse of the cos-function. Or, more elaborate: It Returns the angle (in radian, not degree!), which, fed to the cosine-function will produce the argument passed to the acos-function.
+Beschreibung:
+Der acos ist die Arcus-Cosinus-Funktion, d. H. Die Umkehrung der cos-Funktion. Oder ausführlicher: Es gibt den Winkel zurück (im Bogenmaß, nicht im Grad!), Der, der der Kosinusfunktion zugeführt wird, das an die acos-Funktion übergebene Argument erzeugt.
 
-Example:
-print acos(0.5),acos(cos(pi))
-Explanation:
+Beispiel:
+print acos (0,5), acos (cos (pi))
+Erläuterung:
 
-  This example will print 1.0472 3.14159 which are pi/3 and pi respectively.
+  In diesem Beispiel wird 1.0472 3.14159 ausgegeben, die pi / 3 bzw. pi sind.
 
 
-Related: cos, asin
-
-&
+Verwandte: cos, asin

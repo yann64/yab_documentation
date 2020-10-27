@@ -1,4 +1,3 @@
-
 Name:
 exit -- terminate your program
 
@@ -14,5 +13,3 @@ print "Do you want to continue ?"
 input "Please answer y(es) or n(o): " a$ 
 if (lower$(left$(a$,1))="n") exit 1 
 Related: end
-
-&

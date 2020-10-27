@@ -1,4 +1,3 @@
-
 Name:
 mouse set -- show or hide the mouse cursor
 
@@ -13,4 +12,3 @@ Option$ = "Show" -- show the mouse cursor
 Option$ = "Obscure" -- hide the mouse cursor until the mouse is moved 
 
 Related: ismousein(), mouse message$(), mouse message$
-&

@@ -1,4 +1,3 @@
-
 Name:
 len() -- return the length of a string
 
@@ -16,4 +15,3 @@ Explanation:
 This example checks the length of the password, that the user has entered.
 
 Related: left$, right$, mid$ 
-&

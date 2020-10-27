@@ -1,4 +1,3 @@
-
 Name:
 dropbox get$ -- Get the string of the item at a position.
 
@@ -9,4 +8,3 @@ Description:
 Get the item$ at Position fior the dropbox Dropbox$.
 
 Related: dropbox , dropbox add, dropbox clear, dropbox count, dropbox remove, dropbox select
-&

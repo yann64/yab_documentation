@@ -1,4 +1,3 @@
-
 Name:
 texturl color -- Set the color used for the text of a texturl.
 
@@ -13,4 +12,3 @@ Set the colors for the URL. Valid options are:
 "Mouse-over" for the color of the label, when the mouse is moved over the label.
 
 Related: texturl
-&

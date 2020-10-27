@@ -1,4 +1,3 @@
-
 Name:
 colorcontrol -- create a new control for choosing a color
 
@@ -46,4 +45,3 @@ Explanation:
 The example shows a colorcontrol and view. The view always takes the color that is selected by the user. Note: The color is only set, when the selection changed. This avoids flickering on slow machines.
 
 Related: colorcontrol get, colorcontrol set, option set
-&

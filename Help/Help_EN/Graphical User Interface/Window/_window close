@@ -1,4 +1,3 @@
-
 Name:
 window close -- close a window
 
@@ -13,4 +12,3 @@ It is good style to close all windows before exiting. Always keep track of the w
 
 Related:
 window open, window count, window get, window set
-&

@@ -1,4 +1,3 @@
-
 Name:
 colorcontrol set -- set the color in a colorcontrol
 
@@ -9,4 +8,3 @@ Description:
 Sets the color in the colorcontrol ColorControl$ to its RGB values r, g and b. Read the part on the draw set command to learn more about RGB color space in yab.
 
 Related: colorcontrol, colorcontrol get
-&

@@ -1,4 +1,3 @@
-
 Name:
 textedit clear -- delete all text of a textedit
 
@@ -9,4 +8,3 @@ Description:
 This command removes all text within a textedit named TextEdit$. This also works when the textedit is not editable by the user.
 
 Related: textedit, textedit add, textedit color, textedit get, textedit get$, textedit set
-&

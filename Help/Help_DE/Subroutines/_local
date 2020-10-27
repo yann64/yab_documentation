@@ -1,4 +1,3 @@
-
 Name:
 local -- mark a variable as local to a subroutine
 
@@ -40,5 +39,3 @@ As you may see, the content of the global variable a is unchanged after the subr
 
 
 Related: sub, static, dim
-
-&

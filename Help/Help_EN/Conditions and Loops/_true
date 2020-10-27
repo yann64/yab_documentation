@@ -1,4 +1,3 @@
-
 Name:
 true -- a constant with the value of 1
 
@@ -18,4 +17,3 @@ sub is_upper(a$)
 	return false 
 end sub 
 Related: false
-&

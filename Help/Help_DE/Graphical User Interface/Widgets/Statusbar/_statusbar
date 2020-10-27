@@ -1,4 +1,3 @@
-
 Name:
 statusbar -- create a progress or status bar
 
@@ -30,4 +29,3 @@ Explanation:
 The statusbar is put on top of the example window with the two labels "Start" and "End". Using the statusbar set command, the statusbar is updated regularly to the new calculated value i which is between 0 and 100. 
 
 Related: statusbar set
-&

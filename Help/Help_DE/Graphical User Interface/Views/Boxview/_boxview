@@ -1,4 +1,3 @@
-
 Name:
 boxview -- a boxview is view with a labeled border
 
@@ -33,4 +32,3 @@ Explanation:
 The example opens a window and sets up a boxview with the label "Hello Box" and a fancy border style (2).
 
 Related: view, view remove
-&

@@ -1,4 +1,3 @@
-
 Name:
 close -- close a file, which has been opened before
 
@@ -28,4 +27,3 @@ This program opens the file "my.data", reads a number from it, prints this numbe
 
 
 Related: open
-&

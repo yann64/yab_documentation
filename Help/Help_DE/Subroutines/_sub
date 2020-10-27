@@ -1,4 +1,3 @@
-
 Name:
 sub -- declare a user defined subroutine
 
@@ -45,5 +44,3 @@ This example is not the recommended way to compute prime numbers. However it giv
 
 
 Related: local, static, peek
-
-&System

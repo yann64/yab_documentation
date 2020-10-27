@@ -1,4 +1,3 @@
-
 Name:
 color -- print with color
 
@@ -33,4 +32,3 @@ This prints the word " Hallo " in all colors accross your screen.
 Start this program in a terminal. 
 
 Related: print, clear screen, at
-&

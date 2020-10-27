@@ -1,4 +1,3 @@
-
 Name:
 keyboard message$() -- check the keyboard for pressed buttons
 
@@ -30,4 +29,3 @@ Explanation:
 This simple example first sets the focus on the view that should get the keyboard messages. Whenever a key is pressed, and it is not similar to the pressed key before, we show a text message.
 
 Related: inkey$, mouse message$(), option set, shortcut
-&

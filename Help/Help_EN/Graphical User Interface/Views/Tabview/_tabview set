@@ -1,4 +1,3 @@
-
 Name:
 tabview set -- Chose the current tab
 
@@ -9,5 +8,3 @@ Description:
 Open the tab number TabNumber.
 
 Related: tabview tabview add, tabview get
-
-&View

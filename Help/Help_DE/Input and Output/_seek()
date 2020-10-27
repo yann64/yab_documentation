@@ -1,4 +1,3 @@
-
 Name:
 seek() -- change the position within an open file
 
@@ -44,5 +43,3 @@ This example increments randomly one of ten counters (in the array count()); how
 
 
 Related: tell, open, print, peek
-
-&

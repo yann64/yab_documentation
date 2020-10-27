@@ -1,4 +1,3 @@
-
 Name:
 at() -- can be used in the print-command to place the output at a specified position
 
@@ -29,5 +28,3 @@ This example plots a full period of the sine-function across the screen.
 Start this program in a terminal.
 
 Related: print, clear screen, color
-
-&

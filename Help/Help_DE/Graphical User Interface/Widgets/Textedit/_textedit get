@@ -1,4 +1,3 @@
-
 Name:
 textedit get -- retrieve various information from a textedit
 
@@ -43,4 +42,3 @@ Specifys the type of search and returns the linenumber that the search string is
 
 
 Related: textedit, textedit add, textedit clear, textedit color, textedit get$, textedit set
-&

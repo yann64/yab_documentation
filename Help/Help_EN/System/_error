@@ -1,4 +1,3 @@
-
 Name:
 error -- raise an error and terminate your program
 
@@ -19,7 +18,4 @@ The error message would look like this:
 
 ---Error in t.yab, line 2: Oh no ... 
 ---Error: Program stopped due to an error 
-
-
-
-&
+Related:

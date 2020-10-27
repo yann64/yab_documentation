@@ -1,4 +1,3 @@
-
 Name:
 text set -- set the alignment of a text widget
 
@@ -42,4 +41,3 @@ Explanation:
 This fun program changes the alignment of the text every half second. 
 
 Related: text
-&Textcontrol

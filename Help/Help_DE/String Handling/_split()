@@ -1,4 +1,3 @@
-
 Name:
 split() -- split a string into many strings
 
@@ -82,4 +81,3 @@ Please enter a line: -a==b-c==
 
 
 Related: token
-&

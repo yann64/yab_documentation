@@ -1,4 +1,3 @@
-
 Name:
 if -- evaluate a condition and execute statements or not, depending on the result
 
@@ -49,5 +48,3 @@ Explanation:
 The input-number between 1 and 4 is simply echoed as text (one, two, ...). The example demonstrates both forms (short and long) of the if-statement (Note however, that the same thing can be done, probably somewhat more elegant, with the switch-statement).
 
 Related: else, elsif, endif
-
-&

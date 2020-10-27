@@ -1,4 +1,3 @@
-
 Name:
 tooltip -- add a tooltip to a view or widget
 
@@ -39,4 +38,3 @@ Explanation:
 The example shows how easily a tooltip can be applied to any kind of widget. Here, to the button, the listbox, the slider and the window view itself too.
 
 Related: tooltip color
-&

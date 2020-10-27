@@ -1,4 +1,3 @@
-
 Name:
 textcontrol get$ -- get the text held by a textcontrol.
 
@@ -10,4 +9,3 @@ Description:
 Get the entry of the text control TextControl$. Even works, when Return was not pressed.
 
 Related: textcontrol, textcontrol clear, textcontrol set
-&

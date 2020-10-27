@@ -1,4 +1,3 @@
-
 Name:
 default -- mark the default-branch within a switch-statement
 
@@ -35,5 +34,3 @@ Explanation:
 
 
 Related: sub, case
-
-&

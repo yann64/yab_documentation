@@ -1,4 +1,3 @@
-
 Name:
 thread remove -- kill a running thread or team
 
@@ -20,4 +19,3 @@ Explanation:
 Save this example in the file kamikaze.yab and start it from the command line (not from the IDE). It first gets the ID from itself and then kills its own team. Thus the last print command is not executed anymore. This is a very unelegant way to exit.
 
 Related: thread get
-&

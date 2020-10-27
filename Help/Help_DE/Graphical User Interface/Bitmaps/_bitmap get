@@ -1,4 +1,3 @@
-
 Name:
 bitmap get -- get heitht/width information or insert an icon or portion of a bitmap or canvas view  to bitmap
 
@@ -90,5 +89,4 @@ Explanation:
 
 This program uses all forms of bitmap get and displays the output in a Window.
 
-Related: bitmap, bitmap color, bitmap image, bitmap remove, bitmap save, draw bitmap  
-&
+Related: bitmap, bitmap color, bitmap image, bitmap remove, bitmap save, draw bitmap

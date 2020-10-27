@@ -1,4 +1,3 @@
-
 Name:
 textcontrol -- Add a textcontrol to a view.
 
@@ -16,4 +15,3 @@ The textcontrol will return a message on invocation, ( by pressing tsb or enter 
 id$:text$
 
 Related: textcontrol clear, textcontrol get$, textcontrol set
-&

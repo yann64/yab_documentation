@@ -1,4 +1,3 @@
-
 Name:
 elsif -- starts an alternate condition within an if-statement
 
@@ -51,5 +50,3 @@ Explanation:
 
 
 Related: if, else
-
-&

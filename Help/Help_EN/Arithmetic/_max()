@@ -1,4 +1,3 @@
-
 Name:
 max() -- return the larger of its two arguments
 
@@ -27,5 +26,3 @@ Explanation:
   Now, the interesting question would be, which will be approached, when we increase the number of iterations from thousend to infinity. Well, maybe someone could just tell me :-)
 
 Related: min
-
-&

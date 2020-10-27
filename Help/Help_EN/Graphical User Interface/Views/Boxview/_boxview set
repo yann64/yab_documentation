@@ -1,4 +1,3 @@
-
 Name:
 boxview set -- set the label and boarder for a boxview
 
@@ -8,4 +7,3 @@ BOXVIEW SET  ID$, Option$, Value$
 Description:
 Option$ = "Label",  Value$ = new label
 Option$ = "Line",  Value$ = "0|1|2" no |simple | fancy border
-&

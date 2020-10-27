@@ -1,4 +1,3 @@
-
 Name:
 checkbox -- create a new checkbox
 
@@ -34,4 +33,3 @@ Explanation:
 Whenever the checkbox is selected or deselected, an alert window will tell you.
 
 Related: checkbox image, checkbox set, option set
-&

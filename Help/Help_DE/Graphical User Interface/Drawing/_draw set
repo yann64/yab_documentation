@@ -1,4 +1,3 @@
-
 Name:
 draw set -- set various drawing parameters
 
@@ -43,4 +42,3 @@ Example:
 Explanation:
 
 Related: draw circle, draw curve, draw dot, draw ellipse, draw get, draw get$, draw line, draw rect, draw text, view
-&

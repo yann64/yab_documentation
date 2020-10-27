@@ -1,4 +1,3 @@
-
 Name:
 clipboard copy -- copy a string to the clipboard
 
@@ -18,4 +17,3 @@ Explanation:
 The example will first display whatever is written in the clipboard (might be empty too), and then copies the string "Foo Bar" to the clipboard. Another output shows, it actually worked.
 
 Related: clipboard paste$
-&

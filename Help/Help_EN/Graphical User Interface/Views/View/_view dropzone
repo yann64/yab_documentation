@@ -1,4 +1,3 @@
-
 Name:
 view dropzone --  Definea view as a drop zone that accepts dropped files.
 
@@ -8,5 +7,5 @@ VIEW DROPZONE View$
 Description:
 Define View$ as a drop zone that accepts dropped files.
 DROPZONE accepts multiple files (and sends them in inversed order as message)
+
 Related: view
-&

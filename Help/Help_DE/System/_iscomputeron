@@ -1,4 +1,3 @@
-
 Name:
 iscomputeron -- tells you whether the computer is on
 
@@ -15,5 +14,3 @@ wend
 Explanation:
 
 Iscomputeron looks nice for endless loops.
-
-&

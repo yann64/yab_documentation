@@ -1,4 +1,3 @@
-
 Name:
 beep -- ring the bell within your computer; a synonym for bell
 
@@ -10,5 +9,5 @@ The beep-command rings the bell once. beep is a synonym for bell.
 
 Example:
 beep:print "This is a problem ..." 
+
 Related: bell
-&

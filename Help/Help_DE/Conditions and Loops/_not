@@ -1,4 +1,3 @@
-
 Name:
 not -- negate an expression; can be written as!
 
@@ -12,6 +11,5 @@ The keyword not (or ! for short) is mostly used within conditions (e.g. within i
 Example:
 input "Please enter three ascending numbers: " a,b,c 
 if (not (a<b and b<c)) error " the numbers you have entered are not ascending ..." 
-Related: and, or, xor, eor
 
-&
+Related: and, or, xor, eor

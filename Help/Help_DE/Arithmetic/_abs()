@@ -1,20 +1,17 @@
-
 Name:
-abs() -- returns the absolute value of its numeric argument
+abs () - gibt den absoluten Wert seines numerischen Arguments zurück
 
-Synopsis:
-y=abs(x)
+Zusammenfassung:
+y = abs (x)
 
-Description:
-If the argument of the abs-function is positive (e.g. 2) it is returned unchanged, if the argument is negative (e.g. -1) it is returned as a positive value (e.g. 1).
+Beschreibung:
+Wenn das Argument der abs-Funktion positiv ist (z. B. 2), wird es unverändert zurückgegeben, wenn das Argument negativ ist (z. B. -1), wird es als positiver Wert zurückgegeben (z. B. 1).
 
-Example:
-print abs(-2),abs(2)
-Explanation:
+Beispiel:
+print abs (-2), abs (2)
 
-  This example will print 2 2
+Erläuterung:
 
+  In diesem Beispiel wird 2 2 ausgegeben
 
-Related: sig
-
-&
+Verwandte: sig

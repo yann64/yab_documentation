@@ -1,4 +1,3 @@
-
 Name:
 printer setup -- setup the current printer
 
@@ -27,4 +26,3 @@ Explanation:
 The example shows a window with a menu. When printer setup is selected from this menu, the setup is called. If the user saves the config, it will be stored in the file named "ExamplePrinterConfig".
 
 Related: printer
-&Menus

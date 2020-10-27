@@ -1,4 +1,3 @@
-
 Name:
 attribute clear -- Deletes an attrinbute from a file.
 
@@ -10,4 +9,3 @@ Description:
 Delete the attribute Name$ from file Filename$.
 
 Related: attribute set, attribute get, attribute get$
-&

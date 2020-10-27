@@ -1,4 +1,3 @@
-
 Name:
 atan() -- returns the arcus tangens of its numeric argument
 
@@ -16,7 +15,4 @@ Explanation:
 
   This will print 0.785398 2.06823e-13 -3.14159 3.14159 which is pi/4, almost 0, -pi and pi respectively.
 
-
 Related: tan, sin
-
-&

@@ -1,4 +1,3 @@
-
 Name:
 calendar -- create a new calendar
 
@@ -32,4 +31,3 @@ Explanation:
 In this example, a calendar is set on the window with an American date format, month, day, year and the / as separator. When the window is closed, an alert window shows the selected date with calendar get$.
 
 Related: calendar get$, calendar set, date$, option set
-&

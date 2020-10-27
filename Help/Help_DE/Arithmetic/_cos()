@@ -1,4 +1,3 @@
-
 Name:
 cos() -- return the cosine of its single argument
 
@@ -16,5 +15,3 @@ Explanation:
 
 
 Related: acos, sin
-
-&

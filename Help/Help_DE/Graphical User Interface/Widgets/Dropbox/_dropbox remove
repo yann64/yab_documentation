@@ -1,4 +1,3 @@
-
 Name:
 dropbox remove -- removes an item from a  dropbox.
 
@@ -16,4 +15,3 @@ Note:
 Each time an item was removed, the drop box count will change as well!
 
 Related: dropbox , dropbox add, dropbox clear, dropbox count, dropbox get$, dropbox select
-&

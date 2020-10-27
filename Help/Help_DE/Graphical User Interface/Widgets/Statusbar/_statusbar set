@@ -1,4 +1,3 @@
-
 Name:
 statusbar -- set the value for a status bar
 
@@ -11,4 +10,3 @@ Use statusbar set to actually set the bar to a specific value. This value named 
 Have a look at the statusbar command for an example.
 
 Related: statusbar
-&

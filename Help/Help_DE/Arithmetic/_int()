@@ -1,4 +1,3 @@
-
 Name:
 int() -- return the integer part of its single numeric argument
 
@@ -15,6 +14,5 @@ if (a=int(a) and a>=1 and a<=10) then
 else 
 	print "Never mind ..." 
 endif 
-Related: frac
 
-&
+Related: frac

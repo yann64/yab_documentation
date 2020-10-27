@@ -1,21 +1,18 @@
-
 Name:
-and() -- the bitwise arithmetic and
+and () - die bitweise Arithmetik und
 
-Synopsis:
- x=and(a,b) 
+Zusammenfassung:
+ x = and (a, b)
 
-Description:
-Used to compute the bitwise and of both its argument. Both arguments are treated as binary numbers (i.e. a series of 0 and 1); a bit of the resultingvalue will then be 1, if both arguments have a 1 at this position in their binary representation.
-Note, that both arguments are silently converted to integer values and that negative numbers have their own binary representation and may leadto unexpected results when passed to and.
+Beschreibung:
+Wird verwendet, um das bitweise und beide Argumente zu berechnen. Beide Argumente werden als Binärzahlen behandelt (d. H. Eine Reihe von 0 und 1); Ein Bit des resultierenden Werts ist dann 1, wenn beide Argumente an dieser Position in ihrer binären Darstellung eine 1 haben.
+Beachten Sie, dass beide Argumente stillschweigend in ganzzahlige Werte konvertiert werden und dass negative Zahlen eine eigene binäre Darstellung haben und zu unerwarteten Ergebnissen führen können, wenn sie an und übergeben werden.
 
-Example:
-print and(6,3) 
-Explanation:
+Beispiel:
+print and (6,3)
+Erläuterung:
           
-  This will print 2. This result is clear, if you note, that the binary representation of 6 and 3 are 110 and 011 respectively; this will yield 010 in binary representaion or 2 as decimal.
+  Dies gibt 2 aus. Dieses Ergebnis ist klar, wenn Sie feststellen, dass die binäre Darstellung von 6 und 3 110 bzw. 011 ist; Dies ergibt 010 in binärer Darstellung oder 2 als Dezimalzahl.
 
 
-Related: or, eor, xor, not
-
-&
+Verwandte: or, eor, xor, not

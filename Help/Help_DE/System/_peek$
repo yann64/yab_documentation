@@ -1,4 +1,3 @@
-
 Name:
 peek$ -- retrieve internal string-information
 
@@ -51,5 +50,3 @@ If you save this program in a file foo.yab and execute it via yab t.yab a b c, y
 1c 
 
 Related: peek, poke, open
-
-&

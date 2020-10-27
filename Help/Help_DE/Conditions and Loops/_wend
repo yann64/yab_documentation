@@ -1,4 +1,3 @@
-
 Name:
 wend -- end a while-loop
 
@@ -24,4 +23,3 @@ Explanation:
 This example reads a sentence and converts every occurence of the letter e into uppercase (E).
 
 Related: while
-&

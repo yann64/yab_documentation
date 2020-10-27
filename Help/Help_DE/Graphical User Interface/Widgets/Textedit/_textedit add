@@ -1,4 +1,3 @@
-
 Name:
 textedit add -- add text to a textedit
 
@@ -10,4 +9,3 @@ Adds ( appends ) Text$ to textedit TextEdit$.
 This command works when the textedit is not editable by the user.
 
 Related: textedit, textedit clear, textedit color, textedit get, textedit get$, textedit set
-&

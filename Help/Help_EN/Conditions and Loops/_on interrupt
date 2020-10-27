@@ -1,4 +1,3 @@
-
 Name:
 on interrupt -- change reaction on keyboard interrupts
 
@@ -25,5 +24,4 @@ Explanation:
 
 This program writes a file with 100 random numbers. The on interrupt continue command insures, that the program will not be terminated on a keyboard interrupt and the file will be written entirely in any case. The sleep-command just stretches the process arificially to give you a chance to try a ctrl-C.
 
-
-&
+Related:

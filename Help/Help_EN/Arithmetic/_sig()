@@ -1,4 +1,3 @@
-
 Name:
 sig() -- return the sign of its argument
 
@@ -25,5 +24,3 @@ Explanation:
 
 
 Related: abs, int, frac
-
-&

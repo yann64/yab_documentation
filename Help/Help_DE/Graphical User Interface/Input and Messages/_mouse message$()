@@ -1,4 +1,3 @@
-
 Name:
 mouse message$() -- check the mouse for its position and the state of the buttons
 
@@ -47,4 +46,3 @@ This example lets you drag a rectangle with the mouse. It gets the current posit
 
 
 Related: ismousein(), keyboard message$(), mouse message$, mouse set
-&

@@ -1,4 +1,3 @@
-
 Name:
 trim$() -- remove leading and trailing spaces from its argument
 
@@ -20,4 +19,3 @@ This example asks for an answer (yes or no) and removes spaces with trim$ to mak
 
 
 Related: ltrim$, rtrim$
-&

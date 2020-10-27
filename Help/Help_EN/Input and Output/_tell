@@ -1,4 +1,3 @@
-
 Name:
 tell -- get the current position within an open file
 
@@ -25,5 +24,3 @@ This example (mis)uses tell to get the size of the file. The seek positions the 
 
 
 Related: tell, open
-
-&

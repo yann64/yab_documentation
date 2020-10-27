@@ -1,4 +1,3 @@
-
 Name:
 asin() -- returns the arcus sine of its numeric argument
 
@@ -16,5 +15,3 @@ Explanation:
 
 
 Related: sin, acos
-
-&

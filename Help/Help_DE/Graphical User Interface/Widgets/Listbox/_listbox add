@@ -1,4 +1,3 @@
-
 Name:
 listbox add -- add an item to a listbox
 
@@ -12,4 +11,3 @@ This command adds a string here named Item$ to the listbox with the ID ListBox$.
 Have a look at the listbox command for an example.
 
 Related: listbox, listbox clear, listbox count, listbox get, listbox get$, listbox remove, listbox select, listbox sort
-&

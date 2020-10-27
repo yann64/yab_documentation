@@ -1,4 +1,3 @@
-
 Name:
 or() -- arithmetic or, used for bit-operations
 
@@ -16,5 +15,3 @@ Explanation:
   This will print 15. This result is clear, if you note, that the binary representation of 14 and 3 are 1110 and 0011 respectively; this will yield 1111 in binary representaion or 15 as decimal.
 
 Related: and, eor, xor, not
-
-&

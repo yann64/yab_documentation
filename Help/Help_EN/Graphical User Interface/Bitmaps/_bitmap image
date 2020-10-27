@@ -1,4 +1,3 @@
-
 Name:
 bitmap image -- copies an image file to a bitmap.
 
@@ -10,5 +9,3 @@ Explanation:
 Load image file ImageFIle$ into a new Bitmap called Bitmap$
 
 Related: bitmap, bitmap color, bitmap get, bitmap remove, bitmap save, draw bitmap
-
-&

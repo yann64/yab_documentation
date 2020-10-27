@@ -1,4 +1,3 @@
-
 Name:
 mouse message$ --  Returns the state of the mouse related to the application.
   
@@ -12,4 +11,3 @@ This command is somewhat a duplicate to mouse message$(). However, it does not r
 The mouse string has the format  VIEW:X:Y:LMB:MMB:RMB  where VIEW is the View$ the mouse is over, MB is the corresponding left, middle, right mousebutton. X and Y are relative to the VIEW returned.
 
 Related: ismousein(), mouse message$(), mouse set
-&

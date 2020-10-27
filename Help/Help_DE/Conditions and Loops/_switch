@@ -1,4 +1,3 @@
-
 Name:
 switch -- select one of many alternatives depending on a value
 
@@ -39,5 +38,3 @@ This example translates a single digit into a string; note, how the cases 5 to 7
 
 
 Related: switch, case, break
-
-&

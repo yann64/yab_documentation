@@ -1,4 +1,3 @@
-
 Name:
 thread get -- get the thread identification for a team or program
 
@@ -24,4 +23,3 @@ Explanation:
 The first statement prints the team ID number of the first yab program running. The second statement prints the first thread ID of the first yab program running. Note: The team ID takes the whole path while the thread ID only takes the program name.
 
 Related: thread remove
-&

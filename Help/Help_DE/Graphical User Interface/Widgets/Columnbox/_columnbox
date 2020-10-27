@@ -1,4 +1,3 @@
-
 Name:
 columnbox -- create a list widget with columns
 
@@ -85,4 +84,3 @@ Several colors are set to personalize our columnbox a bit and the second row is 
 In the message loop we check for the "_Select" and the "_Invoke" messages of the columnbox. When a row is selected, e.g. by clicking on it once, we first obtain the row where the click happened with columnbox get (this can also be obtain from the message itself using the right$ and val commands). Then the item string itself is retrieved with the columnbox get$ command.
 
 Related: columnbox add, columnbox clear, columnbox column, columnbox count, columnbox get, columnbox get$, columnbox remove, columnbox select
-&

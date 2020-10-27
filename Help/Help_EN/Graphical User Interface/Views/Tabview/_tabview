@@ -1,4 +1,3 @@
-
 Name:
 tabview -- Open a tabview and chose top/bottom/left/right for the tabs
 
@@ -10,4 +9,3 @@ Open a tabview and chose top/bottom for the tabs:
 Option$ = "top, bottom,left,right" where to place the tabs.
 
 Related: splitview, stackview
-&

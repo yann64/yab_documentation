@@ -1,4 +1,3 @@
-
 Name:
 on goto -- jump to one of multiple gosub-targets
 
@@ -50,5 +49,3 @@ Explanation:
 Note, how invalid input (a number less than 1, or larger than 3) is automatically detected.
 
 Related: goto, on gosub
-
-&

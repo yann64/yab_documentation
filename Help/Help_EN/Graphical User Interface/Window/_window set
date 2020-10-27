@@ -1,4 +1,3 @@
-
 Name:
 window set -- set the properties of a window
 
@@ -85,4 +84,3 @@ A small demo window is opened with the floating look and feel. It can only be re
 
 Related:
 window open, window close, window count, window get
-&

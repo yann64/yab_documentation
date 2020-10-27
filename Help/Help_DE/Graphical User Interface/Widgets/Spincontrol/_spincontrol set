@@ -1,4 +1,3 @@
-
 Name:
 spincontrol set -- set the spincontrol to a value
 
@@ -9,4 +8,3 @@ Description:
 Sets the spin control SpinControl$ to value Value.
 
 Related: spincontrol, spincontrol get
-&

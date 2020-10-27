@@ -1,4 +1,3 @@
-
 Name:
 upper$() -- convert a string to upper case
 
@@ -25,4 +24,3 @@ This program asks for a sentence and marks the first (if any) occurence of the l
 
 
 Related: lower$
-&

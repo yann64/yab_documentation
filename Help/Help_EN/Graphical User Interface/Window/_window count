@@ -1,4 +1,3 @@
-
 Name:
 window count -- return the number of open windows
 
@@ -27,4 +26,3 @@ This funky program first opens ten windows and then closes them using the window
 
 Related:
 window open, window close, window get, window set
-&

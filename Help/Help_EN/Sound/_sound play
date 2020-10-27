@@ -1,4 +1,3 @@
-
 Name:
 sound play -- play a sound file
 
@@ -20,4 +19,3 @@ Explanation:
 This loads the file "bach.mp3" and then waits forever (use Ctrl-C or Break to end the program).
 
 Related: sound stop, sound wait
-&

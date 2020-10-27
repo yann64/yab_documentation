@@ -1,4 +1,3 @@
-
 Name:
 ismousein() -- reports whether the mouse is currently in a view
 
@@ -19,5 +18,3 @@ After opening the window named "Example", this program checks if the mouse is cu
 
 
 Related: mouse message$(), mouse message$, mouse set
-
-&

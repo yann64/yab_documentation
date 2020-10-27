@@ -1,4 +1,3 @@
-
 Name:
 execute$() -- execute a user defined subroutine, which must return a string
 
@@ -25,5 +24,3 @@ print foo$(a$,b$)
 
 
 Related: compile, execute
-
-&

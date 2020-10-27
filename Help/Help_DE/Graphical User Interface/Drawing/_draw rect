@@ -1,4 +1,3 @@
-
 Name:
 draw rect -- draw a rectangle
 
@@ -21,4 +20,3 @@ Explanation:
 Display a rectangle.
 
 Related: draw circle, draw curve, draw dot, draw ellipse, draw flush, draw line, draw set
-&

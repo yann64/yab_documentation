@@ -1,5 +1,5 @@
-
-Name: splitview get --  Get the current position of the divider
+Name: 
+splitview get --  Get the current position of the divider
 
 Synopsis:
 Position = SPLITVIEW GET SplitView$, "Divider"
@@ -8,5 +8,3 @@ Description:
 Get the current position of the divider.
 
 Related: splitview, splitview set
-
-&

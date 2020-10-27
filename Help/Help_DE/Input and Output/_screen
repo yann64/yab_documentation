@@ -1,4 +1,3 @@
-
 Name:
 screen -- as clear screen clears the text window
 
@@ -14,5 +13,3 @@ Description:
 The keyword screen appears only within the sequence clear screen; please see there for a description.
 
 Related: clear screen
-
-&

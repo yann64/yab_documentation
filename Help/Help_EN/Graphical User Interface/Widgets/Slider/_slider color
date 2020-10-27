@@ -1,4 +1,3 @@
-
 Name:
 slider color -- set the colors for a slider
 
@@ -11,4 +10,3 @@ Part$ = "barcolor" -- The color to the left or bottom, representing the slider's
 Part$ = "fillcolor" -- The color to the right or top, representing the remainder of the posible slider value.  
 
 Related: slider, slider get, slider label, slider set
-&

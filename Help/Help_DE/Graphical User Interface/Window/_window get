@@ -1,10 +1,10 @@
 Name:
-window get --Informationabfrage ueber von einem Fenster
+window get -- request information about a window
 
 Synopsis:
 Result = WINDOW GET WindowID$, Option$
 
-Beschreibung:
+Description:
 To obtain some properties of the window with the ID WindowID$, the following options are allowed:
 
 Option$ = "Position-X" -- Result will contain the horizontal position of the upper left corner of the window relative to the screen

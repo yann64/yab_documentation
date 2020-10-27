@@ -1,4 +1,3 @@
-
 Name:
 using -- Specify the format for printing a number
 
@@ -21,5 +20,3 @@ This example prints a column of square roots of random number, nicely aligned at
 
 
 Related: print, str$
-
-&

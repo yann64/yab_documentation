@@ -1,4 +1,3 @@
-
 Name:
 pause -- pause, sleep, wait for the specified number of seconds
 
@@ -28,5 +27,3 @@ This example draws a sine-curve; due to the pause-statement the speed of drawing
 
 
 Related: sleep, wait
-
-&

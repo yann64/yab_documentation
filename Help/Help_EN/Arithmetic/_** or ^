@@ -13,4 +13,5 @@ On the other hand, the second argument can be fractional, if the first one ist p
 
 Example:
 print 2**0.5 
+
 Related: sqrt

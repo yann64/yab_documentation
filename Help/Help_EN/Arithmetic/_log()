@@ -1,4 +1,3 @@
-
 Name:
 log() -- compute the natural logarithm
 
@@ -28,5 +27,3 @@ Explanation:
 
 
 Related: exp
-
-&

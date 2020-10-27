@@ -1,4 +1,3 @@
-
 Name:
 treebox sort -- Sort the treebox.
 
@@ -10,6 +9,3 @@ Sorts the entries of TreeBox$ alphabetically.
 
 
 Related: treebox, treebox add, treebox clear, treebox collapse, treebox count, treebox expand, treebox get$, treebox remove, treebox select
-
-
-&Localization

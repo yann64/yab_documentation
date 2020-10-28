@@ -114,7 +114,12 @@ i=0
 		treebox add name_baummenu$, d$(treezeilen), entry_tree$,false	
 	elseif (d$(treezeilen+3)="") then
 		if(instr(d$(treezeilen+2),"_")) then
-			entry_tree$=mid$(d$(treezeilen+2),2)
+			if (mid$(d$(treezeilen+2),2)="chr$(47)chr$(47)")then
+				entry_tree$="//"
+			//print mid$(d$(treezeilen+2),2)
+			else
+				entry_tree$=mid$(d$(treezeilen+2),2)
+			endif
 		else
 			entry_tree$=d$(treezeilen+2)
 		endif

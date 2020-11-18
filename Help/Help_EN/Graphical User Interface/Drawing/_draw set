@@ -28,17 +28,31 @@ if Pattern$ = "CheckeredFill" checkered fill is used as a combination of low- an
 otherwise Pattern$ is a 8x8 1bit map where one line is one character which is written out as its ASCII code.
 Use the pattern editor to draw and calculate patterns for your convenience.
 
-Draw set with a parameter Font$ sets the font for Target$. The Font$ consists of the font family, the font style and the font size separated with commas. E.g. the following is a valid font string:
-Font$ = "Zurich, Roman, 25"
-Note: Use the correct spelling of the font families and styles keeping existing spaces; they are case sensitive too.
-Three special Font$ are available, namely the system fonts:
-If Font$ = "system-plain", the plain system font is used (default),
-if Font$ = "system-fixed", the fixed-sized system font is used,
-if Font$ = "system-bold", the bold system font is used.
-See the command draw get$ for more information about font families and styles.
+DRAW SET Font$, View$
+  Set the drawing font on View$.
+  Font$ = FontFamily$ + "," + FontStyle$ + "," + Size + "," + FontOption$ + "," Rotation + "," + Shear
+    where FontOption$ can contain the following options (only used when supported by the font):
+    FontOption$ = "bold" or "italic" or "outlined" or "underscore" or "strikeout" or "regular" (regular is default)
+    where Rotation is between 0.0 (default) and 360.0
+    where Shear is between 45.0 (slanted to right) and 135.0 (slanted to left) with 90.0 default
+      
+  or Font$ = "system-plain" for the plain system font,
+  or Font$ = "system-bold" for the bold system font,
+  or Font$ = "system-fixed" for the fixed system font
 
 Example:
-"127191223239215187109214"
+	REM Define the Font Family, Style, Size and the FontOption, Rotation, Shear
+	FontFamily$ = "Noto Sans Display" 
+	FontStyle$ = "Regular" 
+	Size$="12"
+	FontOption$="bold"
+	Rotation$ = "90"
+	Shear$="90"	
+	Font$=FontFamily$ + "," + FontStyle$ + "," + Size$ + "," + FontOption$ + "," +Rotation$+ "," + Shear$
+	DRAW SET  Font$ , View$ 
+	DRAW TEXT 100,100 ,"This is the TEXT" ,View$
 Explanation:
+	This Example draws the text < "This is the TEXT" > on position 100,100 on the View View$. The text will be Rotated 90 degrees to the  	
+	left. 
 
 Related: draw circle, draw curve, draw dot, draw ellipse, draw get, draw get$, draw line, draw rect, draw text, view

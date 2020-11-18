@@ -1,0 +1,379 @@
+#!/bin/yab
+StartWindow()
+About()
+main()
+sub main()
+
+	dim part$(1)
+	inloop = true
+	while(inloop)
+
+		msg$ = message$
+
+		if (split(msg$, part$(), ":|") > 2) then
+			PartTwo$ = part$(2)
+			PartThree$ = part$(3)
+	         fi
+
+		if (msg$ <> "") print msg$
+			switch msg$
+
+				case Start_FensterName$+":_QuitRequested|"
+					window close Start_FensterName$
+				break
+				case Start_FensterName$+"1:Program:Quit|"
+				case Start_FensterName$+"1:Programm:Beenden|"
+					window close Start_FensterName$
+				break				
+				case Start_FensterName$+"1:Program:About|"
+				case Start_FensterName$+"1:Programm:Über|"
+					about()
+				break	
+				case "close|"
+					Stackview set "STV",1
+				break
+				case "Languages:"+PartTwo$+"|"
+					helpfile$=helpdir2$+"/"+PartTwo$
+					baummenu(helpfile$)
+				break
+				case "Help_EN:_Select:"+PartThree$+"|"
+					entrynumber=val(PartThree$)
+					print entrynumber
+					Item$ = TREEBOX GET$ "Help_EN", entrynumber
+					print Item$ 
+				   	right_side(entrynumber)			
+				break
+				case "Info|"
+					stackview set "STV",2
+				break
+				default:
+
+			end switch
+			if(window count<1) inloop = false
+		    sleep 0.1
+	wend
+end sub	
+sub baummenu(helpfile$)
+
+x=0
+i=0
+	auslesen=open(helpfile$, "r")
+	while (not EOF(auslesen))
+		line input #auslesen b$
+		dim elements$(1)
+		b$=mid$(b$,1)
+		numElements = split(b$, elements$(),"|")
+		for i = 1 to numElements
+			x=x+1		
+			dim d$(x)
+			d$(x) = elements$(i)
+			//print d$(x)
+		next i
+	wend
+	close(auslesen)
+	//name_baummenu$=d$(1)
+	
+	
+	 treebox clear name_baummenu$
+	TexteditHelp_x=VIEW GET "ViewBox","Width"
+	TexteditHelp_y=VIEW GET "ViewBox","Height"
+	TEXTEDIT 10,10 TO TexteditHelp_x-10,TexteditHelp_y-25, "Information", 3, "ViewBox"
+	TEXTEDIT SET "Information", "wordwrap", true
+	TEXTEDIT SET "Information", "editable", false
+	TEXTEDIT SET "Information", "autoindent", false
+	//TEXTEDIT COLOR "Information", "color1, color2, color3, color4, char-color", Command$
+	TEXTEDIT COLOR "Information","bgcolor",255,255,255 //(white)
+    	TEXTEDIT COLOR "Information"," textcolor", 0,0,0 //(black)
+     	TEXTEDIT COLOR "Information","color1",0,0,255 //(blue)
+     	TEXTEDIT COLOR "Information","color2",255,0,0// (red)
+     	TEXTEDIT COLOR "Information","color3",0,175,0// (green)
+    	TEXTEDIT COLOR "Information","color4",185,185,185 //(gray)
+    	TEXTEDIT COLOR "Information"," char-color",200,0,255// (magenta)
+    	farben()
+	textedit color "Information", "color1", "Name:"
+	textedit color "Information", "color1", "Synopsis:"
+	textedit color "Information", "color1", "Description:"
+	textedit color "Information", "color1", "Example:"
+	textedit color "Information", "color1", "Design:"
+	textedit color "Information", "color1", "Layout:"
+	textedit color "Information", "color1", "Message:"
+	textedit color "Information", "color1", "Related:"
+ 	anzahlspalten=numElements
+	anzahlzeilen=x/anzahlspalten
+	eintraege=anzahlspalten*anzahlzeilen
+	for treezeilen=1 to anzahlzeilen*anzahlspalten step anzahlspalten
+	//print len(d$(treezeilen+4))
+	if (d$(treezeilen+1)="") then
+		treebox add name_baummenu$, d$(treezeilen)			
+	elseif (d$(treezeilen+2)="") then
+		if(instr(d$(treezeilen+1),"_")) then
+			entry_tree$=mid$(d$(treezeilen+1),2)
+		else
+			entry_tree$=d$(treezeilen+1)
+		endif
+		treebox add name_baummenu$, d$(treezeilen), entry_tree$,false	
+	elseif (d$(treezeilen+3)="") then
+		if(instr(d$(treezeilen+2),"_")) then
+			if (mid$(d$(treezeilen+2),2)="chr$(47)chr$(47)")then
+				entry_tree$="//"
+			//print mid$(d$(treezeilen+2),2)
+			else
+				entry_tree$=mid$(d$(treezeilen+2),2)
+			endif
+		else
+			entry_tree$=d$(treezeilen+2)
+		endif
+		treebox add name_baummenu$, d$(treezeilen+1), entry_tree$,false
+	elseif (d$(treezeilen+4)="") then
+		if(instr(d$(treezeilen+3),"_")) then
+			entry_tree$=mid$(d$(treezeilen+3),2)
+		else
+			entry_tree$=d$(treezeilen+3)
+		endif
+		treebox add name_baummenu$, d$(treezeilen+2), entry_tree$,false		
+	elseif (len(d$(treezeilen+4))>0) then
+		if(instr(d$(treezeilen+4),"_")) then
+			entry_tree$=mid$(d$(treezeilen+4),2)
+		else
+			entry_tree$=d$(treezeilen+4)
+		endif
+		treebox add name_baummenu$, d$(treezeilen+3),entry_tree$,false
+	//elseif (len(d$(treezeilen+5))>0) then
+	//	treebox add name_baummenu$, d$(treezeilen+4), mid$(d$(treezeilen+5),2),false						
+	endif
+	
+	next treezeilen
+end sub
+
+sub right_side(entrynumber)
+	TEXTEDIT CLEAR "Information"
+	box_header$ = TREEBOX GET$ "Help_EN", entrynumber
+	
+	fileload$=d$(entrynumber*6)
+	handleA=open(fileload$, "r")
+	while (not EOF(handleA))
+		line input #handleA information$
+		information$=information$+"\n"
+		TEXTEDIT ADD "Information",information$
+		boxview SET "ViewBox", "Label", box_header$
+	wend
+	close(auslesen)
+end sub
+// draw a sort of 3D line
+sub MyLine(x1,y1,x2,y2,View$)
+	//print View$
+	draw set "highcolor", 185,185,185, View$
+	draw line x1,y1 to x2,y2, View$
+	draw set "highcolor", 239,239,239, View$
+	if(x1=x2) then
+		draw line x1+1,y1 to x2+1,y2, View$
+	else
+		draw line x1,y1+1 to x2,y2+1, View$
+	endif
+	draw set "highcolor", 0,0,0, View$
+	return
+end sub
+
+
+sub Header(headerText$, window$, size)
+	local w
+	local head$
+
+	head$ = window$+"Header"
+	layout "none", window$
+	view 0,0 to size,40, head$, window$
+	draw set "bgcolor", 230,230,255, head$
+	draw set "lowcolor", 230,230,255, head$
+	if(peek$("os") = "Haiku") then
+		draw set "Noto Sans Display, Bold, 18", head$
+	else
+		draw set "Swis721 BT, Bold, 18", head$
+	endif
+	draw set "highcolor", 0,0,0, head$
+	w = draw get "Text-width", headerText$, head$
+	draw text size-w-10,25, headerText$, head$
+	draw set "highcolor", 239,239,239, head$
+	draw line 0,40 to size,40, head$
+	draw set "highcolor", 185,185,185, head$
+	draw line 0,39 to size,39, head$
+	return
+end sub
+Sub StartWindow()
+REM ######Fenteraufbau######
+
+	screenWidth = peek("desktopwidth")
+	screenHeight = peek("desktopheight")
+	WindowSize_x=800
+	WindowSize_y=600
+	
+	ProgrammName$="BeSly yab Documentation"	
+	Start_FensterName$="BeSly-yab-Docu"
+	NameView$="Programme"
+	Stackview$="STV"
+		
+	window open ((screenWidth/2)-(WindowSize_x/2)), ((screenHeight/2)-(WindowSize_y/2)) to ((screenWidth/2)+(WindowSize_x/2)), ((screenHeight/2)+(WindowSize_y/2)), Start_FensterName$,ProgrammName$
+	window set  Start_FensterName$, "MinimumTo", WindowSize_x,WindowSize_y
+	window set  Start_FensterName$, "MaximumTo", WindowSize_x,WindowSize_y
+	
+	
+	Header(ProgrammName$, Start_FensterName$, WindowSize_x)
+	Footer("BeSly Software Solutions", Start_FensterName$, WindowSize_x)
+	
+	STACKVIEW 0,40 TO WindowSize_x,WindowSize_y-40, Stackview$, 2, Start_FensterName$
+	STV_y = VIEW GET "STV1", "Height"
+	STV_x = VIEW GET "STV1", "Width"
+
+	//helpfile
+	directory$="/boot/system/documentation/yab"
+	
+	helpdir$=directory$+"/Help"
+	helpdir2$=directory$+"/data"
+	//directory$="/Share/Projekte/c/yab"
+	//helpdir$=directory$+"/yab_documentation/Help"
+	//helpdir2$=directory$+"/yab_documentation/data"
+	
+	ViewHelp_x= VIEW GET Stackview$+"1","Width"
+	ViewHelp_y= VIEW GET Stackview$+"1","Height"	
+		
+	Boxview (ViewHelp_x/2)-180,5 to ViewHelp_x-15, ViewHelp_y-15,"ViewBox", "YAB-HELP", 2,Stackview$+"1"
+	dropbox 9,10 to  (ViewHelp_x/2)-91,40,"Languages","", Stackview$+"1"
+	readdir_languages()
+	//print Item$
+	helpfile$=helpdir2$+"/"+Item$
+	name_baummenu$=Item$
+	treebox 10,50 to (ViewHelp_x/2)-200,ViewHelp_y-15, name_baummenu$, 3, Stackview$+"1"
+	//Treebox will be generated in sub baummenu
+	baummenu(helpfile$)
+	
+	
+					
+End sub
+sub Footer(footerText$, window$, size)
+	local w
+	local footer$
+	//y=WINDOW GET window$, "Height"
+	//print y
+	footer$ = window$+"Footer"
+	layout "none", window$
+	view 0, 560 to size, 600, footer$, window$
+	draw set "bgcolor", 230,230,255, footer$
+	draw set "lowcolor", 230,230,255, footer$
+	if(peek$("os") = "Haiku") then
+		draw set "Noto Sans Display, 18", footer$
+		
+	else
+		draw set "Swis721 BT, 18", footer$
+	endif
+	draw set "highcolor", 0,0,0, footer$
+	w = draw get "Text-width", footerText$, footer$
+	//draw text 10,25, footerText$, footer$
+	draw text 10,25, "Copyright:", footer$
+	TEXTURL 70,15, "url", footerText$, "http://software.besly.de", footer$
+	draw set "highcolor", 239,239,239, footer$
+	draw line 0,1 to size,1, footer$
+	draw set "highcolor", 185,185,185, footer$
+	draw line 0,0 to size,0, footer$
+	button size-50,10 to size-10,30, "Info", "Info", footer$
+	return
+end sub
+sub About()
+	STV2_y = VIEW GET "STV2", "Height"
+	STV2_x = VIEW GET "STV2", "Width"
+	View 0,0 to STV2_x, STV2_y, "View_About", "STV2" //Start_FensterName$
+	STV2_y = VIEW GET "View_About", "Height"
+	STV2_x = VIEW GET "View_About", "Width"
+  	DRAW TEXT 10,30, "BeSly Software Solutions", "View_About"
+  	//DRAW LINE 0,40 TO View_breite_box,41, "View_About" 
+  	 	  	
+  	DRAW TEXT 10,60, "Name:", "View_About"
+  	DRAW TEXT 10,80, "Version / Build:", "View_About"
+  	DRAW TEXT 10,100, "Version Status:", "View_About"
+  	DRAW TEXT 10,120, "Developers:", "View_About"  
+  	DRAW TEXT 10,140, "Contact:", "View_About"
+  	DRAW TEXT 10,160, "Website:", "View_About"
+  	DRAW TEXT 10,180, "Bug-Reporting:", "View_About"	
+   	
+   	DRAW TEXT 150,60, ProgrammName$, "View_About"
+  	DRAW TEXT 150,80, "0.0.1/ 31.10.2020", "View_About"
+  	DRAW TEXT 150,100, "Alpha", "View_About"
+  	DRAW TEXT 150,120, "Lorglas", "View_About"
+  	DRAW SET "system-plain,regular,16,regular,0,45" ,"View_About"
+  	TEXTURL 150,131, "email", "webmaster@besly.de", "webmaster@besly.de", "View_About"  	
+  	TEXTURL 150,151, "website", "http://software.besly.de", "http://software.besly.de", "View_About"   	
+  	//TEXTURL 150,167, "Bug-Report", "http://trac.besly.de", "http://trac.besly.de", "View_About" 
+  	
+  	TEXTEDIT 10,200 TO STV2_x-10, STV2_y-40, "not_implemented", 0, "View_About"
+  	TEXTEDIT SET "not_implemented", "bold", "12"
+  	textedit add "not_implemented", "New in this Revision:\n"
+  	TEXTEDIT SET "not_implemented", "plain", "12"
+  	//textedit add "not_implemented", "Brightness Slider under Colorcontrol\n"
+  	//textedit add "not_implemented", "New in this Revision:\n"
+  	TEXTEDIT SET "not_implemented", "editable", false
+	button (STV2_x/2)-50, STV2_y-30 to (STV2_x/2)+50, STV2_y-10, "close", "Close",  "View_About"	
+end sub
+sub farben()
+handle = open("data/color1")
+		if(handle) then
+			while(not eof(handle))
+				line input #handle tmp$
+				textedit color "Information", "color1", tmp$
+			wend
+			close(handle)
+		endif
+		handle = open("data/color2")
+		if(handle) then
+			while(not eof(handle))
+				line input #handle tmp$
+				textedit color "Information", "color2", tmp$
+			wend
+			close(handle)
+		endif
+		handle = open("data/color3")
+		if(handle) then
+			while(not eof(handle))
+				line input #handle tmp$
+				textedit color "Information", "color3", tmp$
+			wend
+			close(handle)
+		endif
+		handle = open("data/color4")
+		if(handle) then
+			while(not eof(handle))
+				line input #handle tmp$
+				textedit color "Information", "color4", tmp$
+			wend
+			close(handle)
+		endif
+		handle = open("data/color5")
+		if(handle) then
+			while(not eof(handle))
+				line input #handle tmp$
+				textedit color "Information", "char-color", tmp$
+			wend
+			close(handle)
+		endif
+end sub
+sub readdir_languages()	
+	DROPBOX CLEAR "Languages"	
+	output$=system$("ls -Q1 "+helpdir$)
+	dim elements$(1)
+	numElements = split(output$, elements$(),"\n")
+	for i = 1 to numElements-1
+		//check if Helpfile available
+		filename$=mid$(elements$(i),2,len(elements$(i))-2)
+		if(IfExists(filename$))then	
+			DROPBOX ADD "Languages", mid$(elements$(i),2,len(elements$(i))-2)
+			if (mid$(elements$(i),2,len(elements$(i))-2)="Help_EN")then			
+				DROPBOX SELECT "Languages", i
+				Item$ = DROPBOX GET$ "Languages", i			
+			endif
+		else
+			//DROPBOX ADD "Languages", mid$(elements$(i),2,len(elements$(i))-2)
+			//OPTION SET "Languages", "Enabled", false 
+		endif
+	next i		
+end sub
+sub IfExists(filename$) //27.02.2014
+	print "filename$: "+filename$
+     return not system("test -e \""+helpdir2$+"/"+filename$+"\"")
+end sub

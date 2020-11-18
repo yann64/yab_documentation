@@ -29,9 +29,9 @@ Z:
 Expressions used by Yabasic that should not be used as any variable:
 
 argument 	| arraysize | at 			| backspace 	| cc 			| cb 			| circledate$ 	| debug 
-del 			| down 	 | end 		| enter 	   	| error 		| esc			| fatal 		|fontheight 
+del 			| down 	 | end 		| enter 	   	| error 		| esc			| fatal 		| fontheight 
 f1...f12 		| home 	 | infolevel	| ins 	   		| interrupt 	| left 		| library 		| lower$ 
-main 		| maxnum | note 		| new curve 	| numparams 	| on 			| origin 		|os 
+main 		| maxnum | note 		| new curve 	| numparams 	| on 			| origin 		| os 
 pi 			| printer	 | rc 			| rightscreen 	| screenheight  | screenwidth 	| scrdown		| scrup 
 static 		| tab 	 | textalign 	|time$ 		| up			| upper$		| version		| warning
 window

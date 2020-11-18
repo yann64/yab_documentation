@@ -2,8 +2,8 @@ Name:
 dim -- create an array prior to its first use
 
 Synopsis: 
-dim array(x,y) 
-dim array$(x,y) 
+dim array(d,e) 
+dim array$(d,e) 
 
 Description:
 The dim-command prepares one or more arrays (of either strings or numbers) for later use. This command can also be used to enlarges an existing array.
@@ -19,7 +19,7 @@ Example:
 dim a(5,5) 
 for x=1 to 5
 	for y=1 to 5 
-		a(x,y)=int(ran(100)) 
+		a(d,e)=int(ran(100)) 
 	y
 next x 
 printmatrix(a()) 

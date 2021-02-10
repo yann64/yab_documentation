@@ -43,6 +43,7 @@ do
 	next a 
 	print 
 loop 
+
 Explanation:
 
 This program prints the following output:
@@ -77,7 +78,5 @@ Please enter a line: a--b-
 
 Please enter a line: -a==b-c== 
 7 Tokens: (EMPTY),a,(EMPTY),b,c,(EMPTY),(EMPTY) 
-
-
 
 Related: token

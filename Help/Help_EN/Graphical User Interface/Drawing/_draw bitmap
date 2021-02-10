@@ -25,3 +25,5 @@ Possible Mode$:
 
 "Copy" -- copy the bitmap to the target ignoring transparency
 "Alpha" -- copy the bitmap to the target supporting transparency
+
+Related:

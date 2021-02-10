@@ -306,11 +306,11 @@ Help_EN|Subroutines|_return|||/boot/system/documentation/yab/Help/Help_EN/Subrou
 Help_EN|Subroutines|_static|||/boot/system/documentation/yab/Help/Help_EN/Subroutines/_static
 Help_EN|Subroutines|_sub|||/boot/system/documentation/yab/Help/Help_EN/Subroutines/_sub
 Help_EN|System||||/boot/system/documentation/yab/Help/Help_EN/System
-Help_EN|System|Atrributes|||/boot/system/documentation/yab/Help/Help_EN/System/Atrributes
-Help_EN|System|Atrributes|_attribute clear||/boot/system/documentation/yab/Help/Help_EN/System/Atrributes/_attribute clear
-Help_EN|System|Atrributes|_attribute get||/boot/system/documentation/yab/Help/Help_EN/System/Atrributes/_attribute get
-Help_EN|System|Atrributes|_attribute get$||/boot/system/documentation/yab/Help/Help_EN/System/Atrributes/_attribute get$
-Help_EN|System|Atrributes|_attribute set||/boot/system/documentation/yab/Help/Help_EN/System/Atrributes/_attribute set
+Help_EN|System|Attributes|||/boot/system/documentation/yab/Help/Help_EN/System/Attributes
+Help_EN|System|Attributes|_attribute clear||/boot/system/documentation/yab/Help/Help_EN/System/Atrributes/_attribute clear
+Help_EN|System|Attributes|_attribute get||/boot/system/documentation/yab/Help/Help_EN/System/Atrributes/_attribute get
+Help_EN|System|Attributes|_attribute get$||/boot/system/documentation/yab/Help/Help_EN/System/Atrributes/_attribute get$
+Help_EN|System|Attributes|_attribute set||/boot/system/documentation/yab/Help/Help_EN/System/Atrributes/_attribute set
 Help_EN|System|_#|||/boot/system/documentation/yab/Help/Help_EN/System/_#
 Help_EN|System|_:|||/boot/system/documentation/yab/Help/Help_EN/System/_:
 Help_EN|System|_bind()|||/boot/system/documentation/yab/Help/Help_EN/System/_bind()
@@ -326,13 +326,14 @@ Help_EN|System|_execute$()|||/boot/system/documentation/yab/Help/Help_EN/System/
 Help_EN|System|_execute()|||/boot/system/documentation/yab/Help/Help_EN/System/_execute()
 Help_EN|System|_exit|||/boot/system/documentation/yab/Help/Help_EN/System/_exit
 Help_EN|System|_iscomputeron|||/boot/system/documentation/yab/Help/Help_EN/System/_iscomputeron
-Help_EN|System|_pause|||/boot/system/documentation/yab/Help/Help_EN/System/_pause
-Help_EN|System|_peek|||/boot/system/documentation/yab/Help/Help_EN/System/_peek
+Help_EN|System|_launch|||/boot/system/documentation/yab/Help/Help_EN/System/_launch
 Help_EN|System|_peek$|||/boot/system/documentation/yab/Help/Help_EN/System/_peek$
 Help_EN|System|_poke|||/boot/system/documentation/yab/Help/Help_EN/System/_poke
 Help_EN|System|_rem|||/boot/system/documentation/yab/Help/Help_EN/System/_rem
 Help_EN|System|_sleep|||/boot/system/documentation/yab/Help/Help_EN/System/_sleep
-Help_EN|System|_system$()|||/boot/system/documentation/yab/Help/Help_EN/System/_system$()
+Help_EN|System|_systemt|||/boot/system/documentation/yab/Help/Help_EN/System/_wait
+Help_EN|System|_pause|||/boot/system/documentation/yab/Help/Help_EN/System/_pause
+Help_EN|System|_pee$()|||/boot/system/documentation/yab/Help/Help_EN/System/_system$()
 Help_EN|System|_system()|||/boot/system/documentation/yab/Help/Help_EN/System/_system()
 Help_EN|System|_thread get|||/boot/system/documentation/yab/Help/Help_EN/System/_thread get
 Help_EN|System|_thread remove|||/boot/system/documentation/yab/Help/Help_EN/System/_thread remove

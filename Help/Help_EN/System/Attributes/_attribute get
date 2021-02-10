@@ -1,0 +1,29 @@
+Name:
+attribute get -- Get the number value of the attribute.
+
+Synopsis:
+
+Value = ATTRIBUTE GET Name$, Filename$
+
+Description:
+
+Value = ATTRIBUTE GET Name$, Filename$
+  Get the number value of the attribute Name$ for file Filename$.
+  For "Bool" type attributes:
+  Value = 1|0
+
+Example:
+
+attribute set "bool","Saved", "false", "foobar" 
+
+if (attribute get "Saved","foobar") then
+print "foobar is saved"
+else
+print "foobar is not saved"
+end if
+
+Explanation:
+
+This example saves a false (0) attribute named Saved on the file "foobar" then checks to see if the Saved attribute is true(1) or false(0) and prints the result. in this case "foobar is not saved."
+
+Related: attribute clear, attribute set, attribute get$

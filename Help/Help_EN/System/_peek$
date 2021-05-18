@@ -49,4 +49,4 @@ If you save this program in a file foo.yab and execute it via yab t.yab a b c, y
 2b 
 1c 
 
-Related: peek, poke, open
+Related: peek, poke, open, loudness set

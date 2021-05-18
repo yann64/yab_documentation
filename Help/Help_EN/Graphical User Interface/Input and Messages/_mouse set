@@ -10,5 +10,15 @@ Sometimes (e.g. games) the mouse cursor is just in the way. To get rid of it for
 Option$ = "Hide" -- hide the mouse cursor
 Option$ = "Show" -- show the mouse cursor
 Option$ = "Obscure" -- hide the mouse cursor until the mouse is moved 
+Option$ = "CROSSHAIR" -- change the mouse cursor to a crosshair icon
+Option$ = "CROSSHAIR2"  -- change the mouse cursor to a crosshair icon
+Option$ = "FACE"  -- change the mouse cursor to a face icon
+Option$ = "CLOCK1"  -- change the mouse cursor to a clock icon
+Option$ = "CLOCK2" -- change the mouse cursor to a clock icon
+Option$ = "CLOCK3" -- change the mouse cursor to a clock icon
+Option$ = "CLOCK4" -- change the mouse cursor to a clock icon
+Option$ = "CLOCK5" -- change the mouse cursor to a clock icon
+Option$ = "CLOCK6" -- change the mouse cursor to a clock icon
+Option$ = "WAIT" -- change the mouse cursor to a wait icon
 
 Related: ismousein(), mouse message$(), mouse message$

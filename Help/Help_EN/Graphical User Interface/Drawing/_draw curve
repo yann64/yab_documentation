@@ -15,4 +15,5 @@ draw set true, "HighSolidFill"
 draw curve 10,150, 75,60, 150,20, 250,140, "Example"
 sleep 7
 window close "Example"
-Related: draw circle, draw dot, draw ellipse, draw flush, draw line, draw rect, draw set
+
+Related: draw circle, draw dot, draw ellipse, draw flush, draw line, draw rect, draw set, draw triangle 

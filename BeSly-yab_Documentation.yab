@@ -11,6 +11,7 @@ sub main()
 		msg$ = message$
 
 		if (split(msg$, part$(), ":|") > 2) then
+			PartOne$ = part$(1)			
 			PartTwo$ = part$(2)
 			PartThree$ = part$(3)
 	         fi
@@ -147,9 +148,10 @@ end sub
 
 sub right_side(entrynumber)
 	TEXTEDIT CLEAR "Information"
-	box_header$ = TREEBOX GET$ "Help_EN", entrynumber
-	
+	box_header$ = TREEBOX GET$ PartOne$, entrynumber // "Help_EN"
+
 	fileload$=d$(entrynumber*6)
+	//print fileload$
 	handleA=open(fileload$, "r")
 	while (not EOF(handleA))
 		line input #handleA information$
@@ -215,7 +217,7 @@ REM ######Fenteraufbau######
 	window set  Start_FensterName$, "MinimumTo", WindowSize_x,WindowSize_y
 	window set  Start_FensterName$, "MaximumTo", WindowSize_x,WindowSize_y
 	
-	
+	localize "x-vnd.BeSly_Documentation"
 	Header(ProgrammName$, Start_FensterName$, WindowSize_x)
 	Footer("BeSly Software Solutions", Start_FensterName$, WindowSize_x)
 	
@@ -224,18 +226,19 @@ REM ######Fenteraufbau######
 	STV_x = VIEW GET "STV1", "Width"
 
 	//helpfile
+	//directory$="/Share/Projekte/c/yab/yab_documentation"
 	directory$="/boot/system/documentation/yab"
 	
 	helpdir$=directory$+"/Help"
 	helpdir2$=directory$+"/data"
-	//directory$="/Share/Projekte/c/yab"
+	
 	//helpdir$=directory$+"/yab_documentation/Help"
 	//helpdir2$=directory$+"/yab_documentation/data"
 	
 	ViewHelp_x= VIEW GET Stackview$+"1","Width"
-	ViewHelp_y= VIEW GET Stackview$+"1","Height"	
+	ViewHelp_y= VIEW GET Stackview$+"1","Height"
 		
-	Boxview (ViewHelp_x/2)-180,5 to ViewHelp_x-15, ViewHelp_y-15,"ViewBox", "YAB-HELP", 2,Stackview$+"1"
+	Boxview (ViewHelp_x/2)-180,5 to ViewHelp_x-15, ViewHelp_y-15,"ViewBox", translate$("YAB-HELP"), 2,Stackview$+"1"
 	dropbox 9,10 to  (ViewHelp_x/2)-91,40,"Languages","", Stackview$+"1"
 	readdir_languages()
 	//print Item$
@@ -282,34 +285,39 @@ sub About()
 	View 0,0 to STV2_x, STV2_y, "View_About", "STV2" //Start_FensterName$
 	STV2_y = VIEW GET "View_About", "Height"
 	STV2_x = VIEW GET "View_About", "Width"
+	
   	DRAW TEXT 10,30, "BeSly Software Solutions", "View_About"
   	//DRAW LINE 0,40 TO View_breite_box,41, "View_About" 
   	 	  	
   	DRAW TEXT 10,60, "Name:", "View_About"
   	DRAW TEXT 10,80, "Version / Build:", "View_About"
   	DRAW TEXT 10,100, "Version Status:", "View_About"
-  	DRAW TEXT 10,120, "Developers:", "View_About"  
-  	DRAW TEXT 10,140, "Contact:", "View_About"
-  	DRAW TEXT 10,160, "Website:", "View_About"
-  	DRAW TEXT 10,180, "Bug-Reporting:", "View_About"	
-   	
+  	DRAW TEXT 10,120, translate$("Developers:"), "View_About"  
+  	DRAW TEXT 10,140, translate$("Contact:"), "View_About"
+  	DRAW TEXT 10,160, translate$("Website:"), "View_About"
+  	DRAW TEXT 10,180, translate$("Bug-Reporting:"), "View_About"	
+	
    	DRAW TEXT 150,60, ProgrammName$, "View_About"
-  	DRAW TEXT 150,80, "0.0.1/ 31.10.2020", "View_About"
+  	DRAW TEXT 150,80, "0.0.2/ 18.05.2021", "View_About"
   	DRAW TEXT 150,100, "Alpha", "View_About"
   	DRAW TEXT 150,120, "Lorglas", "View_About"
   	DRAW SET "system-plain,regular,16,regular,0,45" ,"View_About"
   	TEXTURL 150,131, "email", "webmaster@besly.de", "webmaster@besly.de", "View_About"  	
   	TEXTURL 150,151, "website", "http://software.besly.de", "http://software.besly.de", "View_About"   	
-  	//TEXTURL 150,167, "Bug-Report", "http://trac.besly.de", "http://trac.besly.de", "View_About" 
+  	TEXTURL 150,167, "Bug-Report", "http://trac.besly.de", "http://trac.besly.de", "View_About" 
   	
   	TEXTEDIT 10,200 TO STV2_x-10, STV2_y-40, "not_implemented", 0, "View_About"
   	TEXTEDIT SET "not_implemented", "bold", "12"
-  	textedit add "not_implemented", "New in this Revision:\n"
+	textedit add "not_implemented", translate$("New in this revision")+" 0.0.2:\n"
   	TEXTEDIT SET "not_implemented", "plain", "12"
-  	//textedit add "not_implemented", "Brightness Slider under Colorcontrol\n"
-  	//textedit add "not_implemented", "New in this Revision:\n"
+	textedit add "not_implemented", "- "+translate$("Localization added\n")
+	textedit add "not_implemented", "\n"
+	TEXTEDIT SET "not_implemented", "bold", "12"
+  	textedit add "not_implemented", translate$("New in this revision")+" 0.0.1:\n"
+  	TEXTEDIT SET "not_implemented", "plain", "12"
+  	textedit add "not_implemented", "- "+translate$("First init.\n")
   	TEXTEDIT SET "not_implemented", "editable", false
-	button (STV2_x/2)-50, STV2_y-30 to (STV2_x/2)+50, STV2_y-10, "close", "Close",  "View_About"	
+	button (STV2_x/2)-50, STV2_y-30 to (STV2_x/2)+50, STV2_y-10, "close", translate$("Close"),  "View_About"	
 end sub
 sub farben()
 handle = open("data/color1")

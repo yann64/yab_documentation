@@ -36,7 +36,7 @@ string |  Result for converting 1000*pi |      Description
                                                   point).
 
 %-12.5f           3141.59265xx                    The '-' requests the output to be 
-                                                  left-centered (therefor the filling 
+                                                  left-centered (therefore the filling 
                                                   space appears at thi right).
 
  #####.##          x3141.59                        Each '#' specifies a digit 

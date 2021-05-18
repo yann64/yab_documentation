@@ -1,0 +1,17 @@
+Name:
+LANGUAGE_AVAILABLE$ -- get the language code from the installed language
+
+Synopsis:
+LANGUAGE_AVAILABLE$
+
+Description:
+get a list of available language code back
+
+Example:
+
+output$ = LANGUAGE_AVAILABLE$
+print output$
+
+Explanation:
+
+Related: translate$(), localize

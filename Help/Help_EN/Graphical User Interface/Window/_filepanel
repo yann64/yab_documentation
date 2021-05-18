@@ -2,7 +2,7 @@ Name:
 filepanel -- open a file or directory selection window
 
 Synopsis:
-Filename$ = FILEPANEL Mode$, Title$, Directory$
+//Filename$ = FILEPANEL Mode$, Title$, Directory$
 Filename$ = FILEPANEL Mode$, Title$, Directory$, DefaultFile$
 
 Description:
@@ -21,6 +21,7 @@ Furthermore, the title for the window tab has to specified in Title$. Ideally th
 
 The starting directory for browsing is set with Directory$. If this is an invalid directory, "/boot/home" will be used instead.
 
+Since localize is reactive with yab 1.8, it is needed that you define a empty filename also for load modes. See the example below.
 Only for the "Save-File" mode, you additionally can provide a default filename that is put into the textcontrol field of the filepanel in this mode. If you call the filepanel without DefaultFile$, the textcontrol field will be empty.
 
 Design:
@@ -34,8 +35,8 @@ button 10,70 to 190,90, "Save", "Save a file...", "Example"
 
 while(not quitting)
         m$ = message$
-        if(instr(m$, "OpenFile")) filename$ = filepanel "load-file", "Open File", ""
-        if(instr(m$, "OpenDir")) filename$ = filepanel "load-directory", "Open Directory", ""
+        if(instr(m$, "OpenFile")) filename$ = filepanel "load-file", "Open File", "",""
+        if(instr(m$, "OpenDir")) filename$ = filepanel "load-directory", "Open Directory", "",""
         if(instr(m$, "Save")) filename$ = filepanel "save-file", "Save File", "", "SuggestedFile"
 
         if(instr(m$, "Quit")) quitting = true

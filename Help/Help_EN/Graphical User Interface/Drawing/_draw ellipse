@@ -17,4 +17,4 @@ sleep 7
 window close "Example"
 Explanation:
 
-Related: draw circle, draw curve, draw dot, draw flush, draw line, draw rect, draw set
+Related: draw circle, draw curve, draw dot, draw flush, draw line, draw rect, draw set, draw triangle

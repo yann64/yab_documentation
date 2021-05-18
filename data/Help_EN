@@ -1,343 +1,349 @@
-Help_EN|||||/boot/system/documentation/yab/Help/Help_EN
-Help_EN|Arithmetic||||/boot/system/documentation/yab/Help/Help_EN/Arithmetic
-Help_EN|Arithmetic|_** or ^|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_** or ^
-Help_EN|Arithmetic|_abs()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_abs()
-Help_EN|Arithmetic|_acos()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_acos()
-Help_EN|Arithmetic|_and()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_and()
-Help_EN|Arithmetic|_asin()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_asin()
-Help_EN|Arithmetic|_atan()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_atan()
-Help_EN|Arithmetic|_bin$()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_bin$()
-Help_EN|Arithmetic|_cos()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_cos()
-Help_EN|Arithmetic|_dec()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_dec()
-Help_EN|Arithmetic|_eor()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_eor()
-Help_EN|Arithmetic|_euler|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_euler
-Help_EN|Arithmetic|_exp()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_exp()
-Help_EN|Arithmetic|_frac()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_frac()
-Help_EN|Arithmetic|_int()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_int()
-Help_EN|Arithmetic|_log()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_log()
-Help_EN|Arithmetic|_max()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_max()
-Help_EN|Arithmetic|_min()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_min()
-Help_EN|Arithmetic|_mod()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_mod()
-Help_EN|Arithmetic|_or()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_or()
-Help_EN|Arithmetic|_pi|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_pi
-Help_EN|Arithmetic|_ran()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_ran()
-Help_EN|Arithmetic|_sig()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_sig()
-Help_EN|Arithmetic|_sin()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_sin()
-Help_EN|Arithmetic|_sqr()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_sqr()
-Help_EN|Arithmetic|_sqrt()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_sqrt()
-Help_EN|Arithmetic|_tan()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_tan()
-Help_EN|Arithmetic|_xor()|||/boot/system/documentation/yab/Help/Help_EN/Arithmetic/_xor()
-Help_EN|Conditions and Loops||||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops
-Help_EN|Conditions and Loops|_and|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_and
-Help_EN|Conditions and Loops|_break|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_break
-Help_EN|Conditions and Loops|_case|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_case
-Help_EN|Conditions and Loops|_continue|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_continue
-Help_EN|Conditions and Loops|_default|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_default
-Help_EN|Conditions and Loops|_do|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_do
-Help_EN|Conditions and Loops|_else|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_else
-Help_EN|Conditions and Loops|_elsif|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_elsif
-Help_EN|Conditions and Loops|_end|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_end
-Help_EN|Conditions and Loops|_endif|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_endif
-Help_EN|Conditions and Loops|_false|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_false
-Help_EN|Conditions and Loops|_fi|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_fi
-Help_EN|Conditions and Loops|_for|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_for
-Help_EN|Conditions and Loops|_gosub|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_gosub
-Help_EN|Conditions and Loops|_goto|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_goto
-Help_EN|Conditions and Loops|_if|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_if
-Help_EN|Conditions and Loops|_label|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_label
-Help_EN|Conditions and Loops|_logical or|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_logical or
-Help_EN|Conditions and Loops|_loop|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_loop
-Help_EN|Conditions and Loops|_next|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_next
-Help_EN|Conditions and Loops|_not|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_not
-Help_EN|Conditions and Loops|_on gosub|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_on gosub
-Help_EN|Conditions and Loops|_on goto|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_on goto
-Help_EN|Conditions and Loops|_on interrupt|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_on interrupt
-Help_EN|Conditions and Loops|_repeat|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_repeat
-Help_EN|Conditions and Loops|_return|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_return
-Help_EN|Conditions and Loops|_step|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_step
-Help_EN|Conditions and Loops|_switch|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_switch
-Help_EN|Conditions and Loops|_then|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_then
-Help_EN|Conditions and Loops|_true|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_true
-Help_EN|Conditions and Loops|_until|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_until
-Help_EN|Conditions and Loops|_wend|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_wend
-Help_EN|Conditions and Loops|_while|||/boot/system/documentation/yab/Help/Help_EN/Conditions and Loops/_while
-Help_EN|Data Processing||||/boot/system/documentation/yab/Help/Help_EN/Data Processing
-Help_EN|Data Processing|_arraydim()|||/boot/system/documentation/yab/Help/Help_EN/Data Processing/_arraydim()
-Help_EN|Data Processing|_arraysize()|||/boot/system/documentation/yab/Help/Help_EN/Data Processing/_arraysize()
-Help_EN|Data Processing|_data|||/boot/system/documentation/yab/Help/Help_EN/Data Processing/_data
-Help_EN|Data Processing|_dim|||/boot/system/documentation/yab/Help/Help_EN/Data Processing/_dim
-Help_EN|Data Processing|_read|||/boot/system/documentation/yab/Help/Help_EN/Data Processing/_read
-Help_EN|Data Processing|_redim|||/boot/system/documentation/yab/Help/Help_EN/Data Processing/_redim
-Help_EN|Data Processing|_restore|||/boot/system/documentation/yab/Help/Help_EN/Data Processing/_restore
-Help_EN|Graphical User Interface||||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface
-Help_EN|Graphical User Interface|Bitmaps|||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Bitmaps
-Help_EN|Graphical User Interface|Bitmaps|_bitmap||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Bitmaps/_bitmap
-Help_EN|Graphical User Interface|Bitmaps|_bitmap color||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Bitmaps/_bitmap color
-Help_EN|Graphical User Interface|Bitmaps|_bitmap get||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Bitmaps/_bitmap get
-Help_EN|Graphical User Interface|Bitmaps|_bitmap image||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Bitmaps/_bitmap image
-Help_EN|Graphical User Interface|Bitmaps|_bitmap remove||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Bitmaps/_bitmap remove
-Help_EN|Graphical User Interface|Bitmaps|_bitmap save||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Bitmaps/_bitmap save
-Help_EN|Graphical User Interface|Bitmaps|_screenshot||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Bitmaps/_screenshot
-Help_EN|Graphical User Interface|Drawing|||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Drawing
-Help_EN|Graphical User Interface|Drawing|_draw bitmap||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Drawing/_draw bitmap
-Help_EN|Graphical User Interface|Drawing|_draw circle||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Drawing/_draw circle
-Help_EN|Graphical User Interface|Drawing|_draw curve||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Drawing/_draw curve
-Help_EN|Graphical User Interface|Drawing|_draw dot||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Drawing/_draw dot
-Help_EN|Graphical User Interface|Drawing|_draw ellipse||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Drawing/_draw ellipse
-Help_EN|Graphical User Interface|Drawing|_draw flush||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Drawing/_draw flush
-Help_EN|Graphical User Interface|Drawing|_draw get||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Drawing/_draw get
-Help_EN|Graphical User Interface|Drawing|_draw get$||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Drawing/_draw get$
-Help_EN|Graphical User Interface|Drawing|_draw image||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Drawing/_draw image
-Help_EN|Graphical User Interface|Drawing|_draw line||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Drawing/_draw line
-Help_EN|Graphical User Interface|Drawing|_draw rect||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Drawing/_draw rect
-Help_EN|Graphical User Interface|Drawing|_draw set||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Drawing/_draw set
-Help_EN|Graphical User Interface|Drawing|_draw text||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Drawing/_draw text
-Help_EN|Graphical User Interface|Input and Messages|||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Input and Messages
-Help_EN|Graphical User Interface|Input and Messages|_ismousein()||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Input and Messages/_ismousein()
-Help_EN|Graphical User Interface|Input and Messages|_keyboard message$()||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Input and Messages/_keyboard message$()
-Help_EN|Graphical User Interface|Input and Messages|_message send||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Input and Messages/_message send
-Help_EN|Graphical User Interface|Input and Messages|_message$||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Input and Messages/_message$
-Help_EN|Graphical User Interface|Input and Messages|_mouse message$||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Input and Messages/_mouse message$
-Help_EN|Graphical User Interface|Input and Messages|_mouse message$()||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Input and Messages/_mouse message$()
-Help_EN|Graphical User Interface|Input and Messages|_mouse set||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Input and Messages/_mouse set
-Help_EN|Graphical User Interface|Input and Messages|_shortcut||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Input and Messages/_shortcut
-Help_EN|Graphical User Interface|Menus|||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Menus
-Help_EN|Graphical User Interface|Menus|_menu||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Menus/_menu
-Help_EN|Graphical User Interface|Menus|_menu set||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Menus/_menu set
-Help_EN|Graphical User Interface|Menus|_popupmenu||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Menus/_popupmenu
-Help_EN|Graphical User Interface|Menus|_submenu||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Menus/_submenu
-Help_EN|Graphical User Interface|Menus|_submenu set||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Menus/_submenu set
-Help_EN|Graphical User Interface|Printing|||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Printing
-Help_EN|Graphical User Interface|Printing|_printer||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Printing/_printer
-Help_EN|Graphical User Interface|Printing|_printer setup||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Printing/_printer setup
-Help_EN|Graphical User Interface|Views|||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views
-Help_EN|Graphical User Interface|Views|Boxview||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Boxview
-Help_EN|Graphical User Interface|Views|Boxview|_boxview|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Boxview/_boxview
-Help_EN|Graphical User Interface|Views|Boxview|_boxview set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Boxview/_boxview set
-Help_EN|Graphical User Interface|Views|Canvas||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Canvas
-Help_EN|Graphical User Interface|Views|Canvas|_canvas|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Canvas/_canvas
-Help_EN|Graphical User Interface|Views|Layout||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Layout
-Help_EN|Graphical User Interface|Views|Layout|_layout|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Layout/_layout
-Help_EN|Graphical User Interface|Views|Scrollbar||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Scrollbar
-Help_EN|Graphical User Interface|Views|Scrollbar|_scrollbar|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Scrollbar/_scrollbar
-Help_EN|Graphical User Interface|Views|Scrollbar|_scrollbar get|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Scrollbar/_scrollbar get
-Help_EN|Graphical User Interface|Views|Scrollbar|_scrollbar set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Scrollbar/_scrollbar set
-Help_EN|Graphical User Interface|Views|Splitview||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Splitview
-Help_EN|Graphical User Interface|Views|Splitview|_splitview|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Splitview/_splitview
-Help_EN|Graphical User Interface|Views|Splitview|_splitview get|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Splitview/_splitview get
-Help_EN|Graphical User Interface|Views|Splitview|_splitview set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Splitview/_splitview set
-Help_EN|Graphical User Interface|Views|Stackview||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Stackview
-Help_EN|Graphical User Interface|Views|Stackview|_stackview|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Stackview/_stackview
-Help_EN|Graphical User Interface|Views|Stackview|_stackview get|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Stackview/_stackview get
-Help_EN|Graphical User Interface|Views|Stackview|_stackview set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Stackview/_stackview set
-Help_EN|Graphical User Interface|Views|Tabview||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Tabview
-Help_EN|Graphical User Interface|Views|Tabview|_tabview|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Tabview/_tabview
-Help_EN|Graphical User Interface|Views|Tabview|_tabview add|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Tabview/_tabview add
-Help_EN|Graphical User Interface|Views|Tabview|_tabview get|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Tabview/_tabview get
-Help_EN|Graphical User Interface|Views|Tabview|_tabview set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/Tabview/_tabview set
-Help_EN|Graphical User Interface|Views|View||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/View
-Help_EN|Graphical User Interface|Views|View|_view|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/View/_view
-Help_EN|Graphical User Interface|Views|View|_view dropzone|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/View/_view dropzone
-Help_EN|Graphical User Interface|Views|View|_view get|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/View/_view get
-Help_EN|Graphical User Interface|Views|View|_view remove|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Views/View/_view remove
-Help_EN|Graphical User Interface|Widgets|||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets
-Help_EN|Graphical User Interface|Widgets|Button||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Button
-Help_EN|Graphical User Interface|Widgets|Button|_button|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Button/_button
-Help_EN|Graphical User Interface|Widgets|Button|_button image|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Button/_button image
-Help_EN|Graphical User Interface|Widgets|Calendar||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Calendar
-Help_EN|Graphical User Interface|Widgets|Calendar|_calendar|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Calendar/_calendar
-Help_EN|Graphical User Interface|Widgets|Calendar|_calendar get$|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Calendar/_calendar get$
-Help_EN|Graphical User Interface|Widgets|Calendar|_calendar set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Calendar/_calendar set
-Help_EN|Graphical User Interface|Widgets|Checkbox||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Checkbox
-Help_EN|Graphical User Interface|Widgets|Checkbox|_checkbox|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Checkbox/_checkbox
-Help_EN|Graphical User Interface|Widgets|Checkbox|_checkbox image|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Checkbox/_checkbox image
-Help_EN|Graphical User Interface|Widgets|Checkbox|_checkbox set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Checkbox/_checkbox set
-Help_EN|Graphical User Interface|Widgets|Colorcontrol||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Colorcontrol
-Help_EN|Graphical User Interface|Widgets|Colorcontrol|_colorcontrol|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Colorcontrol/_colorcontrol
-Help_EN|Graphical User Interface|Widgets|Colorcontrol|_colorcontrol get|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Colorcontrol/_colorcontrol get
-Help_EN|Graphical User Interface|Widgets|Colorcontrol|_colorcontrol set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Colorcontrol/_colorcontrol set
-Help_EN|Graphical User Interface|Widgets|Columnbox||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Columnbox
-Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox
-Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox add|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox add
-Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox clear|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox clear
-Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox color|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox color
-Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox column|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox column
-Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox count|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox count
-Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox get|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox get
-Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox get$|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox get$
-Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox remove|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox remove
-Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox select|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox select
-Help_EN|Graphical User Interface|Widgets|Dropbox||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Dropbox
-Help_EN|Graphical User Interface|Widgets|Dropbox|_dropbox|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Dropbox/_dropbox
-Help_EN|Graphical User Interface|Widgets|Dropbox|_dropbox add|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Dropbox/_dropbox add
-Help_EN|Graphical User Interface|Widgets|Dropbox|_dropbox clear|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Dropbox/_dropbox clear
-Help_EN|Graphical User Interface|Widgets|Dropbox|_dropbox count|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Dropbox/_dropbox count
-Help_EN|Graphical User Interface|Widgets|Dropbox|_dropbox get$|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Dropbox/_dropbox get$
-Help_EN|Graphical User Interface|Widgets|Dropbox|_dropbox remove|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Dropbox/_dropbox remove
-Help_EN|Graphical User Interface|Widgets|Dropbox|_dropbox select|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Dropbox/_dropbox select
-Help_EN|Graphical User Interface|Widgets|Listbox||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Listbox
-Help_EN|Graphical User Interface|Widgets|Listbox|_listbox|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox
-Help_EN|Graphical User Interface|Widgets|Listbox|_listbox add|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox add
-Help_EN|Graphical User Interface|Widgets|Listbox|_listbox clear|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox clear
-Help_EN|Graphical User Interface|Widgets|Listbox|_listbox count|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox count
-Help_EN|Graphical User Interface|Widgets|Listbox|_listbox get|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox get
-Help_EN|Graphical User Interface|Widgets|Listbox|_listbox get$|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox get$
-Help_EN|Graphical User Interface|Widgets|Listbox|_listbox remove|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox remove
-Help_EN|Graphical User Interface|Widgets|Listbox|_listbox select|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox select
-Help_EN|Graphical User Interface|Widgets|Listbox|_listbox sort|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox sort
-Help_EN|Graphical User Interface|Widgets|Options||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Options
-Help_EN|Graphical User Interface|Widgets|Options|_option color|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Options/_option color
-Help_EN|Graphical User Interface|Widgets|Options|_option set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Options/_option set
-Help_EN|Graphical User Interface|Widgets|Radiobutton||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Radiobutton
-Help_EN|Graphical User Interface|Widgets|Radiobutton|_radiobutton|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Radiobutton/_radiobutton
-Help_EN|Graphical User Interface|Widgets|Radiobutton|_radiobutton set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Radiobutton/_radiobutton set
-Help_EN|Graphical User Interface|Widgets|Slider||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Slider
-Help_EN|Graphical User Interface|Widgets|Slider|_slider|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Slider/_slider
-Help_EN|Graphical User Interface|Widgets|Slider|_slider color|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Slider/_slider color
-Help_EN|Graphical User Interface|Widgets|Slider|_slider get|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Slider/_slider get
-Help_EN|Graphical User Interface|Widgets|Slider|_slider label|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Slider/_slider label
-Help_EN|Graphical User Interface|Widgets|Slider|_slider set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Slider/_slider set
-Help_EN|Graphical User Interface|Widgets|Spincontrol||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Spincontrol
-Help_EN|Graphical User Interface|Widgets|Spincontrol|_spincontrol|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Spincontrol/_spincontrol
-Help_EN|Graphical User Interface|Widgets|Spincontrol|_spincontrol get|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Spincontrol/_spincontrol get
-Help_EN|Graphical User Interface|Widgets|Spincontrol|_spincontrol set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Spincontrol/_spincontrol set
-Help_EN|Graphical User Interface|Widgets|Statusbar||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Statusbar
-Help_EN|Graphical User Interface|Widgets|Statusbar|_statusbar|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Statusbar/_statusbar
-Help_EN|Graphical User Interface|Widgets|Statusbar|_statusbar set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Statusbar/_statusbar set
-Help_EN|Graphical User Interface|Widgets|Text||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Text
-Help_EN|Graphical User Interface|Widgets|Text|_text|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Text/_text
-Help_EN|Graphical User Interface|Widgets|Text|_text set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Text/_text set
-Help_EN|Graphical User Interface|Widgets|Textcontrol||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Textcontrol
-Help_EN|Graphical User Interface|Widgets|Textcontrol|_textcontrol|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Textcontrol/_textcontrol
-Help_EN|Graphical User Interface|Widgets|Textcontrol|_textcontrol clear|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Textcontrol/_textcontrol clear
-Help_EN|Graphical User Interface|Widgets|Textcontrol|_textcontrol get$|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Textcontrol/_textcontrol get$
-Help_EN|Graphical User Interface|Widgets|Textcontrol|_textcontrol set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Textcontrol/_textcontrol set
-Help_EN|Graphical User Interface|Widgets|Textedit||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Textedit
-Help_EN|Graphical User Interface|Widgets|Textedit|_textedit|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Textedit/_textedit
-Help_EN|Graphical User Interface|Widgets|Textedit|_textedit add|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Textedit/_textedit add
-Help_EN|Graphical User Interface|Widgets|Textedit|_textedit clear|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Textedit/_textedit clear
-Help_EN|Graphical User Interface|Widgets|Textedit|_textedit color|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Textedit/_textedit color
-Help_EN|Graphical User Interface|Widgets|Textedit|_textedit get|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Textedit/_textedit get
-Help_EN|Graphical User Interface|Widgets|Textedit|_textedit get$|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Textedit/_textedit get$
-Help_EN|Graphical User Interface|Widgets|Textedit|_textedit set|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Textedit/_textedit set
-Help_EN|Graphical User Interface|Widgets|Texturl||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Texturl
-Help_EN|Graphical User Interface|Widgets|Texturl|_texturl|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Texturl/_texturl
-Help_EN|Graphical User Interface|Widgets|Texturl|_texturl color|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Texturl/_texturl color
-Help_EN|Graphical User Interface|Widgets|Tooltip||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Tooltip
-Help_EN|Graphical User Interface|Widgets|Tooltip|_tooltip|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Tooltip/_tooltip
-Help_EN|Graphical User Interface|Widgets|Tooltip|_tooltip color|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Tooltip/_tooltip color
-Help_EN|Graphical User Interface|Widgets|Treebox||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Treebox
-Help_EN|Graphical User Interface|Widgets|Treebox|_treebox|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox
-Help_EN|Graphical User Interface|Widgets|Treebox|_treebox add|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox add
-Help_EN|Graphical User Interface|Widgets|Treebox|_treebox clear|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox clear
-Help_EN|Graphical User Interface|Widgets|Treebox|_treebox collapse|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox collapse
-Help_EN|Graphical User Interface|Widgets|Treebox|_treebox count|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox count
-Help_EN|Graphical User Interface|Widgets|Treebox|_treebox expand|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox expand
-Help_EN|Graphical User Interface|Widgets|Treebox|_treebox get$|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox get$
-Help_EN|Graphical User Interface|Widgets|Treebox|_treebox remove|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox remove
-Help_EN|Graphical User Interface|Widgets|Treebox|_treebox select|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox select
-Help_EN|Graphical User Interface|Widgets|Treebox|_treebox sort|/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox sort
-Help_EN|Graphical User Interface|Window|||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Window
-Help_EN|Graphical User Interface|Window|_alert||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Window/_alert
-Help_EN|Graphical User Interface|Window|_filepanel||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Window/_filepanel
-Help_EN|Graphical User Interface|Window|_window close||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Window/_window close
-Help_EN|Graphical User Interface|Window|_window count||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Window/_window count
-Help_EN|Graphical User Interface|Window|_window get||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Window/_window get
-Help_EN|Graphical User Interface|Window|_window open||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Window/_window open
-Help_EN|Graphical User Interface|Window|_window set||/boot/system/documentation/yab/Help/Help_EN/Graphical User Interface/Window/_window set
-Help_EN|Input and Output||||/boot/system/documentation/yab/Help/Help_EN/Input and Output
-Help_EN|Input and Output|_;|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_;
-Help_EN|Input and Output|_at()|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_at()
-Help_EN|Input and Output|_clear screen|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_clear screen
-Help_EN|Input and Output|_close|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_close
-Help_EN|Input and Output|_color|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_color
-Help_EN|Input and Output|_colour|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_colour
-Help_EN|Input and Output|_eof|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_eof
-Help_EN|Input and Output|_eor()|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_eor()
-Help_EN|Input and Output|_getscreen$()|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_getscreen$()
-Help_EN|Input and Output|_inkey$|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_inkey$
-Help_EN|Input and Output|_input|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_input
-Help_EN|Input and Output|_line input|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_line input
-Help_EN|Input and Output|_open|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_open
-Help_EN|Input and Output|_print|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_print
-Help_EN|Input and Output|_putscreen|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_putscreen
-Help_EN|Input and Output|_reverse|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_reverse
-Help_EN|Input and Output|_screen|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_screen
-Help_EN|Input and Output|_seek()|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_seek()
-Help_EN|Input and Output|_tell|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_tell
-Help_EN|Input and Output|_using|||/boot/system/documentation/yab/Help/Help_EN/Input and Output/_using
-Help_EN|Localization||||/boot/system/documentation/yab/Help/Help_EN/Localization
-Help_EN|Localization|_localize|||/boot/system/documentation/yab/Help/Help_EN/Localization/_localize
-Help_EN|Localization|_translate$()|||/boot/system/documentation/yab/Help/Help_EN/Localization/_translate$()
-Help_EN|Sound||||/boot/system/documentation/yab/Help/Help_EN/Sound
-Help_EN|Sound|_Mediasound play|||/boot/system/documentation/yab/Help/Help_EN/Sound/_Mediasound play
-Help_EN|Sound|_Mediasound stop|||/boot/system/documentation/yab/Help/Help_EN/Sound/_Mediasound stop
-Help_EN|Sound|_beep|||/boot/system/documentation/yab/Help/Help_EN/Sound/_beep
-Help_EN|Sound|_bell|||/boot/system/documentation/yab/Help/Help_EN/Sound/_bell
-Help_EN|Sound|_sound play|||/boot/system/documentation/yab/Help/Help_EN/Sound/_sound play
-Help_EN|Sound|_sound stop|||/boot/system/documentation/yab/Help/Help_EN/Sound/_sound stop
-Help_EN|Sound|_sound wait|||/boot/system/documentation/yab/Help/Help_EN/Sound/_sound wait
-Help_EN|String Handling||||/boot/system/documentation/yab/Help/Help_EN/String Handling
-Help_EN|String Handling|_asc()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_asc()
-Help_EN|String Handling|_chr$()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_chr$()
-Help_EN|String Handling|_glob()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_glob()
-Help_EN|String Handling|_hex$()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_hex$()
-Help_EN|String Handling|_instr()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_instr()
-Help_EN|String Handling|_left$()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_left$()
-Help_EN|String Handling|_len()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_len()
-Help_EN|String Handling|_lower$()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_lower$()
-Help_EN|String Handling|_ltrim$()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_ltrim$()
-Help_EN|String Handling|_mid$()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_mid$()
-Help_EN|String Handling|_right$()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_right$()
-Help_EN|String Handling|_rtrim$()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_rtrim$()
-Help_EN|String Handling|_split()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_split()
-Help_EN|String Handling|_str$()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_str$()
-Help_EN|String Handling|_token()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_token()
-Help_EN|String Handling|_trim$()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_trim$()
-Help_EN|String Handling|_upper$()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_upper$()
-Help_EN|String Handling|_val()|||/boot/system/documentation/yab/Help/Help_EN/String Handling/_val()
-Help_EN|Subroutines||||/boot/system/documentation/yab/Help/Help_EN/Subroutines
-Help_EN|Subroutines|_end sub|||/boot/system/documentation/yab/Help/Help_EN/Subroutines/_end sub
-Help_EN|Subroutines|_export|||/boot/system/documentation/yab/Help/Help_EN/Subroutines/_export
-Help_EN|Subroutines|_import|||/boot/system/documentation/yab/Help/Help_EN/Subroutines/_import
-Help_EN|Subroutines|_local|||/boot/system/documentation/yab/Help/Help_EN/Subroutines/_local
-Help_EN|Subroutines|_numparams|||/boot/system/documentation/yab/Help/Help_EN/Subroutines/_numparams
-Help_EN|Subroutines|_return|||/boot/system/documentation/yab/Help/Help_EN/Subroutines/_return
-Help_EN|Subroutines|_static|||/boot/system/documentation/yab/Help/Help_EN/Subroutines/_static
-Help_EN|Subroutines|_sub|||/boot/system/documentation/yab/Help/Help_EN/Subroutines/_sub
-Help_EN|System||||/boot/system/documentation/yab/Help/Help_EN/System
-Help_EN|System|Attributes|||/boot/system/documentation/yab/Help/Help_EN/System/Attributes
-Help_EN|System|Attributes|_attribute clear||/boot/system/documentation/yab/Help/Help_EN/System/Atrributes/_attribute clear
-Help_EN|System|Attributes|_attribute get||/boot/system/documentation/yab/Help/Help_EN/System/Atrributes/_attribute get
-Help_EN|System|Attributes|_attribute get$||/boot/system/documentation/yab/Help/Help_EN/System/Atrributes/_attribute get$
-Help_EN|System|Attributes|_attribute set||/boot/system/documentation/yab/Help/Help_EN/System/Atrributes/_attribute set
-Help_EN|System|_#|||/boot/system/documentation/yab/Help/Help_EN/System/_#
-Help_EN|System|_:|||/boot/system/documentation/yab/Help/Help_EN/System/_:
-Help_EN|System|_bind()|||/boot/system/documentation/yab/Help/Help_EN/System/_bind()
-Help_EN|System|_chr$(47)chr$(47)|||/boot/system/documentation/yab/Help/Help_EN/System/_chr$(47)chr$(47)
-Help_EN|System|_clipboard copy|||/boot/system/documentation/yab/Help/Help_EN/System/_clipboard copy
-Help_EN|System|_clipboard paste$|||/boot/system/documentation/yab/Help/Help_EN/System/_clipboard paste$
-Help_EN|System|_compile|||/boot/system/documentation/yab/Help/Help_EN/System/_compile
-Help_EN|System|_date$|||/boot/system/documentation/yab/Help/Help_EN/System/_date$
-Help_EN|System|_doc|||/boot/system/documentation/yab/Help/Help_EN/System/_doc
-Help_EN|System|_docu$|||/boot/system/documentation/yab/Help/Help_EN/System/_docu$
-Help_EN|System|_error|||/boot/system/documentation/yab/Help/Help_EN/System/_error
-Help_EN|System|_execute$()|||/boot/system/documentation/yab/Help/Help_EN/System/_execute$()
-Help_EN|System|_execute()|||/boot/system/documentation/yab/Help/Help_EN/System/_execute()
-Help_EN|System|_exit|||/boot/system/documentation/yab/Help/Help_EN/System/_exit
-Help_EN|System|_iscomputeron|||/boot/system/documentation/yab/Help/Help_EN/System/_iscomputeron
-Help_EN|System|_launch|||/boot/system/documentation/yab/Help/Help_EN/System/_launch
-Help_EN|System|_peek$|||/boot/system/documentation/yab/Help/Help_EN/System/_peek$
-Help_EN|System|_poke|||/boot/system/documentation/yab/Help/Help_EN/System/_poke
-Help_EN|System|_rem|||/boot/system/documentation/yab/Help/Help_EN/System/_rem
-Help_EN|System|_sleep|||/boot/system/documentation/yab/Help/Help_EN/System/_sleep
-Help_EN|System|_systemt|||/boot/system/documentation/yab/Help/Help_EN/System/_wait
-Help_EN|System|_pause|||/boot/system/documentation/yab/Help/Help_EN/System/_pause
-Help_EN|System|_pee$()|||/boot/system/documentation/yab/Help/Help_EN/System/_system$()
-Help_EN|System|_system()|||/boot/system/documentation/yab/Help/Help_EN/System/_system()
-Help_EN|System|_thread get|||/boot/system/documentation/yab/Help/Help_EN/System/_thread get
-Help_EN|System|_thread remove|||/boot/system/documentation/yab/Help/Help_EN/System/_thread remove
-Help_EN|System|_time$|||/boot/system/documentation/yab/Help/Help_EN/System/_time$
-Help_EN|System|_to |||/boot/system/documentation/yab/Help/Help_EN/System/_to 
-Help_EN|System|_wait|||/boot/system/documentation/yab/Help/Help_EN/System/_wait
-Help_EN|Reserved_words||||/boot/system/documentation/yab/Help/Help_EN/Reserved_words
+Help_EN|||||Help/Help_EN
+Help_EN|Arithmetic||||Help/Help_EN/Arithmetic
+Help_EN|Arithmetic|_** or ^|||Help/Help_EN/Arithmetic/_** or ^
+Help_EN|Arithmetic|_abs()|||Help/Help_EN/Arithmetic/_abs()
+Help_EN|Arithmetic|_acos()|||Help/Help_EN/Arithmetic/_acos()
+Help_EN|Arithmetic|_and()|||Help/Help_EN/Arithmetic/_and()
+Help_EN|Arithmetic|_asin()|||Help/Help_EN/Arithmetic/_asin()
+Help_EN|Arithmetic|_atan()|||Help/Help_EN/Arithmetic/_atan()
+Help_EN|Arithmetic|_bin$()|||Help/Help_EN/Arithmetic/_bin$()
+Help_EN|Arithmetic|_cos()|||Help/Help_EN/Arithmetic/_cos()
+Help_EN|Arithmetic|_dec()|||Help/Help_EN/Arithmetic/_dec()
+Help_EN|Arithmetic|_eor()|||Help/Help_EN/Arithmetic/_eor()
+Help_EN|Arithmetic|_euler|||Help/Help_EN/Arithmetic/_euler
+Help_EN|Arithmetic|_exp()|||Help/Help_EN/Arithmetic/_exp()
+Help_EN|Arithmetic|_frac()|||Help/Help_EN/Arithmetic/_frac()
+Help_EN|Arithmetic|_int()|||Help/Help_EN/Arithmetic/_int()
+Help_EN|Arithmetic|_log()|||Help/Help_EN/Arithmetic/_log()
+Help_EN|Arithmetic|_max()|||Help/Help_EN/Arithmetic/_max()
+Help_EN|Arithmetic|_min()|||Help/Help_EN/Arithmetic/_min()
+Help_EN|Arithmetic|_mod()|||Help/Help_EN/Arithmetic/_mod()
+Help_EN|Arithmetic|_or()|||Help/Help_EN/Arithmetic/_or()
+Help_EN|Arithmetic|_pi|||Help/Help_EN/Arithmetic/_pi
+Help_EN|Arithmetic|_ran()|||Help/Help_EN/Arithmetic/_ran()
+Help_EN|Arithmetic|_sig()|||Help/Help_EN/Arithmetic/_sig()
+Help_EN|Arithmetic|_sin()|||Help/Help_EN/Arithmetic/_sin()
+Help_EN|Arithmetic|_sqr()|||Help/Help_EN/Arithmetic/_sqr()
+Help_EN|Arithmetic|_sqrt()|||Help/Help_EN/Arithmetic/_sqrt()
+Help_EN|Arithmetic|_tan()|||Help/Help_EN/Arithmetic/_tan()
+Help_EN|Arithmetic|_xor()|||Help/Help_EN/Arithmetic/_xor()
+Help_EN|Conditions and Loops||||Help/Help_EN/Conditions and Loops
+Help_EN|Conditions and Loops|_and|||Help/Help_EN/Conditions and Loops/_and
+Help_EN|Conditions and Loops|_break|||Help/Help_EN/Conditions and Loops/_break
+Help_EN|Conditions and Loops|_case|||Help/Help_EN/Conditions and Loops/_case
+Help_EN|Conditions and Loops|_continue|||Help/Help_EN/Conditions and Loops/_continue
+Help_EN|Conditions and Loops|_default|||Help/Help_EN/Conditions and Loops/_default
+Help_EN|Conditions and Loops|_do|||Help/Help_EN/Conditions and Loops/_do
+Help_EN|Conditions and Loops|_else|||Help/Help_EN/Conditions and Loops/_else
+Help_EN|Conditions and Loops|_elsif|||Help/Help_EN/Conditions and Loops/_elsif
+Help_EN|Conditions and Loops|_end|||Help/Help_EN/Conditions and Loops/_end
+Help_EN|Conditions and Loops|_endif|||Help/Help_EN/Conditions and Loops/_endif
+Help_EN|Conditions and Loops|_false|||Help/Help_EN/Conditions and Loops/_false
+Help_EN|Conditions and Loops|_fi|||Help/Help_EN/Conditions and Loops/_fi
+Help_EN|Conditions and Loops|_for|||Help/Help_EN/Conditions and Loops/_for
+Help_EN|Conditions and Loops|_gosub|||Help/Help_EN/Conditions and Loops/_gosub
+Help_EN|Conditions and Loops|_goto|||Help/Help_EN/Conditions and Loops/_goto
+Help_EN|Conditions and Loops|_if|||Help/Help_EN/Conditions and Loops/_if
+Help_EN|Conditions and Loops|_label|||Help/Help_EN/Conditions and Loops/_label
+Help_EN|Conditions and Loops|_logical or|||Help/Help_EN/Conditions and Loops/_logical or
+Help_EN|Conditions and Loops|_loop|||Help/Help_EN/Conditions and Loops/_loop
+Help_EN|Conditions and Loops|_next|||Help/Help_EN/Conditions and Loops/_next
+Help_EN|Conditions and Loops|_not|||Help/Help_EN/Conditions and Loops/_not
+Help_EN|Conditions and Loops|_on gosub|||Help/Help_EN/Conditions and Loops/_on gosub
+Help_EN|Conditions and Loops|_on goto|||Help/Help_EN/Conditions and Loops/_on goto
+Help_EN|Conditions and Loops|_on interrupt|||Help/Help_EN/Conditions and Loops/_on interrupt
+Help_EN|Conditions and Loops|_repeat|||Help/Help_EN/Conditions and Loops/_repeat
+Help_EN|Conditions and Loops|_return|||Help/Help_EN/Conditions and Loops/_return
+Help_EN|Conditions and Loops|_step|||Help/Help_EN/Conditions and Loops/_step
+Help_EN|Conditions and Loops|_switch|||Help/Help_EN/Conditions and Loops/_switch
+Help_EN|Conditions and Loops|_then|||Help/Help_EN/Conditions and Loops/_then
+Help_EN|Conditions and Loops|_true|||Help/Help_EN/Conditions and Loops/_true
+Help_EN|Conditions and Loops|_until|||Help/Help_EN/Conditions and Loops/_until
+Help_EN|Conditions and Loops|_wend|||Help/Help_EN/Conditions and Loops/_wend
+Help_EN|Conditions and Loops|_while|||Help/Help_EN/Conditions and Loops/_while
+Help_EN|Data Processing||||Help/Help_EN/Data Processing
+Help_EN|Data Processing|_arraydim()|||Help/Help_EN/Data Processing/_arraydim()
+Help_EN|Data Processing|_arraysize()|||Help/Help_EN/Data Processing/_arraysize()
+Help_EN|Data Processing|_data|||Help/Help_EN/Data Processing/_data
+Help_EN|Data Processing|_dim|||Help/Help_EN/Data Processing/_dim
+Help_EN|Data Processing|_read|||Help/Help_EN/Data Processing/_read
+Help_EN|Data Processing|_redim|||Help/Help_EN/Data Processing/_redim
+Help_EN|Data Processing|_restore|||Help/Help_EN/Data Processing/_restore
+Help_EN|Graphical User Interface||||Help/Help_EN/Graphical User Interface
+Help_EN|Graphical User Interface|Bitmaps|||Help/Help_EN/Graphical User Interface/Bitmaps
+Help_EN|Graphical User Interface|Bitmaps|_bitmap||Help/Help_EN/Graphical User Interface/Bitmaps/_bitmap
+Help_EN|Graphical User Interface|Bitmaps|_bitmap color||Help/Help_EN/Graphical User Interface/Bitmaps/_bitmap color
+Help_EN|Graphical User Interface|Bitmaps|_bitmap get||Help/Help_EN/Graphical User Interface/Bitmaps/_bitmap get
+Help_EN|Graphical User Interface|Bitmaps|_bitmap image||Help/Help_EN/Graphical User Interface/Bitmaps/_bitmap image
+Help_EN|Graphical User Interface|Bitmaps|_bitmap remove||Help/Help_EN/Graphical User Interface/Bitmaps/_bitmap remove
+Help_EN|Graphical User Interface|Bitmaps|_bitmap save||Help/Help_EN/Graphical User Interface/Bitmaps/_bitmap save
+Help_EN|Graphical User Interface|Bitmaps|_screenshot||Help/Help_EN/Graphical User Interface/Bitmaps/_screenshot
+Help_EN|Graphical User Interface|Drawing|||Help/Help_EN/Graphical User Interface/Drawing
+Help_EN|Graphical User Interface|Drawing|_draw bitmap||Help/Help_EN/Graphical User Interface/Drawing/_draw bitmap
+Help_EN|Graphical User Interface|Drawing|_draw circle||Help/Help_EN/Graphical User Interface/Drawing/_draw circle
+Help_EN|Graphical User Interface|Drawing|_draw curve||Help/Help_EN/Graphical User Interface/Drawing/_draw curve
+Help_EN|Graphical User Interface|Drawing|_draw dot||Help/Help_EN/Graphical User Interface/Drawing/_draw dot
+Help_EN|Graphical User Interface|Drawing|_draw ellipse||Help/Help_EN/Graphical User Interface/Drawing/_draw ellipse
+Help_EN|Graphical User Interface|Drawing|_draw flush||Help/Help_EN/Graphical User Interface/Drawing/_draw flush
+Help_EN|Graphical User Interface|Drawing|_draw get||Help/Help_EN/Graphical User Interface/Drawing/_draw get
+Help_EN|Graphical User Interface|Drawing|_draw get$||Help/Help_EN/Graphical User Interface/Drawing/_draw get$
+Help_EN|Graphical User Interface|Drawing|_draw image||Help/Help_EN/Graphical User Interface/Drawing/_draw image
+Help_EN|Graphical User Interface|Drawing|_draw line||Help/Help_EN/Graphical User Interface/Drawing/_draw line
+Help_EN|Graphical User Interface|Drawing|_draw rect||Help/Help_EN/Graphical User Interface/Drawing/_draw rect
+Help_EN|Graphical User Interface|Drawing|_draw set||Help/Help_EN/Graphical User Interface/Drawing/_draw set
+Help_EN|Graphical User Interface|Drawing|_draw text||Help/Help_EN/Graphical User Interface/Drawing/_draw text
+Help_EN|Graphical User Interface|Drawing|_draw triangle||Help/Help_EN/Graphical User Interface/Drawing/_draw triangle
+Help_EN|Graphical User Interface|Input and Messages|||Help/Help_EN/Graphical User Interface/Input and Messages
+Help_EN|Graphical User Interface|Input and Messages|_ismousein()||Help/Help_EN/Graphical User Interface/Input and Messages/_ismousein()
+Help_EN|Graphical User Interface|Input and Messages|_keyboard message$()||Help/Help_EN/Graphical User Interface/Input and Messages/_keyboard message$()
+Help_EN|Graphical User Interface|Input and Messages|_message send||Help/Help_EN/Graphical User Interface/Input and Messages/_message send
+Help_EN|Graphical User Interface|Input and Messages|_message$||Help/Help_EN/Graphical User Interface/Input and Messages/_message$
+Help_EN|Graphical User Interface|Input and Messages|_mouse message$||Help/Help_EN/Graphical User Interface/Input and Messages/_mouse message$
+Help_EN|Graphical User Interface|Input and Messages|_mouse message$()||Help/Help_EN/Graphical User Interface/Input and Messages/_mouse message$()
+Help_EN|Graphical User Interface|Input and Messages|_mouse set||Help/Help_EN/Graphical User Interface/Input and Messages/_mouse set
+Help_EN|Graphical User Interface|Input and Messages|_shortcut||Help/Help_EN/Graphical User Interface/Input and Messages/_shortcut
+Help_EN|Graphical User Interface|Menus|||Help/Help_EN/Graphical User Interface/Menus
+Help_EN|Graphical User Interface|Menus|_menu||Help/Help_EN/Graphical User Interface/Menus/_menu
+Help_EN|Graphical User Interface|Menus|_menu set||Help/Help_EN/Graphical User Interface/Menus/_menu set
+Help_EN|Graphical User Interface|Menus|_popupmenu||Help/Help_EN/Graphical User Interface/Menus/_popupmenu
+Help_EN|Graphical User Interface|Menus|_submenu||Help/Help_EN/Graphical User Interface/Menus/_submenu
+Help_EN|Graphical User Interface|Menus|_submenu set||Help/Help_EN/Graphical User Interface/Menus/_submenu set
+Help_EN|Graphical User Interface|Printing|||Help/Help_EN/Graphical User Interface/Printing
+Help_EN|Graphical User Interface|Printing|_printer||Help/Help_EN/Graphical User Interface/Printing/_printer
+Help_EN|Graphical User Interface|Printing|_printer setup||Help/Help_EN/Graphical User Interface/Printing/_printer setup
+Help_EN|Graphical User Interface|Views|||Help/Help_EN/Graphical User Interface/Views
+Help_EN|Graphical User Interface|Views|Boxview||Help/Help_EN/Graphical User Interface/Views/Boxview
+Help_EN|Graphical User Interface|Views|Boxview|_boxview|Help/Help_EN/Graphical User Interface/Views/Boxview/_boxview
+Help_EN|Graphical User Interface|Views|Boxview|_boxview set|Help/Help_EN/Graphical User Interface/Views/Boxview/_boxview set
+Help_EN|Graphical User Interface|Views|Canvas||Help/Help_EN/Graphical User Interface/Views/Canvas
+Help_EN|Graphical User Interface|Views|Canvas|_canvas|Help/Help_EN/Graphical User Interface/Views/Canvas/_canvas
+Help_EN|Graphical User Interface|Views|Layout||Help/Help_EN/Graphical User Interface/Views/Layout
+Help_EN|Graphical User Interface|Views|Layout|_layout|Help/Help_EN/Graphical User Interface/Views/Layout/_layout
+Help_EN|Graphical User Interface|Views|Scrollbar||Help/Help_EN/Graphical User Interface/Views/Scrollbar
+Help_EN|Graphical User Interface|Views|Scrollbar|_scrollbar|Help/Help_EN/Graphical User Interface/Views/Scrollbar/_scrollbar
+Help_EN|Graphical User Interface|Views|Scrollbar|_scrollbar get|Help/Help_EN/Graphical User Interface/Views/Scrollbar/_scrollbar get
+Help_EN|Graphical User Interface|Views|Scrollbar|_scrollbar set|Help/Help_EN/Graphical User Interface/Views/Scrollbar/_scrollbar set
+Help_EN|Graphical User Interface|Views|Splitview||Help/Help_EN/Graphical User Interface/Views/Splitview
+Help_EN|Graphical User Interface|Views|Splitview|_splitview|Help/Help_EN/Graphical User Interface/Views/Splitview/_splitview
+Help_EN|Graphical User Interface|Views|Splitview|_splitview get|Help/Help_EN/Graphical User Interface/Views/Splitview/_splitview get
+Help_EN|Graphical User Interface|Views|Splitview|_splitview set|Help/Help_EN/Graphical User Interface/Views/Splitview/_splitview set
+Help_EN|Graphical User Interface|Views|Stackview||Help/Help_EN/Graphical User Interface/Views/Stackview
+Help_EN|Graphical User Interface|Views|Stackview|_stackview|Help/Help_EN/Graphical User Interface/Views/Stackview/_stackview
+Help_EN|Graphical User Interface|Views|Stackview|_stackview get|Help/Help_EN/Graphical User Interface/Views/Stackview/_stackview get
+Help_EN|Graphical User Interface|Views|Stackview|_stackview set|Help/Help_EN/Graphical User Interface/Views/Stackview/_stackview set
+Help_EN|Graphical User Interface|Views|Tabview||Help/Help_EN/Graphical User Interface/Views/Tabview
+Help_EN|Graphical User Interface|Views|Tabview|_tabview|Help/Help_EN/Graphical User Interface/Views/Tabview/_tabview
+Help_EN|Graphical User Interface|Views|Tabview|_tabview add|Help/Help_EN/Graphical User Interface/Views/Tabview/_tabview add
+Help_EN|Graphical User Interface|Views|Tabview|_tabview get|Help/Help_EN/Graphical User Interface/Views/Tabview/_tabview get
+Help_EN|Graphical User Interface|Views|Tabview|_tabview set|Help/Help_EN/Graphical User Interface/Views/Tabview/_tabview set
+Help_EN|Graphical User Interface|Views|View||Help/Help_EN/Graphical User Interface/Views/View
+Help_EN|Graphical User Interface|Views|View|_view|Help/Help_EN/Graphical User Interface/Views/View/_view
+Help_EN|Graphical User Interface|Views|View|_view dropzone|Help/Help_EN/Graphical User Interface/Views/View/_view dropzone
+Help_EN|Graphical User Interface|Views|View|_view get|Help/Help_EN/Graphical User Interface/Views/View/_view get
+Help_EN|Graphical User Interface|Views|View|_view remove|Help/Help_EN/Graphical User Interface/Views/View/_view remove
+Help_EN|Graphical User Interface|Views|View|_view scale|Help/Help_EN/Graphical User Interface/Views/View/_view scale
+Help_EN|Graphical User Interface|Widgets|||Help/Help_EN/Graphical User Interface/Widgets
+Help_EN|Graphical User Interface|Widgets|Button||Help/Help_EN/Graphical User Interface/Widgets/Button
+Help_EN|Graphical User Interface|Widgets|Button|_button|Help/Help_EN/Graphical User Interface/Widgets/Button/_button
+Help_EN|Graphical User Interface|Widgets|Button|_button image|Help/Help_EN/Graphical User Interface/Widgets/Button/_button image
+Help_EN|Graphical User Interface|Widgets|Calendar||Help/Help_EN/Graphical User Interface/Widgets/Calendar
+Help_EN|Graphical User Interface|Widgets|Calendar|_calendar|Help/Help_EN/Graphical User Interface/Widgets/Calendar/_calendar
+Help_EN|Graphical User Interface|Widgets|Calendar|_calendar get$|Help/Help_EN/Graphical User Interface/Widgets/Calendar/_calendar get$
+Help_EN|Graphical User Interface|Widgets|Calendar|_calendar set|Help/Help_EN/Graphical User Interface/Widgets/Calendar/_calendar set
+Help_EN|Graphical User Interface|Widgets|Checkbox||Help/Help_EN/Graphical User Interface/Widgets/Checkbox
+Help_EN|Graphical User Interface|Widgets|Checkbox|_checkbox|Help/Help_EN/Graphical User Interface/Widgets/Checkbox/_checkbox
+Help_EN|Graphical User Interface|Widgets|Checkbox|_checkbox image|Help/Help_EN/Graphical User Interface/Widgets/Checkbox/_checkbox image
+Help_EN|Graphical User Interface|Widgets|Checkbox|_checkbox set|Help/Help_EN/Graphical User Interface/Widgets/Checkbox/_checkbox set
+Help_EN|Graphical User Interface|Widgets|Colorcontrol||Help/Help_EN/Graphical User Interface/Widgets/Colorcontrol
+Help_EN|Graphical User Interface|Widgets|Colorcontrol|_colorcontrol|Help/Help_EN/Graphical User Interface/Widgets/Colorcontrol/_colorcontrol
+Help_EN|Graphical User Interface|Widgets|Colorcontrol|_colorcontrol get|Help/Help_EN/Graphical User Interface/Widgets/Colorcontrol/_colorcontrol get
+Help_EN|Graphical User Interface|Widgets|Colorcontrol|_colorcontrol set|Help/Help_EN/Graphical User Interface/Widgets/Colorcontrol/_colorcontrol set
+Help_EN|Graphical User Interface|Widgets|Columnbox||Help/Help_EN/Graphical User Interface/Widgets/Columnbox
+Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox|Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox
+Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox add|Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox add
+Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox clear|Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox clear
+Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox color|Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox color
+Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox column|Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox column
+Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox count|Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox count
+Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox get|Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox get
+Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox get$|Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox get$
+Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox remove|Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox remove
+Help_EN|Graphical User Interface|Widgets|Columnbox|_columnbox select|Help/Help_EN/Graphical User Interface/Widgets/Columnbox/_columnbox select
+Help_EN|Graphical User Interface|Widgets|Dropbox||Help/Help_EN/Graphical User Interface/Widgets/Dropbox
+Help_EN|Graphical User Interface|Widgets|Dropbox|_dropbox|Help/Help_EN/Graphical User Interface/Widgets/Dropbox/_dropbox
+Help_EN|Graphical User Interface|Widgets|Dropbox|_dropbox add|Help/Help_EN/Graphical User Interface/Widgets/Dropbox/_dropbox add
+Help_EN|Graphical User Interface|Widgets|Dropbox|_dropbox clear|Help/Help_EN/Graphical User Interface/Widgets/Dropbox/_dropbox clear
+Help_EN|Graphical User Interface|Widgets|Dropbox|_dropbox count|Help/Help_EN/Graphical User Interface/Widgets/Dropbox/_dropbox count
+Help_EN|Graphical User Interface|Widgets|Dropbox|_dropbox get$|Help/Help_EN/Graphical User Interface/Widgets/Dropbox/_dropbox get$
+Help_EN|Graphical User Interface|Widgets|Dropbox|_dropbox remove|Help/Help_EN/Graphical User Interface/Widgets/Dropbox/_dropbox remove
+Help_EN|Graphical User Interface|Widgets|Dropbox|_dropbox select|Help/Help_EN/Graphical User Interface/Widgets/Dropbox/_dropbox select
+Help_EN|Graphical User Interface|Widgets|Listbox||Help/Help_EN/Graphical User Interface/Widgets/Listbox
+Help_EN|Graphical User Interface|Widgets|Listbox|_listbox|Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox
+Help_EN|Graphical User Interface|Widgets|Listbox|_listbox add|Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox add
+Help_EN|Graphical User Interface|Widgets|Listbox|_listbox clear|Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox clear
+Help_EN|Graphical User Interface|Widgets|Listbox|_listbox count|Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox count
+Help_EN|Graphical User Interface|Widgets|Listbox|_listbox get|Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox get
+Help_EN|Graphical User Interface|Widgets|Listbox|_listbox get$|Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox get$
+Help_EN|Graphical User Interface|Widgets|Listbox|_listbox remove|Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox remove
+Help_EN|Graphical User Interface|Widgets|Listbox|_listbox select|Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox select
+Help_EN|Graphical User Interface|Widgets|Listbox|_listbox sort|Help/Help_EN/Graphical User Interface/Widgets/Listbox/_listbox sort
+Help_EN|Graphical User Interface|Widgets|Options||Help/Help_EN/Graphical User Interface/Widgets/Options
+Help_EN|Graphical User Interface|Widgets|Options|_option color|Help/Help_EN/Graphical User Interface/Widgets/Options/_option color
+Help_EN|Graphical User Interface|Widgets|Options|_option set|Help/Help_EN/Graphical User Interface/Widgets/Options/_option set
+Help_EN|Graphical User Interface|Widgets|Radiobutton||Help/Help_EN/Graphical User Interface/Widgets/Radiobutton
+Help_EN|Graphical User Interface|Widgets|Radiobutton|_radiobutton|Help/Help_EN/Graphical User Interface/Widgets/Radiobutton/_radiobutton
+Help_EN|Graphical User Interface|Widgets|Radiobutton|_radiobutton set|Help/Help_EN/Graphical User Interface/Widgets/Radiobutton/_radiobutton set
+Help_EN|Graphical User Interface|Widgets|Slider||Help/Help_EN/Graphical User Interface/Widgets/Slider
+Help_EN|Graphical User Interface|Widgets|Slider|_slider|Help/Help_EN/Graphical User Interface/Widgets/Slider/_slider
+Help_EN|Graphical User Interface|Widgets|Slider|_slider color|Help/Help_EN/Graphical User Interface/Widgets/Slider/_slider color
+Help_EN|Graphical User Interface|Widgets|Slider|_slider get|Help/Help_EN/Graphical User Interface/Widgets/Slider/_slider get
+Help_EN|Graphical User Interface|Widgets|Slider|_slider label|Help/Help_EN/Graphical User Interface/Widgets/Slider/_slider label
+Help_EN|Graphical User Interface|Widgets|Slider|_slider set|Help/Help_EN/Graphical User Interface/Widgets/Slider/_slider set
+Help_EN|Graphical User Interface|Widgets|Spincontrol||Help/Help_EN/Graphical User Interface/Widgets/Spincontrol
+Help_EN|Graphical User Interface|Widgets|Spincontrol|_spincontrol|Help/Help_EN/Graphical User Interface/Widgets/Spincontrol/_spincontrol
+Help_EN|Graphical User Interface|Widgets|Spincontrol|_spincontrol get|Help/Help_EN/Graphical User Interface/Widgets/Spincontrol/_spincontrol get
+Help_EN|Graphical User Interface|Widgets|Spincontrol|_spincontrol set|Help/Help_EN/Graphical User Interface/Widgets/Spincontrol/_spincontrol set
+Help_EN|Graphical User Interface|Widgets|Statusbar||Help/Help_EN/Graphical User Interface/Widgets/Statusbar
+Help_EN|Graphical User Interface|Widgets|Statusbar|_statusbar|Help/Help_EN/Graphical User Interface/Widgets/Statusbar/_statusbar
+Help_EN|Graphical User Interface|Widgets|Statusbar|_statusbar set|Help/Help_EN/Graphical User Interface/Widgets/Statusbar/_statusbar set
+Help_EN|Graphical User Interface|Widgets|Text||Help/Help_EN/Graphical User Interface/Widgets/Text
+Help_EN|Graphical User Interface|Widgets|Text|_text|Help/Help_EN/Graphical User Interface/Widgets/Text/_text
+Help_EN|Graphical User Interface|Widgets|Text|_text set|Help/Help_EN/Graphical User Interface/Widgets/Text/_text set
+Help_EN|Graphical User Interface|Widgets|Textcontrol||Help/Help_EN/Graphical User Interface/Widgets/Textcontrol
+Help_EN|Graphical User Interface|Widgets|Textcontrol|_textcontrol|Help/Help_EN/Graphical User Interface/Widgets/Textcontrol/_textcontrol
+Help_EN|Graphical User Interface|Widgets|Textcontrol|_textcontrol clear|Help/Help_EN/Graphical User Interface/Widgets/Textcontrol/_textcontrol clear
+Help_EN|Graphical User Interface|Widgets|Textcontrol|_textcontrol get$|Help/Help_EN/Graphical User Interface/Widgets/Textcontrol/_textcontrol get$
+Help_EN|Graphical User Interface|Widgets|Textcontrol|_textcontrol set|Help/Help_EN/Graphical User Interface/Widgets/Textcontrol/_textcontrol set
+Help_EN|Graphical User Interface|Widgets|Textedit||Help/Help_EN/Graphical User Interface/Widgets/Textedit
+Help_EN|Graphical User Interface|Widgets|Textedit|_textedit|Help/Help_EN/Graphical User Interface/Widgets/Textedit/_textedit
+Help_EN|Graphical User Interface|Widgets|Textedit|_textedit add|Help/Help_EN/Graphical User Interface/Widgets/Textedit/_textedit add
+Help_EN|Graphical User Interface|Widgets|Textedit|_textedit clear|Help/Help_EN/Graphical User Interface/Widgets/Textedit/_textedit clear
+Help_EN|Graphical User Interface|Widgets|Textedit|_textedit color|Help/Help_EN/Graphical User Interface/Widgets/Textedit/_textedit color
+Help_EN|Graphical User Interface|Widgets|Textedit|_textedit get|Help/Help_EN/Graphical User Interface/Widgets/Textedit/_textedit get
+Help_EN|Graphical User Interface|Widgets|Textedit|_textedit get$|Help/Help_EN/Graphical User Interface/Widgets/Textedit/_textedit get$
+Help_EN|Graphical User Interface|Widgets|Textedit|_textedit set|Help/Help_EN/Graphical User Interface/Widgets/Textedit/_textedit set
+Help_EN|Graphical User Interface|Widgets|Texturl||Help/Help_EN/Graphical User Interface/Widgets/Texturl
+Help_EN|Graphical User Interface|Widgets|Texturl|_texturl|Help/Help_EN/Graphical User Interface/Widgets/Texturl/_texturl
+Help_EN|Graphical User Interface|Widgets|Texturl|_texturl color|Help/Help_EN/Graphical User Interface/Widgets/Texturl/_texturl color
+Help_EN|Graphical User Interface|Widgets|Tooltip||Help/Help_EN/Graphical User Interface/Widgets/Tooltip
+Help_EN|Graphical User Interface|Widgets|Tooltip|_tooltip|Help/Help_EN/Graphical User Interface/Widgets/Tooltip/_tooltip
+Help_EN|Graphical User Interface|Widgets|Tooltip|_tooltip color|Help/Help_EN/Graphical User Interface/Widgets/Tooltip/_tooltip color
+Help_EN|Graphical User Interface|Widgets|Treebox||Help/Help_EN/Graphical User Interface/Widgets/Treebox
+Help_EN|Graphical User Interface|Widgets|Treebox|_treebox|Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox
+Help_EN|Graphical User Interface|Widgets|Treebox|_treebox add|Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox add
+Help_EN|Graphical User Interface|Widgets|Treebox|_treebox clear|Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox clear
+Help_EN|Graphical User Interface|Widgets|Treebox|_treebox collapse|Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox collapse
+Help_EN|Graphical User Interface|Widgets|Treebox|_treebox count|Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox count
+Help_EN|Graphical User Interface|Widgets|Treebox|_treebox expand|Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox expand
+Help_EN|Graphical User Interface|Widgets|Treebox|_treebox get$|Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox get$
+Help_EN|Graphical User Interface|Widgets|Treebox|_treebox remove|Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox remove
+Help_EN|Graphical User Interface|Widgets|Treebox|_treebox select|Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox select
+Help_EN|Graphical User Interface|Widgets|Treebox|_treebox sort|Help/Help_EN/Graphical User Interface/Widgets/Treebox/_treebox sort
+Help_EN|Graphical User Interface|Window|||Help/Help_EN/Graphical User Interface/Window
+Help_EN|Graphical User Interface|Window|_alert||Help/Help_EN/Graphical User Interface/Window/_alert
+Help_EN|Graphical User Interface|Window|_filepanel||Help/Help_EN/Graphical User Interface/Window/_filepanel
+Help_EN|Graphical User Interface|Window|_pcworkspaces||Help/Help_EN/Graphical User Interface/Window/_pcworkspaces
+Help_EN|Graphical User Interface|Window|_window close||Help/Help_EN/Graphical User Interface/Window/_window close
+Help_EN|Graphical User Interface|Window|_window count||Help/Help_EN/Graphical User Interface/Window/_window count
+Help_EN|Graphical User Interface|Window|_window get||Help/Help_EN/Graphical User Interface/Window/_window get
+Help_EN|Graphical User Interface|Window|_window open||Help/Help_EN/Graphical User Interface/Window/_window open
+Help_EN|Graphical User Interface|Window|_window set||Help/Help_EN/Graphical User Interface/Window/_window set
+Help_EN|Input and Output||||Help/Help_EN/Input and Output
+Help_EN|Input and Output|_;|||Help/Help_EN/Input and Output/_;
+Help_EN|Input and Output|_at()|||Help/Help_EN/Input and Output/_at()
+Help_EN|Input and Output|_clear screen|||Help/Help_EN/Input and Output/_clear screen
+Help_EN|Input and Output|_close|||Help/Help_EN/Input and Output/_close
+Help_EN|Input and Output|_color|||Help/Help_EN/Input and Output/_color
+Help_EN|Input and Output|_colour|||Help/Help_EN/Input and Output/_colour
+Help_EN|Input and Output|_eof|||Help/Help_EN/Input and Output/_eof
+Help_EN|Input and Output|_eor()|||Help/Help_EN/Input and Output/_eor()
+Help_EN|Input and Output|_getscreen$()|||Help/Help_EN/Input and Output/_getscreen$()
+Help_EN|Input and Output|_inkey$|||Help/Help_EN/Input and Output/_inkey$
+Help_EN|Input and Output|_input|||Help/Help_EN/Input and Output/_input
+Help_EN|Input and Output|_line input|||Help/Help_EN/Input and Output/_line input
+Help_EN|Input and Output|_open|||Help/Help_EN/Input and Output/_open
+Help_EN|Input and Output|_print|||Help/Help_EN/Input and Output/_print
+Help_EN|Input and Output|_putscreen|||Help/Help_EN/Input and Output/_putscreen
+Help_EN|Input and Output|_reverse|||Help/Help_EN/Input and Output/_reverse
+Help_EN|Input and Output|_screen|||Help/Help_EN/Input and Output/_screen
+Help_EN|Input and Output|_seek()|||Help/Help_EN/Input and Output/_seek()
+Help_EN|Input and Output|_tell|||Help/Help_EN/Input and Output/_tell
+Help_EN|Input and Output|_using|||Help/Help_EN/Input and Output/_using
+Help_EN|Localization||||Help/Help_EN/Localization
+Help_EN|Localization|_availableLanguage|||Help/Help_EN/Localization/_availableLanguage
+Help_EN|Localization|_localize|||Help/Help_EN/Localization/_localize
+Help_EN|Localization|_translate$()|||Help/Help_EN/Localization/_translate$()
+Help_EN|Sound||||Help/Help_EN/Sound
+Help_EN|Sound|_loudness set|||Help/Help_EN/Sound/_loudness set
+Help_EN|Sound|_Mediasound play|||Help/Help_EN/Sound/_Mediasound play
+Help_EN|Sound|_Mediasound stop|||Help/Help_EN/Sound/_Mediasound stop
+Help_EN|Sound|_beep|||Help/Help_EN/Sound/_beep
+Help_EN|Sound|_bell|||Help/Help_EN/Sound/_bell
+Help_EN|Sound|_sound play|||Help/Help_EN/Sound/_sound play
+Help_EN|Sound|_sound stop|||Help/Help_EN/Sound/_sound stop
+Help_EN|Sound|_sound wait|||Help/Help_EN/Sound/_sound wait
+Help_EN|String Handling||||Help/Help_EN/String Handling
+Help_EN|String Handling|_asc()|||Help/Help_EN/String Handling/_asc()
+Help_EN|String Handling|_chr$()|||Help/Help_EN/String Handling/_chr$()
+Help_EN|String Handling|_glob()|||Help/Help_EN/String Handling/_glob()
+Help_EN|String Handling|_hex$()|||Help/Help_EN/String Handling/_hex$()
+Help_EN|String Handling|_instr()|||Help/Help_EN/String Handling/_instr()
+Help_EN|String Handling|_left$()|||Help/Help_EN/String Handling/_left$()
+Help_EN|String Handling|_len()|||Help/Help_EN/String Handling/_len()
+Help_EN|String Handling|_lower$()|||Help/Help_EN/String Handling/_lower$()
+Help_EN|String Handling|_ltrim$()|||Help/Help_EN/String Handling/_ltrim$()
+Help_EN|String Handling|_mid$()|||Help/Help_EN/String Handling/_mid$()
+Help_EN|String Handling|_right$()|||Help/Help_EN/String Handling/_right$()
+Help_EN|String Handling|_rtrim$()|||Help/Help_EN/String Handling/_rtrim$()
+Help_EN|String Handling|_split()|||Help/Help_EN/String Handling/_split()
+Help_EN|String Handling|_str$()|||Help/Help_EN/String Handling/_str$()
+Help_EN|String Handling|_str_replace$()|||Help/Help_EN/String Handling/_str_replace$()
+Help_EN|String Handling|_token()|||Help/Help_EN/String Handling/_token()
+Help_EN|String Handling|_trim$()|||Help/Help_EN/String Handling/_trim$()
+Help_EN|String Handling|_upper$()|||Help/Help_EN/String Handling/_upper$()
+Help_EN|String Handling|_val()|||Help/Help_EN/String Handling/_val()
+Help_EN|Subroutines||||Help/Help_EN/Subroutines
+Help_EN|Subroutines|_end sub|||Help/Help_EN/Subroutines/_end sub
+Help_EN|Subroutines|_export|||Help/Help_EN/Subroutines/_export
+Help_EN|Subroutines|_import|||Help/Help_EN/Subroutines/_import
+Help_EN|Subroutines|_local|||Help/Help_EN/Subroutines/_local
+Help_EN|Subroutines|_numparams|||Help/Help_EN/Subroutines/_numparams
+Help_EN|Subroutines|_return|||Help/Help_EN/Subroutines/_return
+Help_EN|Subroutines|_static|||Help/Help_EN/Subroutines/_static
+Help_EN|Subroutines|_sub|||Help/Help_EN/Subroutines/_sub
+Help_EN|System||||Help/Help_EN/System
+Help_EN|System|Attributes|||Help/Help_EN/System/Attributes
+Help_EN|System|Attributes|_attribute clear||Help/Help_EN/System/Atrributes/_attribute clear
+Help_EN|System|Attributes|_attribute get||Help/Help_EN/System/Atrributes/_attribute get
+Help_EN|System|Attributes|_attribute get$||Help/Help_EN/System/Atrributes/_attribute get$
+Help_EN|System|Attributes|_attribute set||Help/Help_EN/System/Atrributes/_attribute set
+Help_EN|System|_#|||Help/Help_EN/System/_#
+Help_EN|System|_:|||Help/Help_EN/System/_:
+Help_EN|System|_bind()|||Help/Help_EN/System/_bind()
+Help_EN|System|_chr$(47)chr$(47)|||Help/Help_EN/System/_chr$(47)chr$(47)
+Help_EN|System|_clipboard copy|||Help/Help_EN/System/_clipboard copy
+Help_EN|System|_clipboard paste$|||Help/Help_EN/System/_clipboard paste$
+Help_EN|System|_compile|||Help/Help_EN/System/_compile
+Help_EN|System|_date$|||Help/Help_EN/System/_date$
+Help_EN|System|_doc|||Help/Help_EN/System/_doc
+Help_EN|System|_docu$|||Help/Help_EN/System/_docu$
+Help_EN|System|_error|||Help/Help_EN/System/_error
+Help_EN|System|_execute$()|||Help/Help_EN/System/_execute$()
+Help_EN|System|_execute()|||Help/Help_EN/System/_execute()
+Help_EN|System|_exit|||Help/Help_EN/System/_exit
+Help_EN|System|_iscomputeron|||Help/Help_EN/System/_iscomputeron
+Help_EN|System|_launch|||Help/Help_EN/System/_launch
+Help_EN|System|_peek$|||Help/Help_EN/System/_peek$
+Help_EN|System|_poke|||Help/Help_EN/System/_poke
+Help_EN|System|_rem|||Help/Help_EN/System/_rem
+Help_EN|System|_sleep|||Help/Help_EN/System/_sleep
+Help_EN|System|_systemt|||Help/Help_EN/System/_wait
+Help_EN|System|_pause|||Help/Help_EN/System/_pause
+Help_EN|System|_system$()|||Help/Help_EN/System/_system$()
+Help_EN|System|_system()|||Help/Help_EN/System/_system()
+Help_EN|System|_thread get|||Help/Help_EN/System/_thread get
+Help_EN|System|_thread remove|||Help/Help_EN/System/_thread remove
+Help_EN|System|_time$|||Help/Help_EN/System/_time$
+Help_EN|System|_to |||Help/Help_EN/System/_to 
+Help_EN|System|_wait|||Help/Help_EN/System/_wait
+Help_EN|Reserved_words||||Help/Help_EN/Reserved_words

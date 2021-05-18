@@ -48,6 +48,9 @@ Return true, if the executing yab-program is part of a standalone program; see t
 peek("version")
 Return the version number of yab (e.g. 1).
 
+peek("loudness")
+Return the loudness from the system.
+
 peek("error")
 Return a number specifying the nature of the last error in an open- or seek-statement. Normally an error within an open-statement immediately terminates your program with an appropriate error-message, so there is no chance and no need to learn more about the nature of the error. However, if you use open as a condition (e.g. if (open(#1,"foo")) ...) the outcome (success or failure) of the open-operation will determine, if the condition evaluates to true or false. If now such an operation fails, your program will not be terminated and you might want to learn the reason for failure. This reason will be returned by peek("error") (as a number) or by peek$("error") (as a string)The table below shows the various error codes; the value returned by peek$("error") explains the nature of the error. Note, that the codes 10,11 and 12 refer to the seek-command.
 

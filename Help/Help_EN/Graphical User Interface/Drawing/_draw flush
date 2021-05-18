@@ -26,4 +26,4 @@ Explanation:
 
 In this example, some things are drawn on the window and then cleared by the draw flush command.
 
-Related: draw circle, draw curve, draw dot, draw ellipse, draw line, draw rect, draw set
+Related: draw circle, draw curve, draw dot, draw ellipse, draw line, draw rect, draw set, draw triangle

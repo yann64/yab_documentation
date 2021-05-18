@@ -5,6 +5,9 @@ Synopsis:
 PrintingError = PRINTER JobName$, SetupFile$, View$
 
 Description:
+
+Importent: JobName$ must be a short name without any Slashes and otherthink. In the IDE was the docname given as the document which was open incl. the director, but it didn't work. i change this to "yab-IDE" and its work. 
+
 Printer is a powerful but yet simple command to print a view named View$. The view is send to the currently active printer and put into the spooling queue. There, it is visible under the name JobName$.
 
 SetupFile$ gives a files as saved by the printer setup command. If the setup file is not valid or empty (""), the printing setup is called first automatically. Otherwise the saved setup is used for the printing.
@@ -12,7 +15,7 @@ SetupFile$ gives a files as saved by the printer setup command. If the setup fil
 Printer returns one of the following numbers:
 0 = No Problems
 1 = Page setup failed (probably communication problems with the print server)
-2 = The configuration file was loaded but page setup failed
+2 = The configuration file was loaded but page setup failed // This error isn't supported anymore
 3 = The view View$ was not found
 4 = The number of pages is 0 or less
 5 = The printing was canceled or something went wrong with printing
@@ -37,7 +40,7 @@ button 50,170 to 150,190, "PrintButton", "Print...", "Example"
 while(not quitting)
         m$ = message$
         if(instr(m$, "PrintButton")) then
-                errcode = printer "Example Printjob", "", "PrintMe"
+                errcode = printer "Printjob", "", "PrintMe"
                 if(errcode>1) alert "Printing Problem: "+str$(errcode), "Ok", "Warning"
         endif
         if(instr(m$, "Quit")) quitting = true

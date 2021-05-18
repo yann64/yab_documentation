@@ -1,0 +1,16 @@
+Name:
+pcworkspaces -- get the current number of workspaces from the system
+
+Synopsis:
+print pcworkspaces
+
+Description:
+
+Example:
+print str$(pcworkspaces)
+
+Explanation:
+
+print out the current number of workspaces from the system as a string
+
+Related: window set

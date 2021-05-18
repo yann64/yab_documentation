@@ -55,4 +55,4 @@ Explanation:
 	This Example draws the text < "This is the TEXT" > on position 100,100 on the View View$. The text will be Rotated 90 degrees to the  	
 	left. 
 
-Related: draw circle, draw curve, draw dot, draw ellipse, draw get, draw get$, draw line, draw rect, draw text, view
+Related: draw circle, draw curve, draw dot, draw ellipse, draw get, draw get$, draw line, draw rect, draw text, draw triangle, view

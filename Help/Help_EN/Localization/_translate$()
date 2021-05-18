@@ -1,17 +1,18 @@
 Name:
-translate$() -- translate a string on ZETA
+translate$() -- translate a string
 
 Synopsis:
 Translation$ = TRANSLATE$(Source$)
 
 Description:
-The counterpart to the localize command is translate$(). It translates the string Source$ according to known dictionaries (see localize for more information about dictionaries) into the language currently set as default in ZETA. 
+The counterpart to the localize command is translate$(). It translates the string Source$ according to known dictionaries (see localize for more information about dictionaries) into the language currently set as default.
 
-Note: Currently localization is only supported on ZETA. However, supporting the localization of your program is a good idea for BeOS users too because localization support might be added soon to BeOS yab.
+Note: However, supporting the localization of your program is a good idea for BeOS users too because localization support might be added soon to BeOS yab.
 
 Example:
 print translate$("File")
-Explanation:
-Using only the system dictionaries, we can obtain the translation of "File" according to the language set in the ZETA preferences.
 
-Related: localize
+Explanation:
+Using only the system dictionaries, we can obtain the translation of "File" according to the language set in the preferences.
+
+Related: localize, LANGUAGE_AVAILABLE$

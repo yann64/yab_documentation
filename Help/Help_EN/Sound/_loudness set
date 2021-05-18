@@ -1,0 +1,28 @@
+Name:
+loudness set -- set the loudness from the system
+
+Synopsis:
+LOUDNESS SET number
+
+Description:
+Set the loudness from the system to the given number.  
+
+Example:
+ss=-70
+sz=20
+for i = 1 to 5 
+	LOUDNESS SET ss
+	x=peek("loudness")
+	print x
+	wait 2
+	LOUDNESS SET sz
+	x=peek("loudness")
+	print x
+	wait 2
+next i
+
+Explanation:
+
+In the example above, the volume was turned up and down every 2 seconds
+
+Related: sound play, sound stop, peek("loudness")

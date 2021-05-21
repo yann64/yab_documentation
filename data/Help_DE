@@ -306,11 +306,11 @@ Help_DE|Subroutines|_return|||/boot/system/documentation/yab/Help/Help_DE/Subrou
 Help_DE|Subroutines|_static|||/boot/system/documentation/yab/Help/Help_DE/Subroutines/_static
 Help_DE|Subroutines|_sub|||/boot/system/documentation/yab/Help/Help_DE/Subroutines/_sub
 Help_DE|System||||/boot/system/documentation/yab/Help/Help_DE/System
-Help_DE|System|Atrributes|||/boot/system/documentation/yab/Help/Help_DE/System/Atrributes
-Help_DE|System|Atrributes|_attribute clear||/boot/system/documentation/yab/Help/Help_DE/System/Atrributes/_attribute clear
-Help_DE|System|Atrributes|_attribute get||/boot/system/documentation/yab/Help/Help_DE/System/Atrributes/_attribute get
-Help_DE|System|Atrributes|_attribute get$||/boot/system/documentation/yab/Help/Help_DE/System/Atrributes/_attribute get$
-Help_DE|System|Atrributes|_attribute set||/boot/system/documentation/yab/Help/Help_DE/System/Atrributes/_attribute set
+Help_DE|System|Attributes|||/boot/system/documentation/yab/Help/Help_DE/System/Attributes
+Help_DE|System|Attributes|_attribute clear||/boot/system/documentation/yab/Help/Help_DE/System/Attributes/_attribute clear
+Help_DE|System|Attributes|_attribute get||/boot/system/documentation/yab/Help/Help_DE/System/Attributes/_attribute get
+Help_DE|System|Attributes|_attribute get$||/boot/system/documentation/yab/Help/Help_DE/System/Attributes/_attribute get$
+Help_DE|System|Attributes|_attribute set||/boot/system/documentation/yab/Help/Help_DE/System/Attributes/_attribute set
 Help_DE|System|_#|||/boot/system/documentation/yab/Help/Help_DE/System/_#
 Help_DE|System|_:|||/boot/system/documentation/yab/Help/Help_DE/System/_:
 Help_DE|System|_bind()|||/boot/system/documentation/yab/Help/Help_DE/System/_bind()

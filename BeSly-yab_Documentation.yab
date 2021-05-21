@@ -152,14 +152,14 @@ sub right_side(entrynumber)
 
 	fileload$=d$(entrynumber*6)
 	//print fileload$
-	handleA=open(fileload$, "r")
+	handleA=open(directory$+"/"+fileload$, "r")
 	while (not EOF(handleA))
 		line input #handleA information$
 		information$=information$+"\n"
 		TEXTEDIT ADD "Information",information$
 		boxview SET "ViewBox", "Label", box_header$
 	wend
-	close(auslesen)
+	close(handleA)
 end sub
 // draw a sort of 3D line
 sub MyLine(x1,y1,x2,y2,View$)

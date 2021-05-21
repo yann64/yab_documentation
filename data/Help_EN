@@ -313,10 +313,10 @@ Help_EN|Subroutines|_static|||Help/Help_EN/Subroutines/_static
 Help_EN|Subroutines|_sub|||Help/Help_EN/Subroutines/_sub
 Help_EN|System||||Help/Help_EN/System
 Help_EN|System|Attributes|||Help/Help_EN/System/Attributes
-Help_EN|System|Attributes|_attribute clear||Help/Help_EN/System/Atrributes/_attribute clear
-Help_EN|System|Attributes|_attribute get||Help/Help_EN/System/Atrributes/_attribute get
-Help_EN|System|Attributes|_attribute get$||Help/Help_EN/System/Atrributes/_attribute get$
-Help_EN|System|Attributes|_attribute set||Help/Help_EN/System/Atrributes/_attribute set
+Help_EN|System|Attributes|_attribute clear||Help/Help_EN/System/Attributes/_attribute clear
+Help_EN|System|Attributes|_attribute get||Help/Help_EN/System/Attributes/_attribute get
+Help_EN|System|Attributes|_attribute get$||Help/Help_EN/System/Attributes/_attribute get$
+Help_EN|System|Attributes|_attribute set||Help/Help_EN/System/Attributes/_attribute set
 Help_EN|System|_#|||Help/Help_EN/System/_#
 Help_EN|System|_:|||Help/Help_EN/System/_:
 Help_EN|System|_bind()|||Help/Help_EN/System/_bind()

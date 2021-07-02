@@ -333,12 +333,12 @@ Help_EN|System|_execute()|||Help/Help_EN/System/_execute()
 Help_EN|System|_exit|||Help/Help_EN/System/_exit
 Help_EN|System|_iscomputeron|||Help/Help_EN/System/_iscomputeron
 Help_EN|System|_launch|||Help/Help_EN/System/_launch
+Help_EN|System|_pause|||Help/Help_EN/System/_pause
+Help_EN|System|_peek|||Help/Help_EN/System/_peek
 Help_EN|System|_peek$|||Help/Help_EN/System/_peek$
 Help_EN|System|_poke|||Help/Help_EN/System/_poke
 Help_EN|System|_rem|||Help/Help_EN/System/_rem
 Help_EN|System|_sleep|||Help/Help_EN/System/_sleep
-Help_EN|System|_systemt|||Help/Help_EN/System/_wait
-Help_EN|System|_pause|||Help/Help_EN/System/_pause
 Help_EN|System|_system$()|||Help/Help_EN/System/_system$()
 Help_EN|System|_system()|||Help/Help_EN/System/_system()
 Help_EN|System|_thread get|||Help/Help_EN/System/_thread get

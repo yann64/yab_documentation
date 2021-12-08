@@ -1,0 +1,17 @@
+Nom:
+** or ^ -- élève le premier argument à la puissance du second
+
+Aperçu:
+print 2**b 
+print 3^4 
+
+Description:
+** (ou ^, qui est un synonyme exact), est l'opérateur arythmétique de puissance; il requiert un nombre à sa gauche et un autre nombre à sa droite;
+** élève ensuite le premier nombre à la puissance du second et retourne le résultat. Le résultat n'est calculé que si il est un nombre réel (et pas un nombre complexe);
+cela signifie que la puissance ne peut être calculée si le premier argument est négatif et le second n'est pas un entier.
+En contrepartie, le second argument peut ne pas être un entier si le premier argument est positif, signifiant que ** peut être utilisé pour calculer une racine du premier argument. Par exemple x**0.5 calcule la racine carrée de x.
+
+Example:
+print 2**0.5 
+
+Voir aussi: sqrt

@@ -1,0 +1,29 @@
+Name:
+draw flush -- clear all prior draw commands
+
+Synopsis:
+DRAW FLUSH View$
+
+Description:
+Draw flush clears the view named View$ from all drawings.
+
+In yab, all draw commands are stored in a list for every view. If the window is updated, e.g. when resized, all prior drawing is repeated. If you do a lot of drawing in a view, you might notice the redrawing due to flickering. if you want to clear your view, it is much better to clear it with draw flush than e.g. drawing a big rectangle over the other drawings. For flickerfree drawing consider to draw on a canvas instead of a view.
+
+Note: This does not work for canvas and bitmaps.
+
+Note: Widgets are not affected by draw flush.
+
+Example:
+window open 100,100 to 400,400, "Example", "Example"
+draw line 0,0 to 300,300, "Example"
+draw circle 100,50, 20, "Example"
+draw rect 10,200 to 200,250, "Example"
+sleep 1
+draw flush "Example"
+sleep 3
+window close "Example" 
+Explanation:
+
+In this example, some things are drawn on the window and then cleared by the draw flush command.
+
+Related: draw circle, draw curve, draw dot, draw ellipse, draw line, draw rect, draw set, draw triangle

@@ -1,0 +1,52 @@
+Name:
+elsif -- starts an alternate condition within an if-statement
+
+Synopsis: 
+if (...) then 
+  ... 
+elseif (...) 
+  ... 
+elsif (...) then 
+  ... 
+else 
+  ... 
+endif 
+
+Description:
+The elsif-statement is used to select a single alternative among a seriesof choices. With each elsif-statement you may specify a condition, which is tested, if the main condition (specified with the if-statement) has failed. Note that elsif might be just as well written as elseif.
+Within the example below, two variables a and b are tested against a rangeof values. The variable a is tested with the elsif-statement. The very same tests are performed for the variable b too; but here an involved series of if-else-statements is employed, making the tests much more obscure.
+
+Example:
+ 
+input "Please enter a number: " a 
+if (a<0) then 
+	print "less than 0" 
+elseif (a<=10) then 
+	print "between 0 and 10" 
+elsif (a<=20) 
+	print "between 11 and 20" 
+else 
+	print "over 20" 
+endif 
+
+input "Please enter another number: " b 
+if (b<0) then 
+	print "less than 0" 
+else 
+	if (b<=10) then 
+		print "between 0 and 10" 
+	else 
+		if (b<=20) then 
+			print "between 11 and 20" 
+		else 
+			print "over 20" 
+		endif 
+	endif 
+endif 
+Explanation:
+
+  Note, that the very same tests are performed for the variables a and b, but can be stated much more clearly with the elsif-statement.
+  Note, that elsif might be written as elseif too, and that the keyword then is optional.
+
+
+Related: if, else

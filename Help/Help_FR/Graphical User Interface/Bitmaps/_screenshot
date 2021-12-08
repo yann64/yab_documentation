@@ -1,0 +1,8 @@
+Name:
+screenshot -- copies the specified region of the desktop onto a bitmap
+
+Synopsis:
+SCREENSHOT x1, y1 to x2, y2, Bitmap$
+
+Description:
+Takes a screenshot and copies the specified region of the desktop onto Bitmap$, which will be created!

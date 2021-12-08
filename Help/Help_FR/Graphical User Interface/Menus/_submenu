@@ -1,0 +1,88 @@
+Name:
+submenu -- create a submenu item for an existing menu
+
+Synopsis:
+SUBMENU MenuHead$, MenuItem$, SubMenuItem$, Shortcut$, View$
+
+Description:
+To have a submenu to an existing menu, you have to specify the menu title MenuHead$, the menu item that will contain the submenu MenuItem$ and the new name for the submenu entry SubMenuItem$. If MenuHead$ or MenuItem$ do not exist, they are created. Similar to the menu command the submenu item can be called by a shortcut key Shortcut$. This again explained below in detail.
+
+If SubMenuItem$ is set as follows:
+
+Menu$ = "--"
+
+then the submenu item will be a separator line.
+
+The first letter of Shortcut$ specifys the shortcut key for this submenu item. It is always combined with the command key which is ALT normally (or CTRL when CTRL and ALT are switched in the preferences). E.g. consider a Shortcut$ of "O" then ALT-O will appear in the menu and the user has to press ALT-O to activate this menu item. Additionaly to the command key you can specify further modifiers which are set before the shortcut letter:
+
+
+"S" for the shift key
+"C" for the control key (CTRL, or ALT if CTRL and ALT are switched)
+"O" for the option key (on most keyboards probably the Windows button)
+
+These modifiers can be combined, but the following combinations do not work: "SO", "SC" and "SCO"
+
+Some Shortcut examples:
+
+"O" for ALT-O
+"SO" for Shift-ALT-O
+"COO" for Control-Option-ALT-O
+
+
+Message:
+The submenu when selected or called by the shortcut key will return a message of the format: 
+
+View$+":"+Head$+":"+MenuItem$+":"+SubMenuItem$
+
+Note, when you have switched on localization, you get the translated message. Have a look at the example below, how to handle such translations.
+
+Design:
+Use submenus sparsely. Even a complex program like the yab IDE contains only one submenu (for the online resources). Most often submenus should only be used for a list of similar items. Use capitalized words for English menu entries (like for headings).  A menu item should have three dots (...) always when the user can expect a further dialog and not an immediate action. 
+
+Example:
+localize
+window open 100,100 to 400,300, "Example", "Example"
+
+submenu "File", "Alert Types", "Empty Alert...", "", "Example"
+submenu "File", "Alert Types", "Info Alert...", "", "Example"
+submenu "File", "Alert Types", "Idea Alert...", "", "Example"
+submenu "File", "Alert Types", "Warning Alert...", "", "Example"
+submenu "File", "Alert Types", "Stop Alert...", "", "Example"
+
+menu "File", "--", "", "Example"
+menu "File", "Quit", "Q", "Example"
+
+dim msg$(1)
+while(not quitting)
+        n = token(message$, msg$(), "|")
+        for i = 1 to n
+                switch(msg$(i))
+                        case "_QuitRequested"
+                        case "Example:_QuitRequested"
+                        case translate$("Example:File:Quit")
+                                quitting = true
+                                break
+                        case translate$("Example:File:Alert Types:Empty Alert...")
+                                alert "Empty alert.", "Ok", "empty"
+                                break
+                        case translate$("Example:File:Alert Types:Info Alert...")
+                                alert "Info alert.", "Ok", "info"
+                                break
+                        case translate$("Example:File:Alert Types:Idea Alert...")
+                                alert "Idea alert.", "Ok", "idea"
+                                break
+                        case translate$("Example:File:Alert Types:Warning Alert...")
+                                alert "Warning alert.", "Ok", "warning"
+                                break
+                        case translate$("Example:File:Alert Types:Stop Alert...")
+                                alert "Stop alert.", "Ok", "stop"
+                                break
+                end switch
+        next i
+wend
+
+window close "Example"
+Explanation:
+Here the important part is the declaration of the submenu. With the first submenu command the menubar, the menu head named "File" and the menu item named "Alert Types" are created. Because of localization we have to check the submenu message with the translate$() otherwise we would miss them.
+
+Related: menu, menu set, submenu set

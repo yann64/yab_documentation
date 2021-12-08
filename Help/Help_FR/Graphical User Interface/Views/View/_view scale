@@ -1,0 +1,29 @@
+Name:
+view scale -- scale a view
+
+Synopsis:
+VIEW SCALE View$
+
+Description:
+The view is scaled with all drawn elements
+  
+Example:
+
+Snippet:
+
+SLIDER 10,30 TO 310,80, "scale", "SET Scale", 0, 200,"Block", View$
+SLIDER LABEL  "scale", "0", "200"
+SLIDER SET "scale", "both", 5
+SLIDER SET "scale", 10
+
+case ("scale:1:0:0")
+	Value = SLIDER GET "scale"
+	Value=(Value*1)/10
+	print Value
+	VIEW Scale "TEST","Scale",Value
+break
+
+Explanation:
+In the above example you see snippets from a program. First generate a view with a rectangle (as example). Then generate a slider to manage the scale. look at the case example to set the view scale.
+
+Related: view, view get

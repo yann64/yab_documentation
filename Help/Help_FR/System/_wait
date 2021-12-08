@@ -1,0 +1,11 @@
+Name:
+wait -- pause, sleep, wait for the specified number of seconds
+
+Synopsis: 
+wait 4 
+
+Description:
+The wait-command has many different names: You may write pause, sleep or wait interchangeable; whatever you write, yab will always do exactly the same.
+Therefore you should refer to the entry for the pause-function for further information.
+
+Related: pause, sleep

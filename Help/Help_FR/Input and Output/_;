@@ -1,0 +1,19 @@
+Name:
+; -- suppress the implicit newline after a print-statement
+
+Synopsis: 
+print "foo",bar; 
+
+Description:
+The semicolon (';') may only appear at the last position within a print-statement. It supresses the implicit newline, which yab normally adds after each print-statement.
+
+Put another way: Normally the output of each print-statement appears on a line by itself. If you rather want the output of many print-statements to appear on a single line, you should end the print-statement with a semicolon.
+
+Example:
+print "Hello ":print "World!" 
+Explanation:
+
+This example prints Hello World! in a single line.
+
+
+Related: print

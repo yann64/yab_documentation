@@ -1,0 +1,34 @@
+Name:
+boxview -- a boxview is view with a labeled border
+
+Synopsis:
+BOXVIEW x1,y1 TO x2,y2, ID$, Label$, LineType, View$
+
+Description:
+This command sets up a view named ID$ with a border and a label.  While the boxview is constructed at the coordinates (x1,y1) to (x2,y2) on the view named View$, the own coordinates of a boxview start at (x1+3,y1+12) to (x2-3,y2-3) so that the border can not be overwritten. This is independent of the line type.
+
+If Label$ is not "", it will be displayed on the upper left corner of the boxview. Otherwise no label is shown.
+
+There are three possible line types for the border style:
+  For LineType = 0 the boxview has no border.
+  For LineType = 1 the boxview has a simple line border.
+  For LineType = 2 the boxview has a fancy line border.
+
+Other than commands like stackview, tabview or splitview, you can simply remove a boxview just as a normal view with the view remove command.
+
+Layout:
+The boxview will follow all sides as in standard layout.
+
+Design:
+Use boxviews to group similar entries. Do not use too much boxviews in a window, as this looks too cluttered.
+
+Example:
+window open 100,100 to 300,300, "Example", "Example"
+boxview 10,10 to 190,190, "MyBox", "Hello Box", 2, "Example"
+sleep 7
+window close "Example"
+Explanation:
+
+The example opens a window and sets up a boxview with the label "Hello Box" and a fancy border style (2).
+
+Related: view, view remove

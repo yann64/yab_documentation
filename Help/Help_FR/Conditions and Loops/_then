@@ -1,0 +1,25 @@
+Name:
+then -- tell the long from the short form of the if-statement
+
+Synopsis: 
+if (a<b) then 
+  ... 
+endif 
+
+Description:
+The keyword then is part of the if-statement; please see there for further explanations. However, not every if-statement requires the keyword then: If the keyword then is present, the if-clause may extend over more than one line, and the keyword endif is required to end it. If the keyword then is not present, the if-statement extends up to the end of the line, and any endif would be an error.
+
+Example:
+if (1<2) then 
+	print "Hello "
+endif 
+
+if (2<3) print "world" 
+if (2<1) 
+	print "!" 
+Explanation:
+
+This example prints Hello world. Note, that no exclamation mark (!) is printed, which might come as a surprise and may be changed in future versions of yab.
+
+
+Related: if

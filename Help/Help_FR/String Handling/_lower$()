@@ -1,0 +1,17 @@
+Name:
+lower$() -- convert a string to lower case
+
+Synopsis: 
+l$=lower$(a$) 
+
+Description:
+The lower$-function accepts a single string-argument and converts it to all lower case.
+
+Example:
+input "Please enter a password: " a$ 
+if (a$=lower$(a$)) error "Your password is NOT mixed case!" 
+Explanation:
+
+This example prompts for a password and checks, if it is really lower case.
+
+Related: upper$

@@ -1,0 +1,21 @@
+Name:
+trim$() -- remove leading and trailing spaces from its argument
+
+Synopsis: 
+a$=trim$(b$) 
+
+Description:
+The trim$-function removes all whitespaces from the left and from the right end of a string and returns the result. Calling trim$ is equivalent to calling rtrim$(ltrim$()).
+
+Example:
+do 
+	input "Continue ? Please answer yes or no: " a$ 
+	a$=lower$(trim$(a$)) 
+	if (len(a$)>0 and a$=left$("no",len(a$)) exit 
+loop 
+Explanation:
+
+This example asks for an answer (yes or no) and removes spaces with trim$ to make the comparison with the string "no" more bulletproof.
+
+
+Related: ltrim$, rtrim$

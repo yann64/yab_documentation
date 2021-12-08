@@ -1,0 +1,10 @@
+Name:
+slider label -- Set start and end limit labels
+
+Synopsis:
+SLIDER LABEL Slider$, StartLabel$, EndLabel$
+
+Description:
+Sets the StartLabel$ and  EndLabel$ for the slider Slider$
+
+Related: slider, slider color, slider get, slider set

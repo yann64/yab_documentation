@@ -1,0 +1,26 @@
+Name:
+gosub -- continue execution at another point within your program 
+(and return later)
+
+Synopsis:
+gosub foo 
+
+... 
+
+label foo 
+... 
+return 
+
+Description:
+gosub remembers the current position within your program and then passes the flow of execution to another point (which is normally marked with a label). Later, when a return- statement is encountered, the execution is resumed at the previous location.
+gosub is the traditional command for calling code, which needs to be executed from various places within your program. However, with subroutines yab offers a much more flexible way to achieve this (and more). Therefore gosub must to be considered obsolete.
+
+Example:
+print "Do you want to exit ? "
+gosub ask 
+if (r$="y") exit 
+
+label ask 
+input "Please answer yes or no, by typing 'y' or 'n': ",r$ 
+return 
+Related: return, goto, sub, label, on gosub

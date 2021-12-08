@@ -1,0 +1,19 @@
+Name:
+tan() -- return the tangens of its argument
+
+Synopsis:
+foo=tan(bar) 
+
+Description:
+The tan-function computes the tangens of its arguments (which should be specified in radian).
+
+Example:
+for a=0 to 45 
+	print tan(a*pi/180) 
+next a 
+Explanation:
+
+  This example simply prints the tangens of all angles between 0 and 45 degree.
+
+
+Related: atan, sin

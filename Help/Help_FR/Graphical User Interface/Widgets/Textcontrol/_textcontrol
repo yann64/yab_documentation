@@ -1,0 +1,17 @@
+Name:
+textcontrol -- Add a textcontrol to a view.
+
+Synopsis:
+TEXTCONTROL x1,y1 TO x2,y2, ID$, Label$, Text$, View$
+
+Description:
+Opens a textcontrol from (x1,y1) to (x2,y2) with Label$ and preset it with Text$ on View$
+
+The distance from x1 to x2 needs to be long enough for the label Label$ and the textcontrol view.
+
+Message:
+The textcontrol will return a message on invocation, ( by pressing tsb or enter after entering text.)
+
+id$:text$
+
+Related: textcontrol clear, textcontrol get$, textcontrol set

@@ -1,0 +1,15 @@
+Name:
+view remove -- remove a view
+
+Synopsis:
+VIEW REMOVE View$
+
+Description:
+Remove View$. The window view cannot be removed. Should be much more stable now.
+Warning: Currently clears all internal information about menues and drop boxes. It is only safe to use it, when you don't have any menues or drop boxes on views that will not be removed.
+  
+Warning:
+
+Never remove menus with shortcuts, otherwise yab will crash when the shortcut key is pressed!
+
+Related: view, view get

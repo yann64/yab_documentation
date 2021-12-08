@@ -1,0 +1,10 @@
+Name:
+columnbox remove -- delete a line in a columnbox
+
+Synopsis:
+COLUMNBOX REMOVE ColumnBox$, Row
+
+Description:
+In the given columnbox named ColumnBox$, the specified row is deleted.
+
+Related: columnbox, columnbox add, columnbox clear, columnbox color, columnbox column, columnbox count, columnbox get, columnbox get$, columnbox select

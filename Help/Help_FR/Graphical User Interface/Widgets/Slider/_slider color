@@ -1,0 +1,12 @@
+Name:
+slider color -- set the colors for a slider
+
+Synopsis:
+SLIDER COLOR Silder$, Part$, r,g,b
+
+Description:
+Sets the rgb color for the Part$ of Slider$
+Part$ = "barcolor" -- The color to the left or bottom, representing the slider's value.
+Part$ = "fillcolor" -- The color to the right or top, representing the remainder of the posible slider value.  
+
+Related: slider, slider get, slider label, slider set

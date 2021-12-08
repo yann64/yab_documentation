@@ -1,0 +1,29 @@
+Name:
+time$ -- return a string containing the current time
+
+Synopsis: 
+print time$ 
+print time$() 
+
+Description:
+The time$ function returns the current time in four fields separated by hyphens '-'. The fields are:The current hour in the range from 0 to 23, padded with zeroes (e.g. 00 or 04) to a length of two characters.
+
+The number of minutes, padded with zeroes.
+The number of seconds, padded with zeroes.
+The number of seconds, that have elapsed since the program has been started. This value encreases as long as your program runs and is therefore unbound and not padded with zeroes.
+
+At the time of writing this documentation, time$ returns 22-58-53-0. Note, that the first three of the four fields returned by time$ have a fixed width; therefore it is easy to extract some fields with the usual string-functions mid$ (and others).
+
+Example:
+print "Hello it is ",time$ 
+print "An empty for-loop with ten million iterations takes "
+s=val(mid$(time$,10)) 
+for a=1 to 10000000:next a 
+e=val(mid$(time$,10)) 
+print e-s," seconds" 
+Explanation:
+
+This program benchmarks the for-loop and uses the fourth field of the string returned by time$.
+
+
+Related: date$

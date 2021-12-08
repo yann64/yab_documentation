@@ -1,0 +1,18 @@
+Name:
+draw circle -- draw a circle
+
+Synopsis:
+DRAW CIRCLE x,y, Radius, Target$
+
+Description:
+This command will draw a circle on Target$. Target$ has to be either a valid view, bitmap or canvas. The center of the circle is (x,y) and the circle has a radius of Radius.
+
+At default it will draw a filled circle in the current highcolor. With the draw set command you can change the filling settings.
+
+Example:
+window open 100,100 to 400,400, "Example", "Example"
+draw set true, "HighSolidFill"
+draw circle 150,150, 75, "Example"
+sleep 7
+window close "Example"
+Related: draw curve, draw dot, draw ellipse, draw flush, draw line, draw rect, draw set

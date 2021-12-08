@@ -1,0 +1,46 @@
+Name:
+sub -- declare a user defined subroutine
+
+Synopsis: 
+foo(2,"hello") 
+
+... 
+
+sub foo(bar,baz$) 
+  ... 
+  return qux 
+  ... 
+end sub 
+
+Description:
+The sub-keyword starts the definition of a user defined subroutine. With user defined subroutines you are able to somewhat extend yab with your own commands or functions. A subroutine accepts arguments (numbers or strings) and returns a number or a string (however, you are not required to assign the value returned to a variable). The name of the subroutine follows after the keyword sub. If the name (in the synopsis: foo) ends on a '$', the subroutine should return a string (with the return-statement), otherwise a number.
+
+After the name of the subroutine yab requires a pair of braces; within those braces you may specify a list of parameters, for which values can (but need not) be included when calling the subroutine. If you omit one of those parameters when calling such a subroutine, it assumes the value zero (for numeric parameters) or the empty string (for string parameters). However with peek("argument") you may find out, how many arguments have really been passed while calling the subroutine.
+
+Parameters of a subroutine are always local variables (see the keyword local for more explanation).
+From within the subroutine you may return any time with the keyword return; along with the return-keyword you may specify the return value. Note that more than one return is allowed within a single subroutine.
+
+Finally, the keyword end sub ends the subroutine definition. Note, that the definition of a subroutine need not appear within the program before the first call to this sub.
+
+Note: As braces have two uses in yab (i.e. for supplying arguments to a subroutine as well as to list the indices of an array). yab can not tell apart an array from a subroutine with the same name. Therefore you cannot define a subroutine with the same name as an array!
+
+Example:
+p=2 
+do 
+	if (is_prime(p)) print p 
+	p=p+1 
+loop 
+
+sub is_prime(a) 
+	local b 
+	for b=2 to sqrt(a) 
+		if (frac(a/b)=0) return false 
+	next b 
+	return true 
+end sub 
+Explanation:
+
+This example is not the recommended way to compute prime numbers. However it gives a nice demonstration of using a subroutine.
+
+
+Related: local, static, peek

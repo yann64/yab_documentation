@@ -1,0 +1,92 @@
+Name:
+bitmap get -- get heitht/width information or insert an icon or portion of a bitmap or canvas view  to bitmap
+
+Synopsis:
+BITMAP GET x1, y1 TO x2, y2, Target_bitmap$, Source_bitmap$
+BITMAP GET IconSize, Bitmap$, File$
+BITMAP GET ID$, Option$, Path$
+BITMAP GET ID$, Option$
+
+Description:
+Get a portion of an image:
+
+BITMAP GET x1, y1 TO x2, y2, Target_bitmap$, Source_bitmap$
+
+x1,y1 and x2, y2 describe the bounding rectangle for the data in Source_bitmap$ to be copied to Target_bitmap$. Source_bitmap$ must be a bitmap or canvas. the Target_bitmap$ is created.
+
+get an icon and copy it to a bitmap:
+
+BITMAP GET IconSize, Bitmap$, File$
+
+Copies the icon, shown in Tracker, of File$ in the specified IconSize onto Bitmap$.
+The icon will be resized to IconSize, and properly scaled if it is an hvicon.
+
+Bitmap$ is created.
+
+Note: icons are square, IconSize 40 gives an image 40 * 40.
+
+BITMAP GET ID$, Option$, Path$
+
+Copies an icon to bitmap ID$.
+  
+Option$ =  "Path|Mime|Mime16|Mime32"
+ 
+If Option$ = "Path",  Path$ must be the path to a file. The icon returned is 32 * 32
+If Option$ = "Mime" or "Mime16", Path$ must be the mimetype of the file which icon is to be swown. The resulting bitmap is 16 to 16.
+If Option$ = "Mime32", Path$ must be the mimetype of the file which icon is to be swown.The resulting bitmap is 32 to 32.
+
+the bitmap ID$, is created.
+
+x=BITMAP GET ID$, Option$
+Option$ = "Height|Width"
+Delivers height or width of bitmap ID$
+
+Example:
+
+#!yab
+
+window open 100,100 to 600,600, "MainWindow", "IconWorld"
+canvas 0,0 to 500,500, "Main","MainWindow"
+systempath$ = "/boot/system/apps/Mail"
+
+draw text 70,30, "bitmap get \"BMP_icon\", \"path\", \"" + systempath$ +"\"", "Main"
+bitmap get "BMP_icon", "path", systempath$
+draw bitmap 10, 10, "BMP_icon", "alpha", "Main"
+bitmap remove "BMP_icon"
+ 
+draw text 70,70, "bitmap get \"BMP_icon\", \"mime16\", \"application/x-vnd.Be-MAIL\"", "Main"
+bitmap get "BMP_icon", "mime16", "application/x-vnd.Be-MAIL"
+draw bitmap 10, 60, "BMP_icon", "alpha", "Main"
+bitmap remove "BMP_icon"
+
+draw text 70,110, "bitmap get \"BMP_icon\", \"mime32\", \"application/x-vnd.Be-MAIL\"", "Main"
+bitmap get "BMP_icon", "mime32", "application/x-vnd.Be-MAIL"
+draw bitmap 10, 90, "BMP_icon", "alpha", "Main"
+bitmap remove "BMP_icon"
+
+draw text 70,150, "bitmap get 62, \"BMP_icon\", \"" + systempath$ + "\"", "Main"
+bitmap get 62, "BMP_icon", systempath$
+draw bitmap 10, 130, "BMP_icon", "alpha", "Main"
+
+x=bitmap get "BMP_icon","width"
+draw text 70,190, "x=bitmap get 62, \"BMP_icon\", \"width\" :"+str$(x), "Main"
+bitmap remove "BMP_icon"
+
+BITMAP GET 0, 130 TO 60, 150,"BMP_icon","Main"
+draw bitmap 0, 200, "BMP_icon", "alpha", "Main"
+draw text 70,220, "bitmap get 0,130 TO 60, 150, \"BMP_icon\", \"Main\"","Main" 
+
+x=bitmap get "BMP_icon","width"
+draw text 70,240, "x=bitmap get, \"BMP_icon\", \"width\" :"+str$(x), "Main"
+
+while(not instr(message$, "Quit"))
+wend
+
+window close "Main"
+
+
+Explanation:
+
+This program uses all forms of bitmap get and displays the output in a Window.
+
+Related: bitmap, bitmap color, bitmap image, bitmap remove, bitmap save, draw bitmap

@@ -1,0 +1,24 @@
+Name:
+slider -- Add a slider control
+
+Synopsis:
+SLIDER x1,y1 TO x2,y2, ID$, Label$, Min, Max, View$
+SLIDER x1,y1 TO x2,y2, ID$, Label$, Min, Max, Option$, View$
+
+Description:
+SLIDER x1,y1 TO x2,y2, ID$, Label$, Min, Max, View$
+Add a slider with a minimum and and a maximum value (Min, Max).
+
+SLIDER x1,y1 TO x2,y2, ID$, Label$, Min, Max, Option$, View$
+Option$ = "block/triangle, horizontal/vertical"
+
+
+Example:
+
+see SliderWorld.yab for example usage.
+
+NOTE:
+
+The label, Label$ must be shorter than the slider or yab will re-size the slider to fit the label. This can cause the slider to be wider than the view. it is best to use short labels.
+
+Related: slider color, slider get, slider label, slider set

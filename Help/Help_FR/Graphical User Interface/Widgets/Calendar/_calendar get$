@@ -1,0 +1,12 @@
+Name:
+calendar get$ -- returns the selected date of a calendar
+
+Synopsis:
+GetDate$ = CALENDAR GET$ Calendar$
+
+Description:
+The command will return the currently selected date of the calendar widget named Calendar$. Note: the calendar does not send any messages, so use this command to read out a calendar.
+
+Note: This GetDate$ has a different format than the yab command date$. However, it is not too difficult to convert these formats.
+
+Related: calendar, calendar set, date$

@@ -1,0 +1,19 @@
+Name:
+sqr() -- compute the square of its argument
+
+Synopsis:
+a=sqr(b) 
+
+Description:
+The sqr-function computes the square of its numerical argument (i.e. it multiplies its argument with itself).
+
+Example:
+for a=1 to 10 
+	print a,sqr(a),a**2 
+next a 
+Explanation:
+
+  As you may see from the output, sqr can be written as **2 (or ^2) too.
+
+
+Related: sqrt, **, ^

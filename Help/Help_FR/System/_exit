@@ -1,0 +1,15 @@
+Name:
+exit -- terminate your program
+
+Synopsis: 
+exit 
+exit 1 
+
+Description:
+Terminate your program and return any given value to the operating system. exit is similar to end, but it will terminate your program immediately, no matter what.
+
+Example:
+print "Do you want to continue ?" 
+input "Please answer y(es) or n(o): " a$ 
+if (lower$(left$(a$,1))="n") exit 1 
+Related: end

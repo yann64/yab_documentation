@@ -1,0 +1,17 @@
+Name:
+abs() -- returns the absolute value of its numeric argument
+
+Synopsis:
+y=abs(x)
+
+Description:
+If the argument of the abs-function is positive (e.g. 2) it is returned unchanged, if the argument is negative (e.g. -1) it is returned as a positive value (e.g. 1).
+
+Example:
+print abs(-2),abs(2)
+Explanation:
+
+  This example will print 2 2
+
+
+Related: sig

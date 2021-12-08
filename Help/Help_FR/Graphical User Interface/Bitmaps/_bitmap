@@ -1,0 +1,10 @@
+Name:
+bitmap -- creates a bitmap in memory
+
+Synopsis:
+BITMAP Width, Height, ID$
+
+Description:
+Bitmap creates a new bitmap in memory. A bitmap can be drawn on like a view or canvas.  A bitmap is always initialized with a white transparent background
+
+Related:  bitmap color, bitmap get, bitmap image, bitmap remove, bitmap save, draw bitmap

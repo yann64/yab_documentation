@@ -1,0 +1,33 @@
+Name:
+calendar -- create a new calendar
+
+Synopsis:
+CALENDAR x,y, ID$, Format$, SetDate$, View$
+
+Description:
+Calendar is a nifty widget that gives you a date textcontrol with a dropdown calendar window. It is created at (x,y) as upper left corner on the view View$. With the default font size, it always has a width of 80 pixels and a height of 20 pixels. 
+
+You have to provide a date format Format$ which must be either "DDMMYYYY" for day, month, year or "MMDDYYYY" for month, day, year. Futhermore, you have to add a divider to the Format$ which can be either ".", "/" or "-". Thus, the default Format$ looks like this: "DDMMYYYY."
+
+The SetDate$ should give the starting date in the format you have chosen. Default is the current day, when SetDate$ = "". Note: this SetDate$ has a different format than the yab command date$. However, it is not too difficult to convert these formats.
+
+The calendar can be disabled or enabled with the option set command.
+
+Layout:
+In standard layout, the calendar will follow the lower, right corner of the view or window.
+
+Example:
+window open 100,100 to 300,200, "Example", "Example"
+calendar 10,10, "MyCalendar", "MMDDYYYY/", "04.06.1975", "Example"
+while(not quitting)
+	if(instr(message$, "_QuitRequested")) then
+		alert "You selected: "+calendar get$ "MyCalendar", "Duh", "info"
+		quitting = true
+	endif
+wend
+window close "Example"
+Explanation:
+
+In this example, a calendar is set on the window with an American date format, month, day, year and the / as separator. When the window is closed, an alert window shows the selected date with calendar get$.
+
+Related: calendar get$, calendar set, date$, option set

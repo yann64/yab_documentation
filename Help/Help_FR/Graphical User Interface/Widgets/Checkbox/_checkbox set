@@ -1,0 +1,10 @@
+Name:
+checkbox set -- (de-)select the checkbox
+
+Synopsis:
+CHECKBOX SET CheckBox$, IsSelected
+
+Description:
+If IsSelected is set to true, the checkbox named CheckBox$ will be selected. If IsSelected is set to false, the checkbox will be deselected.
+
+Related: checkbox, checkbox image

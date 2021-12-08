@@ -1,0 +1,35 @@
+Name:
+text -- create a text label
+
+Synopsis:
+TEXT x,y, ID$, Text$, View$
+TEXT x1,y1 TO x2,y2, ID$, Text$, View$
+
+Description:
+The text command sets up a text label Text$ at the position (x,y) or (x1,y1) of the view named View$. Providing second coordinates (x2,y2) is useful for the alignment of the text, see text set for details. The text label has an ID$ which is needed for text set or for changing the text itself with option set.
+
+So how does this compare to the draw text command? 
+A text cannot be flushed and it will never flicker.
+A text can be aligned.
+The label of a text can change.
+On a canvas only draw text can be used.
+The font and color can only be changed for draw text.
+
+Note: (x,y) is the upper left corner, this is different to draw text, where y is the baseline of the text.
+
+Design:
+Text should be used for labels on a view. Use the alignment to make clean interfaces.
+
+Example:
+window open 100,100 to 200,150, "Example", "Example"
+text 10,10, "Text", "Hello World", "Example"
+
+while(not instr(message$, "Quit"))
+wend
+
+window close "Example"
+Explanation:
+
+A simple yab program, just a window and a text label.
+
+Related: draw text, option set, text set

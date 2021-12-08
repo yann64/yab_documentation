@@ -1,0 +1,10 @@
+Name:
+textcontrol clear -- Clears the text data from a textcontrol.
+
+Synopsis:
+TEXTCONTROL CLEAR TextControl$
+
+Description:
+Delete the text of the text control.
+
+Related: textcontrol, textcontrol get$, textcontrol set

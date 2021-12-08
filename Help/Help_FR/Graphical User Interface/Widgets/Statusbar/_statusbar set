@@ -1,0 +1,12 @@
+Name:
+statusbar -- set the value for a status bar
+
+Synopsis:
+STATUSBAR SET Statusbar$, LeftLabel$, RightLabel$, State
+
+Description:
+Use statusbar set to actually set the bar to a specific value. This value named State here is a number between 0 and 100. Thus, 0 is the empty statusbar while 100 is the full statusbar. During your update, you can change the labels at the left and right (LeftLabel$ and RightLabel$).
+
+Have a look at the statusbar command for an example.
+
+Related: statusbar

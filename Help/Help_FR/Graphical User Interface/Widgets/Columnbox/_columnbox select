@@ -1,0 +1,12 @@
+Name:
+columnbox select -- select a row in a columnbox
+
+Synopsis:
+COLUMNBOX SELECT ColumnBox$, Row
+
+Description:
+In the given columnbox named ColumnBox$, the specified row is selected. If Row is set to 0, any former selection is revoked.
+
+Have a look at the columnbox command for an example.
+
+Related: columnbox, columnbox add, columnbox clear, columnbox color, columnbox column, columnbox count, columnbox get, columnbox get$, columnbox remove

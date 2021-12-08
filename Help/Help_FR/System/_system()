@@ -1,0 +1,23 @@
+Name:
+system() -- hand a statement over to your operating system and return its exitcode
+
+Synopsis: 
+ret=system("foo") 
+system("bar") 
+
+Description:
+The system-command accepts a single string argument, which specifies a command to be executed. The function will return the exitcode of the command; its output (if any) will be lost.
+
+Example:
+print "Please enter the name of the file, that should be deleted." 
+input f$ 
+if (system("rm "+f$+" >/dev/null 2>&1")) then 
+	print "Error!" 
+else 
+	print "okay." 
+endif 
+Explanation:
+
+This program uses the commandline command rm to remove a file.
+
+Related: system$

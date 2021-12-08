@@ -1,0 +1,33 @@
+Name:
+layout -- Set the layout for all views on a window.
+
+Synopsis:
+LAYOUT Layout$, WindowOfView$
+
+Description:
+
+Set the layout for all views on the window of View$. The layout will affect all following new widgets, but not the already created. Draw commands are not affected by the layout.
+Layout$ (not case sensitive):
+"Standard" = default layout, all widgets follow bottom and right side of the window
+	except for listboxes and textedit which follow all sides.
+"All" = follow all sides (widgets resize)
+"None" = follow the top and the left side (equals "top, left")
+
+ -OR- Layout$ is a combination of  horizontal , vertical  (e.g. "Right, Top" etc.).
+
+NOTE:
+
+In combination, horizontal is first and virtical is second. "Right,Top" is ok, "Top, Right" is not.
+
+Horizontal:
+"Left" = follow left side (default, when no other horizontal layout is given)
+"Right" = follow the right side
+"Left, Right" = follow the left and the right side (resize)
+"H-Center" = follow the horizontal center
+ Vertical:
+"Top" = follow the top side (default, when no other vertical layout is given)
+"Bottom" = follow the bottom side
+"Top, Bottom" = follow the top and bottom side (resize)
+"V-Center" = follow the vertical center
+
+Related:

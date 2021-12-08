@@ -1,0 +1,10 @@
+Name:
+tabview get -- get the curent open tab number
+
+Synopsis:
+TabNumber = TABVIEW GET TABVIEW$
+
+Description:
+Get the current opened tab. 
+
+Related: tabview, tabview add tasbview set

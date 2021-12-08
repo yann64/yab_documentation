@@ -1,0 +1,40 @@
+Name:
+switch -- select one of many alternatives depending on a value
+
+Synopsis: 
+switch a 
+  case 1 
+  case 2 
+  ... 
+end switch 
+
+... 
+
+switch a$ 
+  case "a" 
+  case "b" 
+end switch 
+
+Description:
+The switch-statment selects one of many codepaths depending on a numerical or string expression. I.e. it takes an expression (either numeric or string) and compares it with a series of values, each wrapped within a case-clause. If the expression equals the value given in a case-clause, the subsequent statements are executed.
+The default-clause allows to specify commands, which should be executed, if none of case-clauses matches.
+Note, that many case-clauses might be clustered (e.g. case "a":case "b":case "c"). Or put another way: You need a break-statement at the end of a case-branch, if you do not want to run into the next case.
+
+Example:
+input "Please enter a single digit: " n 
+switch n 
+	case 0:print "zero":break 
+	case 1:print "one":break 
+	case 2:print "two":break 
+	case 3:print "three":break 
+	case 4:print "four":break 
+	case 5:case 6: case 7:case 8:case 9 
+	print "Much!":break 
+	default:print "Hey! That was more than a single digit!" 
+end switch 
+Explanation:
+
+This example translates a single digit into a string; note, how the cases 5 to 7 are clustered.
+
+
+Related: switch, case, break

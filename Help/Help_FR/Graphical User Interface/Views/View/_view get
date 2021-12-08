@@ -1,0 +1,12 @@
+Name:
+view get -- gets information about a view
+
+Synopsis:
+Result = VIEW GET View$, Option$
+
+Description:
+Option$ = "Position-X/Position-Y/Width/Height/Exists/Focused"
+Returns the requested property or if used with Exists/Focused returns 1 if so and 0 if not.
+&view remove
+
+Related:

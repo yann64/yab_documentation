@@ -1,0 +1,9 @@
+Name:
+scrollbar get --  Get the current position of the scrollbar.
+
+Description:
+Position = SCROLLBAR GET Scrollbar$, "Horizontal"
+Position = SCROLLBAR GET Scrollbar$, "Vertical"
+  Get the current position of the scrollbars.
+
+Related: scrollbar, scrollbar set

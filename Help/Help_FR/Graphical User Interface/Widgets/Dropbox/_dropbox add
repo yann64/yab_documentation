@@ -1,0 +1,10 @@
+Name:
+dropbox add -- adds an item to a dropbox.
+
+Synopsis:
+DROPBOX ADD DropBox$, Item$
+
+Description:
+Add Item$ to the dropbox. Use Item$ = "--" for a separator. 
+
+Related: dropbox , dropbox clear, dropbox count, dropbox get$, dropbox remove, dropbox select

@@ -1,0 +1,77 @@
+Name:
+print -- Write to terminal or file
+
+Synopsis:
+print "foo",a$,b 
+print "foo","a$,b; 
+print #a "foo",a$ 
+print #a "foo",a$; 
+print foo using "##.###" 
+print reverse "foo" 
+print at(10,10) a$,b 
+print @(10,10) a$,b 
+print color("red","blue") a$,b 
+print color("magenta") a$,b 
+print color("green","yellow") at(5,5) a$,b 
+
+Description:
+The print-statement outputs strings or characters, either to your terminal (also known as console) or to an open file.
+
+To understand all those uses of the print-statement, let's go throught the various lines in the synopsis above:print "foo",a$,bPrint the string foo as well as the contents of the variables a$ and b onto the screen, silently adding a newline.
+
+print "foo",a$,b;
+(Note the trailing semicolon!) This statement does the same as the one above; only the implicit newline is skipped, which means that the next print-statement will append seamlessly.
+
+print #a "foo",a$
+This is the way to write to files. The file with the number a must be open already, an implicit newline is added. Note the file-number #a, which starts with a hash ('#') amd is separated from the rest of the statement by a space only. The file-number (contained in the variable a) must have been returned by a previous open-statement (e.g. a=open("bar")).
+
+print #a "foo",a$;
+The same as above, but without the implicit newline.
+
+print foo using "##.###"
+Print the number foo with as many digits before and after the decimal dot as given by the number of '#'-signs. See the entries for using and str$ for a detailed description of this format.
+
+print reverse "foo"
+
+*** requires ncurses support compiled in ***
+See Documentation/Advanced for info.
+
+As all the print-variants to follow, this form of the print-statement can only be issued after clear screen has been called. The strings and numbers after the reverse-clause are simply printed inverse (compared to the normal print-statement).
+
+print at(10,10) a$,b
+
+*** requires ncurses support compiled in ***
+See Documentation/Advanced for info.
+
+Print at the specified (x,y)-position. This is only allowed after clear screen has been called. You may want to query peek$("screenwidth") or peek$("screenheight") to learn the actual size of your screen. You may add a semicolon to suppress the implicit newline.
+
+print @(10,10) a$,b
+This is exactly the same as above, however, at may be written as @.
+
+print color("red","blue") at(5,5) a$,b
+Print with the specified fore- ("red") and background ("blue") color (or colour). The possible values are "black", "white", "red", "blue", "green", "yellow", "cyan" or "magenta". Again, you need to call clear screen first and add a semicolon if you want to suppress the implicit newline.
+
+print color("magenta") a$,b
+You may specify the foreground color only.
+
+print color("green","yellow") a$,b
+A color and a position (in this sequence, not the other way around) may be specified at once.
+
+Example:
+clear screen 
+columns=peek("screenwidth") 
+lines=peek("screenheight") 
+dim col$(7) 
+for a=0 to 7:read col$(a):next a 
+data "black","white","red","blue","green","yellow","cyan","magenta" 
+
+for a=0 to 2*pi step 0.1 
+	print colour(col$(mod(i,8))) at(columns*(0.8*sin(a)+0.9)/2,lines*(0.8*cos(a)+0.9)/2) "*" 
+	i=i+1 
+next a 
+Explanation:
+
+This example draws a cloured ellipse within the text window.
+Start this program in a terminal.
+
+Related: at, color, input, clear screen, using, ;

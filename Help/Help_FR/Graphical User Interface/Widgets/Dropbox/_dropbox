@@ -1,0 +1,39 @@
+Name:
+dropbox -- Adds an empty dropbox.
+
+Synopsis:
+DROPBOX x1,y1 TO x2,y2, ID$, Label$, View$
+
+Description:
+Adds an empty dropbox (BMenuField) at (x1,y1) to (x2,y2) known as ID$ and with a label on View$. 
+
+Example:
+
+snippet
+
+DROPBOX 290,60 TO 480,80, "category", "Category:", "Mainview1"
+	DROPBOX ADD "category", "Audio"
+	DROPBOX ADD "category", "Business"
+	DROPBOX ADD "category", "Development"
+	DROPBOX ADD "category", "Education"
+	DROPBOX ADD "category", "Games"
+	DROPBOX ADD "category", "Graphics"
+	DROPBOX ADD "category", "Internet and Network"
+	DROPBOX ADD "category", "Productivity"
+	DROPBOX ADD "category", "Science and Matyhematics"
+	DROPBOX ADD "category", "System and Utilities"
+	DROPBOX ADD "category", "Video"
+	DROPBOX SELECT "category", 8
+
+end snippet
+
+Explanation:
+
+The dropbox "category" is created with a label of "Categorty" in "MainView1." Next the categories to select from are added, and "Productivity" is set as the default category. When a different category is selectedm the dropbox returns a message:    
+
+category:Science and Matyhematics
+
+if selection 9 is made.
+
+
+Related: dropbox add, dropbox clear, dropbox count, dropbox get$, dropbox remove, dropbox select

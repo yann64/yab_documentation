@@ -1,0 +1,54 @@
+Name:
+menu set -- set options for the menu
+
+Synopsis:
+MENU SET MenuHead$, SetRadioMode, View$
+MENU SET MenuHead$, MenuItem$, Option$, View$ 
+
+Description:
+This lets you set some options for the first level menu. 
+
+Given a MenuHead$ you can put the entire menu in radio mode, i.e. only one item can be selected at a time. Set SetRadioMode to true to allow radio mode, set it to false to return to a normal behavior again. Note, you have to select the first item yourself after switching to radio mode. Use the following option to do so.
+
+Given a MenuHead$ and a MeniItem$ you can disable or enable the item or you can select it by putting a mark to it or remove the mark again. Thus the following options are valid:
+
+
+Option$ = "Disable" -- grey out the item so it cannot be selected anymore
+Option$ = "Enable" -- enable a formerly disabled item again
+Option$ = "Mark" -- mark this item
+Option$ = "Plain" -- remove a mark again
+
+
+Example:
+window open 100,100 to 400,300, "Example", "Example"
+menu "Test", "Foo", "", "Example"
+menu "Test", "Bar", "", "Example"
+menu set "Test", "Foo", "mark", "Example"
+menu set "Test", "Bar", "disable", "Example"
+fooMarked = true
+
+menu "Radio", "1", "", "Example"
+menu "Radio", "2", "", "Example"
+menu "Radio", "3", "", "Example"
+menu set "Radio", true, "Example"
+menu set "Radio", "2", "mark", "Example"
+
+while(not quitting)
+	m$ = message$
+	if(instr(m$, "Quit")) quitting = true
+	if(instr(m$, "Foo")) then
+		fooMarked = not fooMarked
+		if(fooMarked) then
+			menu set "Test", "Foo", "mark", "Example"
+		else
+			menu set "Test", "Foo", "plain", "Example"
+		endif
+	endif
+wend
+window close "Example"
+Explanation:
+The first menu has two items, the first item is selectable. As you see in the message loop you are responsable yourself to apply or remove the mark from this item. The second item is disabled.
+
+The second menu is in radio mode, so only one item can be selected. The user will do that for you, however you have to select an item for the first time.
+
+Related: menu, submenu, submenu set

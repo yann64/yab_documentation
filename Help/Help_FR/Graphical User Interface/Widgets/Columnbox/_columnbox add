@@ -1,0 +1,19 @@
+Name:
+columnbox add -- add an item to a columnbox
+
+Synopsis:
+COLUMNBOX ADD ColumnBox$, Column, Row, Height, Item$
+
+Description:
+To add an item named Item$ to a columnbox named ColumnBox$, you have to specify the column and the row where the item should be located in the columnbox table. An existing item will be overwritten. If Row is larger than the number of rows in the columnbox, a new row is created. Furthermore, you have to specify the height of the row in pixels, a normal value should be Height = 14 or Height = 16 for text items.
+
+To have images or icons as items, you have to specify that with special identifiers in Item$:
+If Item$ = "__Icon__="+FileName$ then the image file FileName$ will be shown,
+if Item$ = "__Path__="+FileName$ then the large Trackericon of the file FileName$ will be shown
+if Item$ = "__Mime__="+Signature$ then the small icon of the mime type Signature$ will be shown.
+
+Note: These identifiers are case sensitive!
+
+Have a look at the columnbox command for an example.
+
+Related: columnbox, columnbox clear, columnbox color, columnbox column, columnbox count, columnbox get, columnbox get$, columnbox remove, columnbox select

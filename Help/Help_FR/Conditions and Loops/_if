@@ -1,0 +1,50 @@
+Name:
+if -- evaluate a condition and execute statements or not, depending on the result
+
+Synopsis: 
+if (...) then 
+  ... 
+endif 
+
+if (...) ... 
+
+if (...) then 
+  ... 
+else 
+  ... 
+endif 
+
+if (...) then 
+  ... 
+elsif (...) 
+  ... 
+elsif (...) then 
+  ... 
+else 
+  ... 
+endif 
+
+Description:
+The if-statement is used to evaluate a conditions and take actions accordingly. (As an aside, please note that there is no real difference between conditions and expressions.)There are two major forms of the if-statement:The one-line-form without the keyword then: if (...) ...
+This form evaluates the condition and if the result is true executes all commands (seperated by colons) upt to the end of the line. There is neither an endif keyword nor an else-branch.
+The multi-line-form with the keyword then: if (...) then ... elsif (...) ... else ... endif(where elsif and else are optional, whereas endif is not.
+According to the requirements of your program, you may specify:elsif(...), which specifies a condition, that will be evaluated only if the condition(s) whithin if or any preceeding elsif did not match.
+else, which introduces a sequence of commands, that will be executed, if none of the conditions above did match. endif is required and ends the if-statement.
+
+Example:
+input "Please enter a number between 1 and 4: " a 
+if (a<=1 or a>=4) error "Wrong, wrong!" 
+if (a=1) then 
+	print "one" 
+elsif (a=2) 
+	print "two" 
+elsif (a=3) 
+	print "three" 
+else 
+	print "four" 
+endif 
+Explanation:
+
+The input-number between 1 and 4 is simply echoed as text (one, two, ...). The example demonstrates both forms (short and long) of the if-statement (Note however, that the same thing can be done, probably somewhat more elegant, with the switch-statement).
+
+Related: else, elsif, endif

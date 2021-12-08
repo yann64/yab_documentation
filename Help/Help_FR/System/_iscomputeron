@@ -1,0 +1,16 @@
+Name:
+iscomputeron -- tells you whether the computer is on
+
+Synopsis:
+IsItTurnedOn = ISCOMPUTERON
+
+Description:
+Returns 1 if the computer is on. If the computer isn't on, the value returned by this function is undefined.
+
+Example:
+print "This program will run until the computer is shut down :)"
+while(iscomputeron)
+wend
+Explanation:
+
+Iscomputeron looks nice for endless loops.

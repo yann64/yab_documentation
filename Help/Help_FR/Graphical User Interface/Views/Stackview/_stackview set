@@ -1,0 +1,10 @@
+Name:
+stackview set -- set the shown view in a stackview
+
+Synopsis:
+STACKVIEW SET StackView$, ViewNumber
+
+Description:
+To switch the views of a stackview, yoy have to use this command. Simply provide it with the ID of the stackview (here: StackView$) and the number of the view you want it to show. Remember: The first view on the stack has the number 1. If you provide an invalid number, nothing will happen.
+
+Related: stackview, stackview get

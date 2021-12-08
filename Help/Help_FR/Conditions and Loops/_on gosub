@@ -1,0 +1,51 @@
+Name:
+on goto -- jump to one of multiple gosub-targets
+
+Synopsis: 
+on a gosub foo,bar,baz 
+  ... 
+label foo 
+  ... 
+return 
+
+label bar 
+  ... 
+return 
+
+label baz 
+  ... 
+return 
+
+Description:
+The on gosub statement uses its numeric argument (the one between on and gosub) to select an element from the list of labels, which follows after the gosub-keyword: If the number is 1, the program does a gosub to the first label; if the number is 2, to the second and, so on. if the number is zero or less, the program continues at the position of the first label; if the number is larger than the total count of labels, the execution continues at the position of the last label; i.e. the first and last label in the list constitute some kind of fallback-slot.
+
+Note, that the on gosub-command can no longer be considered state of the art; people (not me!) may even start to mock you, if you use it.
+
+Example:
+do 
+	print "Please enter a number between 1 and 3: "
+	print 
+	input "Your choice " a 
+	on a gosub bad,one,two,three,bad 
+loop 
+
+label bad 
+	print "No. Please between 1 and 3" 
+return 
+
+label one 
+	print "one" 
+return 
+
+label two 
+	print "two" 
+return 
+
+label three 
+	print "three" 
+return 
+Explanation:
+
+Note, how invalid input (a number less than 1, or larger than 3) is automatically detected.
+
+Related: goto, on gosub

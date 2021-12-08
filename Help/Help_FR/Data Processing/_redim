@@ -1,0 +1,11 @@
+Name:
+redim -- create an array prior to its first use. A synonym for dim
+
+Synopsis: 
+See the dim-command. 
+
+Description:
+The redim-command does exactly the same as the dim-command; it is just a synonym. redim has been around in older versions of basic (not even yab) for many years; therefore it is supported in yab for compatibility reasons.
+Please refer to the entry for the dim-command for further information.
+
+Related: dim

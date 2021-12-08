@@ -1,0 +1,44 @@
+Name:
+radiobutton -- create a new radiobutton
+
+Synopsis:
+RADIOBUTTON x,y, ID$, Label$, IsActivated, View$
+
+Description:
+Set up a radiobutton named ID$ at the position (x,y). It will display the label Label$ next to the button. If IsActivated is set to true, the radiobutton will be selected. All radiobuttons on one view will act as a group. Thus on a view only one radiobutton will be active. 
+
+Note: On setup it is up to you to preselect a radiobutton. You can even make more than one radiobutton active but this is hardly useful. When the user selects a radiobutton, all others will be deselected automatically.
+
+You can use option set to disable the radiobutton or to change the label.
+
+Message:
+The radiobutton when selected will send a message string with its ID$.
+
+Layout:
+In standard layout, the radiobutton will follow the lower, right corner of the view or window.
+
+Design:
+Try to align radiobuttons below each other. 
+
+Example:
+window open 100,100 to 200,200, "Example", "Music"
+radiobutton 10,10, "Radio1", "Classic", true, "Example"
+radiobutton 10,30, "Radio2", "Jazz", false, "Example"
+radiobutton 10,50, "Radio3", "Pop", false, "Example"
+
+while(not quitting)
+	m$ = message$
+	if(instr(m$, "_QuitRequested")) then
+		quitting = true
+	elsif(instr(m$, "Radio")) then
+		n$ = mid$(m$,instr(m$, "Radio")+5,1)
+		alert "You selected the "+n$+". radiobutton", "Ok", "info"
+	endif
+wend
+
+window close "Example"
+Explanation:
+
+Here we have a window with three radiobuttons. Because they are all on one view (the window view) they act as a group. When selected, the number of the radiobutton ID will be extracted with mid$ and stored in n$. It is then shown in an alert window.
+
+Related: radiobutton set, option set

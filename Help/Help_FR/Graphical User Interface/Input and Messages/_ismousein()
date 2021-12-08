@@ -1,0 +1,20 @@
+Name:
+ismousein() -- reports whether the mouse is currently in a view
+
+Synopsis:
+State = ISMOUSEIN(View$)
+
+Description:
+Ismousein reports true whenever it is called and the mouse pointer is currently over the view named View$. This is independend of whether the window containing the view is active or not. 
+
+Example:
+window open 100,100 to 300,300, "Example", "Example"
+while(not instr(message$, "Quit"))
+	if(ismousein("Example")) print "Mouse is in window"
+wend
+window close "Example"
+Explanation:
+After opening the window named "Example", this program checks if the mouse is currently over the window. Then a message is printed on the console.
+
+
+Related: mouse message$(), mouse message$, mouse set

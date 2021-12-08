@@ -1,0 +1,20 @@
+Name:
+bin$() -- converts a number into a sequence of binary digits
+
+Synopsis:
+hexadecimal$=bin$(decimal)
+
+Description:
+The bin$-function takes a single numeric argument an converts it into a stringof binary digits (i.e. zeroes and ones). If you pass a negative number to bin$, the resulting string will be preceeded by a '-'.
+If you want to convert the other way around (i.e. from binary to decimal) you may use the dec-function.
+
+Example:
+for a=1 to 100 
+	print bin$(a) 
+next a 
+Explanation:
+
+  This example prints the binary representation of all digits between 1 and 100.
+
+
+Related: hex$, dec

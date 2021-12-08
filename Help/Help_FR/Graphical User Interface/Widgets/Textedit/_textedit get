@@ -1,0 +1,44 @@
+Name:
+textedit get -- retrieve various information from a textedit
+
+Synopsis:
+Width = TEXTEDIT GET TextEdit$, "Line-Width", LineNumber
+Height = TEXTEDIT GET TextEdit$, "Line-Height", LineNumber
+return = TEXTEDIT GET TextEdit$, Option$
+LineNumber = TEXTEDIT GET TextEdit$, Option$, Search$
+Result = TEXTEDIT GET TextEdit$, Option$, LineNumber
+
+Description:
+
+return = TEXTEDIT GET TextEdit$, Option$
+Option$ = "hasChanged" -- returns IsChanged 0 not changed, 1 changed
+	
+This is a hook function that is set once the user changes the text, reset it to false by using:
+	 "textedit set TextEdit$, "changed", false
+
+Then use this hook to see if the user has changed the text. 
+
+
+Option$ = "countlines" --  returns the number of lines ending in /n
+Options = "countphysicallines" -- returns the number of displayed lines
+Option$ = "currentline" -- returns the curent lLineNumber
+Option$ = "vertical-scrollbar" -- returns the virtical ofset of the scrollbar
+Option$ = "horizontal-scrollbar" -- returns the horizontal ofset of the scrollbar
+Option$ = "cursor-position" -- returns the cursor position
+Option$ = "textlength" -- returns the length of the text.
+
+
+Width = TEXTEDIT GET TextEdit$, "Line-Width", LineNumber
+Get the width in pixels of the line.
+
+Height = TEXTEDIT GET TextEdit$, "Line-Height", LineNumber
+Get the height in pixels of the line.
+
+LineNumber = TEXTEDIT GET TextEdit$, Option$, Search$
+Option$ = "Find", Search$
+Option$ = "Case-Sensitive-Find", Search$
+
+Specifys the type of search and returns the linenumber that the search string is found in. returns 0 if not found.
+
+
+Related: textedit, textedit add, textedit clear, textedit color, textedit get$, textedit set

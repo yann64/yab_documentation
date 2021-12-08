@@ -1,0 +1,10 @@
+Name:
+treebox -- Adds a treebox to a view.
+
+Sybopsis:
+TREEBOX x1,y1 to x2,y2, ID$, ScrollbarType, View$
+
+Description:
+Adds a tree box. This behaves just like a LISTBOX but is able to show nested trees.
+
+Related: treebox add, treebox clear, treebox collapse, treebox count, treebox expand, treebox get$, treebox remove, treebox select, treebox sort

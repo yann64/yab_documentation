@@ -1,0 +1,24 @@
+Name:
+eof -- check, if an open file contains data
+
+Synopsis: 
+open 1,"foo.bar" 
+if (eof(1)) then 
+   ... 
+end if 
+
+Description:
+The eof-function checks, if there is still data left within an open file. As an argument it expects the file-number as returned by (or used within) the open-function (or statement).
+
+Example:
+a=open("foo.bar") 
+while(not eof(a)) 
+	input #a,a$ 
+	print a$ 
+end while 
+Explanation:
+
+This example will print the contents of the file "foo.bar". The eof-function will terminate the loop, if there is no more data left within the file. 
+
+
+Related: open

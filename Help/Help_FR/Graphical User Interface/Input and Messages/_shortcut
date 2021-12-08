@@ -1,0 +1,72 @@
+Name:
+shortcut -- sends a message when a specified shortcut key is pressed
+
+Synopsis:
+
+SHORTCUT View$, Shortcut$, MyMessage$
+
+Description:
+For adding keyboard shortcuts to your program that are not related to menu entries, use the shortcut command. It sends the message MyMessage$ whenever the key combination Shortcut$ is pressed and the view named View$ has focus.
+
+The first letter of Shortcut$ specifys the shortcut key for this menu item. It is always combined with the command key which is ALT normally (or CTRL when CTRL and ALT are switched in the preferences). E.g. consider a Shortcut$ of "O" then ALT-O will send MyMessage$ to the message queue. Additionaly to the command key you can specify further modifiers which are set before the shortcut letter:
+
+
+"S" for the shift key
+"C" for the control key (CTRL, or ALT if CTRL and ALT are switched)
+"O" for the option key (on most keyboards probably the Windows button)
+
+
+These modifiers can be combined, but the following combinations do not work: "SO", "SC" and "SCO"
+
+Some Shortcut examples:
+
+
+"O" for ALT-O
+"SO" for Shift-ALT-O
+"COO" for Control-Option-ALT-O
+
+
+Message:
+Shortcut sends MyMessage$.
+
+Design:
+To use shortcuts is good but to use shortcuts in menus is much better. In menus the user can see the shortcut and does not have to memorize it. Furthermore he can select the according action by mouse too. 
+
+Use the default shortcuts as described for the menu command. Note: Other than with menu, the following shortcuts are reserved and cannot be overwritten:
+
+
+ALT-X
+ALT-C
+ALT-V
+ALT-A
+ALT-W
+ALT-Q
+
+
+Example:
+window open 100,100 to 300,200, "Example", "Example"
+
+draw text 10,20, "Press Alt-B for an about window", "Example"
+draw text 10,40, "Press Alt-Shift-Q to quit", "Example"
+
+shortcut "Example", "B", "About"
+shortcut "Example", "SQ", "MyQuit"
+
+option set "Example", "focus", true
+
+while(not quitting)
+        m$ = message$
+        if(instr(m$, "About")) alert "An easy shortcut example", "Dooh", "info"
+        if(instr(m$, "MyQuit")) then
+                quitting = true
+        elsif(instr(m$,"Quit")) then
+                alert "Use the shortcut to quit!", "Ok", "info"
+        endif
+wend
+
+window close "Example"
+Explanation:
+
+Here two shortcuts are setup, ALT-B (or CTRL-B if ALT and CTRL are switched in your preferences) sends the message "About" and Shift-ALT-Q to send the message "MyQuit". Additionally other quit messages are rejected telling the user to only use the shortcut.
+
+Related: keyboard message$, menu, message$

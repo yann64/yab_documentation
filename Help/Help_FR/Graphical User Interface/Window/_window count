@@ -1,0 +1,28 @@
+Name:
+window count -- return the number of open windows
+
+Synopsis:
+n = WINDOW COUNT
+
+Description:
+To get the number n of currently open windows of your application, simply invoke window count.
+
+Example:
+for i=1 to 10
+	window open 10+i*10, 10+i*10 to 200+i*10, 200+i*10, "Win"+str$(i), "Win"
+	sleep 0.5
+next i
+
+n = window count
+
+while(n>0)
+	window close "Win"+str$(n)
+	n = window count
+	sleep 0.5
+wend
+Explanation:
+
+This funky program first opens ten windows and then closes them using the window count to obtain the number ID of the last opened window.
+
+Related:
+window open, window close, window get, window set

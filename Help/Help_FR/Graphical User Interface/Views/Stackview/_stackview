@@ -1,0 +1,51 @@
+Name:
+stackview -- create views above each other
+
+Synopsis:
+STACKVIEW x1,y1 TO x2,y2, ID$, NumberOfViews, View$
+
+Description:
+Stackview creates several views on top of each other. All views have the same coordinates (x1,y1)-(x2,y2) on the view named View$. NumberOfViews specifies how many views should be created. Obviously it should be greater or equal to 2 to be useful. 
+
+All stacked views get a own ID which is ID$ and the number of the view. E.g. if ID$ = "MyStack" and NumberOfViews = 3, then the stacked views have the IDs "MyStack1", MyStack2" and "MyStack3". Use the command stackview set to switch between these views.
+
+Layout:
+The stackview and all views it contains will follow all sides as in standard layout.
+
+Design:
+You can think of a stackview as a tabview without tabs. Therefore it is up to the programmer to provide a method to switch between the stacked views.
+
+Stackviews are useful in typical BeOS style option windows (e.g. in the yab IDE). Have a look at the code below for an example.
+
+Example:
+window open 100,100 to 400,300, "Example", "Option Example"
+
+listbox 10,10 to 100,190, "List", 1, "Example"
+listbox add "List", "First Option"
+listbox add "List", "Second Option"
+listbox add "List", "Third Option"
+
+stackview 110,10 to 290,190, "Stack", 3, "Example"
+draw set "bgcolor", 255,200,200, "Stack1"
+draw text 10,10, "This is view \"Stack1\"", "Stack1"
+draw set "bgcolor", 200,255,200, "Stack2"
+draw text 10,10, "This is view \"Stack2\"", "Stack2"
+draw set "bgcolor", 200,200,255, "Stack3"
+draw text 10,10, "This is view \"Stack3\"", "Stack3"
+
+while(not quitting)
+	msg$ = message$
+	if(instr(msg$, "List")) then
+		n = listbox get "List"
+		stackview set "Stack", n
+	elsif(instr(msg$, "Quit")) then
+		quitting = true
+	endif
+wend
+
+window close "Example"
+Explanation:
+
+This window has a listbox on the left-hand side and a stackview with three views on the right. Each view has a own background color and text. When an item is selected in the list, we get its number and then switch the stackview to the corresponding view.
+
+Related: stackview get, stackview set, tabview

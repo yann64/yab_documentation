@@ -1,0 +1,18 @@
+Name:
+sound stop -- stop playing a sound file
+
+Synopsis:
+SOUND STOP Id
+
+Description:
+Stop a sound that is playing with the valid identification number Id.
+
+Example:
+id = sound play "bach.mp3", 1
+sleep 3
+sound stop id
+Explanation:
+
+This first loads the file "bach.mp3", plays it for three seconds and then stops it.
+
+Related: sound play, sound wait

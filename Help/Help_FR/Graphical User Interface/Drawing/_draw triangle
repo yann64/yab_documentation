@@ -1,0 +1,19 @@
+Name:
+draw triangle -- draw a triangle
+
+Synopsis:
+DRAW TRIANGLE x1,y1,x2,y2,x3,y3, Target$
+
+Description:
+This command will draw a triangle on Target$. Target$ has to be either a valid view, bitmap or canvas. 
+
+At default it will draw a filled triangle in the current highcolor. With the draw set command you can change the filling settings.
+
+Example:
+window open 100,100 to 400,400, "Example", "Example"
+draw set true, "HighSolidFill"
+DRAW TRIANGLE 80,50,110,50,95,70,"Example",
+sleep 7
+window close "Example"
+
+Related: draw curve, draw dot, draw ellipse, draw flush, draw line, draw rect, draw set

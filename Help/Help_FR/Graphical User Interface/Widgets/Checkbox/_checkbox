@@ -1,0 +1,35 @@
+Name:
+checkbox -- create a new checkbox
+
+Synopsis:
+CHECKBOX x,y, ID$, Label$, IsSelected, View$
+
+Description:
+Set up a checkbox named ID$ at the position (x,y). It will display the label Label$ next to the box. If IsSelected is set to true, the checkbox will be selected.
+
+You can use option set to disable the checkbox or to change the label.
+
+Message:
+The checkbox when selected will send a message string with ID$+":ON", and when deselected with the message string ID$+":OFF".
+
+Layout:
+In standard layout, the checkbox will follow the lower, right corner of the view or window.
+
+Design:
+Try to align checkboxes below each other. Also put them in groups (e.g. in a boxview) when you have many checkboxes.
+
+Example:
+window open 100,100 to 400,200, "Example", "Example"
+checkbox 10,10, "MyCheckBox", "Select this checkbox", false, "Example"
+while(not quitting)
+	m$ = message$
+	if(m$ = "MyCheckBox:OFF|") alert "The checkbox is deselected", "Ok", "info"
+	if(m$ = "MyCheckBox:ON|") alert "The checkbox is selected", "Ok", "info"
+	if(instr(m$, "Quit")) quitting = true
+wend
+window close "Example"
+Explanation:
+
+Whenever the checkbox is selected or deselected, an alert window will tell you.
+
+Related: checkbox image, checkbox set, option set

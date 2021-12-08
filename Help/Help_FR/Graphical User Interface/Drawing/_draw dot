@@ -1,0 +1,23 @@
+Name:
+draw dot -- draw a single dot
+
+Synopsis:
+DRAW DOT x,y, View$
+
+Description:
+Draw a single dot at (x,y) on Target$. Target$ has to be either a valid view, bitmap or canvas.
+
+At default the dot is drawn in the current highcolor.
+
+Example:
+window open 100,100 to 400,400, "Example", "Example"
+for i = 0 to 300 step 0.5
+        draw dot i, sin(i*50)*50+150, "Example"
+next i
+sleep 7
+window close "Example" 
+Explanation:
+
+This program draws a sinus curve with single dots.
+
+Related: draw circle, draw curve, draw ellipse, draw flush, draw line, draw rect, draw set, draw triangle

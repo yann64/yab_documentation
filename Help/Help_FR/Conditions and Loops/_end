@@ -1,0 +1,21 @@
+Name:
+end -- terminate your program
+
+Synopsis:
+end 
+
+Description:
+Terminate your program. Much (but not exactly) like the exit command.
+Note, that end may not end your program immediately; if you have opened a window or called clear screen, yab assumes, that your user wants to study the output of your program after it has ended; therfore it issuesthe line ---Program done, press RETURN--- and waits for a key to be pressed. If you do not like this behaviour, consider using exit.
+
+Example:
+ 
+    print "Do you want to continue ?" 
+    input "Please answer y(es) or n(o): " a$ 
+    if (lower$(left$(a$,1))="n") then 
+      print "bye" 
+      end 
+    fi 
+          
+
+Related: exit

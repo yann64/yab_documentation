@@ -1,0 +1,21 @@
+Name:
+line input -- read in a whole line of text and assign it to a variable
+
+Synopsis: 
+line input a 
+line input a$ 
+line input "Hello" a 
+line input #1 a$ 
+
+Description:
+In most respects line input is like the input-command: It reads the new contents of a variable, either from keyboard or from a file. However, line input always reads a complete line and assigns it to its variable. line input does not stop reading at spaces and is therefore the best way to read in a string which might contain whitespace. Note, that the final newline is stripped of.
+
+Example:
+line input "Please enter your name (e.g. Frodo Beutelin): " a$ 
+print "Hello ",a$ 
+Explanation:
+
+Note that the usage of line input is essential in this example; a simple input-statement would only return the string up to the first space, e.g. Frodo.
+
+
+Related: input

@@ -1,0 +1,39 @@
+Name:
+restore -- reposition the data-pointer
+
+Synopsis: 
+read a,b,c,d,e,f 
+restore 
+read g,h,i 
+restore foo 
+data 1,2,3 
+label foo 
+data 4,5,6 
+
+Description:
+The restore-command may be used to reset the reading of data-statements, so that the next read-statement will read data from the first data-statement.
+You may specify a label with the restore-command; in that case, the next read-statement will read data starting at the given label. If the label is omitted, reading data will begin with the first data-statement within your program.
+
+Example:
+input "Which language (German/English) ? " l$ 
+if (instr("German",l$)>0) then 
+	restore German 
+else 
+	restore English 
+endif 
+
+for a=1 to 3 
+	read x,x$ 
+	print x,"=",x$ 
+next a 
+
+label English 
+data 1,"one",2,"two",3,"three" 
+label German 
+data 1,"eins",2,"zwei",3,"drei" 
+Explanation:
+
+This program asks to select one of those languages known to me (i.e. English or German) and then prints the numbers 1,2 and 3 and their textual equivalents in the chosen language.
+
+
+Related: read, data, label

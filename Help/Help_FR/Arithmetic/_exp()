@@ -1,0 +1,21 @@
+Name:
+exp() -- compute the exponential function of its single argument
+
+Synopsis:
+ foo=exp(bar) 
+
+Description:
+This function computes e to the power of its argument, where e is the well known euler constant 2.71828182864. The exp-function is the inverse of the log-function.
+
+Example:
+window open 100,100 to 300,300, "Example", "Example"
+for x=-100 to 100 
+	draw dot x,100-100*exp(x/100)/euler, "Example"
+next x 
+sleep 5
+window close "Example"
+Explanation:
+
+This program plots part of the exp-function, however the range is rather small, so that you may not recognize the function from this plot.
+
+Related: log

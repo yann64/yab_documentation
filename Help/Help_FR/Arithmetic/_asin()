@@ -1,0 +1,17 @@
+Name:
+asin() -- returns the arcus sine of its numeric argument
+
+Synopsis:
+angle=asin(x)
+
+Description:
+The acos is the arcus sine-function, i.e. the inverse of the sin-function. Or, more elaborate: It Returns the angle (in radian, not degree!), which,fed to the sine -function will produce the argument passed to the asin-function.
+
+Example:
+print asin(0.5),asin(sin(pi)) 
+Explanation:
+          
+  This will print 0.523599 -2.06823e-13 which is pi/6 and almost 0 respectively.
+
+
+Related: sin, acos

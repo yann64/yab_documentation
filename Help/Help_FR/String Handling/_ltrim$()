@@ -1,0 +1,23 @@
+Name:
+ltrim$() -- trim spaces at the left end of a string
+
+Synopsis: 
+a$=ltrim$(b$) 
+
+Description:
+The ltrim$-function removes all whitespace from the left end of a string and returns the result.
+
+Example:
+input "Please answer 'yes' or 'no' : " a$ 
+a$=lower$(ltrim$(rtrim$(a$))) 
+if (len(a$)>0 and a$=left$("yes",len(a$))) then 
+	print "Yes ..." 
+else 
+	print "No ..." 
+endif 
+Explanation:
+
+This example prompts for an answer and removes any spaces, which might precede the input; therefore it is even prepared for the (albeit somewhat patological case), that the user first hits space before entering his answer.
+
+
+Related: rtrim$, trim$

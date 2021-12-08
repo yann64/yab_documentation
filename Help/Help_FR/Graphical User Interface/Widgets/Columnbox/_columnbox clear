@@ -1,0 +1,10 @@
+Name:
+columnbox clear -- deletes everything in a columnbox
+
+Synopsis:
+COLUMNBOX CLEAR ColumnBox$
+
+Description:
+Use columnbox clear to remove all rows and items in the columnbox named ColumnBox$.
+
+Related: columnbox, columnbox add, columnbox color, columnbox column, columnbox count, columnbox get, columnbox get$, columnbox remove, columnbox select

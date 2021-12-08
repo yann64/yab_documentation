@@ -1,0 +1,10 @@
+Name:
+stackview get -- get the number of the shown view in a stackview
+
+Synopsis:
+ViewNumber = STACKVIEW GET StackView$
+
+Description:
+Stackview get will return you the number of the currently shown view. Remember: Numbering starts with 1.
+
+Related: stackview, stackview set

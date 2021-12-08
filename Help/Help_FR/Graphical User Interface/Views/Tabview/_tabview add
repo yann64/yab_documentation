@@ -1,0 +1,26 @@
+Name:
+tabview add -- Adds a new view and new tab to a tabview.
+
+Synopsys:
+TABVIEW ADD TabView$, TabName$
+
+Description:
+For each tab, a new view is created; you can add widgets or draw on these views as ususal.
+The ids for the views ist TabView$+"1" for the first, TabView$+"2" for the second view, etc.
+
+example:
+
+// make the tabview
+tabview 10,60 to 530,390, "Box", "top", "Win"
+tabview add "Box", "Widgets"
+tabview add "Box", "Views and More"
+
+// button
+button 10,10 to 100,30, "Button", "Button", "Box1"
+tooltip "Button", "BUTTON"
+
+Explanation:
+
+This snippet from the AllInOne.yab example program sets up a tabview called Box on the main Window view "Win" with the tabs at the top, then adds two tabs. "Widgets" is the first tab, "Box1", and "Views and More" is the second tab, "Box2". the button is added to the tab labeled "Widgets."
+
+Related: tabview tabview get, tabview set

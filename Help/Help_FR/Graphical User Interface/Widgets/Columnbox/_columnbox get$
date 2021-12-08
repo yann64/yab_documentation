@@ -1,0 +1,12 @@
+Name:
+columnbox get$ -- get a specific item in a columnbox
+
+Synopsis:
+Item$ = COLUMNBOX GET$ ColumnBox$, Column, Row
+
+Description:
+In the given columnbox named ColumnBox$, the item text at the position (Column, Row) will be stored in Item$. For icons and images, this will return the identifier and the file path.
+
+Have a look at the columnbox command for an example.
+
+Related: columnbox, columnbox add, columnbox clear, columnbox color, columnbox column, columnbox count, columnbox get, columnbox remove, columnbox select

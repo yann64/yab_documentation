@@ -1,0 +1,22 @@
+Name:
+end sub -- ends a subroutine definition
+
+Synopsis: 
+sub foo(...) 
+  ... 
+end sub 
+
+Description:
+Marks the end of a subroutine-definition (which starts with the sub-keyword). The whole concept of subroutines is explained within the entry for sub. 
+Example:
+print foo(3) 
+
+sub foo(a) 
+	return a*2 
+end sub 
+Explanation:
+
+This program prints out 6. The subroutine foo simply returns twice its argument.
+
+
+Related: sub

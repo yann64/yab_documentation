@@ -1,0 +1,12 @@
+Name:
+calendar set -- sets the date for a calendar
+
+Synopsis:
+CALENDAR SET Calendar$, SetDate$
+
+Description:
+This lets you set the date of the calendar named Calendar$. Note: SetDate$ has to use the format, that is defined for the calendar.
+
+Note: this SetDate$ has a different format than the yab command date$. However, it is not too difficult to convert these formats.
+
+Related: calendar, calendar get$, date$

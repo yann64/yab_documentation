@@ -1,0 +1,14 @@
+Name:
+to -- this keyword appears as part of other statements
+
+Synopsis 
+for a=1 to 100 step 2 
+  ... 
+next a 
+draw line x,y to a,b, View$
+
+Description:
+The to-keyword serves two purposes (which are not related at all):within for-statements, to specify the upper bound of the loop.
+Within any graphical command (e.g. line), that requires two points (i.e. four numbers) as arguments, a comma ',' might be replaced with the keyword to. I.e. instead of 100,100,200,200 you may write 100,100 to 200,200 in such commands.
+
+Related: for, draw line, view

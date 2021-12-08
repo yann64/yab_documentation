@@ -1,0 +1,41 @@
+Name:
+static -- preserves the value of a variable between calls to a subroutine
+
+Synopsis: 
+sub foo() 
+
+  static a 
+
+  ... 
+
+end sub 
+
+Description:
+The static keyword can be used within subroutines to mark variables as static. This has two effects: First, the variable is local to the subroutine, i.e. its value is not know outside the subroutine (this is the effect of the local keyword). Second, the static-keyword arranges things, so that the variable keeps its value between invocations of the subroutine (this is different from the local-keyword).
+
+Example:
+foo() 
+foo() 
+foo() 
+
+sub foo() 
+	static a 
+	local b 
+	a=a+1 
+	b=b+1 
+	print a,b 
+end sub 
+Explanation:
+
+This program shows the difference between static and local variables within a subroutine; it produces this output:
+
+
+1 1 
+2 1 
+3 1 
+
+
+The output shows, that the static variable a keeps its value between subroutine calls, whereas b is initialized with the value 0 at every call to the subroutine foo.
+
+
+Related: sub, local

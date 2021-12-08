@@ -1,0 +1,32 @@
+Name:
+poke -- change selected internals of yab
+
+Synopsis: 
+poke "foo","bar" 
+poke "foo",baz 
+poke #a,"bar" 
+poke #a,baz 
+
+Description:
+The poke-command may be used to change details of yabs behaviour. Like the related function peek, poke does many different things, depending on the arguments supplied.
+
+Here are the different things you can do with poke:poke "infolevel","debug"Change the amount of internal information, that yab outputs during execution.
+The second argument can be either "debug", "note", "warning", "error" or "fatal". However, normally you will not want to change this from its default value "warning". See also the related peek$("infolevel").
+
+poke #1,a
+Write the given byte (a in the example above) to the specified stream (#a in the example).
+
+See also the related function peek(#1).
+
+Example:
+print "Hello, now you will see, how much work" 
+print "a simple for-loop involves ..." 
+input "Please press return " a$ 
+poke "infolevel","debug" 
+for a=1 to 10:next a 
+Explanation:
+
+This example only demonstrates one of the many pokes, which are described above: The program switches the infolevel to debug, which makes yab produce a lot of debug-messages during the subsequent for-loop.
+
+
+Related: peek, peek$

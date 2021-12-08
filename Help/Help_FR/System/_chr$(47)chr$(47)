@@ -1,0 +1,18 @@
+Name:
+// -- starts a comment
+
+Synopsis: 
+//  This is a comment! 
+
+Description:
+The double-slash ('//') is (besides REM and '#') the third way to start a comment. '//' is the latest and greatest in the field of commenting and allows yab to catch up with such cool languages like C++ and Java.
+
+Example:
+// Another comment. 
+print "Hello world!" // Another comment 
+Explanation:
+
+Unlike the example given for '#' this example is syntactically correct and will not produce an error.
+
+
+Related: #, rem

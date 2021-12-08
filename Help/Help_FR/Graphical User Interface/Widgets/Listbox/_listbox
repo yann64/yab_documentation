@@ -1,0 +1,60 @@
+Name:
+listbox -- create a list widget
+
+Synopsis:
+LISTBOX x1,y1 TO x2,y2, ID$, ScrollbarType, View$
+
+Description:
+The listbox provides a list widget that can be filled with text items. It is set up at the position (x1,y1) to (x2,y2) on the view named View$. It gets an own identifier ID$. Additionally you have to specify whether the listbox should get scrollbars. This is given by ScrollbarType as follows:
+
+ScrollbarType = 0 -- no scrollbar
+ScrollbarType = 1 -- the listbox has a vertical scrollbar
+ScrollbarType = 2 -- the listbox has a horizontal scrollbar
+ScrollbarType = 3 -- the listbox has a vertical and a horizontal scrollbar
+
+Message:
+The listbox provides two messages. The first kicks in when an item is selected by clicking once on it or by the up and down keys. This then has the format ID$+":_Select:"+SelectedItem$ where SelectedItem$ contains the number of the item selected. The second message is send, when a item is invoked, i.e. by double-clicking at a item or pressing the Enter key. It has the format ID$+":_Invoke:"+SelectedItem$.
+
+Layout:
+The listbox will follow all sides as in standard layout.
+
+Design:
+The listbox is an easy method to present a lot of data well-structured in a list. Use it instead of a dropbox when you have enough space or the list of data gets too long. For having icons or images in a list, use the columnbox instead.
+
+Example:
+window open 100,100 to 400,400, "Example", "Example"
+
+listbox 10,10 to 290,260, "MyList", 1, "Example"
+button 10,270 to 290,290, "MyButton", "Sort List", "Example"
+
+listbox add "MyList", "Apple"
+listbox add "MyList", "8088"
+listbox add "MyList", "80286"
+listbox add "MyList", "ZX81"
+listbox add "MyList", 1, "BeOS"
+
+listbox select "MyList", 2
+
+while(not quitting)
+        m$ = message$
+        if(instr(m$, "MyButton")) then
+                listbox sort "MyList"
+        endif
+        if(instr(m$, "_Select")) then
+                currentItem = listbox get "MyList"
+                print listbox get$ "MyList", currentItem
+        endif
+        if(instr(m$, "_Invoke")) then
+                currentItem = listbox get "MyList"
+                item$ = listbox get$ "MyList", currentItem
+                alert "You selected "+item$, "Ok", "info"
+        endif
+        if(instr(m$, "Quit")) quitting = true
+wend
+
+window close "Example"
+Explanation:
+
+This program opens a window with a listbox named "MyList" and a button named "MyButton". Several items are added, note the order of the items. The last item is put into the first position of the list. Then the second item is selected, this will generate a message which will be processed immendiatly. You can see the name of the selected item on the console output. When the sort button is pressed, the list is sorted. When double clicking on an item, an alert window pops up showing the selected item.
+
+Related: listbox add, listbox clear, listbox count, listbox get, listbox get$, listbox remove, listbox select, listbox sort

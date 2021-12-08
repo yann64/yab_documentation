@@ -1,0 +1,15 @@
+Name:
+colour -- see color
+
+Synopsis:
+
+*** requires ncurses support compiled in ***
+See Documentation/Advanced for info. 
+ 
+print colour(fore$) text$ 
+print colour(fore$,back$) text$ 
+
+Description:
+See color.
+
+Related: color

@@ -1,0 +1,28 @@
+Name:
+mod() -- compute the remainder of a division
+
+Synopsis:
+print mod(a,b) 
+
+Description:
+The mod-function divides its two arguments and computes the remainder. Note, that a/b-int(a/b) and mod(a,b) are always equal.
+
+Example:
+//*** requires ncurses support compiled in ***
+//See Documentation/Advanced for info.
+
+clear screen 
+print at(10,10) "Please wait "
+p$="-\|/" 
+for a=1 to 100 
+	rem  ... do something lengthy here, or simply sleep :-) 
+	pause(1) 
+	print at(22,10) mid$(p$,1+mod(a,4)) 
+next a 
+Explanation:
+
+  This example executes some time consuming action within a loop (in fact, it simply sleeps) and gives the user some indication of progress by displaying a turning bar (thats where the  mod()-function comes into play). 
+Start this program in a terminal.
+
+
+Related: int, frac

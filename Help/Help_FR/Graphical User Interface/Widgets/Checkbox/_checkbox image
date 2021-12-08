@@ -1,0 +1,48 @@
+Name:
+checkbox image -- create a new checkbox with images
+
+Synopsis:
+CHECKBOX IMAGE x,y, ID$, EnabledOn$, EnabledOff$, DisabledOn$, DisabledOff$, IsSelected, View$
+
+Description:
+This command lets you create a checkbox with images named ID$ on the view View$. The position (x,y) is the upper left corner of the images and the size of the first image (EnabledOn$) is taken. If IsSelected is set to true, the checkbox will be selected.
+
+You have to provide at least two image files:
+EnabledOn$ -- the image file name of the selected checkbox
+EnabledOff$ -- the image file name of the deselected checkbox
+The images can be of any format that BeOS or ZETA can translate.
+
+If you want to disable the checkbox, you should provide the additional image files:
+DisabledOn$ -- the image file name of the disabled selected checkbox
+DisabledOff$ -- the image file name of the disabled deselected checkbox
+You can put in an empty string "" if you don't need a disabled checkbox.
+
+Just be aware that image files with relative path might be not found when you start your program as a script from tracker.
+
+You can use option set to disable the checkbox.
+
+Message:
+The checkbox when selected will send a message string with ID$+":ON", and when deselected with the message string ID$+":OFF".
+
+Layout:
+In standard layout, the checkbox will follow the lower, right corner of the view or window.
+
+Design:
+Be creative but do not use offensive images. For icons, try to use BeOS-like icons always. Ask in the community if you need assistence in creating new icons.
+
+Example:
+window open 100,100 to 400,200, "Example", "Example"
+checkbox 10,10, "MyCheckBox", "enabled_icon_on.png", "enabled_icon_off.png", 
+         "disabled_icon_on.png", "disabled_icon_off.png", false, "Example"
+while(not quitting)
+	m$ = message$
+	if(m$ = "MyCheckBox:OFF|") alert "The checkbox is deselected", "Ok", "info"
+	if(m$ = "MyCheckBox:ON|") alert "The checkbox is selected", "Ok", "info"
+	if(instr(m$, "Quit")) quitting = true
+wend
+window close "Example"
+Explanation:
+
+Whenever the checkbox is selected or deselected, an alert window will tell you. The checknox is only shown correctly, when the images exist.
+
+Related: checkbox, checkbox set, option set

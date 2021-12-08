@@ -1,0 +1,10 @@
+Name:
+dropbox get -- returns the number of the currently selected entry in a columnbox
+
+Synopsis:
+number = DROPBOX GET DropBox$
+
+Description:
+Get the number at the selected Entry for the dropbox Dropbox$.
+
+Related: dropbox , dropbox add, dropbox clear, dropbox count, dropbox remove, dropbox select, dropbox get$

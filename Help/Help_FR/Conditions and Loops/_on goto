@@ -1,0 +1,45 @@
+Name:
+on goto -- jump to one of many goto-targets
+
+Synopsis: 
+on a goto foo,bar,baz 
+  ... 
+label foo 
+  ... 
+label bar 
+  ... 
+label baz 
+  ... 
+
+Description:
+The on goto statement uses its numeric argument (the one between on and goto to select an element from the list of labels, which follows after the goto-keyword: If the number is 1, the execution continues at the first label; if the number is 2, at the second, and so on. if the number is zero or less, the program continues at the position of the first label; if the number is larger than the total count of labels, the execution continues at the position of the last label; i.e. the first and last label in the list constitute some kind of fallback-slot.
+
+Note, that (unlike the goto-command) the on goto-command can no longer be considered state of the art; people may (not me!) even start to mock you, if you use it.
+
+Example:
+label over 
+print "Please Select one of these choices: "
+print 
+print "  1 -- show time" 
+print "  2 -- show date" 
+print "  3 -- exit" 
+print 
+input "Your choice " a 
+on a goto over,show_time,show_date,terminate,over 
+
+label show_time 
+	print time$() 
+goto over 
+
+label show_date 
+	print date$() 
+goto over 
+
+label terminate 
+exit 
+Explanation:
+
+Note, how invalid input (a number less than 1, or larger than 3) is automatically detected; in such a case the question is simply issued again.
+
+
+Related: goto, on gosub

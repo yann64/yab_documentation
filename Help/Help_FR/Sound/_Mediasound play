@@ -1,0 +1,20 @@
+Name:
+Mediasound play -- play sound / stream file 
+
+Synopsis:
+Mediasound play (file$)
+
+Description:
+To play a sound file named Filename$ which can be of any supported format (e.g. WAV, MP3, etc.) sound play will return a number ID. 
+ID give 1 back. this is needed to stop playing.
+MEDIASOUND you must wait a little before you hear the stream:
+
+Example:
+ID = MEDIASOUND PLAY SoundFile$
+sleep 3
+MEDIASOUND STOP ID
+Explanation:
+
+This first loads the file SoundFile$, plays it for three seconds and then stops it.
+
+Related: mediasound play, mediasound stop

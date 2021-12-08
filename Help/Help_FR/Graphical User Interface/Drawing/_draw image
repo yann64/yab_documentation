@@ -1,0 +1,44 @@
+Name:
+draw image -- load and display an image file
+
+Synopsis:
+LoadError = DRAW IMAGE x,y, ImageFile$, Target$
+LoadError = DRAW IMAGE x1,y1 TO x2,y2, ImageFile$, Target$ 
+
+Description:
+The image with the filename ImageFile$ is loaded and put on Target$. Target$ has to be either a valid view, bitmap or canvas. Any image files that are understood by the system can be used. Transparent images are supported, however they might cause problems when printed with the printer command.
+
+If only one coordinate pair is given, the image will be displayed in its full size where (x,y) is the upper left corner. If the second coordinates are given too, the image will be resized from (x1,y1) to (x2,y2). 
+If x2 is set to -1, the width is scaled according to the height;
+if y2 is set to -1, the height is scaled according to the width;
+if x2 and y2 are set to -1, the image is not scaled at all.
+
+Draw image returns information about the success of the loading procedure:
+LoadError = 0, image successfully loaded
+LoadError = 1, the file was not found
+LoadError = 2, the translator roster was not found, i.e. the system does not understand the image type
+LoadError = 3, translation failed, maybe the file is corrupted?
+LoadError = 4, detaching the bitmap failed, maybe out of memory?
+
+Example:
+window open 100,100 to 400,400, "Example", "Example"
+err = draw image 10,10, "mypicture.png", "Example"
+switch(err)
+	case 1: alert "File not found!", "Ok", "stop"
+		exit(1)
+	case 2: alert "Translator not found!", "Ok", "stop"
+		exit(1)
+	case 3: alert "Translation failed!", "Ok", "stop"
+		exit(1)
+	case 4: alert "Detaching failed!", "Ok", "stop"
+		exit(1)
+	default:
+		break
+end switch
+sleep 7
+window close "Example"
+Explanation:
+
+The example program will try to load and display the file "mypicture.png" from the current directory. If the load process failed, an error message is produced.
+
+Related: draw flush

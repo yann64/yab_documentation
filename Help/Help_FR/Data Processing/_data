@@ -1,0 +1,30 @@
+Name:
+data -- introduces a list of data-items
+
+Synopsis: 
+data 9,"world" 
+... 
+read b,a$ 
+
+Description:
+The data-keyword introduces a list of comma-seperated list of strings or numbers, which may be retrieved with the read-command.
+The data-command itself does nothing; it just stores data. A single data-command may precede an arbitrarily long list of values, in which strings or numbers may be mixed at will.
+
+yab internally uses a data-pointer to keep track of the current location within the data-list; this pointer may be reset with the restore-command.
+
+Example:
+do 
+	restore 
+	for a=1 to 4 
+		read num$,num 
+		print num$,"=",num 
+	next a 
+loop 
+data "eleven",11,"twelve",12,"thirteen",13,"fourteen",14 
+Explanation:
+
+This example just prints a series of lines eleven=11 up to fourteen=14 and so on without end.
+The restore-command ensures that the list of data-items is read from the start with every iteration.
+
+
+Related: read, restore

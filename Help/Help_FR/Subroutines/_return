@@ -1,0 +1,45 @@
+Name:
+return -- return from a subroutine or a gosub
+
+Synopsis: 
+gosub foo 
+... 
+label foo 
+... 
+return 
+
+sub bar(baz) 
+  ... 
+  return quertz 
+end sub 
+
+Description:
+The return-statement serves two different (albeit somewhat related) purposes. The probably more important use of return is to return control from within a subroutine to the place in your program, where the subroutine has been called. If the subroutine is declared to return a value, the return-statement might be accompanied by a string or number, which constitutes the return value of the subroutine.
+
+However, even if the subroutine should return a value, the return-statement need not carry a value; in that case the subroutine will return 0 or the empty string (depending on the type of the subroutine). Moreover, feel free to place multiple return-statements within your subroutine; it's a nice way of controlling the flow of execution.
+The second (but historcially first) use of return is to return to the position, where a prior gosub has left off. In that case return may not carry a value.
+
+Example:
+do 
+	read a$ 
+	if (a$="") then 
+		print 
+		end 
+	endif 
+	print mark$(a$)," "
+loop 
+
+data "The","quick","brown","fox","jumped" 
+data "over","the","lazy","dog","" 
+
+sub mark$(a$) 
+	if (instr(lower$(a$),"q")) return upper$(a$) 
+	return a$ 
+end sub 
+Explanation:
+
+This example features a subroutine mark$, that returns its argument in upper case, if it contains the letter "q", or unchanged otherwise. In the test-text the word quick will end up beeing marked as QUICK.
+The example above demonstrates return within subroutines; please see gosub for an example of how to use return in this context.
+
+
+Related: sub, gosub

@@ -1,0 +1,21 @@
+Name:
+continue -- start the next iteration of a for-, do-, repeat- or while-loop
+
+Synopsis:
+continue
+
+Description:
+You may use continue within any loop to start the next iteration immediately. Depending on the type of the loop, the loop-condition will or will not be checked. Especially: for- and while-loops will evaluate their respective conditions, do- and repeat-loops will not.
+Remark: Another way to change the flow of execution within a loop, is the break-command.
+
+Example:
+for a=1 to 100 
+	if mod(a,2)=0 continue 
+	print a 
+next a 
+Explanation:
+
+  This example will print all odd numbers between 1 and 100.
+
+
+Related: for, do, repeat, while, break

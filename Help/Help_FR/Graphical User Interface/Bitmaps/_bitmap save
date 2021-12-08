@@ -1,0 +1,13 @@
+Name:
+bitmap save -- saves a bitmap to an image file.
+
+Synopsis:
+ErrCode = BITMAP IMAGE ImageFile$, Bitmap$
+
+Description:
+Saves a bitmap as FileName$ (overwrites existing ones!) in  Format$ 
+Format$ = "png|tiff|ppm|bmp|jpeg|tga"
+ErrCode = 0|1 , everything worked fine | file could not be saved
+
+
+Related: bitmap, bitmap color, bitmap get, bitmap image, bitmap remove, draw bitmap  

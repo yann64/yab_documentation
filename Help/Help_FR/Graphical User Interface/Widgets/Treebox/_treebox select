@@ -1,0 +1,10 @@
+Name:
+treebox select -- Select an item
+
+Synopsis:
+TREEBOX SELECT TreeBox$, Position
+
+Description:
+Selects theitem at position Position in TreeBox$.
+
+Related: treebox, treebox add, treebox clear, treebox collapse, treebox count, treebox expand, treebox get$, treebox remove, treebox sort

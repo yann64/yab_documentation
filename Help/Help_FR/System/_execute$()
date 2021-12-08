@@ -1,0 +1,26 @@
+Name:
+execute$() -- execute a user defined subroutine, which must return a string
+
+Synopsis:
+print execute$("foo$","arg1","arg2")
+
+Description:
+execute$ can be used to execute a user defined subroutine, whose name may be specified as a string expression.
+This feature is the only way to execute a subroutine, whose name is not known by the time you write your program. This might happen, if you want to execute a subroutine, which is compiled (using the compile command) during the course of execution of your program.
+Note however, that the execute$-function is not the preferred method to execute a user defined subroutine; almost all cases you should just execute a subroutine by writing down its name within your yab program (see the example).
+
+Example:
+print execute$("foo$","Hello","world!") 
+sub foo$(a$,b$) 
+	return a$+" "+b$ 
+end sub 
+Explanation:
+
+The example simply prints Hello world!, which is the return value of the user defined subroutine foo$. The same could be achieved by executing:
+
+
+print foo$(a$,b$) 
+
+
+
+Related: compile, execute

@@ -1,0 +1,14 @@
+Name:
+texturl color -- Set the color used for the text of a texturl.
+
+Synopsis:
+TEXTURL COLOR TextURL$, Option$, r,g,b
+
+
+Description:
+Set the colors for the URL. Valid options are:
+"Label" for the color of the label,
+"Click" for the color of the label, when clicked and
+"Mouse-over" for the color of the label, when the mouse is moved over the label.
+
+Related: texturl

@@ -1,0 +1,20 @@
+Name:
+loop -- marks the end of an infinite loop
+
+Synopsis:
+do 
+  ... 
+loop 
+
+Description:
+The loop-command marks the ends of a loop (which is started by do), wherein all statements within the loop are repeated forever. In this respect the do loop-loop is infinite, however, you may leave it anytime via break or goto.
+
+Example:
+print "Hello, I will throw dice, until I get a 2 ..." 
+do 
+	r=int(rand(6))+1 
+	print r 
+	if (r=2) break 
+loop 
+
+Related: do, for, repeat, while, break

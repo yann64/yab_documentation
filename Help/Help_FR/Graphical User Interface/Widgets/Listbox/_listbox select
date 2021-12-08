@@ -1,0 +1,15 @@
+Name:
+listbox select -- select an item in a listbox
+
+Synopsis:
+LISTBOX SELECT ListBox$, Position
+
+Description:
+In the given listbox named ListBox$, the specified item at the position Position is selected. If Position is set to 0, any former selection is revoked.
+
+Have a look at the listbox command for an example.
+
+Message:
+Using the listbox select command will generate a selection message. This then has the format ID$+":_Select:"+SelectedItem$ where SelectedItem$ contains the number of the item selected. 
+
+Related: listbox, listbox add, listbox clear, listbox count, listbox get, listbox get$, listbox remove, listbox sort

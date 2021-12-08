@@ -1,0 +1,10 @@
+Name:
+spincontrol set -- set the spincontrol to a value
+
+Synopsis:
+SPINCONTROL SET SpinControl$, Value
+
+Description:
+Sets the spin control SpinControl$ to value Value.
+
+Related: spincontrol, spincontrol get

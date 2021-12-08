@@ -1,0 +1,10 @@
+Name:
+treebox get$ --  Get an item from a treebox.
+
+Synopsis:
+Item$ = TREEBOX GET$ TreeBox$, Position
+
+Description:
+Returns the Item$ at position Position in TreeBox$.
+
+Related: treebox, treebox add, treebox clear, treebox collapse, treebox count, treebox expand, treebox remove, treebox select, treebox sort

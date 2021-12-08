@@ -1,0 +1,91 @@
+Name:
+str$() -- convert a number into a string
+
+Synopsis: 
+a$=str$(a) 
+b$=str$(x,"##.###") 
+b$=str$(x,"###,###.##") 
+b$=str$(x,"###,###.##","_.") 
+
+Description:
+The str$-function accepts a numeric argument and returns it as a string. This conversion between number and string can be controlled with the optional third argument (the format argument). See the following table of examples to learn about valid values of this argument. Note, that those examples fall in one of two categories: C-style and basic-style; the first 4 examples in the table below are C-style, the rest of the examples are basic-style. 
+
+For more information on the C-style formats, you may refer to your favorite documentation on the C programming language. The basic-style formats are much simpler, they just depict the desired output, marking digits with '#'; groups of (usually three) digits may be separated with colons (','), the decimal dot must be marked by a literal dot ('.'). Moreover these characters (colons and dot) may be replaced by other characters to satisfy the needs of non-English (e.g. German) languages; see the examples below.
+
+Note, that for clarity, each space in the result has been replaced by the letter 'x', because it would be hard to figure out, how many spaces are produced exactly otherwise.
+
+Examples for the format argument
+
+
+string |  Result for converting 1000*pi |      Description
+
+%2.5f             3141.59265                      The '2' determines the minimum
+                                                  length of the output; but if 
+                                                  needed (as in the example) the 
+                                                  output can be longer. 
+                                                  The '5' is the number of digits 
+                                                  after the decimal point.
+
+%12.5f            xx3141.59265                    Two spaces (which appear as 'x') 
+                                                  are added to pad the output to 
+                                                  the requested length of 12 characters.
+
+%012.5g           0000003141.6                    The 'g' requests, that the precision 
+                                                  ('5') specifies the overall number of 
+                                                  digits (before and after the decimal 
+                                                  point).
+
+%-12.5f           3141.59265xx                    The '-' requests the output to be 
+                                                  left-centered (therefore the filling 
+                                                  space appears at thi right).
+
+ #####.##          x3141.59                        Each '#' specifies a digit 
+                                                  (either before or after the dot), 
+                                                  the '.' specifies the position of 
+                                                  the dot. As 1000*pi does not 
+                                                  have enough digits, the 5 requested 
+                                                  digits before the dot are filled up 
+                                                  with a space (which shows up as an 'x').
+
+ ##,###.##         x3,141.59                       Nearly the same as above, but the colon
+                                                  from the format shows up within the 
+                                                  result.
+
+ ##,###.## 
+and an addtional 
+argument of ".,"  x3.141,59                       Similar to the example above, but 
+                                                  colon and dot are replaced with dot 
+                                                  and colon respectivly.
+
+ ##,###.## 
+and an addtional 
+argument of "_,"  x3_141,59                       Similar to the example above, but 
+                                                  colon and dot are replaced with 
+                                                  underscore and colon respectivly.
+
+ #####             x3142                           The format string does not contain 
+                                                  a dot, and therefore the result does 
+                                                  not have any fractional digits.
+
+ ##.###            ##.###                          As 1000*pi has 4 digits infront of 
+                                                  the decimal dot and the format only 
+                                                  specifies 2, yab does not know 
+                                                  what to do; therefore it chooses just 
+                                                  to reproduce the format string.
+
+
+Example:
+do 
+	input "Please enter a format string: " f$ 
+	a$=str$(1000*pi,f$) 
+	for a=1 to len(a$) 
+		if (mid$(a$,a,1)=" ") mid$(a$,a,1)="x" 
+	next a 
+	print a$ 
+loop 
+Explanation:
+
+This is the program, that has been used to get the results shown in the table above.
+
+
+Related: print, using

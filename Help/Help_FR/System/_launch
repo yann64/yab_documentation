@@ -1,0 +1,17 @@
+Name:
+Launch --  Launch the program FileName$ or the associated executable
+
+Synopsis:
+LAUNCH FileName$
+
+Description:
+Open the program or the  associated executable
+
+Example:
+launch "http://www.besly.de" 
+
+
+
+
+Explanation:
+open the webside www.besly.de with the  associated executable

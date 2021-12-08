@@ -1,0 +1,21 @@
+Name:
+localize stop -- stop the automatic localization
+
+Synopsis:
+LOCALIZE stop
+
+Description:
+To turn the automatic translation off, use:
+LOCALIZE stop
+
+Example:
+LOCALIZE stop
+
+Explanation:
+This stop the automatic translation.
+
+Notice: Keep in mind that the widgets doesn't work correct anymore! If you want to get back to a working widgets, turn on with the following command.
+
+localize
+
+Related: translate$(), LANGUAGE_AVAILABLE$, LOCALIZE

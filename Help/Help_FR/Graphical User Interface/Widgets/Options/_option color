@@ -1,0 +1,10 @@
+Name:
+option color -- Set the background color of a view.
+
+Synopsis:
+OPTION COLOR View$, "BGColor", r,g,b
+
+Description:
+Set the background color of any view (note: this is different to DRAW SET!)
+
+Related:

@@ -1,0 +1,100 @@
+Name:
+peek -- retrieve internal information
+
+Synopsis: 
+print peek("foo") 
+a=peek(#1) 
+
+Description:
+The peek-function has many different and mostly unrelated uses. It is a kind of grabbag for retrieving all kinds of numerical information, internal to yab. The meaning of the numbers returned be the peek-function depends on the string or number passed as an argument.
+
+peek always returns a number, however the closely related peek$-function exists, which may be used to retrieve string information from among the internals of yab. Finally note, that some of the values which are retrieved with peek may even be changed, using the poke-function.
+
+There are two variants of the peek-function: One expects an integer, positive number and is described within the first entry of the list below. The other variant expects one of a well defined set of strings as described in the second and all the following entries of the list below.
+
+peek(a), peek(#a)
+Read a single character from the file a (which must be open of course).
+
+peek("screenheight")
+Return the height in characters of the window, wherein yab runs. This will return 25. With ncurses support compiled in, if you have not called clear screen yet, this peek will return 0, regardless of the size of your terminal.
+
+peek("screenwidth")
+Return the width in characters of the window, wherein yab runs. This will return 80. With ncurses support compiled in, if you have not called clear screen yet, this peekwill return 0, regardless of the size of your terminal.
+
+peek("desktopheight")
+Return the height in pixels of the curent Desktop. 
+
+peek("desktopwidth")
+Return the width in pixels of the curent Desktop. 
+
+peek("menuheight")
+Return the height in pixels based on the font for a menu. 
+
+peek("scrollbarwidth")
+Return the width in pixels for a virtical scrollbar.
+
+peek("tabheight")
+Return the height in pixels based on the font for a tabview tab.
+
+peek("argument")
+Return the number of arguments, that have been passed to yab at invocation time. E.g. if yab has been called like this: 
+  yab foo.yab bar baz
+then peek("argument") will return 2. This is because foo.yab is treated as the name of the program to run, whereas bar and baz are considered arguments to the program, which are passed on the commandline. The function peek("argument") can be written as peek("arguments") too.
+You will want to check out the corresponding function peek$("argument") to actually retrieve the arguments. Note, that each call to peek$("argument") reduces the number returned by peek("argument").
+
+peek("isbound")
+Return true, if the executing yab-program is part of a standalone program; see the section about creating a standalone-program for details.
+
+peek("version")
+Return the version number of yab (e.g. 1).
+
+peek("loudness")
+Return the loudness from the system.
+
+peek("error")
+Return a number specifying the nature of the last error in an open- or seek-statement. Normally an error within an open-statement immediately terminates your program with an appropriate error-message, so there is no chance and no need to learn more about the nature of the error. However, if you use open as a condition (e.g. if (open(#1,"foo")) ...) the outcome (success or failure) of the open-operation will determine, if the condition evaluates to true or false. If now such an operation fails, your program will not be terminated and you might want to learn the reason for failure. This reason will be returned by peek("error") (as a number) or by peek$("error") (as a string)The table below shows the various error codes; the value returned by peek$("error") explains the nature of the error. Note, that the codes 10,11 and 12 refer to the seek-command.
+
+Error codes
+
+peek("error")|       peek$("error")         |        Explanation
+2              Stream already in use          Do not try to open one and the same
+                                              filenumber twice; rather close it first.
+
+3              'x' is not a valid filemode    The optional filemode argument, which may
+                                              be passed to the open-function, has an
+                                              invalid value
+
+4              could not open 'foo'           The open-call did not work, no further
+                                              explanation is available.
+
+5              reached maximum number
+               of open files                  You have opened more files than your
+                                              operating system permits.
+
+9              invalid stream number          An attempt to use an invalid
+                                              (e.g. negative) stream number;
+                                              example: open(-1,"foo")
+
+10             could not position stream x
+               to byte y                      seek did not work.
+
+11             stream x not open              You have tried to seek within a stream,
+                                              that has not been opened yet.
+
+12             seek mode 'x' is none of
+               begin,end,here                 The argument, which has been passed to
+                                              seek is invalid.
+
+Example:
+open "foo" for reading as #1 
+open "bar" for writing as #2 
+while(not eof(#1)) 
+	poke #2,chr$(peek(#1)); 
+wend 
+Explanation:
+
+This program will copy the file foo byte by byte to bar.
+Note, that each peek does something entirely different, and only one has been demonstratedabove. Therefore you need to make up examples yourself for all the other peeks.
+
+
+Related: peek$, poke, open

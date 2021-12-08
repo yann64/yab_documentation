@@ -1,0 +1,45 @@
+Name:
+window open -- open a window
+
+Synopsis:
+WINDOW OPEN x1,y1 TO x2,y2, ID$, Title$
+
+Description:
+The window open command is a very basic and very important command for most yab programs. As it name says, a window is opened on the current desktop. The coordinates (x1,y1) to (x2,y2) of the window are related to the screen coordinates of the current desktop; thus (0,0) is the upper left corner of the screen. The window gets a title named Title$ which is displayed in the tab of the window. Title$ is allowed to be empty ("") aswell. Additionally, the window gets an own ID named ID$. You can use it like any other view and draw on it or put widgets on it. However, you cannot delete it with the view remove command, use window close instead.
+
+Message:
+A window will send several messages to the message queue:
+ID$+":_QuitRequested" -- the close button was pressed or the window received any other message to close itself
+ID$+":_Activated" -- the window was activated
+ID$+":_Deactivated" -- the window was deactivated
+
+If your application gets the general message "_QuitRequested" it is asked to close down completly. This is more general than the window  "_QuitRequested" above which only should shut down the window itself.
+
+Design:
+Use capitalized words for the title tab in English as in headings (but not in German!). Your window should always act as expected when the close button is pressed. Have a look at the window set command to learn about different look and feel parameters for your window.
+
+When your window has quite a lot of widgets and drawings on startup to do, it might look quite ugly with lots of flickering. To avoid this, simply construct the window with negative coordinates (e.g. window open -400,-400 to -100,-100, "Example", "Example"). Then move it to its real position on the workspace with the "MoveTo" option of the window set command when the setup is done. 
+
+Example:
+window open 100,100 to 300,300, "Example", "Example"
+button 10,90 to 190,110, "Button", "My First Window", "Example"
+
+while(not quitting)
+	m$ = message$
+	if(instr(m$, "Example:_QuitRequested")) then
+		alert "You pressed the window close button", "Ok", "info"
+		quitting = true
+	elsif(instr(m$, "_QuitRequested")) then
+		alert "The application should now shut down", "Ok", "info"
+		quitting = true
+	elsif(instr(m$, "Button")) then
+		alert "The button was pressed", "Ok", "info"
+	endif
+wend
+
+window close "Example"
+Explanation:
+A simple window with a button. Try to close it with the close button and then try to shut it down with the Alt-Q shortcut key. This shows how the different "_QuitRequested" messages should be handled.
+
+Related:
+alert, window close, window count, window get, window set

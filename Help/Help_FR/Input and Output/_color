@@ -1,0 +1,34 @@
+Name:
+color -- print with color
+
+Synopsis:
+
+*** requires ncurses support compiled in ***
+See Documentation/Advanced for info. 
+
+print color(fore$) text$ 
+print color(fore$,back$) text$ 
+
+Description:
+Not a seperate command, but part of the print-command; may be included just after print and can only be issued after clear screen has been executed.
+
+color() takes one or two string-arguments, specifying the color of the text and (optionally) the background.
+The one or two strings passed to color() can be one of these: "black", "white", "red", "blue", "green", "yellow", "cyan" and "magenta" (which can be abbreviated as "bla", "whi", "red", "blu", "gre", "yel", "cya" and "mag" respectively). color() can only be used, if clear scren has been issued at least once.
+
+Note, that color() can be written as colour() too.
+
+Example:
+clear screen 
+dim col$(7):for a=0 to 7:read col$(a):next a 
+do 
+	print color(col$(ran(7)),col$(ran(7))) " Hallo "
+	pause 0.01 
+loop 
+data "black","white","red","blue" 
+data "green","yellow","cyan","magenta" 
+Explanation:
+
+This prints the word " Hallo " in all colors accross your screen.
+Start this program in a terminal. 
+
+Related: print, clear screen, at

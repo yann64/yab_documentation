@@ -1,0 +1,40 @@
+Name:
+submenu set -- set options for the submenu
+
+Synopsis:
+SUBMENU SET MenuHead$, MenuItem$, SetRadioMode, View$
+SUBMENU SET MenuHead$, MenuItem$, SubMenuItem$, Option$, View$ 
+
+Description:
+This lets you set some options for the second level menu. 
+
+Given a MenuHead$ and a MenuItem$ you can put the entire submenu in radio mode, i.e. only one item can be selected at a time. Set SetRadioMode to true to allow radio mode, set it to false to return to a normal behavior again. Note, you have to select the first item yourself after switching to radio mode. Use the following option to do so.
+
+Given a MenuHead$, a MeniItem$ and a SubMenuItem$ you can disable or enable the item or you can select it by putting a mark to it or remove the mark again. Thus the following options are valid:
+
+
+Option$ = "Disable" -- grey out the item so it cannot be selected anymore
+Option$ = "Enable" -- enable a formerly disabled item again
+Option$ = "Mark" -- mark this item
+Option$ = "Plain" -- remove a mark again
+
+
+Example:
+window open 100,100 to 400,300, "Example", "Example"
+
+submenu "Test", "My Favorite OS", "BeOS", "", "Example"
+submenu "Test", "My Favorite OS", "Haiku", "", "Example"
+submenu "Test", "My Favorite OS", "ZETA", "", "Example"
+
+submenu set "Test", "My Favorite OS", true, "Example"
+submenu set "Test", "My Favorite OS", "BeOS", "mark", "Example"
+submenu set "Test", "My Favorite OS", "ZETA", "disable", "Example"
+
+while(not instr(message$, "Quit"))
+wend
+
+window close "Example" 
+Explanation:
+The submenu is in radio mode, so only one item can be selected. The user will do that for you, however you have to select an item for the first time. The last item cannot be selected because it is disabled.
+
+Related: menu, menu set, submenu

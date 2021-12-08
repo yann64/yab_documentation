@@ -1,0 +1,17 @@
+Name:
+or() -- arithmetic or, used for bit-operations
+
+Synopsis:
+x=or(a,b) 
+
+Description:
+Used to compute the bitwise or of both its argument. Both arguments are treated as binary numbers (i.e. a series of 0 and 1); a bit of the resulting value will then be 1, if any of its arguments has 1 at this position in theirbinary representation.
+Note, that both arguments are silently converted to integer values and that negative numbers have their own binary representation and may lead to unexpected results when passed to or.
+
+Example:
+print or(14,3) 
+Explanation:
+
+  This will print 15. This result is clear, if you note, that the binary representation of 14 and 3 are 1110 and 0011 respectively; this will yield 1111 in binary representaion or 15 as decimal.
+
+Related: and, eor, xor, not

@@ -1,0 +1,30 @@
+Name:
+tooltip color -- set the color for all tooltips
+
+Synopsis:
+TOOLTIP COLOR Option$, r,g,b
+
+Description:
+To change the textcolor or the background color of all your tooltips, use this command. Given the option "bgcolor" or "textcolor" either the background color or the text color of the tooltips will be changed to the RGB color (r,g,b). Read the part on the draw set command to learn more about RGB color space in yab.
+
+Note: This command only works with the BeOS yab. The colors for the ZETA tooltips are set generally in the ZETA preferences and thus cannot be changed for a single app. So on ZETA with the ZETA yab interpreter this command simply does nothing.
+
+Example:
+window open 100,100 to 300,140, "Example", "Example"
+
+button 10,10 to 190,30, "Button", "I have a tooltip", "Example"
+
+tooltip color "bgcolor", 0,0,0
+tooltip color "textcolor", 255,255,255
+
+tooltip "Button", "A black and white tooltip for the button on BeOS"
+
+while(not instr(message$, "Quit"))
+wend
+
+window close "Example" 
+Explanation:
+
+Here, the color of the tooltips are changed from the default yellow background and black text color to a black background (RGB color values: 0,0,0) and from the default black text color to a white text (RGB color values: 255,255,255).
+
+Related: tooltip

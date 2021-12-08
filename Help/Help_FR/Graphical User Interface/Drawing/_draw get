@@ -1,0 +1,38 @@
+Name:
+draw get -- retrieve font properties
+
+Synopsis:
+Width = DRAW GET FontProperty$, Text$, Target$
+Height = DRAW GET FontProperty$, Target$
+
+Description:
+The draw get command provides you with some information about the width or height of a string with the current font settings that are used for the draw text command.
+
+If FontProperty$ is set to "Text-Width", you have to provide a string Text$ too. The resulting Width is the width of Text$ in the current font setting. The width of a string e.g. helps you to align text. Note: Text$ will not be localized automatically, you have to translate it yourself with translate$(Text$). Target$ has to be either a valid view, bitmap or canvas.
+
+If FontProperty$ is set to "Max-Text-Height" you get the maximum height of the font as return value. The normal font size is the size starting at the baseline. The maximum height gives you the size plus how far the characters can descend below the baseline.
+
+Example:
+window open 100,100 to 400,400, "Example", "Example"
+// set font
+draw set "Zurich, Roman, 25", "Example"
+draw text 50,150, "yab Example", "Example"
+// the string length
+width = draw get "text-width", "yab Example", "Example"
+// baseline
+draw set "highcolor", 0,0,255, "Example"
+draw line 40,150 to width+60,150, "Example"
+// font size
+draw set "highcolor", 255,0,255, "Example"
+draw line 40,150-25 to width+60,150-25, "Example"
+// descend below baseline
+maxheight = draw get "max-text-height", "Example"
+draw set "highcolor", 255,0,0, "Example"
+draw line 40,150-25+maxheight to width+60,150-25+maxheight, "Example"
+sleep 7
+window close "Example" 
+Explanation:
+
+The example shows the baseline (blue line), the font size (pink line) and the lower boundary (red line) for the given string. The lower boundary is calculated by: baseline - font size + maximum text height. If you respect these distances, you can align text pretty well.
+
+Related: draw get$, draw set, draw text

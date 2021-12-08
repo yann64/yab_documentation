@@ -1,0 +1,10 @@
+Name:
+spincontrol -- Add a spincontrol to a view.
+
+Synopsis:
+SPINCONTROL x,y, ID$, Label$, Min, Max, Step, View$
+
+Description:
+Add  a spin control at x,y, named ID$, labeled Label$ with  the range (Min,Max), counting by Step on View$.
+
+Related: spincontrol get, spincontrol set

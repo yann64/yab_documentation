@@ -1,0 +1,43 @@
+Name:
+button image -- create a new button with images
+
+Synopsis:
+BUTTON IMAGE x,y, ID$, EnabledPressed$, EnabledNormal$, Disabled$, View$
+
+Description:
+This command lets you create a button with images named ID$ on the view View$. The position (x,y) is the upper left corner of the images and the size of the first image (EnabledPressed$) is taken.
+
+You have to provide at least two image files:
+EnabledPressed$ -- the image file name of the pressed button
+EnabledNormal$ -- the image file name of the released button
+The images can be of any format that BeOS or ZETA can translate.
+
+If you want to disable the button, you should provide the additional image file:
+Disabled$ -- the image file name of the disabled button 
+You can put in an empty string "" if you don't need a disabled button.
+
+Just be aware that image files with relative path might be not found when you start your program as a script from tracker.
+
+Message:
+The button when pressed will send a message string with ID$.
+
+Layout:
+In standard layout, the button will follow the lower, right corner of the view or window.
+
+Design:
+Be creative but do not use offensive images. For icons, try to use BeOS-like icons always. Ask in the community if you need assistence in creating new icons.
+
+Example:
+window open 100,100 to 300,200, "Example", "Example"
+button image 10,10, "MyIconButton", "icon_pressed.png", "icon_released", "icon_disabled", "Example"
+while(not quitting)
+	m$ = message$
+	if(m$ = "MyIconButton|") alert "You pressed the button", "Ok", "info"
+	if(instr(m$, "_QuitRequested")) quitting = true
+wend
+window close "Example"
+Explanation:
+
+The button is only shown correctly, when the images "icon_pressed.png" and "icon_released" exist.
+
+Related: button

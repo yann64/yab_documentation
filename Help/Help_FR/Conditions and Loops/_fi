@@ -1,0 +1,18 @@
+Name:
+fi -- another name for endif
+
+Synopsis:
+if (...) 
+... 
+fi 
+
+Description:
+fi marks the end of an if-statement and is exactly equivilent to endif, please see there for further information.
+
+Example:
+input "A number please: " a 
+if (a<10) then 
+	print "Your number is less than 10." 
+fi 
+
+Related: endif

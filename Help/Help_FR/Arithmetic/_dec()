@@ -1,0 +1,15 @@
+Name:
+dec() -- convert a base 2 or base 16 number into decimal form
+
+Synopsis:
+a=dec(number$) 
+a=dec(number$,base) 
+
+Description:
+The dec-function takes the string-representation of a base-2 or base-16 (which is the default) number and converts it into a decimal number. The optional second argument (base) might be used to specify a base other than 16. However, currently only base 2 or base 16 are supported.
+
+Example:
+input "Please enter a binary number: " a$ 
+print a$," is ",dec(a$) 
+
+Related: bin$, hex$

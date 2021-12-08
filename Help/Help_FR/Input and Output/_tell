@@ -1,0 +1,26 @@
+Name:
+tell -- get the current position within an open file
+
+Synopsis: 
+open #1,"foo" 
+  ... 
+position=tell(#1) 
+
+Description:
+The tell-function requires the number of an open file as an argument. It returns the position (counted in bytes, starting from the beginning of the file) where the next read will start.
+
+Example:
+open #1,"foo","w" 
+print #1 "Hello World!" 
+close #1 
+
+open #1,"foo" 
+seek #1,0,"end" 
+print tell(#1) 
+close 1 
+Explanation:
+
+This example (mis)uses tell to get the size of the file. The seek positions the file pointer at the end of the file, therefore the call to tell returns the total length of the file.
+
+
+Related: tell, open

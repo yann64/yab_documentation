@@ -1,0 +1,91 @@
+Name:
+localize -- enable the automatic localization
+
+Synopsis:
+LOCALIZE
+LOCALIZE Filename$
+
+Description:
+Not everyone speaks English thus having multiple language support improves the usability of your program. yab provides a very simple language interface with the localize command. Use it once to turn automatic localization on. Now all strings in GUI widgets will be translated automatically if there is a dictionary entry for them. All you have to do, is to make a dictionary for your program. 
+
+
+Haiku:
+
+Dictionaries for stand-alone programs are normally put into the subdirectory /boot/system/data/locale/catalogs.
+For testing your software the catalog can be installed in /boot/home/config/non-packaged/data/locale/catalogs.
+
+In one of the above directories should be a directory with x-vnd. folllowing by program name. looks like
+
+x-vnd.listdir
+
+In this directory you should put the catalog files. Here is an example to see what should be in the directoy:
+
+/boot/home/config/non-packaged/data/locale/catalogs/x-vnd. >>>your app name<<<
+en.catalog
+de.catalog
+
+The catalog files can generate with the yab-localizer. 
+
+
+The dictionary contains the English term in paranthesis ("") some spaces as separator and the translated text in the target language in paranthesis too. Example: 
+
+# A comment starts with a #
+# English     German
+"File"        "Datei"
+"Quit"        "Beenden"
+"This is a sentence."  "Dies ist ein Satz."
+
+ZETA:
+Dictionaries for stand-alone programs are normally put into the subdirectory Language/Dictionaries of your program. But if a filename Filename$ is given, the (absolute) path of this filename is used as dictionary directory. 
+
+ZETA:
+In the dictionary directory there should be files named like the programs name or like file name in Filename$. The files have a language code as ending. The language code consists of a two letter code for the language and a capitalized two letter code of the country. For a sample program named foobar.yab, some example dictionaries: foobar.deDE (language German (de) and country Germany (DE)), foorbar.enUS (language English (en) and country United States (US)), foobar.nlBE (language Dutch (nl) and country Belgium (BE)).
+
+This all looks complicated, but the reader is encouraged to have a look at the localization of the yab IDE and other tools to understand localization completly.
+
+Note: Menus and dropboxes return messages that contain a string that might be translated. Use the translate$() function to handle these.
+
+Note: The strings are case sensitive!
+
+Design:
+It is good design to support localization.
+
+Example:
+Haiku:
+// this examples works with the example localization file above
+// name it "x-vnd.listdir" in your home directory under /boot/home/config/non-packaged/data/locale/catalogs/
+localize "x-vnd.listdir"
+window open 100,100 to 200,200, "Win", "Foobar"
+menu "File", "Quit", "Q", "Win"
+draw text 10,50, "This is a sentence.", "Win"
+
+while(not quitting)
+	msg$ = message$
+	if(instr(msg$, "Quit") or instr(msg$, translate$("Quit"))) quitting = true
+wend
+
+window close "Win"
+
+ZETA:
+// this examples works with the example localization file above
+// name it "foobar.deDE" in your home directory
+localize "/boot/home/foobar"
+window open 100,100 to 200,200, "Win", "Foobar"
+menu "File", "Quit", "Q", "Win"
+draw text 10,50, "This is a sentence.", "Win"
+
+while(not quitting)
+	msg$ = message$
+	if(instr(msg$, "Quit") or instr(msg$, translate$("Quit"))) quitting = true
+wend
+
+window close "Win"
+
+Explanation:
+This shows automatic translation of the menu strings "File" and "Quit" and the draw text string. Change the language settings to German in your preferences. 
+
+Note: The menu strings are also translated when you do not provide the translation.
+
+Further, we have to check the translation of the message$ too with translate$ because the menu now reports the message string "Datei:Beenden|" when selected in German.
+
+Related: translate$(), LANGUAGE_AVAILABLE$

@@ -1,0 +1,46 @@
+Name:
+glob() -- check if a string matches a simple pattern
+
+Synopsis: 
+if (glob(string$,pattern$)) ... 
+
+Description:
+The glob-function takes two arguments, a string and a (glob-) pattern, and checks if the string matches the pattern. However glob does not employ the powerful rules of regular expressions; rather it has only two special characters: * (which matches any number (even zero) of characters) and ? (which matches exactly a single character).
+
+Example:
+for a=1 to 10 
+	read string$,pattern$ 
+	if (glob(string$,pattern$)) then 
+		print string$," matches ",pattern$ 
+	else 
+		print string$," does not match ",pattern$ 
+	endif 
+next a 
+
+data "abc","a*" 
+data "abc","a?" 
+data "abc","a??" 
+data "abc","*b*" 
+data "abc","*" 
+data "abc","???" 
+data "abc","?" 
+data "abc","*c" 
+data "abc","A*" 
+data "abc","????" 
+Explanation:
+
+This program checks the string abc against various patterns and prints the result. The output is:
+
+
+abc matches a* 
+abc does not match a? 
+abc matches a?? 
+abc matches *b* 
+abc matches * 
+abc matches ??? 
+abc does not match ? 
+abc matches *c 
+abc does not match A* 
+abc does not match ???? 
+
+Related:

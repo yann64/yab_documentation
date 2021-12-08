@@ -1,0 +1,15 @@
+Name:
+colorcontrol get -- return a color component of the currently selected color in a colorcontrol
+
+Synopsis:
+Value = COLORCONTROL GET ColorControl$, ColorComponent$
+
+Description:
+Returns the current selected color component of the colorcontrol ColorControl$. Value is always between 0 and 255, where lower values represent darker colors and higher values represent lighter colors.
+
+ColorComponent$ has to be one of the following:
+"Red" -- the value of the red color
+"Green" -- the value of the green color
+"Blue" -- the value of the blue color
+
+Related: colorcontrol, colorcontrol set

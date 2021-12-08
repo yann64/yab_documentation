@@ -1,0 +1,48 @@
+Name:
+mouse message$() -- check the mouse for its position and the state of the buttons
+
+Synopsis:
+Mouse$ = MOUSE MESSAGE$(View$)
+
+Description:
+Mouse message$() returns a string containing information of the mouse coordinates (relative to View$) and the state of the mouse buttons.
+
+The mouse string has the format "X:Y:LMB:MMB:RMB" where MB is the corresponding left, middle, right mousebutton and X and Y are the coordinates relative to the view named View$. Use the token() command to split the string into an array and use val() to get the actual numerical values (see the example below).
+
+Design:
+Using the mouse message$() is not recommended for beginners. Also the advanced programmer should use it not too intensivly, but rather rely on the existing widgets. However, controlling the mouse gives you some means to create some own sort of widgets or some cool mouse-over effects.
+
+Example:
+window open 100,100 to 500,500, "Example", "Example"
+x = 100
+y = 100
+draw rect x,y to x+50,y+50, "Example"
+text 10,10, "mytext", "Drag the square with the mouse", "Example"
+dim mouse$(1)
+while(not instr(message$, "Quit"))
+	GetMouse()
+	
+	// the button is pressed and the mouse is over the rectangle, start drag
+	if(mlmb and mx>=x and mx<=x+50 and my>=y and my<=y+50) then
+		while(mlmb)
+			GetMouse()
+			x = mx-25
+			y = my-25
+			draw flush "Example"
+			draw rect x,y to x+50,y+50, "Example"
+		wend
+	endif
+wend
+window close "Example"
+
+sub GetMouse()
+	n = token(mouse message$("Example"), mouse$(), ":")	
+	mx = val(mouse$(1))
+	my = val(mouse$(2))
+	mlmb = val(mouse$(3))
+end sub
+Explanation:
+This example lets you drag a rectangle with the mouse. It gets the current position and button state in the sub GetMouse(). Now when the left mouse button is pressed and the mouse is over the rectangle, the rectangle will be moved as long as the button is pressed. The redrawing of the rectangle can be improved by checking whether the mouse actually moved.
+
+
+Related: ismousein(), keyboard message$(), mouse message$, mouse set

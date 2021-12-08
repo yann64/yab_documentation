@@ -1,0 +1,49 @@
+Name:
+message$ -- receive a system message
+
+Synopsis:
+msg$ = MESSAGE$
+
+Description:
+Message$ is one of the most important commands for graphical user interfaces. It checks the message queue for new messages that might have arrived from open windows or graphical widgets.
+
+Most of the time the message queue is empty and message$ will return an empty string "". However, when some window or widget is selected or clicked on you probably will receive a message.
+
+Note, once message$ is called, the queue is emptied. So you receive a message only once! It is therefore a good idea to store the message in a string (e.g. msg$) or in an array (see example below) so you can evaluate it further. 
+
+Messages are separated by the pipe symbol "|". Normally, you only receive one message. However, when there is some time passing between two message calls (e.g. because of a long calculation or a sleep command), several messages might have been coming in. Therefore you should always split the whole message into its message parts with the token() command (split() will do too). Use a loop to go through all messages then.
+
+The kind of message is related to the window or widget sending the messgae. Check the different widget entries for more information on the type of message they send. 
+
+Currently, there is one general system message that you always should process: 
+"_QuitRequested" -- this means that your program was asked to quit by another program (e.g. by ProcessController or the system shutdown)
+
+Example:
+// set DEBUG to true to have the messages printed on the console
+// set it to false to disable this feature
+DEBUG = true
+
+window open 100,100 to 300,300, "Example", "Example"
+
+dim msg$(1)
+while(not quitting)
+	// get all messages and split them immediatly
+	numMessages = token(message$, msg$(), "|")
+	
+	// go through all messages
+	for i = 1 to numMessages
+		// if DEBUG is set, print the current message
+		if(DEBUG) print msg$(i)
+		switch(msg$(i))
+			case "_QuitRequested"
+			case "Example:_QuitRequested"
+				quitting = true
+				break
+		end switch
+	next i
+wend
+window close "Example"
+Explanation:
+This example shows a message loop as it is recommended for most programs. The message$ is split into parts by the token command. Using a switch(), the different messages can be examined.
+
+Related: message send

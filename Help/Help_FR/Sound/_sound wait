@@ -1,0 +1,17 @@
+Name:
+sound wait -- waits until a sound file is finished playing
+
+Synopsis:
+SOUND WAIT ID
+
+Description:
+After the a sound file named Id started playing, use this command to wait until the file finished playing.
+
+Example:
+id = sound play "bach.mp3", 1
+sound wait id
+Explanation:
+
+This first loads the file "bach.mp3" and then plays it until it ends.
+
+Related: sound play, sound stop

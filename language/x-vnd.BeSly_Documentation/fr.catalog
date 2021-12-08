@@ -1,0 +1,21 @@
+1	fr	x-vnd.BeSly_Documentation	2400082961
+Build was successful.			La compilation est un succès.
+Build failed!			La compilation a échoué!
+Developers:			Développeurs:
+Contact:			Contact:
+Website:			Site internet:
+Bug-Reporting:			Rapports de bug:
+New in this revision			Nouveautés de la révision
+Localization added\n			Ajout de traduction\n
+First init.\n			Première révision.\n
+Create binary			Créer un binaire
+Input file			Fichier d'entrée
+Output file			Fichier de sortie
+Type here your the source file in.			Entrez ici le fichier source.
+Type here your target file, please without the \".yab\". If you enterd the text with \".yab\", then the \".yab\" will be automaticly deleted.			Entrez ici le fichier cible sans l'extension \".yab\". Si l'extension \".yab\" est saisie, elle sera automatiquement enlevée.
+Type here your app-sign in or do nothing. If you blank this line, then the standart sign will be used.			Entrez ici le chemin vers l'icône voulu. Si laissé vide l'icône pas défaut sera utilisé.
+Drop here the source file.			Déposer ici le fichier source.
+Drop here the target file.			Déposer ici le fichier cible.
+Drop here the app-sign.			Déposer ici l'icône de l'application.
+Close			Fermer
+YAB-HELP			AIDE-YAB
